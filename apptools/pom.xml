@@ -15,15 +15,121 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    <!--java runtime env-->
+    <java_source_version>1.7</java_source_version>
+    <java_target_version>1.7</java_target_version>
+
+    <!--charset-->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!--springframework-->
+    <springframework.version>4.2.2.RELEASE</springframework.version>
+
+    <!--persistence framework-->
+    <mybatis.version>3.3.0</mybatis.version>
+    <mysql-connector.version>5.1.37</mysql-connector.version>
+
+    <!--datasource-->
+    <druid.version>1.0.16</druid.version>
+
+    <!--test-->
+    <junit.version>4.12</junit.version>
+
+    <!--json-->
+    <fastjson.version>1.2.7</fastjson.version>
+
+    <!--common utils-->
+    <guava.version>18.0</guava.version>
+
+    <!--log utils-->
+    <slf4j.version>1.7.12</slf4j.version>
+    <logback.version>1.1.3</logback.version>
+
+    <!--time utils-->
+    <joda-time.version>2.9</joda-time.version>
+
+    <!--for excel parse-->
+    <poi.version>3.13</poi.version>
+
+    <!--plugin version-->
+    <!--jetty plugin-->
+    <jetty.version>9.3.5.v20151012</jetty.version>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>${poi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-access</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>${joda-time.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>${druid.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastjson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${springframework.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>${mybatis.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+
+    </pluginManagement>
+  </build>
 </project>
