@@ -11,6 +11,12 @@
     <name>storemanager-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -71,6 +77,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cxy.apptools</groupId>
+            <artifactId>storemanager-persistence</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>

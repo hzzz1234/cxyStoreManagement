@@ -1,25 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>parent</artifactId>
+        <artifactId>storemanager-parent</artifactId>
         <groupId>com.cxy.apptools</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>storemanager-parent</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>storemanager-common</artifactId>
+    <packaging>jar</packaging>
 
-    <name>storemanager-parent</name>
+    <name>storemanager-common</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>storemanager-domain</module>
-        <module>storemanager-persistence</module>
-        <module>storemanager-job</module>
-        <module>storemanager-web</module>
-        <module>storemanager-rest</module>
-        <module>storemanager-common</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
