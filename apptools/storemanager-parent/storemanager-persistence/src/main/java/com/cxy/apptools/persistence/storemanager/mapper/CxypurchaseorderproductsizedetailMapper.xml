@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderproductsizedetailMapper" >
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxypurchaseorderproductsizedetail" >
+    <id column="productsizepurchaseorderid" property="productsizepurchaseorderid" jdbcType="INTEGER" />
+    <result column="purchaseorderdetailid" property="purchaseorderdetailid" jdbcType="INTEGER" />
+    <result column="sizedetailid" property="sizedetailid" jdbcType="INTEGER" />
+    <result column="num" property="num" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="DataChange_LastTime" property="datachangeLasttime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    productsizepurchaseorderid, purchaseorderdetailid, sizedetailid, num, create_time, 
+    DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cxypurchaseorderproductsizedetail
+    where productsizepurchaseorderid = #{productsizepurchaseorderid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cxypurchaseorderproductsizedetail
+    where productsizepurchaseorderid = #{productsizepurchaseorderid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorderproductsizedetail" >
+    insert into cxypurchaseorderproductsizedetail (productsizepurchaseorderid, purchaseorderdetailid, 
+      sizedetailid, num, create_time, 
+      DataChange_LastTime)
+    values (#{productsizepurchaseorderid,jdbcType=INTEGER}, #{purchaseorderdetailid,jdbcType=INTEGER}, 
+      #{sizedetailid,jdbcType=INTEGER}, #{num,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorderproductsizedetail" >
+    insert into cxypurchaseorderproductsizedetail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="productsizepurchaseorderid != null" >
+        productsizepurchaseorderid,
+      </if>
+      <if test="purchaseorderdetailid != null" >
+        purchaseorderdetailid,
+      </if>
+      <if test="sizedetailid != null" >
+        sizedetailid,
+      </if>
+      <if test="num != null" >
+        num,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null" >
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="productsizepurchaseorderid != null" >
+        #{productsizepurchaseorderid,jdbcType=INTEGER},
+      </if>
+      <if test="purchaseorderdetailid != null" >
+        #{purchaseorderdetailid,jdbcType=INTEGER},
+      </if>
+      <if test="sizedetailid != null" >
+        #{sizedetailid,jdbcType=INTEGER},
+      </if>
+      <if test="num != null" >
+        #{num,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null" >
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorderproductsizedetail" >
+    update cxypurchaseorderproductsizedetail
+    <set >
+      <if test="purchaseorderdetailid != null" >
+        purchaseorderdetailid = #{purchaseorderdetailid,jdbcType=INTEGER},
+      </if>
+      <if test="sizedetailid != null" >
+        sizedetailid = #{sizedetailid,jdbcType=INTEGER},
+      </if>
+      <if test="num != null" >
+        num = #{num,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null" >
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where productsizepurchaseorderid = #{productsizepurchaseorderid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorderproductsizedetail" >
+    update cxypurchaseorderproductsizedetail
+    set purchaseorderdetailid = #{purchaseorderdetailid,jdbcType=INTEGER},
+      sizedetailid = #{sizedetailid,jdbcType=INTEGER},
+      num = #{num,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where productsizepurchaseorderid = #{productsizepurchaseorderid,jdbcType=INTEGER}
+  </update>
+</mapper>

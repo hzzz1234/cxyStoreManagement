@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxyproductcategoryMapper" >
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxyproductcategory" >
+    <id column="productcategoryid" property="productcategoryid" jdbcType="INTEGER" />
+    <result column="productcategoryname" property="productcategoryname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    productcategoryid, productcategoryname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cxyproductcategory
+    where productcategoryid = #{productcategoryid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cxyproductcategory
+    where productcategoryid = #{productcategoryid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyproductcategory" >
+    insert into cxyproductcategory (productcategoryid, productcategoryname
+      )
+    values (#{productcategoryid,jdbcType=INTEGER}, #{productcategoryname,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproductcategory" >
+    insert into cxyproductcategory
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="productcategoryid != null" >
+        productcategoryid,
+      </if>
+      <if test="productcategoryname != null" >
+        productcategoryname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="productcategoryid != null" >
+        #{productcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="productcategoryname != null" >
+        #{productcategoryname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproductcategory" >
+    update cxyproductcategory
+    <set >
+      <if test="productcategoryname != null" >
+        productcategoryname = #{productcategoryname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where productcategoryid = #{productcategoryid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxyproductcategory" >
+    update cxyproductcategory
+    set productcategoryname = #{productcategoryname,jdbcType=VARCHAR}
+    where productcategoryid = #{productcategoryid,jdbcType=INTEGER}
+  </update>
+</mapper>

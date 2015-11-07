@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxycurrencyMapper" >
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxycurrency" >
+    <id column="currencyid" property="currencyid" jdbcType="INTEGER" />
+    <result column="currency_zh" property="currencyZh" jdbcType="VARCHAR" />
+    <result column="currency_en" property="currencyEn" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    currencyid, currency_zh, currency_en
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cxycurrency
+    where currencyid = #{currencyid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cxycurrency
+    where currencyid = #{currencyid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxycurrency" >
+    insert into cxycurrency (currencyid, currency_zh, currency_en
+      )
+    values (#{currencyid,jdbcType=INTEGER}, #{currencyZh,jdbcType=VARCHAR}, #{currencyEn,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxycurrency" >
+    insert into cxycurrency
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="currencyid != null" >
+        currencyid,
+      </if>
+      <if test="currencyZh != null" >
+        currency_zh,
+      </if>
+      <if test="currencyEn != null" >
+        currency_en,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="currencyid != null" >
+        #{currencyid,jdbcType=INTEGER},
+      </if>
+      <if test="currencyZh != null" >
+        #{currencyZh,jdbcType=VARCHAR},
+      </if>
+      <if test="currencyEn != null" >
+        #{currencyEn,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxycurrency" >
+    update cxycurrency
+    <set >
+      <if test="currencyZh != null" >
+        currency_zh = #{currencyZh,jdbcType=VARCHAR},
+      </if>
+      <if test="currencyEn != null" >
+        currency_en = #{currencyEn,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where currencyid = #{currencyid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxycurrency" >
+    update cxycurrency
+    set currency_zh = #{currencyZh,jdbcType=VARCHAR},
+      currency_en = #{currencyEn,jdbcType=VARCHAR}
+    where currencyid = #{currencyid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxysuppliercategoryMapper" >
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxysuppliercategory" >
+    <id column="suppliercategoryid" property="suppliercategoryid" jdbcType="INTEGER" />
+    <result column="suppliercategoryname" property="suppliercategoryname" jdbcType="VARCHAR" />
+    <result column="seq" property="seq" jdbcType="INTEGER" />
+    <result column="pcategoryid" property="pcategoryid" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="DataChange_LastTime" property="datachangeLasttime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    suppliercategoryid, suppliercategoryname, seq, pcategoryid, deleted, create_time, 
+    DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cxysuppliercategory
+    where suppliercategoryid = #{suppliercategoryid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cxysuppliercategory
+    where suppliercategoryid = #{suppliercategoryid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxysuppliercategory" >
+    insert into cxysuppliercategory (suppliercategoryid, suppliercategoryname, 
+      seq, pcategoryid, deleted, 
+      create_time, DataChange_LastTime)
+    values (#{suppliercategoryid,jdbcType=INTEGER}, #{suppliercategoryname,jdbcType=VARCHAR}, 
+      #{seq,jdbcType=INTEGER}, #{pcategoryid,jdbcType=INTEGER}, #{deleted,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxysuppliercategory" >
+    insert into cxysuppliercategory
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="suppliercategoryid != null" >
+        suppliercategoryid,
+      </if>
+      <if test="suppliercategoryname != null" >
+        suppliercategoryname,
+      </if>
+      <if test="seq != null" >
+        seq,
+      </if>
+      <if test="pcategoryid != null" >
+        pcategoryid,
+      </if>
+      <if test="deleted != null" >
+        deleted,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null" >
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="suppliercategoryid != null" >
+        #{suppliercategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="suppliercategoryname != null" >
+        #{suppliercategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="seq != null" >
+        #{seq,jdbcType=INTEGER},
+      </if>
+      <if test="pcategoryid != null" >
+        #{pcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="deleted != null" >
+        #{deleted,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null" >
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxysuppliercategory" >
+    update cxysuppliercategory
+    <set >
+      <if test="suppliercategoryname != null" >
+        suppliercategoryname = #{suppliercategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="seq != null" >
+        seq = #{seq,jdbcType=INTEGER},
+      </if>
+      <if test="pcategoryid != null" >
+        pcategoryid = #{pcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="deleted != null" >
+        deleted = #{deleted,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null" >
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where suppliercategoryid = #{suppliercategoryid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxysuppliercategory" >
+    update cxysuppliercategory
+    set suppliercategoryname = #{suppliercategoryname,jdbcType=VARCHAR},
+      seq = #{seq,jdbcType=INTEGER},
+      pcategoryid = #{pcategoryid,jdbcType=INTEGER},
+      deleted = #{deleted,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where suppliercategoryid = #{suppliercategoryid,jdbcType=INTEGER}
+  </update>
+</mapper>

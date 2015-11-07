@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxycolorMapper" >
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxycolor" >
+    <id column="colorid" property="colorid" jdbcType="INTEGER" />
+    <result column="colorname" property="colorname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    colorid, colorname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from cxycolor
+    where colorid = #{colorid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cxycolor
+    where colorid = #{colorid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxycolor" >
+    insert into cxycolor (colorid, colorname)
+    values (#{colorid,jdbcType=INTEGER}, #{colorname,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxycolor" >
+    insert into cxycolor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="colorid != null" >
+        colorid,
+      </if>
+      <if test="colorname != null" >
+        colorname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="colorid != null" >
+        #{colorid,jdbcType=INTEGER},
+      </if>
+      <if test="colorname != null" >
+        #{colorname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxycolor" >
+    update cxycolor
+    <set >
+      <if test="colorname != null" >
+        colorname = #{colorname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where colorid = #{colorid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxycolor" >
+    update cxycolor
+    set colorname = #{colorname,jdbcType=VARCHAR}
+    where colorid = #{colorid,jdbcType=INTEGER}
+  </update>
+</mapper>
