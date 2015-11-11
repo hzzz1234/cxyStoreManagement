@@ -22,8 +22,14 @@
     <!--charset-->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <!--taglibs-->
+    <taglibs.version>1.1.2</taglibs.version>
+
     <!--jstl-->
     <jstl.version>1.2</jstl.version>
+
+    <!--servlet-api-->
+    <servlet-api.version>2.5</servlet-api.version>
 
     <!--aspect-->
     <aspectj.version>1.8.7</aspectj.version>
@@ -97,6 +103,11 @@
         <version>${logback.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.logback-extensions</groupId>
+        <artifactId>logback-ext-spring</artifactId>
+        <version>0.1.2</version>
+      </dependency>
       <!--统一日志api-->
       <dependency>
         <groupId>org.slf4j</groupId>
@@ -227,18 +238,26 @@
 
       <!-- Tag libs support for view layer -->
 
+
       <dependency>
-        <groupId>javax.servlet</groupId>
+        <groupId>jstl</groupId>
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
-        <scope>runtime</scope>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>${servlet-api.version}</version>
+        <scope>provided</scope>
       </dependency>
 
       <dependency>
         <groupId>taglibs</groupId>
         <artifactId>standard</artifactId>
-        <version>1.1.2</version>
-        <scope>runtime</scope>
+        <version>${taglibs.version}</version>
+        <scope>provided</scope>
       </dependency>
 
       <!--junit for test-->
