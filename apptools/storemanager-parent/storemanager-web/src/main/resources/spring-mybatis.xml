@@ -58,11 +58,11 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping目录包括子目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath:com/cxy/apptools/persistence/mapper/*.xml" />
+        <property name="mapperLocations" value="classpath:com/cxy/apptools/persistence/storemanager/mapper/*.xml" />
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.cxy.persistence.dao" />
+        <property name="basePackage" value="com.cxy.persistence.storemanager.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
@@ -107,7 +107,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.cxy.apptools.web.service.*.*(..))" />
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.cxy.apptools.web.storemanager.service.*.*(..))" />
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>
     <!-- <aop:aspectj-autoproxy />
@@ -119,11 +119,13 @@
     <bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
         <property name="patterns">
             <list>
-                <value>apptools.butler.service.*</value>
+                <value>com.cxy.apptools.web.storemanager.service.*</value>
             </list>
         </property>
     </bean>
+    <!--
     <aop:config>
         <aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />
     </aop:config>
+    -->
 </beans>

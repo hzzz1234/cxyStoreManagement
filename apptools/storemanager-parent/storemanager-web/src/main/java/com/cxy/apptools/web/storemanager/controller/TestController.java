@@ -1,9 +1,12 @@
 package com.cxy.apptools.web.storemanager.controller;
 
+import com.cxy.apptools.web.storemanager.service.TestService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
 
 
 /**
@@ -14,10 +17,14 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/first")       //url
 public class TestController {
 
+    @Resource
+    private TestService testService;
+
     @RequestMapping("hello")             //方法url
      public ModelAndView view() {
         ModelAndView mv = new ModelAndView();  //设置返回页面逻辑名,不带页面名后缀
         mv.addObject("message", "Hello World!");  //保存值到作用域中，key为msg
+        mv.addObject("test", testService.test());  //保存值到作用域中，key为msg
         mv.setViewName("hello");
         return mv;
     }
