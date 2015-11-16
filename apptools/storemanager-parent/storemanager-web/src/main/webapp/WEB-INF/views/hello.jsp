@@ -12,7 +12,30 @@
     <title>My JSP 'index.jsp' starting page</title>
 </head>
 <body>
+private Integer currencyid;
+
+private String currencyZh;
+
+private String currencyEn;
   <h1>${message}</h1>
-  <h1>${test}</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>id</td>
+        <td>engish</td>
+        <td>chinese</td>
+      </tr>
+    </thead>
+    <c:forEach var="item" items="${test}">
+        <td>
+          <td>${item.currencyid}</td>
+          <td>${item.currencyEn}</td>
+          <td>${item.currencyZh}</td>
+        </tr>
+
+
+    </c:forEach>
+  </table>
+
 </body>
 </html>
