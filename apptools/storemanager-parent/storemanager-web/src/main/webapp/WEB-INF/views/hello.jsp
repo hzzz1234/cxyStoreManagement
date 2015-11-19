@@ -33,7 +33,6 @@ private String currencyEn;
           <td>${item.currencyZh}</td>
         </tr>
 
-
     </c:forEach>
   </table>
 
