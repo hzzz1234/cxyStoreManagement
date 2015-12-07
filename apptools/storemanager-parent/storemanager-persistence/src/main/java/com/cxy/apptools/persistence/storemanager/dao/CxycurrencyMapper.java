@@ -1,6 +1,7 @@
 package com.cxy.apptools.persistence.storemanager.dao;
 
 import com.cxy.apptools.domain.storemanager.Cxycurrency;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -20,4 +21,7 @@ public interface CxycurrencyMapper {
 
     @Select("select * from cxycurrency")
     List<Cxycurrency> selectAllValues();
+
+    @Select("SELECT currencyid,currency_zh currencyZh,currency_en currencyEn FROM cxycurrency where currencyid=#{currencyid}")
+    Cxycurrency getCurrencyZh(@Param("currencyid")Integer currencyid);
 }
