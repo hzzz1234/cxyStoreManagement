@@ -8,15 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
-<head>
     <title>My JSP 'index.jsp' starting page</title>
+    <%@ include file="/common/common.jsp"%>
 </head>
 <body>
-private Integer currencyid;
-
-private String currencyZh;
-
-private String currencyEn;
+<%@ include file="/common/header.jsp"%>
   <h1>${message}</h1>
   <table>
     <thead>
@@ -35,6 +31,6 @@ private String currencyEn;
 
     </c:forEach>
   </table>
-
+<%@ include file="/common/foot.jsp"%>
 </body>
 </html>
