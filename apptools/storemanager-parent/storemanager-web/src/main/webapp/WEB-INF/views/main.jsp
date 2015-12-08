@@ -7,18 +7,18 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<html lang="en">
+<html lang="en" ng-app="main" >
 <head>
     <title>Main</title>
     <%@ include file="/common/common.jsp"%>
     <link href="${rc.contextPath}/webresources/storemanager/css/test.css" rel="stylesheet" />
 </head>
 
-<body>
+<body ng-controller="mainCtl">
     <!--头框-->
     <%@ include file="/common/header.jsp"%>
     <!--主框架-->
-    <div class="main-container" id="main-container">
+    <div class="main-container" id="main-container" >
         <script type="text/javascript">
             try{ace.settings.check('main-container' , 'fixed')}catch(e){}
         </script>
@@ -147,6 +147,7 @@
                     </div><!-- /.ace-settings-container -->
 
                     <!-- /section:settings.box -->
+                    <h1 ng-click="query();">{{ name }}</h1>
                     <div class="page-header">
                         <h1>
                             Tables
@@ -1418,5 +1419,7 @@
 
 
     <%@ include file="/common/foot.jsp"%>
+
+        <script src="${rc.contextPath}/webresources/storemanager/js/main.js"></script>
 </body>
 </html>

@@ -31,10 +31,9 @@ public class TestController {
 
     @ResponseBody
     @RequestMapping("hellojson")             //方法url
-    public Object json() {
+    public String json() {
         ModelAndView mv = new ModelAndView();  //设置返回页面逻辑名,不带页面名后缀
-        mv.addObject("message", "Hello World!");  //保存值到作用域中，key为msg
-        mv.setViewName("hello");
-        return mv;
+        String message = "HelloWorld";
+        return message;
     }
 }

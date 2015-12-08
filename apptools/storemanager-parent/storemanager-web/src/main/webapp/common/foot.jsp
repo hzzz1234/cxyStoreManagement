@@ -17,7 +17,7 @@
 
 <!--angular js-->
 <script src="${rc.contextPath}/webresources/angular/js/angular.min.js"></script>
-<script src="${rc.contextPath}/webresources/angular/js/angular-animate.js"></script>
+<script src="${rc.contextPath}/webresources/angular/js/angular-animate.min.js"></script>
 <script src="${rc.contextPath}/webresources/angular/js/angular-aria.min.js"></script>
 <script src="${rc.contextPath}/webresources/angular/js/angular-cookies.min.js"></script>
 <script src="${rc.contextPath}/webresources/angular/js/angular-loader.min.js"></script>

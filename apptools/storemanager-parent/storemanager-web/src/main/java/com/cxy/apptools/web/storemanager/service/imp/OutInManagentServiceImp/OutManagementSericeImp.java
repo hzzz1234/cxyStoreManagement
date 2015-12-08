@@ -16,12 +16,10 @@ public class OutManagementSericeImp implements OutManagementSerice {
 
     @Autowired
     private CxyclientMapper cxyclientMapper;
-    @Override
     public List<Cxyclient> GetAllCxyclients() {
         return cxyclientMapper.GetAllCxyclients();
     }
 
-    @Override
     public int InsertCxyclients(List<Cxyclient> cxyclients) {
         return 0;
     }

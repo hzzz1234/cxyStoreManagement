@@ -15,6 +15,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+
     <!--java runtime env-->
     <java_source_version>1.7</java_source_version>
     <java_target_version>1.7</java_target_version>
@@ -68,10 +69,43 @@
     <!--plugin version-->
     <!--jetty plugin-->
     <jetty.version>9.3.5.v20151012</jetty.version>
+
+    <!--codehaus jackson-->
+    <codehaus.version>1.9.13</codehaus.version>
+
+    <!--jackson-->
+    <jackson.version>2.6.3</jackson.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <!--jackson-->
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-core-asl</artifactId>
+        <version>${codehaus.version}</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>${codehaus.version}</version>
+      </dependency>
+
 
       <dependency>
         <groupId>org.springframework.batch</groupId>
