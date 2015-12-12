@@ -35,10 +35,17 @@
     </div><!-- #sidebar-shortcuts -->
 
     <ul class="nav nav-list">
-        <li class="active">
-            <a href="index.html">
+        <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'main'}">
+                <li class="active">
+            </c:when>
+            <c:otherwise>
+                <li>
+            </c:otherwise>
+        </c:choose>
+            <a href="${rc.contextPath}/">
                 <i class="icon-dashboard"></i>
-                <span class="menu-text"> 控制台 </span>
+                <span class="menu-text"> DashBoard </span>
             </a>
         </li>
 
@@ -50,16 +57,37 @@
                 <b class="arrow icon-angle-down"></b>
             </a>
 
-            <ul class="submenu">
-                <li>
-                    <a href="elements.html">
+            <c:choose>
+                <c:when test="${basevo.leftsideIdentifier== 'left_spec_attr_define' || basevo.leftsideIdentifier== 'left_product_define'}">
+                    <ul class="submenu" style="display: block;">
+                </c:when>
+                <c:otherwise>
+                    <ul class="submenu">
+                </c:otherwise>
+            </c:choose>
+                <c:choose>
+                    <c:when test="${basevo.leftsideIdentifier== 'left_product_define'}">
+                        <li class="active">
+                    </c:when>
+                    <c:otherwise>
+                        <li>
+                    </c:otherwise>
+                </c:choose>
+                    <a href="${rc.contextPath}/metaDefine/productDefine">
                         <i class="icon-double-angle-right"></i>
                         产品定义
                     </a>
                 </li>
 
-                <li>
-                    <a href="buttons.html">
+                <c:choose>
+                    <c:when test="${basevo.leftsideIdentifier== 'left_spec_attr_define'}">
+                        <li class="active">
+                    </c:when>
+                    <c:otherwise>
+                        <li>
+                    </c:otherwise>
+                </c:choose>
+                    <a href="${rc.contextPath}/metaDefine/specAttrDefine">
                         <i class="icon-double-angle-right"></i>
                         特殊类型定义
                     </a>

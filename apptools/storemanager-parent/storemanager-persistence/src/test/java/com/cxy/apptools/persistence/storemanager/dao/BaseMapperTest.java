@@ -1,6 +1,5 @@
 package com.cxy.apptools.persistence.storemanager.dao;
 
-import com.cxy.apptools.domain.storemanager.Cxycurrency;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -37,8 +36,8 @@ public class BaseMapperTest {
     @Test
     public void testSelectByPrimaryKey() throws Exception {
         CxycurrencyMapper cxycurrencyMapper = session.getMapper(CxycurrencyMapper.class);
-        Cxycurrency cu = cxycurrencyMapper.getCurrencyZh(1);
-        System.out.println(cu.getCurrencyid()+" "+cu.getCurrencyZh()+" "+cu.getCurrencyEn());
+//        Cxycurrency cu = cxycurrencyMapper.getCurrencyZh(1);
+//        System.out.println(cu.getCurrencyid()+" "+cu.getCurrencyZh()+" "+cu.getCurrencyEn());
     }
 
 }
