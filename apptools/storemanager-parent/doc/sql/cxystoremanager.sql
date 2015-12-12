@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50621
 File Encoding         : 65001
 
-Date: 2015-11-07 16:04:07
+Date: 2015-12-12 03:30:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -107,12 +107,9 @@ CREATE TABLE `cxyproduct` (
   `productcategoryid` int(11) NOT NULL DEFAULT '0' COMMENT '款型id（cxyproductcategroy）',
   `productcategoryname` varchar(255) NOT NULL DEFAULT '' COMMENT '款型名字',
   `stockno` varchar(255) NOT NULL DEFAULT '' COMMENT '货号',
-  `colorid` int(11) NOT NULL DEFAULT '0' COMMENT '颜色id（cxycolor）',
-  `colorname` varchar(50) NOT NULL DEFAULT '' COMMENT '颜色名字',
-  `sizecategoryid` int(11) NOT NULL DEFAULT '0' COMMENT '尺码属性(sizecategory)',
   `purchaseprice` double NOT NULL DEFAULT '0' COMMENT '进货价格',
   `sellprice` double NOT NULL DEFAULT '0' COMMENT '销售价格',
-  `picaddr` varchar(500) NOT NULL DEFAULT '' COMMENT '图片存放地址',
+  `picaddr` varchar(5000) NOT NULL DEFAULT '' COMMENT '图片存放地址',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
   `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
   PRIMARY KEY (`productid`),
@@ -136,6 +133,23 @@ CREATE TABLE `cxyproductcategory` (
 
 -- ----------------------------
 -- Records of cxyproductcategory
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for cxyproductrspecattr
+-- ----------------------------
+DROP TABLE IF EXISTS `cxyproductrspecattr`;
+CREATE TABLE `cxyproductrspecattr` (
+  `productid` int(11) NOT NULL COMMENT '产品id',
+  `specattrid` int(11) NOT NULL COMMENT '特殊属性',
+  `deleted` int(11) NOT NULL DEFAULT '0' COMMENT '是否删除',
+  `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`productid`,`specattrid`),
+  KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='产品和特殊属性关系表';
+
+-- ----------------------------
+-- Records of cxyproductrspecattr
 -- ----------------------------
 
 -- ----------------------------
@@ -193,16 +207,14 @@ CREATE TABLE `cxypurchaseorderdetail` (
 -- ----------------------------
 DROP TABLE IF EXISTS `cxypurchaseorderproductsizedetail`;
 CREATE TABLE `cxypurchaseorderproductsizedetail` (
-  `productsizepurchaseorderid` int(11) NOT NULL AUTO_INCREMENT COMMENT '商品尺寸订单明细表id',
-  `purchaseorderdetailid` int(11) NOT NULL COMMENT '订单商品明细id',
-  `sizedetailid` int(11) NOT NULL COMMENT '尺寸明细id',
-  `num` int(11) NOT NULL COMMENT '数量',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
+  `purchaseorderdetailid` int(11) NOT NULL COMMENT '购买明细id',
+  `specattrvalueid` int(11) NOT NULL COMMENT '复合值id',
+  `amount` int(11) NOT NULL DEFAULT '0' COMMENT '数量',
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
   `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`productsizepurchaseorderid`),
-  UNIQUE KEY `unq_sizedetail` (`purchaseorderdetailid`,`sizedetailid`) USING BTREE,
+  PRIMARY KEY (`purchaseorderdetailid`,`specattrvalueid`),
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='采购订单商品尺寸明细表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='购买明细尺寸值';
 
 -- ----------------------------
 -- Records of cxypurchaseorderproductsizedetail
@@ -258,16 +270,14 @@ CREATE TABLE `cxyselldetail` (
 -- ----------------------------
 DROP TABLE IF EXISTS `cxysellproductsizedetail`;
 CREATE TABLE `cxysellproductsizedetail` (
-  `sellproductsizedetailid` int(11) NOT NULL AUTO_INCREMENT COMMENT '销售商品尺寸明细id',
-  `selldetailid` int(11) NOT NULL COMMENT '销售商品明细id',
-  `sizedetailid` int(11) NOT NULL COMMENT '尺寸明细id',
-  `num` int(11) NOT NULL COMMENT '数量',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
+  `selldetailid` int(11) NOT NULL COMMENT '售卖明细id',
+  `specattrvalueid` int(11) NOT NULL COMMENT '复合值id',
+  `amount` int(11) NOT NULL DEFAULT '0' COMMENT '数量',
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
   `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`sellproductsizedetailid`),
-  UNIQUE KEY `unq_sizedetail` (`selldetailid`,`sizedetailid`) USING BTREE,
+  PRIMARY KEY (`selldetailid`,`specattrvalueid`),
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='销售商品尺寸明细表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='售卖明细尺寸值';
 
 -- ----------------------------
 -- Records of cxysellproductsizedetail
@@ -315,6 +325,62 @@ CREATE TABLE `cxysizecategorydetail` (
 
 -- ----------------------------
 -- Records of cxysizecategorydetail
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for cxyspecattr
+-- ----------------------------
+DROP TABLE IF EXISTS `cxyspecattr`;
+CREATE TABLE `cxyspecattr` (
+  `specattrid` int(11) NOT NULL AUTO_INCREMENT COMMENT '特殊属性值',
+  `specattrname` varchar(255) NOT NULL COMMENT '特殊属性名',
+  `specattrtypeid` int(11) NOT NULL DEFAULT '0' COMMENT '特殊属性类型id',
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
+  `DataChange_Lasttime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`specattrid`),
+  KEY `idx_DCLT` (`DataChange_Lasttime`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='特殊属性表';
+
+-- ----------------------------
+-- Records of cxyspecattr
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for cxyspecattrtype
+-- ----------------------------
+DROP TABLE IF EXISTS `cxyspecattrtype`;
+CREATE TABLE `cxyspecattrtype` (
+  `speclattrtypeid` int(11) NOT NULL AUTO_INCREMENT COMMENT '特殊属性类型id',
+  `speclattrtypename` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '特殊属性类型名',
+  `deleted` int(11) NOT NULL DEFAULT '0' COMMENT '是否删除',
+  PRIMARY KEY (`speclattrtypeid`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='特殊属性类型表';
+
+-- ----------------------------
+-- Records of cxyspecattrtype
+-- ----------------------------
+INSERT INTO `cxyspecattrtype` VALUES ('1', '单选', '0');
+INSERT INTO `cxyspecattrtype` VALUES ('2', '多选', '0');
+INSERT INTO `cxyspecattrtype` VALUES ('3', '尺寸', '0');
+INSERT INTO `cxyspecattrtype` VALUES ('4', '文本', '0');
+
+-- ----------------------------
+-- Table structure for cxyspecattrvalue
+-- ----------------------------
+DROP TABLE IF EXISTS `cxyspecattrvalue`;
+CREATE TABLE `cxyspecattrvalue` (
+  `specattrvalueid` int(11) NOT NULL AUTO_INCREMENT COMMENT '特殊属性值id',
+  `specattrvaluename` varchar(100) NOT NULL DEFAULT '' COMMENT '特殊属性值',
+  `specattrvaluetext` varchar(5000) NOT NULL DEFAULT '' COMMENT '文本值',
+  `specattrid` int(11) NOT NULL,
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
+  `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`specattrvalueid`),
+  KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='特殊属性值表';
+
+-- ----------------------------
+-- Records of cxyspecattrvalue
 -- ----------------------------
 
 -- ----------------------------
@@ -426,21 +492,19 @@ CREATE TABLE `cxywarehouseindetail` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for cxywarehouseinsizedetail
+-- Table structure for cxywarehouseinproductsizedetail
 -- ----------------------------
-DROP TABLE IF EXISTS `cxywarehouseinsizedetail`;
-CREATE TABLE `cxywarehouseinsizedetail` (
-  `warehouseinproductsizedetailid` int(11) NOT NULL AUTO_INCREMENT COMMENT '商品尺寸订单明细表id',
-  `warehouseindetailid` int(11) NOT NULL COMMENT '入库商品明细id',
-  `sizedetailid` int(11) NOT NULL COMMENT '尺寸明细id',
-  `num` int(11) NOT NULL COMMENT '数量',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
+DROP TABLE IF EXISTS `cxywarehouseinproductsizedetail`;
+CREATE TABLE `cxywarehouseinproductsizedetail` (
+  `warehouseinproductsizedetailid` int(11) NOT NULL COMMENT '售卖明细id',
+  `specattrvalueid` int(11) NOT NULL COMMENT '复合值id',
+  `amount` int(11) NOT NULL DEFAULT '0' COMMENT '数量',
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
   `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`warehouseinproductsizedetailid`),
-  UNIQUE KEY `unq_sizedetail` (`warehouseindetailid`,`sizedetailid`) USING BTREE,
+  PRIMARY KEY (`warehouseinproductsizedetailid`,`specattrvalueid`),
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='入库商品尺寸明细表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='入库明细尺寸值';
 
 -- ----------------------------
--- Records of cxywarehouseinsizedetail
+-- Records of cxywarehouseinproductsizedetail
 -- ----------------------------

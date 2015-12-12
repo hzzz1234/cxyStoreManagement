@@ -185,11 +185,4 @@
       DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
     where supplierid = #{supplierid,jdbcType=INTEGER}
   </update>
-
-  <select id="GetAllCxyclients" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List"></include>
-    from cxyclient
-
-  </select>
 </mapper>

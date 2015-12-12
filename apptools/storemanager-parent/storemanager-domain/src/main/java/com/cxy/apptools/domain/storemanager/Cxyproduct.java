@@ -15,12 +15,6 @@ public class Cxyproduct {
 
     private String stockno;
 
-    private Integer colorid;
-
-    private String colorname;
-
-    private Integer sizecategoryid;
-
     private Double purchaseprice;
 
     private Double sellprice;
@@ -77,30 +71,6 @@ public class Cxyproduct {
 
     public void setStockno(String stockno) {
         this.stockno = stockno == null ? null : stockno.trim();
-    }
-
-    public Integer getColorid() {
-        return colorid;
-    }
-
-    public void setColorid(Integer colorid) {
-        this.colorid = colorid;
-    }
-
-    public String getColorname() {
-        return colorname;
-    }
-
-    public void setColorname(String colorname) {
-        this.colorname = colorname == null ? null : colorname.trim();
-    }
-
-    public Integer getSizecategoryid() {
-        return sizecategoryid;
-    }
-
-    public void setSizecategoryid(Integer sizecategoryid) {
-        this.sizecategoryid = sizecategoryid;
     }
 
     public Double getPurchaseprice() {

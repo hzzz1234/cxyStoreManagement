@@ -2,8 +2,8 @@ package com.cxy.apptools.domain.storemanager;
 
 import java.util.Date;
 
-public class Cxysellproductsizedetail {
-    private Integer selldetailid;
+public class Cxywarehouseinproductsizedetail {
+    private Integer warehouseinproductsizedetailid;
 
     private Integer specattrvalueid;
 
@@ -13,12 +13,12 @@ public class Cxysellproductsizedetail {
 
     private Date datachangeLasttime;
 
-    public Integer getSelldetailid() {
-        return selldetailid;
+    public Integer getWarehouseinproductsizedetailid() {
+        return warehouseinproductsizedetailid;
     }
 
-    public void setSelldetailid(Integer selldetailid) {
-        this.selldetailid = selldetailid;
+    public void setWarehouseinproductsizedetailid(Integer warehouseinproductsizedetailid) {
+        this.warehouseinproductsizedetailid = warehouseinproductsizedetailid;
     }
 
     public Integer getSpecattrvalueid() {

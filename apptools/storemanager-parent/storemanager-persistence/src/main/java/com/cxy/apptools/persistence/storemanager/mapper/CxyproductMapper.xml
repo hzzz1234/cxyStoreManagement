@@ -8,9 +8,6 @@
     <result column="productcategoryid" property="productcategoryid" jdbcType="INTEGER" />
     <result column="productcategoryname" property="productcategoryname" jdbcType="VARCHAR" />
     <result column="stockno" property="stockno" jdbcType="VARCHAR" />
-    <result column="colorid" property="colorid" jdbcType="INTEGER" />
-    <result column="colorname" property="colorname" jdbcType="VARCHAR" />
-    <result column="sizecategoryid" property="sizecategoryid" jdbcType="INTEGER" />
     <result column="purchaseprice" property="purchaseprice" jdbcType="DOUBLE" />
     <result column="sellprice" property="sellprice" jdbcType="DOUBLE" />
     <result column="picaddr" property="picaddr" jdbcType="VARCHAR" />
@@ -19,8 +16,7 @@
   </resultMap>
   <sql id="Base_Column_List" >
     productid, branchid, branchname, productcategoryid, productcategoryname, stockno, 
-    colorid, colorname, sizecategoryid, purchaseprice, sellprice, picaddr, create_time, 
-    DataChange_LastTime
+    purchaseprice, sellprice, picaddr, create_time, DataChange_LastTime
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -35,14 +31,12 @@
   <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct" >
     insert into cxyproduct (productid, branchid, branchname, 
       productcategoryid, productcategoryname, 
-      stockno, colorid, colorname, 
-      sizecategoryid, purchaseprice, sellprice, 
+      stockno, purchaseprice, sellprice, 
       picaddr, create_time, DataChange_LastTime
       )
     values (#{productid,jdbcType=INTEGER}, #{branchid,jdbcType=INTEGER}, #{branchname,jdbcType=VARCHAR}, 
       #{productcategoryid,jdbcType=INTEGER}, #{productcategoryname,jdbcType=VARCHAR}, 
-      #{stockno,jdbcType=VARCHAR}, #{colorid,jdbcType=INTEGER}, #{colorname,jdbcType=VARCHAR}, 
-      #{sizecategoryid,jdbcType=INTEGER}, #{purchaseprice,jdbcType=DOUBLE}, #{sellprice,jdbcType=DOUBLE}, 
+      #{stockno,jdbcType=VARCHAR}, #{purchaseprice,jdbcType=DOUBLE}, #{sellprice,jdbcType=DOUBLE}, 
       #{picaddr,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
       )
   </insert>
@@ -66,15 +60,6 @@
       </if>
       <if test="stockno != null" >
         stockno,
-      </if>
-      <if test="colorid != null" >
-        colorid,
-      </if>
-      <if test="colorname != null" >
-        colorname,
-      </if>
-      <if test="sizecategoryid != null" >
-        sizecategoryid,
       </if>
       <if test="purchaseprice != null" >
         purchaseprice,
@@ -111,15 +96,6 @@
       <if test="stockno != null" >
         #{stockno,jdbcType=VARCHAR},
       </if>
-      <if test="colorid != null" >
-        #{colorid,jdbcType=INTEGER},
-      </if>
-      <if test="colorname != null" >
-        #{colorname,jdbcType=VARCHAR},
-      </if>
-      <if test="sizecategoryid != null" >
-        #{sizecategoryid,jdbcType=INTEGER},
-      </if>
       <if test="purchaseprice != null" >
         #{purchaseprice,jdbcType=DOUBLE},
       </if>
@@ -155,15 +131,6 @@
       <if test="stockno != null" >
         stockno = #{stockno,jdbcType=VARCHAR},
       </if>
-      <if test="colorid != null" >
-        colorid = #{colorid,jdbcType=INTEGER},
-      </if>
-      <if test="colorname != null" >
-        colorname = #{colorname,jdbcType=VARCHAR},
-      </if>
-      <if test="sizecategoryid != null" >
-        sizecategoryid = #{sizecategoryid,jdbcType=INTEGER},
-      </if>
       <if test="purchaseprice != null" >
         purchaseprice = #{purchaseprice,jdbcType=DOUBLE},
       </if>
@@ -189,9 +156,6 @@
       productcategoryid = #{productcategoryid,jdbcType=INTEGER},
       productcategoryname = #{productcategoryname,jdbcType=VARCHAR},
       stockno = #{stockno,jdbcType=VARCHAR},
-      colorid = #{colorid,jdbcType=INTEGER},
-      colorname = #{colorname,jdbcType=VARCHAR},
-      sizecategoryid = #{sizecategoryid,jdbcType=INTEGER},
       purchaseprice = #{purchaseprice,jdbcType=DOUBLE},
       sellprice = #{sellprice,jdbcType=DOUBLE},
       picaddr = #{picaddr,jdbcType=VARCHAR},

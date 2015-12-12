@@ -18,6 +18,6 @@ public class TestServiceImp implements TestService {
     @Autowired
     private CxycurrencyMapper cxycurrencyMapper;
     public List<Cxycurrency> test() {
-        return cxycurrencyMapper.selectAllValues();
+        return null;
     }
 }

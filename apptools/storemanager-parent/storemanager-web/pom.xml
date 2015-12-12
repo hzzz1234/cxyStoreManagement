@@ -10,6 +10,29 @@
     <packaging>war</packaging>
     <name>storemanager-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <profiles>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <pro_jdbc_url>jdbc:mysql://101.200.81.55:3306/cxystoremanager</pro_jdbc_url>
+                <pro_jdbc_username>root</pro_jdbc_username>
+                <pro_jdbc_password>123456</pro_jdbc_password>
+            </properties>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <pro_jdbc_url>jdbc:mysql://127.0.0.1:3306/</pro_jdbc_url>
+                <pro_jdbc_username>root</pro_jdbc_username>
+                <pro_jdbc_password>123456</pro_jdbc_password>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
 
         <dependency>
@@ -141,6 +164,15 @@
         </dependency>
     </dependencies>
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>*.*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <finalName>storemanager-web</finalName>
         <plugins>
             <plugin>

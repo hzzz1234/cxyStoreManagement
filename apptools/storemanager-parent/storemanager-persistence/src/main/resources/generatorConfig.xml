@@ -48,13 +48,9 @@
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxypurchaseorderdetail" domainObjectName="Cxypurchaseorderdetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
-        <table tableName="cxypurchaseorderproductsizedetail" domainObjectName="Cxypurchaseorderproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
-               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxysell" domainObjectName="Cxysell" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxyselldetail" domainObjectName="Cxyselldetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
-               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
-        <table tableName="cxysellproductsizedetail" domainObjectName="Cxysellproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxyshop" domainObjectName="Cxyshop" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
@@ -70,7 +66,19 @@
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxywarehouseindetail" domainObjectName="Cxywarehouseindetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
-        <table tableName="cxywarehouseinsizedetail" domainObjectName="cxywarehouseinsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+        <table tableName="cxyproductrspecattr" domainObjectName="Cxyproductrspecattr" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <table tableName="cxyspecattr" domainObjectName="Cxyspecattr" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <table tableName="cxyspecattrtype" domainObjectName="Cxyspecattrtype" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <table tableName="cxyspecattrvalue" domainObjectName="Cxyspecattrvalue" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+		<table tableName="cxypurchaseorderproductsizedetail" domainObjectName="Cxypurchaseorderproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+		<table tableName="cxysellproductsizedetail" domainObjectName="Cxysellproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+		<table tableName="cxywarehouseinproductsizedetail" domainObjectName="Cxywarehouseinproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>	   
     </context>
 </generatorConfiguration>

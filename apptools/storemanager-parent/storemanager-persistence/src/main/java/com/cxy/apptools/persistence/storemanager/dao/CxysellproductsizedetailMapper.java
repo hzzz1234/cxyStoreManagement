@@ -1,15 +1,16 @@
 package com.cxy.apptools.persistence.storemanager.dao;
 
 import com.cxy.apptools.domain.storemanager.Cxysellproductsizedetail;
+import org.apache.ibatis.annotations.Param;
 
 public interface CxysellproductsizedetailMapper {
-    int deleteByPrimaryKey(Integer sellproductsizedetailid);
+    int deleteByPrimaryKey(@Param("selldetailid") Integer selldetailid, @Param("specattrvalueid") Integer specattrvalueid);
 
     int insert(Cxysellproductsizedetail record);
 
     int insertSelective(Cxysellproductsizedetail record);
 
-    Cxysellproductsizedetail selectByPrimaryKey(Integer sellproductsizedetailid);
+    Cxysellproductsizedetail selectByPrimaryKey(@Param("selldetailid") Integer selldetailid, @Param("specattrvalueid") Integer specattrvalueid);
 
     int updateByPrimaryKeySelective(Cxysellproductsizedetail record);
 

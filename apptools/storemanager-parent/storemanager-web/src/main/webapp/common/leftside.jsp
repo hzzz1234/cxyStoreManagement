@@ -43,16 +43,9 @@
         </li>
 
         <li>
-            <a href="typography.html">
-                <i class="icon-text-width"></i>
-                <span class="menu-text"> 文字排版 </span>
-            </a>
-        </li>
-
-        <li>
             <a href="#" class="dropdown-toggle">
-                <i class="icon-desktop"></i>
-                <span class="menu-text"> UI 组件 </span>
+                <i class="icon-text-width"></i>
+                <span class="menu-text"> 元数据定义 </span>
 
                 <b class="arrow icon-angle-down"></b>
             </a>
@@ -61,103 +54,14 @@
                 <li>
                     <a href="elements.html">
                         <i class="icon-double-angle-right"></i>
-                        组件
+                        产品定义
                     </a>
                 </li>
 
                 <li>
                     <a href="buttons.html">
                         <i class="icon-double-angle-right"></i>
-                        按钮 &amp; 图表
-                    </a>
-                </li>
-
-                <li>
-                    <a href="treeview.html">
-                        <i class="icon-double-angle-right"></i>
-                        树菜单
-                    </a>
-                </li>
-
-                <li>
-                    <a href="jquery-ui.html">
-                        <i class="icon-double-angle-right"></i>
-                        jQuery UI
-                    </a>
-                </li>
-
-                <li>
-                    <a href="nestable-list.html">
-                        <i class="icon-double-angle-right"></i>
-                        可拖拽列表
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="dropdown-toggle">
-                        <i class="icon-double-angle-right"></i>
-
-                        三级菜单
-                        <b class="arrow icon-angle-down"></b>
-                    </a>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">
-                                <i class="icon-leaf"></i>
-                                第一级
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-pencil"></i>
-
-                                第四级
-                                <b class="arrow icon-angle-down"></b>
-                            </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-plus"></i>
-                                        添加产品
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-eye-open"></i>
-                                        查看商品
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-list"></i>
-                <span class="menu-text"> 表格 </span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="tables.html">
-                        <i class="icon-double-angle-right"></i>
-                        简单 &amp; 动态
-                    </a>
-                </li>
-
-                <li>
-                    <a href="jqgrid.html">
-                        <i class="icon-double-angle-right"></i>
-                        jqGrid plugin
+                        特殊类型定义
                     </a>
                 </li>
             </ul>
@@ -165,47 +69,36 @@
 
         <li>
             <a href="#" class="dropdown-toggle">
-                <i class="icon-edit"></i>
-                <span class="menu-text"> 表单 </span>
-
-                <b class="arrow icon-angle-down"></b>
+                <i class="ace-icon glyphicon glyphicon-book"></i>
+                <span class="menu-text"> 采购列表 </span>
             </a>
+        </li>
 
-            <ul class="submenu">
-                <li>
-                    <a href="form-elements.html">
-                        <i class="icon-double-angle-right"></i>
-                        表单组件
-                    </a>
-                </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="ace-icon glyphicon glyphicon-edit"></i>
+                <span class="menu-text"> 入库列表 </span>
+            </a>
+        </li>
 
-                <li>
-                    <a href="form-wizard.html">
-                        <i class="icon-double-angle-right"></i>
-                        向导提示 &amp; 验证
-                    </a>
-                </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="ace-icon glyphicon glyphicon-file"></i>
+                <span class="menu-text"> 售卖列表 </span>
+            </a>
+        </li>
 
-                <li>
-                    <a href="wysiwyg.html">
-                        <i class="icon-double-angle-right"></i>
-                        编辑器
-                    </a>
-                </li>
-
-                <li>
-                    <a href="dropzone.html">
-                        <i class="icon-double-angle-right"></i>
-                        文件上传
-                    </a>
-                </li>
-            </ul>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-group"></i>
+                <span class="menu-text"> 供应商 </span>
+            </a>
         </li>
 
         <li>
             <a href="widgets.html">
-                <i class="icon-list-alt"></i>
-                <span class="menu-text"> 插件 </span>
+                <i class="ace-icon glyphicon glyphicon-user"></i>
+                <span class="menu-text"> 客户 </span>
             </a>
         </li>
 
