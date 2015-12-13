@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxywarehouseinproductsizedetailMapper" >
-  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail" >
-    <id column="warehouseinproductsizedetailid" property="warehouseinproductsizedetailid" jdbcType="INTEGER" />
-    <id column="specattrvalueid" property="specattrvalueid" jdbcType="INTEGER" />
-    <result column="amount" property="amount" jdbcType="INTEGER" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
-    <result column="DataChange_LastTime" property="datachangeLasttime" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxywarehouseinproductsizedetailMapper">
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    <id column="warehouseinproductsizedetailid" jdbcType="INTEGER" property="warehouseinproductsizedetailid" />
+    <id column="specattrvalueid" jdbcType="INTEGER" property="specattrvalueid" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     warehouseinproductsizedetailid, specattrvalueid, amount, create_time, DataChange_LastTime
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from cxywarehouseinproductsizedetail
     where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
       and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="map" >
+  <delete id="deleteByPrimaryKey" parameterType="map">
     delete from cxywarehouseinproductsizedetail
     where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
       and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail" >
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
     insert into cxywarehouseinproductsizedetail (warehouseinproductsizedetailid, specattrvalueid, 
       amount, create_time, DataChange_LastTime
       )
@@ -31,60 +31,151 @@
       #{amount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail" >
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
     insert into cxywarehouseinproductsizedetail
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="warehouseinproductsizedetailid != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="warehouseinproductsizedetailid != null">
         warehouseinproductsizedetailid,
       </if>
-      <if test="specattrvalueid != null" >
+      <if test="specattrvalueid != null">
         specattrvalueid,
       </if>
-      <if test="amount != null" >
+      <if test="amount != null">
         amount,
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time,
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="warehouseinproductsizedetailid != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="warehouseinproductsizedetailid != null">
         #{warehouseinproductsizedetailid,jdbcType=INTEGER},
       </if>
-      <if test="specattrvalueid != null" >
+      <if test="specattrvalueid != null">
         #{specattrvalueid,jdbcType=INTEGER},
       </if>
-      <if test="amount != null" >
+      <if test="amount != null">
         #{amount,jdbcType=INTEGER},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
     update cxywarehouseinproductsizedetail
-    <set >
-      <if test="amount != null" >
+    <set>
+      <if test="amount != null">
         amount = #{amount,jdbcType=INTEGER},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
       and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail" >
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    update cxywarehouseinproductsizedetail
+    set amount = #{amount,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
+      and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    <id column="warehouseinproductsizedetailid" jdbcType="INTEGER" property="warehouseinproductsizedetailid" />
+    <id column="specattrvalueid" jdbcType="INTEGER" property="specattrvalueid" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    warehouseinproductsizedetailid, specattrvalueid, amount, create_time, DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cxywarehouseinproductsizedetail
+    where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
+      and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from cxywarehouseinproductsizedetail
+    where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
+      and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    insert into cxywarehouseinproductsizedetail (warehouseinproductsizedetailid, specattrvalueid, 
+      amount, create_time, DataChange_LastTime
+      )
+    values (#{warehouseinproductsizedetailid,jdbcType=INTEGER}, #{specattrvalueid,jdbcType=INTEGER}, 
+      #{amount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    insert into cxywarehouseinproductsizedetail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="warehouseinproductsizedetailid != null">
+        warehouseinproductsizedetailid,
+      </if>
+      <if test="specattrvalueid != null">
+        specattrvalueid,
+      </if>
+      <if test="amount != null">
+        amount,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="warehouseinproductsizedetailid != null">
+        #{warehouseinproductsizedetailid,jdbcType=INTEGER},
+      </if>
+      <if test="specattrvalueid != null">
+        #{specattrvalueid,jdbcType=INTEGER},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
+    update cxywarehouseinproductsizedetail
+    <set>
+      <if test="amount != null">
+        amount = #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where warehouseinproductsizedetailid = #{warehouseinproductsizedetailid,jdbcType=INTEGER}
+      and specattrvalueid = #{specattrvalueid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxywarehouseinproductsizedetail">
     update cxywarehouseinproductsizedetail
     set amount = #{amount,jdbcType=INTEGER},
       create_time = #{createTime,jdbcType=TIMESTAMP},

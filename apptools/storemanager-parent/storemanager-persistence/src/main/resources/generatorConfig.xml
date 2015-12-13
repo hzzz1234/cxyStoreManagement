@@ -11,7 +11,7 @@
             <property name="suppressAllComments" value="true" />
         </commentGenerator>
         <!-- 数据库链接URL、用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/cxystoremanager" userId="root" password="123456">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://101.200.81.55:3306/cxystoremanager" userId="root" password="123456">
             <!-- <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="msa" password="msa"> -->
         </jdbcConnection>
         <javaTypeResolver>
@@ -79,6 +79,9 @@
 		<table tableName="cxysellproductsizedetail" domainObjectName="Cxysellproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
 		<table tableName="cxywarehouseinproductsizedetail" domainObjectName="Cxywarehouseinproductsizedetail" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
-               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>	   
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <table tableName="cxybranch" domainObjectName="Cxybranch" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+
     </context>
 </generatorConfiguration>

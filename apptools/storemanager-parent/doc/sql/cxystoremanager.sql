@@ -1,19 +1,36 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 50621
-Source Host           : localhost:3306
+Source Server         : 101.200.81.55
+Source Server Version : 50173
+Source Host           : 101.200.81.55:3306
 Source Database       : cxystoremanager
 
 Target Server Type    : MYSQL
-Target Server Version : 50621
+Target Server Version : 50173
 File Encoding         : 65001
 
-Date: 2015-12-12 03:30:03
+Date: 2015-12-13 16:26:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for cxybranch
+-- ----------------------------
+DROP TABLE IF EXISTS `cxybranch`;
+CREATE TABLE `cxybranch` (
+  `branchid` int(11) NOT NULL,
+  `branchname` varchar(255) NOT NULL DEFAULT '' COMMENT '品牌名称',
+  `create_time` datetime NOT NULL DEFAULT '1990-01-01 00:00:00' COMMENT '创建时间',
+  `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`branchid`),
+  KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='品牌表';
+
+-- ----------------------------
+-- Records of cxybranch
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for cxyclient

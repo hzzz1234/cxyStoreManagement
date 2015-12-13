@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderMapper" >
-  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxypurchaseorder" >
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="pouid" property="pouid" jdbcType="VARCHAR" />
-    <result column="shopid" property="shopid" jdbcType="INTEGER" />
-    <result column="supplierid" property="supplierid" jdbcType="INTEGER" />
-    <result column="quantity" property="quantity" jdbcType="INTEGER" />
-    <result column="payamount" property="payamount" jdbcType="DOUBLE" />
-    <result column="totalamout" property="totalamout" jdbcType="DOUBLE" />
-    <result column="currency" property="currency" jdbcType="INTEGER" />
-    <result column="comment" property="comment" jdbcType="VARCHAR" />
-    <result column="status" property="status" jdbcType="INTEGER" />
-    <result column="pddate" property="pddate" jdbcType="TIMESTAMP" />
-    <result column="redate" property="redate" jdbcType="TIMESTAMP" />
-    <result column="repsor" property="repsor" jdbcType="VARCHAR" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
-    <result column="DataChange_LastTime" property="datachangeLasttime" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderMapper">
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pouid" jdbcType="VARCHAR" property="pouid" />
+    <result column="shopid" jdbcType="INTEGER" property="shopid" />
+    <result column="supplierid" jdbcType="INTEGER" property="supplierid" />
+    <result column="quantity" jdbcType="INTEGER" property="quantity" />
+    <result column="payamount" jdbcType="DOUBLE" property="payamount" />
+    <result column="totalamout" jdbcType="DOUBLE" property="totalamout" />
+    <result column="currency" jdbcType="INTEGER" property="currency" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="pddate" jdbcType="TIMESTAMP" property="pddate" />
+    <result column="redate" jdbcType="TIMESTAMP" property="redate" />
+    <result column="repsor" jdbcType="VARCHAR" property="repsor" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     id, pouid, shopid, supplierid, quantity, payamount, totalamout, currency, comment, 
     status, pddate, redate, repsor, create_time, DataChange_LastTime
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from cxypurchaseorder
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from cxypurchaseorder
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder" >
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
     insert into cxypurchaseorder (id, pouid, shopid, 
       supplierid, quantity, payamount, 
       totalamout, currency, comment, 
@@ -46,152 +46,360 @@
       #{repsor,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder" >
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
     insert into cxypurchaseorder
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         id,
       </if>
-      <if test="pouid != null" >
+      <if test="pouid != null">
         pouid,
       </if>
-      <if test="shopid != null" >
+      <if test="shopid != null">
         shopid,
       </if>
-      <if test="supplierid != null" >
+      <if test="supplierid != null">
         supplierid,
       </if>
-      <if test="quantity != null" >
+      <if test="quantity != null">
         quantity,
       </if>
-      <if test="payamount != null" >
+      <if test="payamount != null">
         payamount,
       </if>
-      <if test="totalamout != null" >
+      <if test="totalamout != null">
         totalamout,
       </if>
-      <if test="currency != null" >
+      <if test="currency != null">
         currency,
       </if>
-      <if test="comment != null" >
+      <if test="comment != null">
         comment,
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         status,
       </if>
-      <if test="pddate != null" >
+      <if test="pddate != null">
         pddate,
       </if>
-      <if test="redate != null" >
+      <if test="redate != null">
         redate,
       </if>
-      <if test="repsor != null" >
+      <if test="repsor != null">
         repsor,
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time,
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="pouid != null" >
+      <if test="pouid != null">
         #{pouid,jdbcType=VARCHAR},
       </if>
-      <if test="shopid != null" >
+      <if test="shopid != null">
         #{shopid,jdbcType=INTEGER},
       </if>
-      <if test="supplierid != null" >
+      <if test="supplierid != null">
         #{supplierid,jdbcType=INTEGER},
       </if>
-      <if test="quantity != null" >
+      <if test="quantity != null">
         #{quantity,jdbcType=INTEGER},
       </if>
-      <if test="payamount != null" >
+      <if test="payamount != null">
         #{payamount,jdbcType=DOUBLE},
       </if>
-      <if test="totalamout != null" >
+      <if test="totalamout != null">
         #{totalamout,jdbcType=DOUBLE},
       </if>
-      <if test="currency != null" >
+      <if test="currency != null">
         #{currency,jdbcType=INTEGER},
       </if>
-      <if test="comment != null" >
+      <if test="comment != null">
         #{comment,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         #{status,jdbcType=INTEGER},
       </if>
-      <if test="pddate != null" >
+      <if test="pddate != null">
         #{pddate,jdbcType=TIMESTAMP},
       </if>
-      <if test="redate != null" >
+      <if test="redate != null">
         #{redate,jdbcType=TIMESTAMP},
       </if>
-      <if test="repsor != null" >
+      <if test="repsor != null">
         #{repsor,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
     update cxypurchaseorder
-    <set >
-      <if test="pouid != null" >
+    <set>
+      <if test="pouid != null">
         pouid = #{pouid,jdbcType=VARCHAR},
       </if>
-      <if test="shopid != null" >
+      <if test="shopid != null">
         shopid = #{shopid,jdbcType=INTEGER},
       </if>
-      <if test="supplierid != null" >
+      <if test="supplierid != null">
         supplierid = #{supplierid,jdbcType=INTEGER},
       </if>
-      <if test="quantity != null" >
+      <if test="quantity != null">
         quantity = #{quantity,jdbcType=INTEGER},
       </if>
-      <if test="payamount != null" >
+      <if test="payamount != null">
         payamount = #{payamount,jdbcType=DOUBLE},
       </if>
-      <if test="totalamout != null" >
+      <if test="totalamout != null">
         totalamout = #{totalamout,jdbcType=DOUBLE},
       </if>
-      <if test="currency != null" >
+      <if test="currency != null">
         currency = #{currency,jdbcType=INTEGER},
       </if>
-      <if test="comment != null" >
+      <if test="comment != null">
         comment = #{comment,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         status = #{status,jdbcType=INTEGER},
       </if>
-      <if test="pddate != null" >
+      <if test="pddate != null">
         pddate = #{pddate,jdbcType=TIMESTAMP},
       </if>
-      <if test="redate != null" >
+      <if test="redate != null">
         redate = #{redate,jdbcType=TIMESTAMP},
       </if>
-      <if test="repsor != null" >
+      <if test="repsor != null">
         repsor = #{repsor,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder" >
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    update cxypurchaseorder
+    set pouid = #{pouid,jdbcType=VARCHAR},
+      shopid = #{shopid,jdbcType=INTEGER},
+      supplierid = #{supplierid,jdbcType=INTEGER},
+      quantity = #{quantity,jdbcType=INTEGER},
+      payamount = #{payamount,jdbcType=DOUBLE},
+      totalamout = #{totalamout,jdbcType=DOUBLE},
+      currency = #{currency,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      pddate = #{pddate,jdbcType=TIMESTAMP},
+      redate = #{redate,jdbcType=TIMESTAMP},
+      repsor = #{repsor,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pouid" jdbcType="VARCHAR" property="pouid" />
+    <result column="shopid" jdbcType="INTEGER" property="shopid" />
+    <result column="supplierid" jdbcType="INTEGER" property="supplierid" />
+    <result column="quantity" jdbcType="INTEGER" property="quantity" />
+    <result column="payamount" jdbcType="DOUBLE" property="payamount" />
+    <result column="totalamout" jdbcType="DOUBLE" property="totalamout" />
+    <result column="currency" jdbcType="INTEGER" property="currency" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="pddate" jdbcType="TIMESTAMP" property="pddate" />
+    <result column="redate" jdbcType="TIMESTAMP" property="redate" />
+    <result column="repsor" jdbcType="VARCHAR" property="repsor" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, pouid, shopid, supplierid, quantity, payamount, totalamout, currency, comment, 
+    status, pddate, redate, repsor, create_time, DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cxypurchaseorder
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cxypurchaseorder
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    insert into cxypurchaseorder (id, pouid, shopid, 
+      supplierid, quantity, payamount, 
+      totalamout, currency, comment, 
+      status, pddate, redate, 
+      repsor, create_time, DataChange_LastTime
+      )
+    values (#{id,jdbcType=INTEGER}, #{pouid,jdbcType=VARCHAR}, #{shopid,jdbcType=INTEGER}, 
+      #{supplierid,jdbcType=INTEGER}, #{quantity,jdbcType=INTEGER}, #{payamount,jdbcType=DOUBLE}, 
+      #{totalamout,jdbcType=DOUBLE}, #{currency,jdbcType=INTEGER}, #{comment,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{pddate,jdbcType=TIMESTAMP}, #{redate,jdbcType=TIMESTAMP}, 
+      #{repsor,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    insert into cxypurchaseorder
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="pouid != null">
+        pouid,
+      </if>
+      <if test="shopid != null">
+        shopid,
+      </if>
+      <if test="supplierid != null">
+        supplierid,
+      </if>
+      <if test="quantity != null">
+        quantity,
+      </if>
+      <if test="payamount != null">
+        payamount,
+      </if>
+      <if test="totalamout != null">
+        totalamout,
+      </if>
+      <if test="currency != null">
+        currency,
+      </if>
+      <if test="comment != null">
+        comment,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="pddate != null">
+        pddate,
+      </if>
+      <if test="redate != null">
+        redate,
+      </if>
+      <if test="repsor != null">
+        repsor,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="pouid != null">
+        #{pouid,jdbcType=VARCHAR},
+      </if>
+      <if test="shopid != null">
+        #{shopid,jdbcType=INTEGER},
+      </if>
+      <if test="supplierid != null">
+        #{supplierid,jdbcType=INTEGER},
+      </if>
+      <if test="quantity != null">
+        #{quantity,jdbcType=INTEGER},
+      </if>
+      <if test="payamount != null">
+        #{payamount,jdbcType=DOUBLE},
+      </if>
+      <if test="totalamout != null">
+        #{totalamout,jdbcType=DOUBLE},
+      </if>
+      <if test="currency != null">
+        #{currency,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="pddate != null">
+        #{pddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="redate != null">
+        #{redate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="repsor != null">
+        #{repsor,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
+    update cxypurchaseorder
+    <set>
+      <if test="pouid != null">
+        pouid = #{pouid,jdbcType=VARCHAR},
+      </if>
+      <if test="shopid != null">
+        shopid = #{shopid,jdbcType=INTEGER},
+      </if>
+      <if test="supplierid != null">
+        supplierid = #{supplierid,jdbcType=INTEGER},
+      </if>
+      <if test="quantity != null">
+        quantity = #{quantity,jdbcType=INTEGER},
+      </if>
+      <if test="payamount != null">
+        payamount = #{payamount,jdbcType=DOUBLE},
+      </if>
+      <if test="totalamout != null">
+        totalamout = #{totalamout,jdbcType=DOUBLE},
+      </if>
+      <if test="currency != null">
+        currency = #{currency,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="pddate != null">
+        pddate = #{pddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="redate != null">
+        redate = #{redate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="repsor != null">
+        repsor = #{repsor,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxypurchaseorder">
     update cxypurchaseorder
     set pouid = #{pouid,jdbcType=VARCHAR},
       shopid = #{shopid,jdbcType=INTEGER},

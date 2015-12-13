@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxyproductMapper" >
-  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxyproduct" >
-    <id column="productid" property="productid" jdbcType="INTEGER" />
-    <result column="branchid" property="branchid" jdbcType="INTEGER" />
-    <result column="branchname" property="branchname" jdbcType="VARCHAR" />
-    <result column="productcategoryid" property="productcategoryid" jdbcType="INTEGER" />
-    <result column="productcategoryname" property="productcategoryname" jdbcType="VARCHAR" />
-    <result column="stockno" property="stockno" jdbcType="VARCHAR" />
-    <result column="purchaseprice" property="purchaseprice" jdbcType="DOUBLE" />
-    <result column="sellprice" property="sellprice" jdbcType="DOUBLE" />
-    <result column="picaddr" property="picaddr" jdbcType="VARCHAR" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
-    <result column="DataChange_LastTime" property="datachangeLasttime" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxyproductMapper">
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    <id column="productid" jdbcType="INTEGER" property="productid" />
+    <result column="branchid" jdbcType="INTEGER" property="branchid" />
+    <result column="branchname" jdbcType="VARCHAR" property="branchname" />
+    <result column="productcategoryid" jdbcType="INTEGER" property="productcategoryid" />
+    <result column="productcategoryname" jdbcType="VARCHAR" property="productcategoryname" />
+    <result column="stockno" jdbcType="VARCHAR" property="stockno" />
+    <result column="purchaseprice" jdbcType="DOUBLE" property="purchaseprice" />
+    <result column="sellprice" jdbcType="DOUBLE" property="sellprice" />
+    <result column="picaddr" jdbcType="VARCHAR" property="picaddr" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     productid, branchid, branchname, productcategoryid, productcategoryname, stockno, 
     purchaseprice, sellprice, picaddr, create_time, DataChange_LastTime
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from cxyproduct
     where productid = #{productid,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from cxyproduct
     where productid = #{productid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct" >
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
     insert into cxyproduct (productid, branchid, branchname, 
       productcategoryid, productcategoryname, 
       stockno, purchaseprice, sellprice, 
@@ -40,116 +40,278 @@
       #{picaddr,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct" >
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
     insert into cxyproduct
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="productid != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="productid != null">
         productid,
       </if>
-      <if test="branchid != null" >
+      <if test="branchid != null">
         branchid,
       </if>
-      <if test="branchname != null" >
+      <if test="branchname != null">
         branchname,
       </if>
-      <if test="productcategoryid != null" >
+      <if test="productcategoryid != null">
         productcategoryid,
       </if>
-      <if test="productcategoryname != null" >
+      <if test="productcategoryname != null">
         productcategoryname,
       </if>
-      <if test="stockno != null" >
+      <if test="stockno != null">
         stockno,
       </if>
-      <if test="purchaseprice != null" >
+      <if test="purchaseprice != null">
         purchaseprice,
       </if>
-      <if test="sellprice != null" >
+      <if test="sellprice != null">
         sellprice,
       </if>
-      <if test="picaddr != null" >
+      <if test="picaddr != null">
         picaddr,
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time,
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="productid != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="productid != null">
         #{productid,jdbcType=INTEGER},
       </if>
-      <if test="branchid != null" >
+      <if test="branchid != null">
         #{branchid,jdbcType=INTEGER},
       </if>
-      <if test="branchname != null" >
+      <if test="branchname != null">
         #{branchname,jdbcType=VARCHAR},
       </if>
-      <if test="productcategoryid != null" >
+      <if test="productcategoryid != null">
         #{productcategoryid,jdbcType=INTEGER},
       </if>
-      <if test="productcategoryname != null" >
+      <if test="productcategoryname != null">
         #{productcategoryname,jdbcType=VARCHAR},
       </if>
-      <if test="stockno != null" >
+      <if test="stockno != null">
         #{stockno,jdbcType=VARCHAR},
       </if>
-      <if test="purchaseprice != null" >
+      <if test="purchaseprice != null">
         #{purchaseprice,jdbcType=DOUBLE},
       </if>
-      <if test="sellprice != null" >
+      <if test="sellprice != null">
         #{sellprice,jdbcType=DOUBLE},
       </if>
-      <if test="picaddr != null" >
+      <if test="picaddr != null">
         #{picaddr,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
     update cxyproduct
-    <set >
-      <if test="branchid != null" >
+    <set>
+      <if test="branchid != null">
         branchid = #{branchid,jdbcType=INTEGER},
       </if>
-      <if test="branchname != null" >
+      <if test="branchname != null">
         branchname = #{branchname,jdbcType=VARCHAR},
       </if>
-      <if test="productcategoryid != null" >
+      <if test="productcategoryid != null">
         productcategoryid = #{productcategoryid,jdbcType=INTEGER},
       </if>
-      <if test="productcategoryname != null" >
+      <if test="productcategoryname != null">
         productcategoryname = #{productcategoryname,jdbcType=VARCHAR},
       </if>
-      <if test="stockno != null" >
+      <if test="stockno != null">
         stockno = #{stockno,jdbcType=VARCHAR},
       </if>
-      <if test="purchaseprice != null" >
+      <if test="purchaseprice != null">
         purchaseprice = #{purchaseprice,jdbcType=DOUBLE},
       </if>
-      <if test="sellprice != null" >
+      <if test="sellprice != null">
         sellprice = #{sellprice,jdbcType=DOUBLE},
       </if>
-      <if test="picaddr != null" >
+      <if test="picaddr != null">
         picaddr = #{picaddr,jdbcType=VARCHAR},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="datachangeLasttime != null" >
+      <if test="datachangeLasttime != null">
         DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where productid = #{productid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct" >
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    update cxyproduct
+    set branchid = #{branchid,jdbcType=INTEGER},
+      branchname = #{branchname,jdbcType=VARCHAR},
+      productcategoryid = #{productcategoryid,jdbcType=INTEGER},
+      productcategoryname = #{productcategoryname,jdbcType=VARCHAR},
+      stockno = #{stockno,jdbcType=VARCHAR},
+      purchaseprice = #{purchaseprice,jdbcType=DOUBLE},
+      sellprice = #{sellprice,jdbcType=DOUBLE},
+      picaddr = #{picaddr,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where productid = #{productid,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    <id column="productid" jdbcType="INTEGER" property="productid" />
+    <result column="branchid" jdbcType="INTEGER" property="branchid" />
+    <result column="branchname" jdbcType="VARCHAR" property="branchname" />
+    <result column="productcategoryid" jdbcType="INTEGER" property="productcategoryid" />
+    <result column="productcategoryname" jdbcType="VARCHAR" property="productcategoryname" />
+    <result column="stockno" jdbcType="VARCHAR" property="stockno" />
+    <result column="purchaseprice" jdbcType="DOUBLE" property="purchaseprice" />
+    <result column="sellprice" jdbcType="DOUBLE" property="sellprice" />
+    <result column="picaddr" jdbcType="VARCHAR" property="picaddr" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    productid, branchid, branchname, productcategoryid, productcategoryname, stockno, 
+    purchaseprice, sellprice, picaddr, create_time, DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cxyproduct
+    where productid = #{productid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cxyproduct
+    where productid = #{productid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    insert into cxyproduct (productid, branchid, branchname, 
+      productcategoryid, productcategoryname, 
+      stockno, purchaseprice, sellprice, 
+      picaddr, create_time, DataChange_LastTime
+      )
+    values (#{productid,jdbcType=INTEGER}, #{branchid,jdbcType=INTEGER}, #{branchname,jdbcType=VARCHAR}, 
+      #{productcategoryid,jdbcType=INTEGER}, #{productcategoryname,jdbcType=VARCHAR}, 
+      #{stockno,jdbcType=VARCHAR}, #{purchaseprice,jdbcType=DOUBLE}, #{sellprice,jdbcType=DOUBLE}, 
+      #{picaddr,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    insert into cxyproduct
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="productid != null">
+        productid,
+      </if>
+      <if test="branchid != null">
+        branchid,
+      </if>
+      <if test="branchname != null">
+        branchname,
+      </if>
+      <if test="productcategoryid != null">
+        productcategoryid,
+      </if>
+      <if test="productcategoryname != null">
+        productcategoryname,
+      </if>
+      <if test="stockno != null">
+        stockno,
+      </if>
+      <if test="purchaseprice != null">
+        purchaseprice,
+      </if>
+      <if test="sellprice != null">
+        sellprice,
+      </if>
+      <if test="picaddr != null">
+        picaddr,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="productid != null">
+        #{productid,jdbcType=INTEGER},
+      </if>
+      <if test="branchid != null">
+        #{branchid,jdbcType=INTEGER},
+      </if>
+      <if test="branchname != null">
+        #{branchname,jdbcType=VARCHAR},
+      </if>
+      <if test="productcategoryid != null">
+        #{productcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="productcategoryname != null">
+        #{productcategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="stockno != null">
+        #{stockno,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseprice != null">
+        #{purchaseprice,jdbcType=DOUBLE},
+      </if>
+      <if test="sellprice != null">
+        #{sellprice,jdbcType=DOUBLE},
+      </if>
+      <if test="picaddr != null">
+        #{picaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
+    update cxyproduct
+    <set>
+      <if test="branchid != null">
+        branchid = #{branchid,jdbcType=INTEGER},
+      </if>
+      <if test="branchname != null">
+        branchname = #{branchname,jdbcType=VARCHAR},
+      </if>
+      <if test="productcategoryid != null">
+        productcategoryid = #{productcategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="productcategoryname != null">
+        productcategoryname = #{productcategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="stockno != null">
+        stockno = #{stockno,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseprice != null">
+        purchaseprice = #{purchaseprice,jdbcType=DOUBLE},
+      </if>
+      <if test="sellprice != null">
+        sellprice = #{sellprice,jdbcType=DOUBLE},
+      </if>
+      <if test="picaddr != null">
+        picaddr = #{picaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where productid = #{productid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxyproduct">
     update cxyproduct
     set branchid = #{branchid,jdbcType=INTEGER},
       branchname = #{branchname,jdbcType=VARCHAR},
