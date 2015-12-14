@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50173
 File Encoding         : 65001
 
-Date: 2015-12-13 16:26:14
+Date: 2015-12-15 01:18:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -37,20 +37,21 @@ CREATE TABLE `cxybranch` (
 -- ----------------------------
 DROP TABLE IF EXISTS `cxyclient`;
 CREATE TABLE `cxyclient` (
-  `supplierid` int(11) NOT NULL AUTO_INCREMENT COMMENT '供应商id',
-  `suppliername` varchar(255) NOT NULL DEFAULT '' COMMENT '供应商名称',
+  `clientid` int(11) NOT NULL AUTO_INCREMENT COMMENT '客户id',
+  `clientname` varchar(255) NOT NULL DEFAULT '' COMMENT '客户名称',
   `contactname` varchar(255) DEFAULT '' COMMENT '联系人',
   `contactphone` varchar(255) DEFAULT '' COMMENT '联系电话',
   `fax` varchar(255) DEFAULT '' COMMENT '传真',
-  `qq` varchar(255) DEFAULT NULL,
+  `qq` varchar(255) DEFAULT '' COMMENT 'qq',
   `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '' COMMENT '地址',
   `comment` varchar(1000) DEFAULT '' COMMENT '备注',
   `email` varchar(255) DEFAULT '' COMMENT 'email',
   `post` varchar(255) DEFAULT '' COMMENT '邮编',
   `status` int(11) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1不存在',
+  `clientcategoryid` int(11) NOT NULL DEFAULT '0' COMMENT '所属客户组',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
-  `DataChange_LastTime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`supplierid`),
+  `DataChange_LastTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`clientid`),
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='供应商表';
 
@@ -192,11 +193,12 @@ CREATE TABLE `cxypurchaseorder` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `unq_pouid` (`pouid`) USING BTREE,
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='采购订单';
+) ENGINE=InnoDB AUTO_INCREMENT=2324 DEFAULT CHARSET=utf8 COMMENT='采购订单';
 
 -- ----------------------------
 -- Records of cxypurchaseorder
 -- ----------------------------
+INSERT INTO `cxypurchaseorder` VALUES ('1', '12', '213', '23', '2321', '21321', '21321', '21312', '21312', '1', '2015-12-13 21:51:11', '2015-12-07 21:51:38', '12', '1981-03-09 00:00:00', '2015-12-13 22:09:32');
 
 -- ----------------------------
 -- Table structure for cxypurchaseorderdetail
@@ -206,6 +208,7 @@ CREATE TABLE `cxypurchaseorderdetail` (
   `purchaseorderdetailid` int(11) NOT NULL AUTO_INCREMENT COMMENT '订单商品明细id',
   `purchaseorderid` int(11) NOT NULL DEFAULT '0' COMMENT '采购订单id',
   `productid` int(11) NOT NULL DEFAULT '0' COMMENT '商品id',
+  `purchaseprice` double NOT NULL DEFAULT '0' COMMENT '购买价格',
   `comment` varchar(255) DEFAULT NULL COMMENT '注释',
   `seq` int(11) NOT NULL DEFAULT '0' COMMENT '顺序',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
@@ -269,6 +272,7 @@ DROP TABLE IF EXISTS `cxyselldetail`;
 CREATE TABLE `cxyselldetail` (
   `selldetailid` int(11) NOT NULL AUTO_INCREMENT COMMENT '销售商品明细id',
   `sellid` int(11) NOT NULL DEFAULT '0' COMMENT '销售订单id',
+  `sellprice` double NOT NULL COMMENT '售卖价格',
   `productid` int(11) NOT NULL DEFAULT '0' COMMENT '商品id',
   `comment` varchar(255) DEFAULT NULL COMMENT '注释',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
@@ -405,20 +409,21 @@ CREATE TABLE `cxyspecattrvalue` (
 -- ----------------------------
 DROP TABLE IF EXISTS `cxysupplier`;
 CREATE TABLE `cxysupplier` (
-  `clientid` int(11) NOT NULL AUTO_INCREMENT COMMENT '客户id',
-  `clientname` varchar(255) NOT NULL DEFAULT '' COMMENT '客户名称',
+  `supplierid` int(11) NOT NULL AUTO_INCREMENT COMMENT '供应商id',
+  `suppliername` varchar(255) NOT NULL DEFAULT '' COMMENT '供应商名称',
   `contactname` varchar(255) DEFAULT '' COMMENT '联系人',
   `contactphone` varchar(255) DEFAULT '' COMMENT '联系电话',
   `fax` varchar(255) DEFAULT '' COMMENT '传真',
-  `qq` varchar(255) DEFAULT NULL,
+  `qq` varchar(255) DEFAULT '' COMMENT 'qq',
   `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '' COMMENT '地址',
   `comment` varchar(1000) DEFAULT '' COMMENT '备注',
   `email` varchar(255) DEFAULT '' COMMENT 'email',
   `post` varchar(255) DEFAULT '' COMMENT '邮编',
   `status` int(11) NOT NULL DEFAULT '0' COMMENT '状态：0正常 1不存在',
+  `suppliercategoryid` int(11) NOT NULL DEFAULT '0' COMMENT '供应商所属组',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
   `DataChange_LastTime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`clientid`),
+  PRIMARY KEY (`supplierid`),
   KEY `idx_DCLT` (`DataChange_LastTime`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='客户表';
 

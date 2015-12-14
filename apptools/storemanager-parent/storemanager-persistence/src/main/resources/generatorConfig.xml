@@ -32,6 +32,11 @@
         </javaClientGenerator>
 
         <!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
+        <table tableName="cxysupplier" domainObjectName="Cxysupplier" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <table tableName="cxyclient" domainObjectName="Cxyclient" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
+        <!--
         <table tableName="cxyclient" domainObjectName="Cxyclient" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxyclientcategory" domainObjectName="Cxyclientcategory" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
@@ -82,6 +87,6 @@
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
         <table tableName="cxybranch" domainObjectName="Cxybranch" enableInsert="true" enableSelectByPrimaryKey="true" enableSelectByExample="false" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" modelType="flat"/>
-
+        -->
     </context>
 </generatorConfiguration>

@@ -3,9 +3,9 @@ package com.cxy.apptools.domain.storemanager;
 import java.util.Date;
 
 public class Cxyclient {
-    private Integer supplierid;
+    private Integer clientid;
 
-    private String suppliername;
+    private String clientname;
 
     private String contactname;
 
@@ -25,24 +25,26 @@ public class Cxyclient {
 
     private Integer status;
 
+    private Integer clientcategoryid;
+
     private Date createTime;
 
     private Date datachangeLasttime;
 
-    public Integer getSupplierid() {
-        return supplierid;
+    public Integer getClientid() {
+        return clientid;
     }
 
-    public void setSupplierid(Integer supplierid) {
-        this.supplierid = supplierid;
+    public void setClientid(Integer clientid) {
+        this.clientid = clientid;
     }
 
-    public String getSuppliername() {
-        return suppliername;
+    public String getClientname() {
+        return clientname;
     }
 
-    public void setSuppliername(String suppliername) {
-        this.suppliername = suppliername == null ? null : suppliername.trim();
+    public void setClientname(String clientname) {
+        this.clientname = clientname == null ? null : clientname.trim();
     }
 
     public String getContactname() {
@@ -115,6 +117,14 @@ public class Cxyclient {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getClientcategoryid() {
+        return clientcategoryid;
+    }
+
+    public void setClientcategoryid(Integer clientcategoryid) {
+        this.clientcategoryid = clientcategoryid;
     }
 
     public Date getCreateTime() {
