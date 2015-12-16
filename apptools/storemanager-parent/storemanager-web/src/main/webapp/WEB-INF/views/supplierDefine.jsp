@@ -7,15 +7,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<html lang="en" ng-app="productDefine" >
+<html lang="en" ng-app="supplierDefine" >
 <head>
-    <title>product</title>
+    <title>client</title>
     <%@ include file="/common/common.jsp"%>
     <link href="${rc.contextPath}/webresources/storemanager/css/tree.css" rel="stylesheet" />
 
 </head>
 
-<body ng-controller="productCtrl">
+<body ng-controller="supplierCtrl">
 <!--头框-->
 <%@ include file="/common/header.jsp"%>
 <!--主框架-->
@@ -114,90 +114,69 @@
                     <div class="col-xs-12">
                         <form class="form-horizontal" role="form">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="branchname">品牌名</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="suppliername">供应商</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" id="branchname" placeholder="品牌名" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="suppliername" placeholder="供应商" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="branchname">产品类型名</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="contactname">联系人</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" id="productcategory" placeholder="产品类型名" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="contactname" placeholder="联系人" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="productcategory">货号</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="contactphone">联系电话</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" id="stockno" placeholder="货号" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="contactphone" placeholder="联系电话" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="stockno">近期购买价格</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="contactphone">fax</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" id="purchaseprice" placeholder="0.00" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="fax" placeholder="fax" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="purchaseprice">近期销售价格</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="qq">qq</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" id="sellprice" placeholder="0.00" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="qq" placeholder="qq" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="sellprice">产品图片</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="address">地址</label>
 
                                 <div class="col-sm-9">
-                                    <div class="col-xs-4">
-                                        <input type="file" id="pic1" class="cxy-input-file">
-                                        <!-- /section:custom/file-input -->
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <input type="file" id="pic2" class="cxy-input-file">
-                                        <!-- /section:custom/file-input -->
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <input type="file" id="pic3" class="cxy-input-file">
-                                        <!-- /section:custom/file-input -->
-                                    </div>
+                                    <input type="text" id="address" placeholder="地址" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="sellprice">其他</label>
+                                <label class="col-sm-3 control-label no-padding-right" for="post">邮编</label>
+
                                 <div class="col-sm-9">
-                                    <div class="btn-group">
-                                        <button data-toggle="dropdown" class="btn dropdown-toggle">
-                                            <span class="glyphicon-plus"></span>
-                                            增加属性
-                                            <span class="ace-icon fa fa-caret-down icon-on-right"></span>
-                                        </button>
-
-                                        <ul class="dropdown-menu dropdown-default">
-                                            <li>
-                                                <a href="#">Action</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">Another action</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">Something else here</a>
-                                            </li>
-
-                                            <li class="divider"></li>
-
-                                            <li>
-                                                <a href="#">Separated link</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <input type="text" id="post" placeholder="邮编" class="col-xs-10 col-sm-5">
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="email">email</label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="email" placeholder="email" class="col-xs-10 col-sm-5">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="comment">备注</label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="comment" placeholder="备注" class="col-xs-10 col-sm-5">
+                                </div>
+                            </div>
+
                             <div class="clearfix form-actions">
                                 <div class="col-md-offset-3 col-md-9">
                                     <button class="btn btn-info" type="button">
@@ -205,7 +184,7 @@
                                         提交
                                     </button>
 
-                                      
+
                                     <button class="btn" type="reset">
                                         <i class="ace-icon fa fa-undo bigger-110"></i>
                                         重置
@@ -243,7 +222,7 @@
                 //or examples/file-upload.html
                 return true;
                 }*/
-                            /**,before_remove : function() {
+                /**,before_remove : function() {
                 return true;
                 }*/
                 ,

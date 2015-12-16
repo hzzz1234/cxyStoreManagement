@@ -116,15 +116,29 @@
             </a>
         </li>
 
-        <li>
-            <a href="#" class="dropdown-toggle">
+        <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'left_supplier_define'}">
+                <li class="active">
+            </c:when>
+            <c:otherwise>
+                <li>
+            </c:otherwise>
+         </c:choose>
+            <a href="${rc.contextPath}/supplier/supplierDefine" class="dropdown-toggle">
                 <i class="icon-group"></i>
                 <span class="menu-text"> 供应商 </span>
             </a>
         </li>
 
-        <li>
-            <a href="widgets.html">
+        <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'left_client_define'}">
+                <li class="active">
+            </c:when>
+            <c:otherwise>
+                <li>
+            </c:otherwise>
+        </c:choose>
+            <a href="${rc.contextPath}/client/clientDefine">
                 <i class="ace-icon glyphicon glyphicon-user"></i>
                 <span class="menu-text"> 客户 </span>
             </a>
