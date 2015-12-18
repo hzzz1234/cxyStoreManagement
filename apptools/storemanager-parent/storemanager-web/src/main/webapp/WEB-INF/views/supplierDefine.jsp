@@ -52,6 +52,9 @@
                         </div>
                         <div class="tree well" >
                             <ul>
+                                <c:forEach var="item" items="${basevo.cxysuppliercategoryList}">
+                                    ${item.suppliercategoryname}
+                                </c:forEach>
                                 <li>
                                     <span><i class="glyphicon glyphicon-folder-open"></i> Parent</span> <a href="">Goes somewhere</a>
                                     <ul>

@@ -5,7 +5,9 @@ package com.cxy.apptools.web.storemanager.vo.page;
  */
 public abstract class BasePageVo {
 
+    //左边栏选中设置
     private String leftsideIdentifier = "leftsideIdentifier";
+    //面包屑名字
     private String barname = "barname";
 
     public void init(String leftsideIdentifier, String barname) {

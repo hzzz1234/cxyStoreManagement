@@ -2,6 +2,8 @@ package com.cxy.apptools.persistence.storemanager.dao;
 
 import com.cxy.apptools.domain.storemanager.Cxysuppliercategory;
 
+import java.util.List;
+
 public interface CxysuppliercategoryMapper {
     int deleteByPrimaryKey(Integer suppliercategoryid);
 
@@ -14,4 +16,6 @@ public interface CxysuppliercategoryMapper {
     int updateByPrimaryKeySelective(Cxysuppliercategory record);
 
     int updateByPrimaryKey(Cxysuppliercategory record);
+
+    List<Cxysuppliercategory> selectAllValues();
 }
