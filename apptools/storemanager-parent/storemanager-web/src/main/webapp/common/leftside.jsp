@@ -96,23 +96,23 @@
         </li>
 
         <li>
-            <a href="#" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productpurchase/purchase" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-book"></i>
-                <span class="menu-text"> 采购列表 </span>
+                <span class="menu-text">采购列表</span>
             </a>
         </li>
 
         <li>
-            <a href="#" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productinstore/instore" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-edit"></i>
-                <span class="menu-text"> 入库列表 </span>
+                <span class="menu-text">入库列表</span>
             </a>
         </li>
 
         <li>
-            <a href="#" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productsale/sale" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-file"></i>
-                <span class="menu-text"> 售卖列表 </span>
+                <span class="menu-text">售卖列表</span>
             </a>
         </li>
 

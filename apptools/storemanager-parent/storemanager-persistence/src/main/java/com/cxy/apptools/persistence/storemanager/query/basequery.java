@@ -6,7 +6,7 @@ import com.cxy.apptools.persistence.storemanager.enums.OrderTypeIndex;
 /**
  * Created by Administrator on 2015/12/14.
  */
-public class Basequery {
+ class Basequery {
     private String orderField;
     private OrderTypeIndex ordertype = OrderTypeIndex.DESC; //ASC DESC
     private Page page = new Page();
