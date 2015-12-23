@@ -169,38 +169,56 @@
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
               <div class="col-xs-12">
-
                 <div class="table-header" align="center">
                   货品采购表
                 </div>
-
-                <!-- <div class="table-responsive"> -->
-
-                <!-- <div class="dataTables_borderWrap"> -->
                 <div>
-                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row"><div class="col-xs-6"><div id="sample-table-2_length" class="dataTables_length"><label>Display <select size="1" name="sample-table-2_length" aria-controls="sample-table-2"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> records</label></div></div><div class="col-xs-6"><div class="dataTables_filter" id="sample-table-2_filter"><label>Search: <input type="text" aria-controls="sample-table-2"></label></div></div></div><table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
-                    <thead>
-                    <tr role="row"><th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="
-
-
-
-
-													">
+                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div id="sample-table-2_length" class="dataTables_length">
+                          <label>显示:
+                            <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
+                            <option value="10" selected="selected">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> 记录
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_filter" id="sample-table-2_filter">
+                          <label>搜索: <input type="text" aria-controls="sample-table-2"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
+                    <thead style="overflow: scroll">
+                    <tr role="row">
+                      <th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="">
                       <label class="position-relative">
                         <input type="checkbox" class="ace">
                         <span class="lbl"></span>
                       </label>
-                    </th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">Domain</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">Clicks</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="
-
-														Update
-													: activate to sort column ascending">
-                      <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-                      更新
-                    </th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""></th></tr>
+                    </th>
+                      <th class="operate" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="orderoperate: activate to sort column ascending">单据操作</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="order: activate to sort column ascending">采购订单号</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="supplier: activate to sort column ascending">供应商</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="shop: activate to sort column ascending">商铺</th>
+                      <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Numbers: activate to sort column ascending">采购数量</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">总金额</th>
+                      <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">是否付款</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="operator: activate to sort column ascending"><i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>经办人</th>
+                      <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">订单状态</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="pddate: activate to sort column ascending">预计到货时间</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="redater: activate to sort column ascending">实际到货时间</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="createtime: activate to sort column ascending">创建时间</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="lasttime: activate to sort column ascending">最后更新时间</th>
+                    </tr>
                     </thead>
-
-
-                    <tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd">
+                    <tbody role="alert" aria-live="polite" aria-relevant="all">
+                    <tr class="odd">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -268,7 +286,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="even">
+                    </tr>
+                    <tr class="even">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -336,7 +355,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="odd">
+                    </tr>
+                    <tr class="odd">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -404,7 +424,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="even">
+                    </tr>
+                    <tr class="even">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -472,7 +493,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="odd">
+                    </tr>
+                    <tr class="odd">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -540,7 +562,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="even">
+                    </tr>
+                    <tr class="even">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -608,7 +631,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="odd">
+                    </tr>
+                    <tr class="odd">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -676,7 +700,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="even">
+                    </tr>
+                    <tr class="even">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -744,7 +769,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="odd">
+                    </tr>
+                    <tr class="odd">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -812,7 +838,8 @@
                           </div>
                         </div>
                       </td>
-                    </tr><tr class="even">
+                    </tr>
+                    <tr class="even">
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -880,122 +907,42 @@
                           </div>
                         </div>
                       </td>
-                    </tr></tbody></table><div class="row"><div class="col-xs-6"><div class="dataTables_info" id="sample-table-2_info">Showing 1 to 10 of 23 entries</div></div><div class="col-xs-6"><div class="dataTables_paginate paging_bootstrap"><ul class="pagination"><li class="prev disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li><li class="prev disabled"><a href="#"><i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10  记录</div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_paginate paging_bootstrap">
+                          <ul class="pagination">
+                            <li class="prev disabled">
+                              <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                            </li>
+                            <li class="prev disabled">
+                              <a href="#"><i class="fa fa-angle-left"></i></a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next">
+                              <a href="#"><i class="fa fa-angle-right"></i></a>
+                            </li>
+                            <li class="next">
+                              <a href="#">
+                                <i class="fa fa-angle-double-right"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div id="modal-table" class="modal fade" tabindex="-1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header no-padding">
-                    <div class="table-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        <span class="white">×</span>
-                      </button>
-                      Results for "Latest Registered Domains
-                    </div>
-                  </div>
-
-                  <div class="modal-body no-padding">
-                    <table class="table table-striped table-bordered table-hover no-margin-bottom no-border-top">
-                      <thead>
-                      <tr>
-                        <th>Domain</th>
-                        <th>Price</th>
-                        <th>Clicks</th>
-
-                        <th>
-                          <i class="ace-icon fa fa-clock-o bigger-110"></i>
-                          Update
-                        </th>
-                      </tr>
-                      </thead>
-
-                      <tbody>
-                      <tr>
-                        <td>
-                          <a href="#">ace.com</a>
-                        </td>
-                        <td>$45</td>
-                        <td>3,330</td>
-                        <td>Feb 12</td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <a href="#">base.com</a>
-                        </td>
-                        <td>$35</td>
-                        <td>2,595</td>
-                        <td>Feb 18</td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <a href="#">max.com</a>
-                        </td>
-                        <td>$60</td>
-                        <td>4,400</td>
-                        <td>Mar 11</td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <a href="#">best.com</a>
-                        </td>
-                        <td>$75</td>
-                        <td>6,500</td>
-                        <td>Apr 03</td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <a href="#">pro.com</a>
-                        </td>
-                        <td>$55</td>
-                        <td>4,250</td>
-                        <td>Jan 21</td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div class="modal-footer no-margin-top">
-                    <button class="btn btn-sm btn-danger pull-left" data-dismiss="modal">
-                      <i class="ace-icon fa fa-times"></i>
-                      Close
-                    </button>
-
-                    <ul class="pagination pull-right no-margin">
-                      <li class="prev disabled">
-                        <a href="#">
-                          <i class="ace-icon fa fa-angle-double-left"></i>
-                        </a>
-                      </li>
-
-                      <li class="active">
-                        <a href="#">1</a>
-                      </li>
-
-                      <li>
-                        <a href="#">2</a>
-                      </li>
-
-                      <li>
-                        <a href="#">3</a>
-                      </li>
-
-                      <li class="next">
-                        <a href="#">
-                          <i class="ace-icon fa fa-angle-double-right"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div><!-- /.modal-content -->
-              </div><!-- /.modal-dialog -->
-            </div><!-- PAGE CONTENT ENDS -->
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.page-content -->

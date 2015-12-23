@@ -1,5 +1,7 @@
 package com.cxy.apptools.web.storemanager.controller;
 
+import com.cxy.apptools.web.storemanager.vo.page.ProductPurchaseVo;
+import com.cxy.apptools.web.storemanager.vo.page.SupplierDefineVo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +16,10 @@ public class ProductPurchaseController {
     public ModelAndView view(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("productPurchase");
-
+        ProductPurchaseVo productPurchaseVo = new ProductPurchaseVo();
+        productPurchaseVo.init("product_purchase","商品采购");
+        //supplierDefineVo.setCxysuppliercategoryList(supplierService.queryAllValues());
+        mv.addObject("basevo",productPurchaseVo);
         return mv;
     }
 }

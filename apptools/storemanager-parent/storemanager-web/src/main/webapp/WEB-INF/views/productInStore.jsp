@@ -12,7 +12,12 @@
   <title>采购入库</title>
   <%@ include file="/common/common.jsp"%>
 
-</head>
+  <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/ace.onpage-help.css" />
+  <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/sunburst.css" />
+  <link rel="sinks"  href="${rc.contextPath}/webresources/assets/css/ace-skins.min.css"/>
+  <link rel="ace-ie"  href="${rc.contextPath}/webresources/assets/css/ace-ie.min.css"/>
+  <link rel="ace-rtl"  href="${rc.contextPath}/webresources/assets/css/ace-rtl.min.css"/>
+  <link rel="ace-min"  href="${rc.contextPath}/webresources/assets/css/ace.min.css"/>
 
 <body ng-controller="productCtrl">
 <!--头框-->
@@ -1111,10 +1116,8 @@
     })
   </script>
 
-  <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/ace.onpage-help.css" />
-  <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/sunburst.css" />
 
-  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+  <script type="text/javascript"> ace.vars['base'] = '${rc.contextPath}/webresources/assets'; </script>
   <script src="${rc.contextPath}/webresources/assets/js/ace/ace.onpage-help.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/rainbow.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/generic.js"></script>
