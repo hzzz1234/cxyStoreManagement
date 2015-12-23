@@ -31,138 +31,19 @@
 
     <!--主内容-->
     <div class="main-content">
-      <!-- #section:basics/content.breadcrumbs -->
-      <div class="breadcrumbs" id="breadcrumbs">
-        <script type="text/javascript">
-          try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-        </script>
-
-        <ul class="breadcrumb">
-          <li>
-            <i class="ace-icon fa fa-home home-icon"></i>
-            <a href="#">主页</a>
-          </li>
-
-          <li>
-            <a href="#">售卖列表</a>
-          </li>
-
-        </ul><!-- /.breadcrumb -->
-
-        <!-- #section:basics/content.searchbox -->
-        <div class="nav-search" id="nav-search">
-          <form class="form-search">
-							<span class="input-icon">
-								<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
-								<i class="ace-icon fa fa-search nav-search-icon"></i>
-							</span>
-          </form>
-        </div><!-- /.nav-search -->
-
-        <!-- /section:basics/content.searchbox -->
-      </div>
-
-      <!-- /section:basics/content.breadcrumbs -->
+      <%@include file="/common/breadcrumb.jsp"%>
+      <%@include file="/common/settings.jsp"%>
       <div class="page-content">
-        <!-- #section:settings.box -->
-        <div class="ace-settings-container" id="ace-settings-container">
-          <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
-            <i class="ace-icon fa fa-cog bigger-150"></i>
-          </div>
 
-          <div class="ace-settings-box clearfix" id="ace-settings-box">
-            <div class="pull-left width-50">
-              <!-- #section:settings.skins -->
-              <div class="ace-settings-item">
-                <div class="pull-left">
-                  <select id="skin-colorpicker" class="hide">
-                    <option data-skin="no-skin" value="#438EB9">#438EB9</option>
-                    <option data-skin="skin-1" value="#222A2D">#222A2D</option>
-                    <option data-skin="skin-2" value="#C6487E">#C6487E</option>
-                    <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
-                  </select><div class="dropdown dropdown-colorpicker">		<a data-toggle="dropdown" class="dropdown-toggle" data-position="auto" href="#"><span class="btn-colorpicker" style="background-color:#438EB9"></span></a><ul class="dropdown-menu dropdown-caret"><li><a class="colorpick-btn selected" href="#" style="background-color:#438EB9;" data-color="#438EB9"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#222A2D;" data-color="#222A2D"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#C6487E;" data-color="#C6487E"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#D0D0D0;" data-color="#D0D0D0"></a></li></ul></div>
-                </div>
-                <span>&nbsp; Choose Skin</span>
-              </div>
-
-              <!-- /section:settings.skins -->
-
-              <!-- #section:settings.navbar -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar">
-                <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
-              </div>
-
-              <!-- /section:settings.navbar -->
-
-              <!-- #section:settings.sidebar -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar">
-                <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
-              </div>
-
-              <!-- /section:settings.sidebar -->
-
-              <!-- #section:settings.breadcrumbs -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs">
-                <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
-              </div>
-
-              <!-- /section:settings.breadcrumbs -->
-
-              <!-- #section:settings.rtl -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl">
-                <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
-              </div>
-
-              <!-- /section:settings.rtl -->
-
-              <!-- #section:settings.container -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container">
-                <label class="lbl" for="ace-settings-add-container">
-                  Inside
-                  <b>.container</b>
-                </label>
-              </div>
-
-              <!-- /section:settings.container -->
-            </div><!-- /.pull-left -->
-
-            <div class="pull-left width-50">
-              <!-- #section:basics/sidebar.options -->
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover">
-                <label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
-              </div>
-
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact">
-                <label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
-              </div>
-
-              <div class="ace-settings-item">
-                <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight">
-                <label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
-              </div>
-
-              <!-- /section:basics/sidebar.options -->
-            </div><!-- /.pull-left -->
-          </div><!-- /.ace-settings-box -->
-        </div><!-- /.ace-settings-container -->
-
-        <!-- /section:settings.box -->
         <div class="page-header">
           <h1>
-            售卖列表
+            ${basevo.barname}
             <small>
-              <i class="ace-icon fa fa-angle-double-right"></i>
-              显示货品售卖详细信息
+              <i class="icon-double-angle-right"></i>
+              显示货品售卖信息
             </small>
           </h1>
-        </div><!-- /.page-header -->
+        </div>
 
         <div class="row">
           <div class="col-xs-12">
@@ -174,29 +55,54 @@
                   货品售卖表
                 </div>
 
-                <!-- <div class="table-responsive"> -->
-
-                <!-- <div class="dataTables_borderWrap"> -->
                 <div>
-                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row"><div class="col-xs-6"><div id="sample-table-2_length" class="dataTables_length"><label>Display <select size="1" name="sample-table-2_length" aria-controls="sample-table-2"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> records</label></div></div><div class="col-xs-6"><div class="dataTables_filter" id="sample-table-2_filter"><label>Search: <input type="text" aria-controls="sample-table-2"></label></div></div></div><table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
+                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                    <div class="row">
+                      <div class="col-xs-6"><div id="sample-table-2_length" class="dataTables_length">
+                        <label>显示：
+                          <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
+                          <option value="10" selected="selected">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option><option value="100">100</option>
+                          </select> records
+                        </label>
+                      </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_filter" id="sample-table-2_filter">
+                          <label>搜索： <input type="text" aria-controls="sample-table-2"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
                     <thead>
-                    <tr role="row"><th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="
-
-
-
-
-													">
+                    <tr role="row">
+                      <th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="">
                       <label class="position-relative">
                         <input type="checkbox" class="ace">
                         <span class="lbl"></span>
                       </label>
-                    </th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">Domain</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">Clicks</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="
-
-														Update
-													: activate to sort column ascending">
+                    </th>
+                      <th class="hidden-480" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据操作</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">销售出库单号</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">商铺</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">客户</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">出库数量</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">进货单价</th>
+                      <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">币种</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="">收款人</th>
+                      <th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据说明</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">
+                        <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                        创建时间
+                      </th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">
                       <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-                      更新
-                    </th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""></th></tr>
+                      最后更新时间
+                    </th>
+
+
+                    </tr>
                     </thead>
 
 
@@ -880,7 +786,20 @@
                           </div>
                         </div>
                       </td>
-                    </tr></tbody></table><div class="row"><div class="col-xs-6"><div class="dataTables_info" id="sample-table-2_info">Showing 1 to 10 of 23 entries</div></div><div class="col-xs-6"><div class="dataTables_paginate paging_bootstrap"><ul class="pagination"><li class="prev disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li><li class="prev disabled"><a href="#"><i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10 行记录</div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_paginate paging_bootstrap">
+                          <ul class="pagination"><li class="prev disabled"><a href="#">
+                            <i class="fa fa-angle-double-left"></i></a>
+                          </li>
+                            <li class="prev disabled"><a href="#">
+                              <i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
                 </div>
               </div>
             </div>
@@ -1004,10 +923,10 @@
       <div class="footer">
         <div class="footer-inner">
           <!-- #section:basics/footer -->
-          <div class="footer-content">
+          <div class="footer-content" align="center">
 						<span class="bigger-120">
 							<span class="blue bolder">Ace</span>
-							Application © 2013-2014
+							Application © 2016-2017
 						</span>
 
             &nbsp; &nbsp;

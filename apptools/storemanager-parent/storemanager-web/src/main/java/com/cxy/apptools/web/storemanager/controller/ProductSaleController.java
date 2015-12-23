@@ -18,7 +18,7 @@ public class ProductSaleController {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("productSale");
         ProductPurchaseVo productPurchaseVo = new ProductPurchaseVo();
-        productPurchaseVo.init("product_sale","商品售卖");
+        productPurchaseVo.init("product_sale","售卖列表");
         //supplierDefineVo.setCxysuppliercategoryList(supplierService.queryAllValues());
         mv.addObject("basevo",productPurchaseVo);
         return mv;

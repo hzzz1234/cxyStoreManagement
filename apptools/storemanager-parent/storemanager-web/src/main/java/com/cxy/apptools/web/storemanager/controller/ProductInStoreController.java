@@ -17,7 +17,7 @@ public class ProductInStoreController {
 
         mv.setViewName("productInStore");
         ProductInStoreVo productInStoreVo = new ProductInStoreVo();
-        productInStoreVo.init("product_in_store","商品入库");
+        productInStoreVo.init("product_in_store","入库列表");
         //supplierDefineVo.setCxysuppliercategoryList(supplierService.queryAllValues());
         mv.addObject("basevo", productInStoreVo);
         return mv;
