@@ -83,7 +83,7 @@
                         <span class="lbl"></span>
                       </label>
                     </th>
-                      <th class="hidden-480" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据操作</th>
+                      <th class="hidden-480" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending"></th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">销售出库单号</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">商铺</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">客户</th>
@@ -91,7 +91,7 @@
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">进货单价</th>
                       <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">币种</th>
                       <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="">收款人</th>
-                      <th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据说明</th>
+                      <th class="hidden-480" role="columnheader" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据说明</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">
                         <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
                         创建时间
