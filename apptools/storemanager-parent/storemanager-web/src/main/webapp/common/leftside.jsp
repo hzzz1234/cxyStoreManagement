@@ -35,6 +35,7 @@
     </div><!-- #sidebar-shortcuts -->
 
     <ul class="nav nav-list">
+
         <c:choose>
             <c:when test="${basevo.leftsideIdentifier== 'main'}">
                 <li class="active">
@@ -95,24 +96,44 @@
             </ul>
         </li>
 
-        <li>
-            <a href="#" class="dropdown-toggle">
+            <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'product_purchase'}">
+            <li class="active">
+                </c:when>
+                <c:otherwise>
+            <li>
+                </c:otherwise>
+                </c:choose>
+            <a href="${rc.contextPath}/productpurchase/purchase" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-book"></i>
-                <span class="menu-text"> 采购列表 </span>
+                <span class="menu-text">采购列表</span>
             </a>
         </li>
 
-        <li>
-            <a href="#" class="dropdown-toggle">
+            <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'product_in_store'}">
+            <li class="active">
+                </c:when>
+                <c:otherwise>
+            <li>
+                </c:otherwise>
+                </c:choose>
+            <a href="${rc.contextPath}/productinstore/instore" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-edit"></i>
-                <span class="menu-text"> 入库列表 </span>
+                <span class="menu-text">入库列表</span>
             </a>
         </li>
-
-        <li>
-            <a href="#" class="dropdown-toggle">
+            <c:choose>
+            <c:when test="${basevo.leftsideIdentifier== 'product_sale'}">
+            <li class="active">
+                </c:when>
+                <c:otherwise>
+            <li>
+                </c:otherwise>
+                </c:choose>
+            <a href="${rc.contextPath}/productsale/sale" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-file"></i>
-                <span class="menu-text"> 售卖列表 </span>
+                <span class="menu-text">售卖列表</span>
             </a>
         </li>
 
