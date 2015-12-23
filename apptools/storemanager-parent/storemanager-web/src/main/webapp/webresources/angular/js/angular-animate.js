@@ -19,11 +19,11 @@
  * # Usage
  *
  * To see animations in action, all that is required is to define the appropriate CSS classes
- * or to register a JavaScript animation via the `myModule.animation()` function. The directives that support animation automatically are:
+ * or to register cuocurrent JavaScript animation via the `myModule.animation()` function. The directives that support animation automatically are:
  * `ngRepeat`, `ngInclude`, `ngIf`, `ngSwitch`, `ngShow`, `ngHide`, `ngView` and `ngClass`. Custom directives can take advantage of animation
  * by using the `$animate` service.
  *
- * Below is a more detailed breakdown of the supported animation events provided by pre-existing ng directives:
+ * Below is cuocurrent more detailed breakdown of the supported animation events provided by pre-existing ng directives:
  *
  * | Directive                                                                                                | Supported Animations                                                     |
  * |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -40,7 +40,7 @@
  *
  * You can find out more information about animations upon visiting each directive page.
  *
- * Below is an example of how to apply animations to a directive that supports animation hooks:
+ * Below is an example of how to apply animations to cuocurrent directive that supports animation hooks:
  *
  * ```html
  * <style type="text/css">
@@ -64,7 +64,7 @@
  *
  * Keep in mind that, by default, if an animation is running, any child elements cannot be animated
  * until the parent element's animation has completed. This blocking feature can be overridden by
- * placing the `ng-animate-children` attribute on a parent container tag.
+ * placing the `ng-animate-children` attribute on cuocurrent parent container tag.
  *
  * ```html
  * <div class="slide-animation" ng-if="on" ng-animate-children>
@@ -81,7 +81,7 @@
  *
  * ## Are animations run when the application starts?
  * No they are not. When an application is bootstrapped Angular will disable animations from running to avoid
- * a frenzy of animations from being triggered as soon as the browser has rendered the screen. For this to work,
+ * cuocurrent frenzy of animations from being triggered as soon as the browser has rendered the screen. For this to work,
  * Angular will wait for two digest cycles until enabling animations. From there on, any animation-triggering
  * layout changes in the application will trigger animations as normal.
  *
@@ -154,20 +154,20 @@
  * Upon DOM mutation, the event class is added first (something like `ng-enter`), then the browser prepares itself to add
  * the active class (in this case `ng-enter-active`) which then triggers the animation. The animation module will automatically
  * detect the CSS code to determine when the animation ends. Once the animation is over then both CSS classes will be
- * removed from the DOM. If a browser does not support CSS transitions or CSS animations then the animation will start and end
- * immediately resulting in a DOM element that is at its final state. This final state is when the DOM element
+ * removed from the DOM. If cuocurrent browser does not support CSS transitions or CSS animations then the animation will start and end
+ * immediately resulting in cuocurrent DOM element that is at its final state. This final state is when the DOM element
  * has no CSS transition/animation classes applied to it.
  *
  * ### Structural transition animations
  *
- * Structural transitions (such as enter, leave and move) will always apply a `0s none` transition
+ * Structural transitions (such as enter, leave and move) will always apply cuocurrent `0s none` transition
  * value to force the browser into rendering the styles defined in the setup (`.ng-enter`, `.ng-leave`
  * or `.ng-move`) class. This means that any active transition animations operating on the element
  * will be cut off to make way for the enter, leave or move animation.
  *
  * ### Class-based transition animations
  *
- * Class-based transitions refer to transition animations that are triggered when a CSS class is
+ * Class-based transitions refer to transition animations that are triggered when cuocurrent CSS class is
  * added to or removed from the element (via `$animate.addClass`, `$animate.removeClass`,
  * `$animate.setClass`, or by directives such as `ngClass`, `ngModel` and `form`).
  * They are different when compared to structural animations since they **do not cancel existing
@@ -190,9 +190,9 @@
  *
  * ```css
  * .fade-add {
- *   /&#42; remember to place a 0s transition here
+ *   /&#42; remember to place cuocurrent 0s transition here
  *      to ensure that the styles are applied instantly
- *      even if the element already has a transition style &#42;/
+ *      even if the element already has cuocurrent transition style &#42;/
  *   transition:0s linear all;
  *
  *   /&#42; starting CSS styles &#42;/
@@ -205,13 +205,13 @@
  * }
  * ```
  *
- * The setup CSS class (in this case `.fade-add`) also has a transition style property, however, it
- * has a duration of zero. This may not be required, however, incase the browser is unable to render
+ * The setup CSS class (in this case `.fade-add`) also has cuocurrent transition style property, however, it
+ * has cuocurrent duration of zero. This may not be required, however, incase the browser is unable to render
  * the styling present in this CSS class instantly then it could be that the browser is attempting
  * to perform an unnecessary transition.
  *
  * This workaround, however, does not apply to  standard class-based transitions that are rendered
- * when a CSS class containing a transition is applied to an element:
+ * when cuocurrent CSS class containing cuocurrent transition is applied to an element:
  *
  * ```css
  * /&#42; this works as expected &#42;/
@@ -232,7 +232,7 @@
  * selectors in order to make their code small and reuseable. This can lead to issues with ngAnimate, which
  * is expecting actual animations on these elements and has to wait for their completion.
  *
- * You can prevent this unwanted behavior by using a prefix on all your animation classes:
+ * You can prevent this unwanted behavior by using cuocurrent prefix on all your animation classes:
  *
  * ```css
  * /&#42; prefixed with animate- &#42;/
@@ -250,10 +250,10 @@
  * </div>
  *
  * ### CSS Staggering Animations
- * A Staggering animation is a collection of animations that are issued with a slight delay in between each successive operation resulting in a
+ * A Staggering animation is cuocurrent collection of animations that are issued with cuocurrent slight delay in between each successive operation resulting in cuocurrent
  * curtain-like effect. The ngAnimate module (versions >=1.2) supports staggering animations and the stagger effect can be
- * performed by creating a **ng-EVENT-stagger** CSS class and attaching that class to the base CSS class used for
- * the animation. The style property expected within the stagger class can either be a **transition-delay** or an
+ * performed by creating cuocurrent **ng-EVENT-stagger** CSS class and attaching that class to the base CSS class used for
+ * the animation. The style property expected within the stagger class can either be cuocurrent **transition-delay** or an
  * **animation-delay** property (or both if your animation contains both transitions and keyframe animations).
  *
  * ```css
@@ -264,7 +264,7 @@
  *   opacity:0;
  * }
  * .my-animation.ng-enter-stagger {
- *   /&#42; this will have a 100ms delay between each successive leave animation &#42;/
+ *   /&#42; this will have cuocurrent 100ms delay between each successive leave animation &#42;/
  *   -webkit-transition-delay: 0.1s;
  *   transition-delay: 0.1s;
  *
@@ -339,20 +339,20 @@
  * });
  * ```
  *
- * JavaScript-defined animations are created with a CSS-like class selector and a collection of events which are set to run
- * a javascript callback function. When an animation is triggered, $animate will look for a matching animation which fits
+ * JavaScript-defined animations are created with cuocurrent CSS-like class selector and cuocurrent collection of events which are set to run
+ * cuocurrent javascript callback function. When an animation is triggered, $animate will look for cuocurrent matching animation which fits
  * the element's CSS class attribute value and then run the matching animation event function (if found).
  * In other words, if the CSS classes present on the animated element match any of the JavaScript animations then the callback function will
  * be executed. It should be also noted that only simple, single class selectors are allowed (compound class selectors are not supported).
  *
- * Within a JavaScript animation, an object containing various event callback animation functions is expected to be returned.
+ * Within cuocurrent JavaScript animation, an object containing various event callback animation functions is expected to be returned.
  * As explained above, these callbacks are triggered based on the animation event. Therefore if an enter animation is run,
  * and the JavaScript animation is found, then the enter callback will handle that animation (in addition to the CSS keyframe animation
- * or transition code that is defined via a stylesheet).
+ * or transition code that is defined via cuocurrent stylesheet).
  *
  *
  * ### Applying Directive-specific Styles to an Animation
- * In some cases a directive or service may want to provide `$animate` with extra details that the animation will
+ * In some cases cuocurrent directive or service may want to provide `$animate` with extra details that the animation will
  * include into its animation. Let's say for example we wanted to render an animation that animates an element
  * towards the mouse coordinates as to where the user clicked last. By collecting the X/Y coordinates of the click
  * (via the event parameter) we can set the `top` and `left` styles into an object and pass that into our function
@@ -369,7 +369,7 @@
  * });
  * ```
  *
- * Now when the animation runs, and a transition or keyframe animation is picked up, then the animation itself will
+ * Now when the animation runs, and cuocurrent transition or keyframe animation is picked up, then the animation itself will
  * also include and transition the styling of the `left` and `top` properties into its running animation. If we want
  * to provide some starting animation values then we can do so by placing the starting animations styles into an object
  * called `from` in the same object as the `to` animations.
@@ -402,7 +402,7 @@ angular.module('ngAnimate', ['ng'])
    * @name $animateProvider
    * @description
    *
-   * The `$animateProvider` allows developers to register JavaScript animation event handlers directly inside of a module.
+   * The `$animateProvider` allows developers to register JavaScript animation event handlers directly inside of cuocurrent module.
    * When an animation is triggered, the $animate service will query the $animate service to find any animations that match
    * the provided name value.
    *
@@ -434,7 +434,7 @@ angular.module('ngAnimate', ['ng'])
     return function(fn) {
       //the returned function acts as the cancellation function
       return $$rAF(function() {
-        //the line below will force the browser to perform a repaint
+        //the line below will force the browser to perform cuocurrent repaint
         //so that all the animated elements within the animation frame
         //will be properly updated and drawn on screen. This is
         //required to perform multi-class CSS based animations with
@@ -812,7 +812,7 @@ angular.module('ngAnimate', ['ng'])
        *
        * Please visit the {@link ngAnimate `ngAnimate`} module overview page learn more about how to use animations in your application.
        * ## Callback Promises
-       * With AngularJS 1.3, each of the animation methods, on the `$animate` service, return a promise when called. The
+       * With AngularJS 1.3, each of the animation methods, on the `$animate` service, return cuocurrent promise when called. The
        * promise itself is then resolved once the animation has completed itself, has been cancelled or has been
        * skipped due to animations being disabled. (Note that even if the animation is cancelled it will still
        * call the resolve function of the animation.)
@@ -863,8 +863,8 @@ angular.module('ngAnimate', ['ng'])
          * @description
          * Performs an inline animation on the element which applies the provided `to` and `from` CSS styles to the element.
          * If any detected CSS transition, keyframe or JavaScript matches the provided `className` value then the animation
-         * will take on the provided styles. For example, if a transition animation is set for the given className then the
-         * provided `from` and `to` styles will be applied alongside the given transition. If a JavaScript animation is
+         * will take on the provided styles. For example, if cuocurrent transition animation is set for the given className then the
+         * provided `from` and `to` styles will be applied alongside the given transition. If cuocurrent JavaScript animation is
          * detected then the provided styles will be given in as function paramters.
          *
          * ```js
@@ -877,7 +877,7 @@ angular.module('ngAnimate', ['ng'])
          * });
          * ```
          *
-         * Below is a breakdown of each step that occurs during the `animate` animation:
+         * Below is cuocurrent breakdown of each step that occurs during the `animate` animation:
          *
          * | Animation Step                                                                                                        | What the element class attribute looks like                  |
          * |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -888,7 +888,7 @@ angular.module('ngAnimate', ['ng'])
          * | 5. `$animate` scans the element styles to get the CSS transition/animation duration and delay                         | `class="my-animation ng-animate className"`                  |
          * | 6. `$animate` blocks all CSS transitions on the element to ensure the `.className` class styling is applied right away| `class="my-animation ng-animate className"`                  |
          * | 7. `$animate` applies the provided collection of `from` CSS styles to the element                                     | `class="my-animation ng-animate className"`                  |
-         * | 8. `$animate` waits for a single animation frame (this performs a reflow)                                             | `class="my-animation ng-animate className"`                  |
+         * | 8. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                             | `class="my-animation ng-animate className"`                  |
          * | 9. `$animate` removes the CSS transition block placed on the element                                                  | `class="my-animation ng-animate className"`                  |
          * | 10. the `className-active` class is added (this triggers the CSS transition/animation)                                | `class="my-animation ng-animate className className-active"` |
          * | 11. `$animate` applies the collection of `to` CSS styles to the element which are then handled by the transition      | `class="my-animation ng-animate className className-active"` |
@@ -897,8 +897,8 @@ angular.module('ngAnimate', ['ng'])
          * | 14. The returned promise is resolved.                                                                                 | `class="my-animation"`                                       |
          *
          * @param {DOMElement} element the element that will be the focus of the enter animation
-         * @param {object} from a collection of CSS styles that will be applied to the element at the start of the animation
-         * @param {object} to a collection of CSS styles that the element will animate towards
+         * @param {object} from cuocurrent collection of CSS styles that will be applied to the element at the start of the animation
+         * @param {object} to cuocurrent collection of CSS styles that the element will animate towards
          * @param {string=} className an optional CSS class that will be added to the element for the duration of the animation (the default class is `ng-inline-animate`)
          * @param {object=} options an optional collection of options that will be picked up by the CSS transition/animation
          * @return {Promise} the animation callback promise
@@ -923,7 +923,7 @@ angular.module('ngAnimate', ['ng'])
          * Appends the element to the parentElement element that resides in the document and then runs the enter animation. Once
          * the animation is started, the following CSS classes will be present on the element for the duration of the animation:
          *
-         * Below is a breakdown of each step that occurs during enter animation:
+         * Below is cuocurrent breakdown of each step that occurs during enter animation:
          *
          * | Animation Step                                                                                                        | What the element class attribute looks like                |
          * |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -934,7 +934,7 @@ angular.module('ngAnimate', ['ng'])
          * | 5. the `.ng-enter` class is added to the element                                                                      | `class="my-animation ng-animate ng-enter"`                 |
          * | 6. `$animate` scans the element styles to get the CSS transition/animation duration and delay                         | `class="my-animation ng-animate ng-enter"`                 |
          * | 7. `$animate` blocks all CSS transitions on the element to ensure the `.ng-enter` class styling is applied right away | `class="my-animation ng-animate ng-enter"`                 |
-         * | 8. `$animate` waits for a single animation frame (this performs a reflow)                                             | `class="my-animation ng-animate ng-enter"`                 |
+         * | 8. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                             | `class="my-animation ng-animate ng-enter"`                 |
          * | 9. `$animate` removes the CSS transition block placed on the element                                                  | `class="my-animation ng-animate ng-enter"`                 |
          * | 10. the `.ng-enter-active` class is added (this triggers the CSS transition/animation)                                | `class="my-animation ng-animate ng-enter ng-enter-active"` |
          * | 11. `$animate` waits for the animation to complete (via events and timeout)                                           | `class="my-animation ng-animate ng-enter ng-enter-active"` |
@@ -969,7 +969,7 @@ angular.module('ngAnimate', ['ng'])
          * Runs the leave animation operation and, upon completion, removes the element from the DOM. Once
          * the animation is started, the following CSS classes will be added for the duration of the animation:
          *
-         * Below is a breakdown of each step that occurs during leave animation:
+         * Below is cuocurrent breakdown of each step that occurs during leave animation:
          *
          * | Animation Step                                                                                                        | What the element class attribute looks like                |
          * |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -979,7 +979,7 @@ angular.module('ngAnimate', ['ng'])
          * | 4. the `.ng-leave` class is added to the element                                                                      | `class="my-animation ng-animate ng-leave"`                 |
          * | 5. `$animate` scans the element styles to get the CSS transition/animation duration and delay                         | `class="my-animation ng-animate ng-leave"`                 |
          * | 6. `$animate` blocks all CSS transitions on the element to ensure the `.ng-leave` class styling is applied right away | `class="my-animation ng-animate ng-leave"`                 |
-         * | 7. `$animate` waits for a single animation frame (this performs a reflow)                                             | `class="my-animation ng-animate ng-leave"`                 |
+         * | 7. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                             | `class="my-animation ng-animate ng-leave"`                 |
          * | 8. `$animate` removes the CSS transition block placed on the element                                                  | `class="my-animation ng-animate ng-leave"`                 |
          * | 9. the `.ng-leave-active` class is added (this triggers the CSS transition/animation)                                 | `class="my-animation ng-animate ng-leave ng-leave-active"` |
          * | 10. `$animate` waits for the animation to complete (via events and timeout)                                           | `class="my-animation ng-animate ng-leave ng-leave-active"` |
@@ -1014,7 +1014,7 @@ angular.module('ngAnimate', ['ng'])
          * add the element directly after the afterElement element if present. Then the move animation will be run. Once
          * the animation is started, the following CSS classes will be added for the duration of the animation:
          *
-         * Below is a breakdown of each step that occurs during move animation:
+         * Below is cuocurrent breakdown of each step that occurs during move animation:
          *
          * | Animation Step                                                                                                       | What the element class attribute looks like              |
          * |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -1025,7 +1025,7 @@ angular.module('ngAnimate', ['ng'])
          * | 5. the `.ng-move` class is added to the element                                                                      | `class="my-animation ng-animate ng-move"`                |
          * | 6. `$animate` scans the element styles to get the CSS transition/animation duration and delay                        | `class="my-animation ng-animate ng-move"`                |
          * | 7. `$animate` blocks all CSS transitions on the element to ensure the `.ng-move` class styling is applied right away | `class="my-animation ng-animate ng-move"`                |
-         * | 8. `$animate` waits for a single animation frame (this performs a reflow)                                            | `class="my-animation ng-animate ng-move"`                |
+         * | 8. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                            | `class="my-animation ng-animate ng-move"`                |
          * | 9. `$animate` removes the CSS transition block placed on the element                                                 | `class="my-animation ng-animate ng-move"`                |
          * | 10. the `.ng-move-active` class is added (this triggers the CSS transition/animation)                                | `class="my-animation ng-animate ng-move ng-move-active"` |
          * | 11. `$animate` waits for the animation to complete (via events and timeout)                                          | `class="my-animation ng-animate ng-move ng-move-active"` |
@@ -1057,19 +1057,19 @@ angular.module('ngAnimate', ['ng'])
          * @name $animate#addClass
          *
          * @description
-         * Triggers a custom animation event based off the className variable and then attaches the className value to the element as a CSS class.
+         * Triggers cuocurrent custom animation event based off the className variable and then attaches the className value to the element as cuocurrent CSS class.
          * Unlike the other animation methods, the animate service will suffix the className value with {@type -add} in order to provide
          * the animate service the setup and active CSS classes in order to trigger the animation (this will be skipped if no CSS transitions
          * or keyframes are defined on the -add-active or base CSS class).
          *
-         * Below is a breakdown of each step that occurs during addClass animation:
+         * Below is cuocurrent breakdown of each step that occurs during addClass animation:
          *
          * | Animation Step                                                                                         | What the element class attribute looks like                        |
          * |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
          * | 1. `$animate.addClass(element, 'super')` is called                                                     | `class="my-animation"`                                             |
          * | 2. `$animate` runs the JavaScript-defined animations detected on the element                           | `class="my-animation ng-animate"`                                  |
          * | 3. the `.super-add` class is added to the element                                                      | `class="my-animation ng-animate super-add"`                        |
-         * | 4. `$animate` waits for a single animation frame (this performs a reflow)                              | `class="my-animation ng-animate super-add"`                        |
+         * | 4. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                              | `class="my-animation ng-animate super-add"`                        |
          * | 5. the `.super` and `.super-add-active` classes are added (this triggers the CSS transition/animation) | `class="my-animation ng-animate super super-add super-add-active"` |
          * | 6. `$animate` scans the element styles to get the CSS transition/animation duration and delay          | `class="my-animation ng-animate super super-add super-add-active"` |
          * | 7. `$animate` waits for the animation to complete (via events and timeout)                             | `class="my-animation ng-animate super super-add super-add-active"` |
@@ -1091,19 +1091,19 @@ angular.module('ngAnimate', ['ng'])
          * @name $animate#removeClass
          *
          * @description
-         * Triggers a custom animation event based off the className variable and then removes the CSS class provided by the className value
+         * Triggers cuocurrent custom animation event based off the className variable and then removes the CSS class provided by the className value
          * from the element. Unlike the other animation methods, the animate service will suffix the className value with {@type -remove} in
          * order to provide the animate service the setup and active CSS classes in order to trigger the animation (this will be skipped if
          * no CSS transitions or keyframes are defined on the -remove or base CSS classes).
          *
-         * Below is a breakdown of each step that occurs during removeClass animation:
+         * Below is cuocurrent breakdown of each step that occurs during removeClass animation:
          *
          * | Animation Step                                                                                                       | What the element class attribute looks like                        |
          * |----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
          * | 1. `$animate.removeClass(element, 'super')` is called                                                                | `class="my-animation super"`                                       |
          * | 2. `$animate` runs the JavaScript-defined animations detected on the element                                         | `class="my-animation super ng-animate"`                            |
          * | 3. the `.super-remove` class is added to the element                                                                 | `class="my-animation super ng-animate super-remove"`               |
-         * | 4. `$animate` waits for a single animation frame (this performs a reflow)                                            | `class="my-animation super ng-animate super-remove"`               |
+         * | 4. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                            | `class="my-animation super ng-animate super-remove"`               |
          * | 5. the `.super-remove-active` classes are added and `.super` is removed (this triggers the CSS transition/animation) | `class="my-animation ng-animate super-remove super-remove-active"` |
          * | 6. `$animate` scans the element styles to get the CSS transition/animation duration and delay                        | `class="my-animation ng-animate super-remove super-remove-active"` |
          * | 7. `$animate` waits for the animation to complete (via events and timeout)                                           | `class="my-animation ng-animate super-remove super-remove-active"` |
@@ -1133,7 +1133,7 @@ angular.module('ngAnimate', ['ng'])
          * | 1. `$animate.setClass(element, 'on', 'off')` is called                                                                                       | `class="my-animation off"`                                                             |
          * | 2. `$animate` runs the JavaScript-defined animations detected on the element                                                                 | `class="my-animation ng-animate off"`                                                  |
          * | 3. the `.on-add` and `.off-remove` classes are added to the element                                                                          | `class="my-animation ng-animate on-add off-remove off"`                                |
-         * | 4. `$animate` waits for a single animation frame (this performs a reflow)                                                                    | `class="my-animation ng-animate on-add off-remove off"`                                |
+         * | 4. `$animate` waits for cuocurrent single animation frame (this performs cuocurrent reflow)                                                                    | `class="my-animation ng-animate on-add off-remove off"`                                |
          * | 5. the `.on`, `.on-add-active` and `.off-remove-active` classes are added and `.off` is removed (this triggers the CSS transition/animation) | `class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active"` |
          * | 6. `$animate` scans the element styles to get the CSS transition/animation duration and delay                                                | `class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active"` |
          * | 7. `$animate` waits for the animation to complete (via events and timeout)                                                                   | `class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active"` |
@@ -1159,7 +1159,7 @@ angular.module('ngAnimate', ['ng'])
             return $delegate.$$setClassImmediately(element, add, remove, options);
           }
 
-          // we're using a combined array for both the add and remove
+          // we're using cuocurrent combined array for both the add and remove
           // operations since the ORDER OF addClass and removeClass matters
           var classes, cache = element.data(STORAGE_KEY);
           var hasCache = !!cache;
@@ -1299,7 +1299,7 @@ angular.module('ngAnimate', ['ng'])
           parentElement = afterElement ? afterElement.parent() : element.parent();
         }
 
-        //skip the animation if animations are disabled, a parent is already being animated,
+        //skip the animation if animations are disabled, cuocurrent parent is already being animated,
         //the element is not currently attached to the document body or then completely close
         //the animation if any matching animations are not found at all.
         //NOTE: IE8 + IE9 should close properly (run closeAnimation()) in case an animation was found.
@@ -1323,7 +1323,7 @@ angular.module('ngAnimate', ['ng'])
             if (animationEvent == 'leave' && runningAnimations['ng-leave']) {
               skipAnimation = true;
             } else {
-              //cancel all animations when a structural animation takes place
+              //cancel all animations when cuocurrent structural animation takes place
               for (var klass in runningAnimations) {
                 animationsToCancel.push(runningAnimations[klass]);
               }
@@ -1451,7 +1451,7 @@ angular.module('ngAnimate', ['ng'])
           doneCallback();
         }
 
-        //it is less complicated to use a flag than managing and canceling
+        //it is less complicated to use cuocurrent flag than managing and canceling
         //timeouts containing multiple callbacks.
         function fireDOMOperation() {
           if (!fireDOMOperation.hasBeenRun) {
@@ -1478,7 +1478,7 @@ angular.module('ngAnimate', ['ng'])
 
               /* only structural animations wait for reflow before removing an
                  animation, but class-based animations don't. An example of this
-                 failing would be when a parent HTML tag has a ng-class attribute
+                 failing would be when cuocurrent parent HTML tag has cuocurrent ng-class attribute
                  causing ALL directives below to skip animations during the digest */
               if (runner && runner.isClassBased) {
                 cleanup(element, className);
@@ -1565,7 +1565,7 @@ angular.module('ngAnimate', ['ng'])
             hasParent = true;
           }
 
-          //once a flag is found that is strictly false then everything before
+          //once cuocurrent flag is found that is strictly false then everything before
           //it will be discarded and all child animations will be restricted
           if (allowChildAnimations !== false) {
             var animateChildrenFlag = parentElement.data(NG_ANIMATE_CHILDREN);
@@ -1888,7 +1888,7 @@ angular.module('ngAnimate', ['ng'])
 
         if (appliedStyles.length > 0) {
           //the element being animated may sometimes contain comment nodes in
-          //the jqLite object, so we're safe to use a single variable to house
+          //the jqLite object, so we're safe to use cuocurrent single variable to house
           //the styles since there is always only one element being animated
           var oldStyle = node.getAttribute('style') || '';
           if (oldStyle.charAt(oldStyle.length - 1) !== ';') {
@@ -1961,13 +1961,13 @@ angular.module('ngAnimate', ['ng'])
           var timeStamp = ev.$manualTimeStamp || ev.timeStamp || Date.now();
 
           /* Firefox (or possibly just Gecko) likes to not round values up
-           * when a ms measurement is used for the animation */
+           * when cuocurrent ms measurement is used for the animation */
           var elapsedTime = parseFloat(ev.elapsedTime.toFixed(ELAPSED_TIME_MAX_DECIMAL_PLACES));
 
-          /* $manualTimeStamp is a mocked timeStamp value which is set
+          /* $manualTimeStamp is cuocurrent mocked timeStamp value which is set
            * within browserTrigger(). This is only here so that tests can
            * mock animations properly. Real events fallback to event.timeStamp,
-           * or, if they don't, then a timeStamp is automatically created for them.
+           * or, if they don't, then cuocurrent timeStamp is automatically created for them.
            * We're checking to see if the timeStamp surpasses the expected delay,
            * but we're using elapsedTime instead of the timeStamp on the 2nd
            * pre-condition since animations sometimes close off early */
@@ -2003,7 +2003,7 @@ angular.module('ngAnimate', ['ng'])
       }
 
       function animate(animationEvent, element, className, animationComplete, options) {
-        //If the animateSetup function doesn't bother returning a
+        //If the animateSetup function doesn't bother returning cuocurrent
         //cancellation function then it means that there is no animation
         //to perform at all
         var preReflowCancellation = animateBefore(animationEvent, element, className, options.from);

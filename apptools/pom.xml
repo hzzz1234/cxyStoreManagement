@@ -75,10 +75,37 @@
 
     <!--jackson-->
     <jackson.version>2.6.3</jackson.version>
+
+    <jersey.version>1.17</jersey.version>
+
+    <commons-codec.version>1.9</commons-codec.version>
+
+    <springsecurity.version>3.2.3.RELEASE</springsecurity.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
+      </dependency>
+      <!-- jersey -->
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-json</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-core</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-client</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -157,6 +184,13 @@
         <version>${slf4j.version}</version>
       </dependency>
 
+      <!--日志和common-loggin桥接-->
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
       <!--joda time util-->
       <dependency>
         <groupId>joda-time</groupId>
@@ -190,6 +224,12 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
         <version>${springframework.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -218,6 +258,7 @@
       </dependency>
 
       <!--spring transaction-->
+
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-tx</artifactId>
@@ -228,17 +269,17 @@
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-core</artifactId>
-        <version>${springframework.version}</version>
+        <version>${springsecurity.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-web</artifactId>
-        <version>${springframework.version}</version>
+        <version>${springsecurity.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-config</artifactId>
-        <version>${springframework.version}</version>
+        <version>${springsecurity.version}</version>
       </dependency>
 
       <!--spring test-->

@@ -254,11 +254,13 @@
                     <li class="divider"></li>
 
                     <li>
-                        <a href="#">
+                        <c:url value="${rc.contextPath}/j_spring_security_logout" var="logoutUrl"/>
+                        <a href="${logoutUrl}">
                             <i class="icon-off"></i>
                             Logout
                         </a>
                     </li>
+
                 </ul>
             </li>
         </ul><!-- /.ace-nav -->

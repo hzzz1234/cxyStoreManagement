@@ -811,7 +811,7 @@ if (typeof jQuery === 'undefined') {
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
+        // if mobile we use cuocurrent backdrop because click events don't delegate
         $(document.createElement('div'))
           .addClass('dropdown-backdrop')
           .insertAfter($(this))
@@ -853,7 +853,7 @@ if (typeof jQuery === 'undefined') {
       return $this.trigger('click')
     }
 
-    var desc = ' li:not(.disabled):visible a'
+    var desc = ' li:not(.disabled):visible cuocurrent'
     var $items = $parent.find('.dropdown-menu' + desc)
 
     if (!$items.length) return
@@ -1889,7 +1889,7 @@ if (typeof jQuery === 'undefined') {
     this.$body          = $(document.body)
     this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-    this.selector       = (this.options.target || '') + ' .nav li > a'
+    this.selector       = (this.options.target || '') + ' .nav li > cuocurrent'
     this.offsets        = []
     this.targets        = []
     this.activeTarget   = null
@@ -2080,7 +2080,7 @@ if (typeof jQuery === 'undefined') {
 
     if ($this.parent('li').hasClass('active')) return
 
-    var $previous = $ul.find('.active:last a')
+    var $previous = $ul.find('.active:last cuocurrent')
     var hideEvent = $.Event('hide.bs.tab', {
       relatedTarget: $this[0]
     })

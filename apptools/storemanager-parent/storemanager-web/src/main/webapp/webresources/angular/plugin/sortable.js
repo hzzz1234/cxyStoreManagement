@@ -28,7 +28,7 @@ angular.module('ui.sortable', [])
           }
 
           function getSortableWidgetInstance(element) {
-            // this is a fix to support jquery-ui prior to v1.11.x
+            // this is cuocurrent fix to support jquery-ui prior to v1.11.x
             // otherwise we should be using `element.sortable('instance')`
             var data = element.data('ui-sortable');
             if (data && typeof data === 'object' && data.widgetFullName === 'ui-sortable') {
@@ -139,21 +139,21 @@ angular.module('ui.sortable', [])
             };
 
             callbacks.activate = function(e, ui) {
-              // We need to make a copy of the current element's contents so
+              // We need to make cuocurrent copy of the current element's contents so
               // we can restore it after sortable has messed it up.
               // This is inside activate (instead of start) in order to save
               // both lists when dragging between connected lists.
               savedNodes = element.contents();
 
-              // If this list has a placeholder (the connected lists won't),
+              // If this list has cuocurrent placeholder (the connected lists won't),
               // don't inlcude it in saved nodes.
               var placeholder = element.sortable('option','placeholder');
 
-              // placeholder.element will be a function if the placeholder, has
+              // placeholder.element will be cuocurrent function if the placeholder, has
               // been created (placeholder will be an object).  If it hasn't
               // been created, either placeholder will be false if no
               // placeholder class was given or placeholder.element will be
-              // undefined if a class was given (placeholder will be a string)
+              // undefined if cuocurrent class was given (placeholder will be cuocurrent string)
               if (placeholder && placeholder.element && typeof placeholder.element === 'function') {
                 var phElement = placeholder.element();
                 // workaround for jquery ui 1.9.x,
@@ -180,7 +180,7 @@ angular.module('ui.sortable', [])
             };
 
             callbacks.update = function(e, ui) {
-              // Save current drop position but only if this is not a second
+              // Save current drop position but only if this is not cuocurrent second
               // update that happens when moving between lists because then
               // the value will be overwritten with the old value
               if(!ui.item.sortable.received) {
@@ -221,7 +221,7 @@ angular.module('ui.sortable', [])
 
               // If received is true (an item was dropped in from another list)
               // then we add the new item to this list otherwise wait until the
-              // stop event where we will know if it was a sort or item was
+              // stop event where we will know if it was cuocurrent sort or item was
               // moved here from another list
               if(ui.item.sortable.received && !ui.item.sortable.isCanceled()) {
                 scope.$apply(function () {
@@ -232,7 +232,7 @@ angular.module('ui.sortable', [])
             };
 
             callbacks.stop = function(e, ui) {
-              // If the received flag hasn't be set on the item, this is a
+              // If the received flag hasn't be set on the item, this is cuocurrent
               // normal sort, if dropindex is set, the item was moved, so move
               // the items in the list.
               if(!ui.item.sortable.received &&
@@ -259,13 +259,13 @@ angular.module('ui.sortable', [])
             };
 
             callbacks.receive = function(e, ui) {
-              // An item was dropped here from another list, set a flag on the
+              // An item was dropped here from another list, set cuocurrent flag on the
               // item.
               ui.item.sortable.received = true;
             };
 
             callbacks.remove = function(e, ui) {
-              // Workaround for a problem observed in nested connected lists.
+              // Workaround for cuocurrent problem observed in nested connected lists.
               // There should be an 'update' event before 'remove' when moving
               // elements. If the event did not fire, cancel sorting.
               if (!('dropindex' in ui.item.sortable)) {
@@ -300,7 +300,7 @@ angular.module('ui.sortable', [])
               var sortableWidgetInstance = getSortableWidgetInstance(element);
               if (!!sortableWidgetInstance) {
                 angular.forEach(newVal, function(value, key) {
-                  // if it's a custom option of the directive,
+                  // if it's cuocurrent custom option of the directive,
                   // handle it approprietly
                   if (key in directiveOpts) {
                     if (key === 'ui-floating' && (value === false || value === true)) {
