@@ -46,8 +46,8 @@
             </small>
           </h1>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
+        <div class="row" >
+          <div class="col-xs-12" style="overflow: scroll">
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
               <div class="col-xs-12">
@@ -75,8 +75,9 @@
                         </div>
                       </div>
                     </div>
-                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
-                    <thead style="overflow: scroll">
+                    <div style="overflow: auto">
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" style="width: 1300px">
+                    <thead >
                     <tr role="row">
                       <th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="">
                       <label class="position-relative">
@@ -85,7 +86,7 @@
                       </label>
                     </th>
                       <th class="operate" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="orderoperate: activate to sort column ascending"></th>
-                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="order: activate to sort column ascending">采购订单号</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="order: activate to sort column ascending" style="width: 110px">采购订单号</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="supplier: activate to sort column ascending">供应商</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="shop: activate to sort column ascending">商铺</th>
                       <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Numbers: activate to sort column ascending">采购数量</th>
@@ -95,12 +96,15 @@
                       <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">订单状态</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="pddate: activate to sort column ascending">预计到货时间</th>
                       <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="redater: activate to sort column ascending">实际到货时间</th>
-                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="createtime: activate to sort column ascending">创建时间</th>
-                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="lasttime: activate to sort column ascending">最后更新时间</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-controls="sample-table-2" aria-label="createtime: activate to sort column ascending">创建时间</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-controls="sample-table-2" aria-label="lasttime: activate to sort column ascending">最后更新时间</th>
                     </tr>
                     </thead>
                     <tbody role="alert" aria-live="polite" aria-relevant="all">
+
                     <tr class="odd">
+
+
                       <td class="center  sorting_1">
                         <label class="position-relative">
                           <input type="checkbox" class="ace">
@@ -108,6 +112,21 @@
                         </label>
                       </td>
 
+                      <td>
+                        <div class="hidden-sm hidden-xs action-buttons" width="auto">
+                          <a class="blue" href="#">
+                            <i class="ace-icon glyphicon glyphicon-zoom-in"></i>
+                          </a>
+
+                          <a class="green" href="#">
+                            <i class="ace-icon glyphicon glyphicon-pencil"></i>
+                          </a>
+
+                          <a class="red" href="#">
+                            <i class="ace-icon glyphicon glyphicon-minus"></i>
+                          </a>
+                        </div>
+                      </td>
                       <td class=" ">
                         <a href="#">app.com</a>
                       </td>
@@ -119,24 +138,10 @@
                         <span class="label label-sm label-warning">Expiring</span>
                       </td>
 
-                      <td class=" ">
-                        <div class="hidden-sm hidden-xs action-buttons">
-                          <a class="blue" href="#">
-                            <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                          </a>
-
-                          <a class="green" href="#">
-                            <i class="ace-icon fa fa-pencil bigger-130"></i>
-                          </a>
-
-                          <a class="red" href="#">
-                            <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                          </a>
-                        </div>
-
+                      <td class="hidden-480">
                         <div class="hidden-md hidden-lg">
                           <div class="inline position-relative">
-                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                            <button class="btn btn-minier  dropdown-toggle" data-toggle="dropdown" data-position="auto">
                               <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
                             </button>
 
@@ -144,7 +149,7 @@
                               <li>
                                 <a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																				<i class="ace-icon glyphicon glyphicon-zoom-in"></i>
 																			</span>
                                 </a>
                               </li>
@@ -152,7 +157,7 @@
                               <li>
                                 <a href="#" class="tooltip-success" data-rel="tooltip" title="" data-original-title="Edit">
 																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																				<i class="ace-icon glyphicon glyphicon-pencil"></i>
 																			</span>
                                 </a>
                               </li>
@@ -160,7 +165,7 @@
                               <li>
                                 <a href="#" class="tooltip-error" data-rel="tooltip" title="" data-original-title="Delete">
 																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																				<i class="ace-icon glyphicon glyphicon-remove"></i>
 																			</span>
                                 </a>
                               </li>
@@ -792,6 +797,7 @@
                     </tr>
                     </tbody>
                     </table>
+                    </div>
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10  记录</div>

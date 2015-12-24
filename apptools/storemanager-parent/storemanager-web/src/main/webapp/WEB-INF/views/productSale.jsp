@@ -74,7 +74,8 @@
                         </div>
                       </div>
                     </div>
-                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
+                    <div style="overflow: auto">
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" width="1300px">
                     <thead>
                     <tr role="row">
                       <th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="">
@@ -113,7 +114,21 @@
                           <span class="lbl"></span>
                         </label>
                       </td>
+                      <td>
+                        <div class="hidden-sm hidden-xs action-buttons" width="auto">
+                          <a class="blue" href="#">
+                            <i class="ace-icon glyphicon glyphicon-zoom-in"></i>
+                          </a>
 
+                          <a class="green" href="#">
+                            <i class="ace-icon glyphicon glyphicon-pencil"></i>
+                          </a>
+
+                          <a class="red" href="#">
+                            <i class="ace-icon glyphicon glyphicon-minus"></i>
+                          </a>
+                        </div>
+                      </td>
                       <td class=" ">
                         <a href="#">app.com</a>
                       </td>
@@ -789,7 +804,8 @@
                     </tr>
                     </tbody>
                     </table>
-                    <div class="row">
+                    </div>
+                      <div class="row">
                       <div class="col-xs-6">
                         <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10 行记录</div>
                       </div>

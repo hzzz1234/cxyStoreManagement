@@ -21,6 +21,7 @@ public class ProductSaleController {
         productPurchaseVo.init("product_sale","售卖列表");
         //supplierDefineVo.setCxysuppliercategoryList(supplierService.queryAllValues());
         mv.addObject("basevo",productPurchaseVo);
+        System.out.println("华珍");
         return mv;
     }
 }
