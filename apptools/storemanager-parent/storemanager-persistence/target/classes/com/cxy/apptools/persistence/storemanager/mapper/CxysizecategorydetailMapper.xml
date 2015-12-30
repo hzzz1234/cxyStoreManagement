@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxysizecategorydetailMapper">
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxysizecategorydetail">
+    <id column="sizedetailid" jdbcType="INTEGER" property="sizedetailid" />
+    <result column="sizecategoryid" jdbcType="INTEGER" property="sizecategoryid" />
+    <result column="sizecategoryname" jdbcType="VARCHAR" property="sizecategoryname" />
+    <result column="size" jdbcType="VARCHAR" property="size" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    sizedetailid, sizecategoryid, sizecategoryname, size
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cxysizecategorydetail
+    where sizedetailid = #{sizedetailid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cxysizecategorydetail
+    where sizedetailid = #{sizedetailid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxysizecategorydetail">
+    insert into cxysizecategorydetail (sizedetailid, sizecategoryid, sizecategoryname, 
+      size)
+    values (#{sizedetailid,jdbcType=INTEGER}, #{sizecategoryid,jdbcType=INTEGER}, #{sizecategoryname,jdbcType=VARCHAR}, 
+      #{size,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxysizecategorydetail">
+    insert into cxysizecategorydetail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sizedetailid != null">
+        sizedetailid,
+      </if>
+      <if test="sizecategoryid != null">
+        sizecategoryid,
+      </if>
+      <if test="sizecategoryname != null">
+        sizecategoryname,
+      </if>
+      <if test="size != null">
+        size,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sizedetailid != null">
+        #{sizedetailid,jdbcType=INTEGER},
+      </if>
+      <if test="sizecategoryid != null">
+        #{sizecategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="sizecategoryname != null">
+        #{sizecategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="size != null">
+        #{size,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxysizecategorydetail">
+    update cxysizecategorydetail
+    <set>
+      <if test="sizecategoryid != null">
+        sizecategoryid = #{sizecategoryid,jdbcType=INTEGER},
+      </if>
+      <if test="sizecategoryname != null">
+        sizecategoryname = #{sizecategoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="size != null">
+        size = #{size,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where sizedetailid = #{sizedetailid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxysizecategorydetail">
+    update cxysizecategorydetail
+    set sizecategoryid = #{sizecategoryid,jdbcType=INTEGER},
+      sizecategoryname = #{sizecategoryname,jdbcType=VARCHAR},
+      size = #{size,jdbcType=VARCHAR}
+    where sizedetailid = #{sizedetailid,jdbcType=INTEGER}
+  </update>
+</mapper>

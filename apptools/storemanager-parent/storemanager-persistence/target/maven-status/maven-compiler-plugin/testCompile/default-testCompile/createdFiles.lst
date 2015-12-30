@@ -1,0 +1,5 @@
+com\cxy\apptools\AppTest.class
+com\cxy\apptools\persistence\storemanager\dao\CxysuppliercategoryMapperTest.class
+com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderMapperTest.class
+com\cxy\apptools\persistence\storemanager\dao\BaseMapperTest.class
+com\cxy\apptools\persistence\storemanager\dao\CxyclientcategoryMapperTest.class

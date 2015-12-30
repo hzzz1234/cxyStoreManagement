@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="storemanager-rest:war exploded">
+    <output-path>$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/storemanager-rest</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="storemanager-rest" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-rest\target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="storemanager-rest/web/Web" />
+    </root>
+  </artifact>
+</component>

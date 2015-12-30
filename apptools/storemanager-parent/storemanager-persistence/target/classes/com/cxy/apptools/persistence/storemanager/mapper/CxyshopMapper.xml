@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cxy.apptools.persistence.storemanager.dao.CxyshopMapper">
+  <resultMap id="BaseResultMap" type="com.cxy.apptools.domain.storemanager.Cxyshop">
+    <id column="shopid" jdbcType="INTEGER" property="shopid" />
+    <result column="shopname" jdbcType="VARCHAR" property="shopname" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contactname" jdbcType="VARCHAR" property="contactname" />
+    <result column="contacephone" jdbcType="VARCHAR" property="contacephone" />
+    <result column="fax" jdbcType="VARCHAR" property="fax" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="post" jdbcType="VARCHAR" property="post" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="pshopid" jdbcType="INTEGER" property="pshopid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    shopid, shopname, address, contactname, contacephone, fax, qq, email, post, status, 
+    comment, pshopid, create_time, DataChange_LastTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cxyshop
+    where shopid = #{shopid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cxyshop
+    where shopid = #{shopid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyshop">
+    insert into cxyshop (shopid, shopname, address, 
+      contactname, contacephone, fax, 
+      qq, email, post, status, 
+      comment, pshopid, create_time, 
+      DataChange_LastTime)
+    values (#{shopid,jdbcType=INTEGER}, #{shopname,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{contactname,jdbcType=VARCHAR}, #{contacephone,jdbcType=VARCHAR}, #{fax,jdbcType=VARCHAR}, 
+      #{qq,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{post,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, 
+      #{comment,jdbcType=VARCHAR}, #{pshopid,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyshop">
+    insert into cxyshop
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="shopid != null">
+        shopid,
+      </if>
+      <if test="shopname != null">
+        shopname,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="contactname != null">
+        contactname,
+      </if>
+      <if test="contacephone != null">
+        contacephone,
+      </if>
+      <if test="fax != null">
+        fax,
+      </if>
+      <if test="qq != null">
+        qq,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="post != null">
+        post,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="comment != null">
+        comment,
+      </if>
+      <if test="pshopid != null">
+        pshopid,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="shopid != null">
+        #{shopid,jdbcType=INTEGER},
+      </if>
+      <if test="shopname != null">
+        #{shopname,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="contactname != null">
+        #{contactname,jdbcType=VARCHAR},
+      </if>
+      <if test="contacephone != null">
+        #{contacephone,jdbcType=VARCHAR},
+      </if>
+      <if test="fax != null">
+        #{fax,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="post != null">
+        #{post,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="pshopid != null">
+        #{pshopid,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cxy.apptools.domain.storemanager.Cxyshop">
+    update cxyshop
+    <set>
+      <if test="shopname != null">
+        shopname = #{shopname,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="contactname != null">
+        contactname = #{contactname,jdbcType=VARCHAR},
+      </if>
+      <if test="contacephone != null">
+        contacephone = #{contacephone,jdbcType=VARCHAR},
+      </if>
+      <if test="fax != null">
+        fax = #{fax,jdbcType=VARCHAR},
+      </if>
+      <if test="qq != null">
+        qq = #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="post != null">
+        post = #{post,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null">
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="pshopid != null">
+        pshopid = #{pshopid,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="datachangeLasttime != null">
+        DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where shopid = #{shopid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cxy.apptools.domain.storemanager.Cxyshop">
+    update cxyshop
+    set shopname = #{shopname,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      contactname = #{contactname,jdbcType=VARCHAR},
+      contacephone = #{contacephone,jdbcType=VARCHAR},
+      fax = #{fax,jdbcType=VARCHAR},
+      qq = #{qq,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      post = #{post,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR},
+      pshopid = #{pshopid,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where shopid = #{shopid,jdbcType=INTEGER}
+  </update>
+</mapper>

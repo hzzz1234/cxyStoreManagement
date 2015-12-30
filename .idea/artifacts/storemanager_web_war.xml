@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="storemanager-web:war">
+    <output-path>$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/target</output-path>
+    <root id="archive" name="storemanager-web.war">
+      <element id="artifact" artifact-name="storemanager-web:war exploded" />
+    </root>
+  </artifact>
+</component>
