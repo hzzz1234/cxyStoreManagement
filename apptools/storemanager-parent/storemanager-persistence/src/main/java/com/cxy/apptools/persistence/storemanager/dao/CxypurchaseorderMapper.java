@@ -19,4 +19,5 @@ public interface CxypurchaseorderMapper {
     int updateByPrimaryKey(Cxypurchaseorder record);
 
     List<Cxypurchaseorder> queryCxypurchaseordersByBasequery(Cxypurchaseorderquery cxypurchaseorderquery);
+    List<Cxypurchaseorder> queryAllorders();
 }

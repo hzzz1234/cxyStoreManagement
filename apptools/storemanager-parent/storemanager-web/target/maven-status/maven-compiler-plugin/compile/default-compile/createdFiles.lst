@@ -2,6 +2,7 @@ com\cxy\apptools\web\storemanager\service\imp\SupplierServiceImp.class
 com\cxy\apptools\web\storemanager\vo\page\ClientDefineVo.class
 com\cxy\apptools\web\storemanager\vo\page\SpecAttrDefineVo.class
 com\cxy\apptools\web\storemanager\vo\page\SupplierDefineVo.class
+com\cxy\apptools\web\storemanager\controller\LoginLogoutController.class
 com\cxy\apptools\web\storemanager\service\SupplierService.class
 com\cxy\apptools\web\storemanager\controller\MetaDefineController.class
 com\cxy\apptools\web\storemanager\service\imp\TestServiceImp.class
@@ -15,9 +16,12 @@ com\cxy\apptools\web\storemanager\vo\page\ProductDefineVo.class
 com\cxy\apptools\web\storemanager\controller\ProductInStoreController.class
 com\cxy\apptools\web\storemanager\controller\MainController.class
 com\cxy\apptools\web\storemanager\controller\ProductSaleController.class
+com\cxy\apptools\web\storemanager\service\imp\ProductPurchaseServiceImp.class
 com\cxy\apptools\web\storemanager\vo\page\ProductPurchaseVo.class
 com\cxy\apptools\web\storemanager\vo\page\ProductInStoreVo.class
+com\cxy\apptools\web\storemanager\controller\BaseController.class
 com\cxy\apptools\web\storemanager\controller\SupplierController.class
 com\cxy\apptools\web\storemanager\controller\TestController.class
 com\cxy\apptools\web\storemanager\controller\ProductPurchaseController.class
+com\cxy\apptools\web\storemanager\service\ProductPurchaseService.class
 com\cxy\apptools\App.class

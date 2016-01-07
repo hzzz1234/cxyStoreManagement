@@ -237,4 +237,9 @@
       limit #{page.startItem},#{page.pageSize}
     </if>
   </select>
+  <select id="queryAllorders" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from cxypurchaseorder
+  </select>
 </mapper>

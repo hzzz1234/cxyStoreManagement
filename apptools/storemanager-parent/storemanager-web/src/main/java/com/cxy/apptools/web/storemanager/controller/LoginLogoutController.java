@@ -16,9 +16,9 @@ public class LoginLogoutController extends BaseController{
     public ModelAndView login(@RequestParam(value="error",required = false) String error){
         ModelAndView mv = new ModelAndView();
         String msg = null;
-        if(!StringUtils.isEmpty(error)){
-            msg = "用户名和密码错，请重新输入！";
-        }
+//        if(!StringUtils.isEmpty(error)){
+//            msg = "用户名和密码错，请重新输入！";
+//         }
         mv.addObject("msg",msg);
         mv.setViewName("login");
         return mv;

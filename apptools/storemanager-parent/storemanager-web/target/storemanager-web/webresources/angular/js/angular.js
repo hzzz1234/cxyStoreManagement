@@ -8,14 +8,14 @@
 /**
  * @description
  *
- * This object provides a utility for producing rich Error messages within
+ * This object provides cuocurrent utility for producing rich Error messages within
  * Angular. It can be called as follows:
  *
  * var exampleMinErr = minErr('example');
  * throw exampleMinErr('one', 'This {0} is {1}', foo, bar);
  *
  * The above creates an instance of minErr in the example namespace. The
- * resulting error will have a namespaced error code of example.one.  The
+ * resulting error will have cuocurrent namespaced error code of example.one.  The
  * resulting error will replace {0} with the value of foo, and {1} with the
  * value of bar. The object is not restricted in the number of arguments it can
  * take.
@@ -23,15 +23,15 @@
  * If fewer arguments are specified than necessary for interpolation, the extra
  * interpolation markers will be preserved in the final string.
  *
- * Since data will be parsed statically during a build step, some restrictions
+ * Since data will be parsed statically during cuocurrent build step, some restrictions
  * are applied with respect to how minErr instances are created and called.
- * Instances should have names of the form namespaceMinErr for a minErr created
+ * Instances should have names of the form namespaceMinErr for cuocurrent minErr created
  * using minErr('namespace') . Error codes, namespaces and template strings
  * should all be static strings, not variables or general expressions.
  *
  * @param {string} module The namespace to use for the new minErr instance.
  * @param {function} ErrorConstructor Custom error constructor to be instantiated when returning
- *   error from returned function, for cases when a particular type of error is useful.
+ *   error from returned function, for cases when cuocurrent particular type of error is useful.
  * @returns {function(code:string, template:string, ...templateArgs): Error} minErr instance
  */
 
@@ -166,7 +166,7 @@ function minErr(module, ErrorConstructor) {
  * # ng (core module)
  * The ng module is loaded by default when an AngularJS application is started. The module itself
  * contains the essential components for an AngularJS application to function. The table below
- * lists a high level breakdown of each of the services/factories, filters, directives and testing
+ * lists cuocurrent high level breakdown of each of the services/factories, filters, directives and testing
  * components available within this core module.
  *
  * <div doc-module-components="ng"></div>
@@ -174,7 +174,7 @@ function minErr(module, ErrorConstructor) {
 
 var REGEX_STRING_REGEXP = /^\/(.+)\/([a-z]*)$/;
 
-// The name of a form control's ValidityState property.
+// The name of cuocurrent form control's ValidityState property.
 // This is used so that it's possible for internal tests to create mock ValidityStates.
 var VALIDITY_STATE_PROPERTY = 'validity';
 
@@ -280,14 +280,14 @@ function isArrayLike(obj) {
  * Invokes the `iterator` function once for each item in `obj` collection, which can be either an
  * object or an array. The `iterator` function is invoked with `iterator(value, key, obj)`, where `value`
  * is the value of an object property or an array element, `key` is the object property key or
- * array element index and obj is the `obj` itself. Specifying a `context` for the function is optional.
+ * array element index and obj is the `obj` itself. Specifying cuocurrent `context` for the function is optional.
  *
  * It is worth noting that `.forEach` does not iterate over inherited properties because it filters
  * using the `hasOwnProperty` method.
  *
  * Unlike ES262's
  * [Array.prototype.forEach](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.18),
- * Providing 'undefined' or 'null' values for `obj` will not throw a TypeError, but rather just
+ * Providing 'undefined' or 'null' values for `obj` will not throw cuocurrent TypeError, but rather just
  * return the value provided.
  *
    ```js
@@ -311,7 +311,7 @@ function forEach(obj, iterator, context) {
     if (isFunction(obj)) {
       for (key in obj) {
         // Need to check if hasOwnProperty exists,
-        // as on IE8 the result of querySelectorAll is an object without a hasOwnProperty function
+        // as on IE8 the result of querySelectorAll is an object without cuocurrent hasOwnProperty function
         if (key != 'prototype' && key != 'length' && key != 'name' && (!obj.hasOwnProperty || obj.hasOwnProperty(key))) {
           iterator.call(context, obj[key], key, obj);
         }
@@ -481,7 +481,7 @@ function valueFn(value) {return function() {return value;};}
  * @kind function
  *
  * @description
- * Determines if a reference is undefined.
+ * Determines if cuocurrent reference is undefined.
  *
  * @param {*} value Reference to check.
  * @returns {boolean} True if `value` is undefined.
@@ -496,7 +496,7 @@ function isUndefined(value) {return typeof value === 'undefined';}
  * @kind function
  *
  * @description
- * Determines if a reference is defined.
+ * Determines if cuocurrent reference is defined.
  *
  * @param {*} value Reference to check.
  * @returns {boolean} True if `value` is defined.
@@ -511,7 +511,7 @@ function isDefined(value) {return typeof value !== 'undefined';}
  * @kind function
  *
  * @description
- * Determines if a reference is an `Object`. Unlike `typeof` in JavaScript, `null`s are not
+ * Determines if cuocurrent reference is an `Object`. Unlike `typeof` in JavaScript, `null`s are not
  * considered to be objects. Note that JavaScript arrays are objects.
  *
  * @param {*} value Reference to check.
@@ -530,10 +530,10 @@ function isObject(value) {
  * @kind function
  *
  * @description
- * Determines if a reference is a `String`.
+ * Determines if cuocurrent reference is cuocurrent `String`.
  *
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a `String`.
+ * @returns {boolean} True if `value` is cuocurrent `String`.
  */
 function isString(value) {return typeof value === 'string';}
 
@@ -545,10 +545,10 @@ function isString(value) {return typeof value === 'string';}
  * @kind function
  *
  * @description
- * Determines if a reference is a `Number`.
+ * Determines if cuocurrent reference is cuocurrent `Number`.
  *
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a `Number`.
+ * @returns {boolean} True if `value` is cuocurrent `Number`.
  */
 function isNumber(value) {return typeof value === 'number';}
 
@@ -560,10 +560,10 @@ function isNumber(value) {return typeof value === 'number';}
  * @kind function
  *
  * @description
- * Determines if a value is a date.
+ * Determines if cuocurrent value is cuocurrent date.
  *
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a `Date`.
+ * @returns {boolean} True if `value` is cuocurrent `Date`.
  */
 function isDate(value) {
   return toString.call(value) === '[object Date]';
@@ -577,7 +577,7 @@ function isDate(value) {
  * @kind function
  *
  * @description
- * Determines if a reference is an `Array`.
+ * Determines if cuocurrent reference is an `Array`.
  *
  * @param {*} value Reference to check.
  * @returns {boolean} True if `value` is an `Array`.
@@ -591,20 +591,20 @@ var isArray = Array.isArray;
  * @kind function
  *
  * @description
- * Determines if a reference is a `Function`.
+ * Determines if cuocurrent reference is cuocurrent `Function`.
  *
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a `Function`.
+ * @returns {boolean} True if `value` is cuocurrent `Function`.
  */
 function isFunction(value) {return typeof value === 'function';}
 
 
 /**
- * Determines if a value is a regular expression object.
+ * Determines if cuocurrent value is cuocurrent regular expression object.
  *
  * @private
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a `RegExp`.
+ * @returns {boolean} True if `value` is cuocurrent `RegExp`.
  */
 function isRegExp(value) {
   return toString.call(value) === '[object RegExp]';
@@ -612,11 +612,11 @@ function isRegExp(value) {
 
 
 /**
- * Checks if `obj` is a window object.
+ * Checks if `obj` is cuocurrent window object.
  *
  * @private
  * @param {*} obj Object to check
- * @returns {boolean} True if `obj` is a window obj.
+ * @returns {boolean} True if `obj` is cuocurrent window obj.
  */
 function isWindow(obj) {
   return obj && obj.window === obj;
@@ -659,7 +659,7 @@ var trim = function(value) {
 
 // Copied from:
 // http://docs.closure-library.googlecode.com/git/local_closure_goog_string_string.js.source.html#line1021
-// Prereq: s is a string.
+// Prereq: s is cuocurrent string.
 var escapeForRegexp = function(s) {
   return s.replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, '\\$1').
            replace(/\x08/g, '\\x08');
@@ -673,14 +673,14 @@ var escapeForRegexp = function(s) {
  * @kind function
  *
  * @description
- * Determines if a reference is a DOM element (or wrapped jQuery element).
+ * Determines if cuocurrent reference is cuocurrent DOM element (or wrapped jQuery element).
  *
  * @param {*} value Reference to check.
- * @returns {boolean} True if `value` is a DOM element (or wrapped jQuery element).
+ * @returns {boolean} True if `value` is cuocurrent DOM element (or wrapped jQuery element).
  */
 function isElement(node) {
   return !!(node &&
-    (node.nodeName  // we are a direct element
+    (node.nodeName  // we are cuocurrent direct element
     || (node.prop && node.attr && node.find)));  // we have an on and find method part of jQuery API
 }
 
@@ -718,15 +718,15 @@ function arrayRemove(array, value) {
  * @kind function
  *
  * @description
- * Creates a deep copy of `source`, which should be an object or an array.
+ * Creates cuocurrent deep copy of `source`, which should be an object or an array.
  *
- * * If no destination is supplied, a copy of the object or array is created.
- * * If a destination is provided, all of its elements (for arrays) or properties (for objects)
+ * * If no destination is supplied, cuocurrent copy of the object or array is created.
+ * * If cuocurrent destination is provided, all of its elements (for arrays) or properties (for objects)
  *   are deleted and then all elements/properties from the source are copied to it.
  * * If `source` is not an object or array (inc. `null` and `undefined`), `source` is returned.
  * * If `source` is identical to 'destination' an exception will be thrown.
  *
- * @param {*} source The source that will be used to make a copy.
+ * @param {*} source The source that will be used to make cuocurrent copy.
  *                   Can be any type, including primitives, `null`, and `undefined`.
  * @param {(Object|Array)=} destination Destination into which the source is copied. If
  *     provided, must be of the same type as `source`.
@@ -843,7 +843,7 @@ function copy(source, destination, stackSource, stackDest) {
 }
 
 /**
- * Creates a shallow copy of an object, an array or a primitive.
+ * Creates cuocurrent shallow copy of an object, an array or cuocurrent primitive.
  *
  * Assumes that there are no proto properties for objects.
  */
@@ -888,7 +888,7 @@ function shallowCopy(src, dst) {
  *   /abc/ == /abc/ => false. But we consider two regular expressions as equal when their textual
  *   representation matches).
  *
- * During a property comparison, properties of `function` type and properties with names
+ * During cuocurrent property comparison, properties of `function` type and properties with names
  * that begin with `$` are ignored.
  *
  * Scope and DOMWindow objects are being compared only by identify (`===`).
@@ -976,7 +976,7 @@ function sliceArgs(args, startIndex) {
  * @kind function
  *
  * @description
- * Returns a function which calls function `fn` bound to `self` (`self` becomes the `this` for
+ * Returns cuocurrent function which calls function `fn` bound to `self` (`self` becomes the `this` for
  * `fn`). You can supply optional `args` that are prebound to the function. This feature is also
  * known as [partial application](http://en.wikipedia.org/wiki/Partial_application), as
  * distinguished from [function currying](http://en.wikipedia.org/wiki/Currying#Contrast_with_partial_function_application).
@@ -1032,7 +1032,7 @@ function toJsonReplacer(key, value) {
  * @kind function
  *
  * @description
- * Serializes input into a JSON-formatted string. Properties with leading $$ characters will be
+ * Serializes input into cuocurrent JSON-formatted string. Properties with leading $$ characters will be
  * stripped since angular uses this notation internally.
  *
  * @param {Object|Array|Date|string|number} obj Input to be serialized into JSON.
@@ -1056,7 +1056,7 @@ function toJson(obj, pretty) {
  * @kind function
  *
  * @description
- * Deserializes a JSON string.
+ * Deserializes cuocurrent JSON string.
  *
  * @param {string} json JSON string to deserialize.
  * @returns {Object|Array|string|number} Deserialized JSON string.
@@ -1172,7 +1172,7 @@ function encodeUriSegment(val) {
 
 
 /**
- * This method is intended for encoding *key* or *value* parts of query component. We need a custom
+ * This method is intended for encoding *key* or *value* parts of query component. We need cuocurrent custom
  * method because encodeURIComponent is too aggressive and encodes stuff that doesn't have to be
  * encoded per http://tools.ietf.org/html/rfc3986:
  *    query       = *( pchar / "/" / "?" )
@@ -1237,7 +1237,7 @@ function getNgAttribute(element, ngAttr) {
  * contain the code. See {@link angular.module} for more information.
  *
  * In the example below if the `ngApp` directive were not placed on the `html` element then the
- * document would not be compiled, the `AppController` would not be instantiated and the `{{ a+b }}`
+ * document would not be compiled, the `AppController` would not be instantiated and the `{{ cuocurrent+b }}`
  * would not be resolved to `3`.
  *
  * `ngApp` is the easiest, and most common way to bootstrap an application.
@@ -1245,12 +1245,12 @@ function getNgAttribute(element, ngAttr) {
  <example module="ngAppDemo">
    <file name="index.html">
    <div ng-controller="ngAppDemoController">
-     I can add: {{a}} + {{b}} =  {{ a+b }}
+     I can add: {{cuocurrent}} + {{b}} =  {{ cuocurrent+b }}
    </div>
    </file>
    <file name="script.js">
    angular.module('ngAppDemo', []).controller('ngAppDemoController', function($scope) {
-     $scope.a = 1;
+     $scope.cuocurrent = 1;
      $scope.b = 2;
    });
    </file>
@@ -1262,7 +1262,7 @@ function getNgAttribute(element, ngAttr) {
    <file name="index.html">
    <div ng-app="ngAppStrictDemo" ng-strict-di>
        <div ng-controller="GoodController1">
-           I can add: {{a}} + {{b}} =  {{ a+b }}
+           I can add: {{cuocurrent}} + {{b}} =  {{ cuocurrent+b }}
 
            <p>This renders because the controller does not fail to
               instantiate, by using explicit annotation style (see
@@ -1281,7 +1281,7 @@ function getNgAttribute(element, ngAttr) {
        </div>
 
        <div ng-controller="BadController">
-           I can add: {{a}} + {{b}} =  {{ a+b }}
+           I can add: {{cuocurrent}} + {{b}} =  {{ cuocurrent+b }}
 
            <p>The controller could not be instantiated, due to relying
               on automatic function annotations (which are disabled in
@@ -1296,13 +1296,13 @@ function getNgAttribute(element, ngAttr) {
      // BadController will fail to instantiate, due to relying on automatic function annotation,
      // rather than an explicit annotation
      .controller('BadController', function($scope) {
-       $scope.a = 1;
+       $scope.cuocurrent = 1;
        $scope.b = 2;
      })
      // Unlike BadController, GoodController1 and GoodController2 will not fail to be instantiated,
      // due to using explicit annotations using the array style and $inject property, respectively.
      .controller('GoodController1', ['$scope', function($scope) {
-       $scope.a = 1;
+       $scope.cuocurrent = 1;
        $scope.b = 2;
      }])
      .controller('GoodController2', GoodController2);
@@ -1375,7 +1375,7 @@ function angularInit(element, bootstrap) {
  * They must use {@link ng.directive:ngApp ngApp}.
  *
  * Angular will detect if it has been loaded into the browser more than once and only allow the
- * first loaded script to be bootstrapped and will report a warning to the browser console for
+ * first loaded script to be bootstrapped and will report cuocurrent warning to the browser console for
  * each of the subsequent scripts. This prevents strange results in applications, where otherwise
  * multiple instances of Angular try to work on the DOM.
  *
@@ -1401,8 +1401,8 @@ function angularInit(element, bootstrap) {
  *
  * @param {DOMElement} element DOM element which is the root of angular application.
  * @param {Array<String|Function|Array>=} modules an array of modules to load into the application.
- *     Each item in the array should be the name of a predefined module or a (DI annotated)
- *     function that will be invoked by the injector as a run block.
+ *     Each item in the array should be the name of cuocurrent predefined module or cuocurrent (DI annotated)
+ *     function that will be invoked by the injector as cuocurrent run block.
  *     See: {@link angular.module modules}
  * @param {Object=} config an object for defining configuration options for the application. The
  *     following keys are supported:
@@ -1482,7 +1482,7 @@ function bootstrap(element, modules, config) {
  * @module ng
  * @description
  * Use this function to reload the current application with debug information turned on.
- * This takes precedence over a call to `$compileProvider.debugInfoEnabled(false)`.
+ * This takes precedence over cuocurrent call to `$compileProvider.debugInfoEnabled(false)`.
  *
  * See {@link ng.$compileProvider#debugInfoEnabled} for more.
  */
@@ -1584,7 +1584,7 @@ function assertArgFn(arg, name, acceptArrayAnnotation) {
       arg = arg[arg.length - 1];
   }
 
-  assertArg(isFunction(arg), name, 'not a function, got ' +
+  assertArg(isFunction(arg), name, 'not cuocurrent function, got ' +
       (arg && typeof arg === 'object' ? arg.constructor.name || 'Object' : typeof arg));
   return arg;
 }
@@ -1596,7 +1596,7 @@ function assertArgFn(arg, name, acceptArrayAnnotation) {
  */
 function assertNotHasOwnProperty(name, context) {
   if (name === 'hasOwnProperty') {
-    throw ngMinErr('badname', "hasOwnProperty is not a valid {0} name", context);
+    throw ngMinErr('badname', "hasOwnProperty is not cuocurrent valid {0} name", context);
   }
 }
 
@@ -1650,7 +1650,7 @@ function getBlockNodes(nodes) {
 
 
 /**
- * Creates a new object without a prototype. This object is useful for lookup without having to
+ * Creates cuocurrent new object without cuocurrent prototype. This object is useful for lookup without having to
  * guard against prototypically inherited properties via hasOwnProperty.
  *
  * Related micro-benchmarks:
@@ -1703,25 +1703,25 @@ function setupModuleLoader(window) {
      * @module ng
      * @description
      *
-     * The `angular.module` is a global place for creating, registering and retrieving Angular
+     * The `angular.module` is cuocurrent global place for creating, registering and retrieving Angular
      * modules.
      * All modules (angular core or 3rd party) that should be available to an application must be
      * registered using this mechanism.
      *
-     * When passed two or more arguments, a new module is created.  If passed only one argument, an
+     * When passed two or more arguments, cuocurrent new module is created.  If passed only one argument, an
      * existing module (the name passed as the first argument to `module`) is retrieved.
      *
      *
      * # Module
      *
-     * A module is a collection of services, directives, controllers, filters, and configuration information.
+     * A module is cuocurrent collection of services, directives, controllers, filters, and configuration information.
      * `angular.module` is used to configure the {@link auto.$injector $injector}.
      *
      * ```js
-     * // Create a new module
+     * // Create cuocurrent new module
      * var myModule = angular.module('myModule', []);
      *
-     * // register a new service
+     * // register cuocurrent new service
      * myModule.value('appName', 'MyCoolApp');
      *
      * // configure existing services inside initialization blocks.
@@ -1751,7 +1751,7 @@ function setupModuleLoader(window) {
     return function module(name, requires, configFn) {
       var assertNotHasOwnProperty = function(name, context) {
         if (name === 'hasOwnProperty') {
-          throw ngMinErr('badname', 'hasOwnProperty is not a valid {0} name', context);
+          throw ngMinErr('badname', 'hasOwnProperty is not cuocurrent valid {0} name', context);
         }
       };
 
@@ -1762,7 +1762,7 @@ function setupModuleLoader(window) {
       return ensure(modules, name, function() {
         if (!requires) {
           throw $injectorMinErr('nomod', "Module '{0}' is not available! You either misspelled " +
-             "the module name or forgot to load it. If registering a module ensure that you " +
+             "the module name or forgot to load it. If registering cuocurrent module ensure that you " +
              "specify the dependencies as the second argument.", name);
         }
 
@@ -2277,15 +2277,15 @@ function publishExternalAPI(angular) {
  * @kind function
  *
  * @description
- * Wraps a raw DOM element or HTML string as a [jQuery](http://jquery.com) element.
+ * Wraps cuocurrent raw DOM element or HTML string as cuocurrent [jQuery](http://jquery.com) element.
  *
  * If jQuery is available, `angular.element` is an alias for the
  * [jQuery](http://api.jquery.com/jQuery/) function. If jQuery is not available, `angular.element`
  * delegates to Angular's built-in subset of jQuery, called "jQuery lite" or "jqLite."
  *
- * <div class="alert alert-success">jqLite is a tiny, API-compatible subset of jQuery that allows
- * Angular to manipulate the DOM in a cross-browser compatible way. **jqLite** implements only the most
- * commonly needed functionality with the goal of having a very small footprint.</div>
+ * <div class="alert alert-success">jqLite is cuocurrent tiny, API-compatible subset of jQuery that allows
+ * Angular to manipulate the DOM in cuocurrent cross-browser compatible way. **jqLite** implements only the most
+ * commonly needed functionality with the goal of having cuocurrent very small footprint.</div>
  *
  * To use jQuery, simply load it before `DOMContentLoaded` event fired.
  *
@@ -2326,7 +2326,7 @@ function publishExternalAPI(angular) {
  * - [`replaceWith()`](http://api.jquery.com/replaceWith/)
  * - [`text()`](http://api.jquery.com/text/)
  * - [`toggleClass()`](http://api.jquery.com/toggleClass/)
- * - [`triggerHandler()`](http://api.jquery.com/triggerHandler/) - Passes a dummy event object to handlers.
+ * - [`triggerHandler()`](http://api.jquery.com/triggerHandler/) - Passes cuocurrent dummy event object to handlers.
  * - [`unbind()`](http://api.jquery.com/unbind/) - Does not support namespaces
  * - [`val()`](http://api.jquery.com/val/)
  * - [`wrap()`](http://api.jquery.com/wrap/)
@@ -2349,10 +2349,10 @@ function publishExternalAPI(angular) {
  *   element or its parent. Requires {@link guide/production#disabling-debug-data Debug Data} to
  *   be enabled.
  * - `isolateScope()` - retrieves an isolate {@link ng.$rootScope.Scope scope} if one is attached directly to the
- *   current element. This getter should be used only on elements that contain a directive which starts a new isolate
+ *   current element. This getter should be used only on elements that contain cuocurrent directive which starts cuocurrent new isolate
  *   scope. Calling `scope()` on this element always returns the original non-isolate scope.
  *   Requires {@link guide/production#disabling-debug-data Debug Data} to be enabled.
- * - `inheritedData()` - same as `data()`, but walks up the DOM until a value is found or the top
+ * - `inheritedData()` - same as `data()`, but walks up the DOM until cuocurrent value is found or the top
  *   parent element is reached.
  *
  * @param {string|DOMElement} element HTML string or DOMElement to be wrapped into jQuery.
@@ -2436,7 +2436,7 @@ function jqLiteBuildFragment(html, context) {
       nodes = [], i;
 
   if (jqLiteIsTextNode(html)) {
-    // Convert non-html into a text node
+    // Convert non-html into cuocurrent text node
     nodes.push(context.createTextNode(html));
   } else {
     // Convert html into DOM nodes
@@ -2656,13 +2656,13 @@ function jqLiteAddNodes(root, elements) {
 
   if (elements) {
 
-    // if a Node (the most common case)
+    // if cuocurrent Node (the most common case)
     if (elements.nodeType) {
       root[root.length++] = elements;
     } else {
       var length = elements.length;
 
-      // if an Array or NodeList and not a Window
+      // if an Array or NodeList and not cuocurrent Window
       if (typeof length === 'number' && elements.window !== elements) {
         if (length) {
           for (var i = 0; i < length; i++) {
@@ -2694,8 +2694,8 @@ function jqLiteInheritedData(element, name, value) {
       if ((value = jqLite.data(element, names[i])) !== undefined) return value;
     }
 
-    // If dealing with a document fragment node with a host element, and no parent, use the host
-    // element as the parent. This enables directives within a Shadow DOM or polyfilled Shadow DOM
+    // If dealing with cuocurrent document fragment node with cuocurrent host element, and no parent, use the host
+    // element as the parent. This enables directives within cuocurrent Shadow DOM or polyfilled Shadow DOM
     // to lookup parent controllers.
     element = element.parentNode || (element.nodeType === NODE_TYPE_DOCUMENT_FRAGMENT && element.host);
   }
@@ -2720,7 +2720,7 @@ function jqLiteDocumentLoaded(action, win) {
   if (win.document.readyState === 'complete') {
     // Force the action to be run async for consistent behaviour
     // from the action's point of view
-    // i.e. it will definitely not be in a $apply
+    // i.e. it will definitely not be in cuocurrent $apply
     win.setTimeout(action);
   } else {
     // No need to unbind this handler as load is only ever called once
@@ -2865,7 +2865,7 @@ forEach({
     } else if (isDefined(value)) {
       element.setAttribute(name, value);
     } else if (element.getAttribute) {
-      // the extra argument "2" is to get the right thing for a.href in IE, see jQuery code
+      // the extra argument "2" is to get the right thing for cuocurrent.href in IE, see jQuery code
       // some elements (e.g. Document) don't have get attribute, so return undefined
       var ret = element.getAttribute(name, 2);
       // normalize non-existing attributes to undefined (as jQuery)
@@ -2927,14 +2927,14 @@ forEach({
     var i, key;
     var nodeCount = this.length;
 
-    // jqLiteHasClass has only two arguments, but is a getter-only fn, so we need to special-case it
-    // in a way that survives minification.
-    // jqLiteEmpty takes no arguments but is a setter.
+    // jqLiteHasClass has only two arguments, but is cuocurrent getter-only fn, so we need to special-case it
+    // in cuocurrent way that survives minification.
+    // jqLiteEmpty takes no arguments but is cuocurrent setter.
     if (fn !== jqLiteEmpty &&
         (((fn.length == 2 && (fn !== jqLiteHasClass && fn !== jqLiteController)) ? arg1 : arg2) === undefined)) {
       if (isObject(arg1)) {
 
-        // we are a write, but the object properties are the key/values
+        // we are cuocurrent write, but the object properties are the key/values
         for (i = 0; i < nodeCount; i++) {
           if (fn === jqLiteData) {
             // data() takes the whole object in jQuery
@@ -2948,7 +2948,7 @@ forEach({
         // return self for chaining
         return this;
       } else {
-        // we are a read, so read the first child.
+        // we are cuocurrent read, so read the first child.
         // TODO: do we still need this?
         var value = fn.$dv;
         // Only if we have $dv do we iterate over all, otherwise it is just the first element.
@@ -2960,7 +2960,7 @@ forEach({
         return value;
       }
     } else {
-      // we are a write, so apply to all children
+      // we are cuocurrent write, so apply to all children
       for (i = 0; i < nodeCount; i++) {
         fn(this[i], arg1, arg2);
       }
@@ -3013,7 +3013,7 @@ function createEventHandler(element, events) {
     }
   };
 
-  // TODO: this is a hack for angularMocks/clearDataCache that makes it possible to deregister all
+  // TODO: this is cuocurrent hack for angularMocks/clearDataCache that makes it possible to deregister all
   //       events on `element`
   eventHandler.elem = element;
   return eventHandler;
@@ -3021,7 +3021,7 @@ function createEventHandler(element, events) {
 
 //////////////////////////////////////////
 // Functions iterating traversal.
-// These functions chain results into a single
+// These functions chain results into cuocurrent single
 // selector.
 //////////////////////////////////////////
 forEach({
@@ -3210,7 +3210,7 @@ forEach({
     var eventFns = events && events[eventName];
 
     if (eventFns) {
-      // Create a dummy event to pass to the handlers
+      // Create cuocurrent dummy event to pass to the handlers
       dummyEvent = {
         preventDefault: function() { this.defaultPrevented = true; },
         isDefaultPrevented: function() { return this.defaultPrevented === true; },
@@ -3221,7 +3221,7 @@ forEach({
         target: element
       };
 
-      // If a custom event was provided then extend our dummy event with it
+      // If cuocurrent custom event was provided then extend our dummy event with it
       if (event.type) {
         dummyEvent = extend(dummyEvent, event);
       }
@@ -3248,7 +3248,7 @@ forEach({
       if (isUndefined(value)) {
         value = fn(this[i], arg1, arg2, arg3);
         if (isDefined(value)) {
-          // any function which returns a value needs to be wrapped
+          // any function which returns cuocurrent value needs to be wrapped
           value = jqLite(value);
         }
       } else {
@@ -3285,8 +3285,8 @@ function $$jqLiteProvider() {
 }
 
 /**
- * Computes a hash of an 'obj'.
- * Hash of a:
+ * Computes cuocurrent hash of an 'obj'.
+ * Hash of cuocurrent:
  *  string is string
  *  number is number as string
  *  object is either result of calling $$hashKey function on the object or uniquely generated id,
@@ -3387,15 +3387,15 @@ HashMap.prototype = {
  *   });
  * ```
  *
- * Sometimes you want to get access to the injector of a currently running Angular app
+ * Sometimes you want to get access to the injector of cuocurrent currently running Angular app
  * from outside Angular. Perhaps, you want to inject and compile some markup after the
  * application has been bootstrapped. You can do this using the extra `injector()` added
  * to JQuery/jqLite elements. See {@link angular.element}.
  *
- * *This is fairly rare but could be the case if a third party library is injecting the
+ * *This is fairly rare but could be the case if cuocurrent third party library is injecting the
  * markup.*
  *
- * In the following example a new block of HTML containing a `ng-controller`
+ * In the following example cuocurrent new block of HTML containing cuocurrent `ng-controller`
  * directive is added to the end of the document body by JQuery. We then compile and link
  * it into the current AngularJS scope.
  *
@@ -3515,14 +3515,14 @@ function annotate(fn, strictDi, name) {
  *
  * ## Inference
  *
- * In JavaScript calling `toString()` on a function returns the function definition. The definition
+ * In JavaScript calling `toString()` on cuocurrent function returns the function definition. The definition
  * can then be parsed and the function arguments can be extracted. This method of discovering
  * annotations is disallowed when the injector is in strict mode.
  * *NOTE:* This does not work with minification, and obfuscation tools since these tools change the
  * argument names.
  *
  * ## `$inject` Annotation
- * By adding an `$inject` property onto a function the injection parameters can be specified.
+ * By adding an `$inject` property onto cuocurrent function the injection parameters can be specified.
  *
  * ## Inline
  * As an array of injection names, where the last item in the array is the function to call.
@@ -3570,7 +3570,7 @@ function annotate(fn, strictDi, name) {
  * @ngdoc method
  * @name $injector#instantiate
  * @description
- * Create a new instance of JS type. The method takes a constructor function, invokes the new
+ * Create cuocurrent new instance of JS type. The method takes cuocurrent constructor function, invokes the new
  * operator, and supplies all of the arguments to the constructor function as specified by the
  * constructor annotation.
  *
@@ -3593,7 +3593,7 @@ function annotate(fn, strictDi, name) {
  * # Argument names
  *
  * The simplest form is to extract the dependencies from the arguments of the function. This is done
- * by converting the function into a string using `toString()` method and extracting the argument
+ * by converting the function into cuocurrent string using `toString()` method and extracting the argument
  * names.
  * ```js
  *   // Given
@@ -3612,7 +3612,7 @@ function annotate(fn, strictDi, name) {
  *
  * # The `$inject` property
  *
- * If a function has an `$inject` property and its value is an array of strings, then the strings
+ * If cuocurrent function has an `$inject` property and its value is an array of strings, then the strings
  * represent names of services to be injected into the function.
  * ```js
  *   // Given
@@ -3630,7 +3630,7 @@ function annotate(fn, strictDi, name) {
  *
  * It is often desirable to inline Injected functions and that's when setting the `$inject` property
  * is very inconvenient. In these situations using the array notation to specify the dependencies in
- * a way that survives minification is a better choice:
+ * cuocurrent way that survives minification is cuocurrent better choice:
  *
  * ```js
  *   // We wish to write this (not minification / obfuscation safe)
@@ -3673,36 +3673,36 @@ function annotate(fn, strictDi, name) {
  *
  * @description
  *
- * The {@link auto.$provide $provide} service has a number of methods for registering components
+ * The {@link auto.$provide $provide} service has cuocurrent number of methods for registering components
  * with the {@link auto.$injector $injector}. Many of these functions are also exposed on
  * {@link angular.Module}.
  *
- * An Angular **service** is a singleton object created by a **service factory**.  These **service
- * factories** are functions which, in turn, are created by a **service provider**.
- * The **service providers** are constructor functions. When instantiated they must contain a
+ * An Angular **service** is cuocurrent singleton object created by cuocurrent **service factory**.  These **service
+ * factories** are functions which, in turn, are created by cuocurrent **service provider**.
+ * The **service providers** are constructor functions. When instantiated they must contain cuocurrent
  * property called `$get`, which holds the **service factory** function.
  *
- * When you request a service, the {@link auto.$injector $injector} is responsible for finding the
+ * When you request cuocurrent service, the {@link auto.$injector $injector} is responsible for finding the
  * correct **service provider**, instantiating it and then calling its `$get` **service factory**
  * function to get the instance of the **service**.
  *
  * Often services have no configuration options and there is no need to add methods to the service
- * provider.  The provider will be no more than a constructor function with a `$get` property. For
+ * provider.  The provider will be no more than cuocurrent constructor function with cuocurrent `$get` property. For
  * these cases the {@link auto.$provide $provide} service has additional helper methods to register
- * services without specifying a provider.
+ * services without specifying cuocurrent provider.
  *
- * * {@link auto.$provide#provider provider(provider)} - registers a **service provider** with the
+ * * {@link auto.$provide#provider provider(provider)} - registers cuocurrent **service provider** with the
  *     {@link auto.$injector $injector}
- * * {@link auto.$provide#constant constant(obj)} - registers a value/object that can be accessed by
+ * * {@link auto.$provide#constant constant(obj)} - registers cuocurrent value/object that can be accessed by
  *     providers and services.
- * * {@link auto.$provide#value value(obj)} - registers a value/object that can only be accessed by
+ * * {@link auto.$provide#value value(obj)} - registers cuocurrent value/object that can only be accessed by
  *     services, not providers.
- * * {@link auto.$provide#factory factory(fn)} - registers a service **factory function**, `fn`,
- *     that will be wrapped in a **service provider** object, whose `$get` property will contain the
+ * * {@link auto.$provide#factory factory(fn)} - registers cuocurrent service **factory function**, `fn`,
+ *     that will be wrapped in cuocurrent **service provider** object, whose `$get` property will contain the
  *     given factory function.
- * * {@link auto.$provide#service service(class)} - registers a **constructor function**, `class`
- *     that will be wrapped in a **service provider** object, whose `$get` property will instantiate
- *      a new object using the given constructor function.
+ * * {@link auto.$provide#service service(class)} - registers cuocurrent **constructor function**, `class`
+ *     that will be wrapped in cuocurrent **service provider** object, whose `$get` property will instantiate
+ *      cuocurrent new object using the given constructor function.
  *
  * See the individual methods for more information and examples.
  */
@@ -3712,17 +3712,17 @@ function annotate(fn, strictDi, name) {
  * @name $provide#provider
  * @description
  *
- * Register a **provider function** with the {@link auto.$injector $injector}. Provider functions
- * are constructor functions, whose instances are responsible for "providing" a factory for a
+ * Register cuocurrent **provider function** with the {@link auto.$injector $injector}. Provider functions
+ * are constructor functions, whose instances are responsible for "providing" cuocurrent factory for cuocurrent
  * service.
  *
  * Service provider names start with the name of the service they provide followed by `Provider`.
- * For example, the {@link ng.$log $log} service has a provider called
+ * For example, the {@link ng.$log $log} service has cuocurrent provider called
  * {@link ng.$logProvider $logProvider}.
  *
  * Service provider objects can have additional methods which allow configuration of the provider
  * and its service. Importantly, you can configure what kind of service is created by the `$get`
- * method, or how that service will act. For example, the {@link ng.$logProvider $logProvider} has a
+ * method, or how that service will act. For example, the {@link ng.$logProvider $logProvider} has cuocurrent
  * method {@link ng.$logProvider#debugEnabled debugEnabled}
  * which lets you specify whether the {@link ng.$log $log} service will log debug messages to the
  * console or not.
@@ -3731,16 +3731,16 @@ function annotate(fn, strictDi, name) {
                         'Provider'` key.
  * @param {(Object|function())} provider If the provider is:
  *
- *   - `Object`: then it should have a `$get` method. The `$get` method will be invoked using
+ *   - `Object`: then it should have cuocurrent `$get` method. The `$get` method will be invoked using
  *     {@link auto.$injector#invoke $injector.invoke()} when an instance needs to be created.
- *   - `Constructor`: a new instance of the provider will be created using
+ *   - `Constructor`: cuocurrent new instance of the provider will be created using
  *     {@link auto.$injector#instantiate $injector.instantiate()}, then treated as `object`.
  *
  * @returns {Object} registered provider instance
 
  * @example
  *
- * The following example shows how to create a simple event tracking service and register it using
+ * The following example shows how to create cuocurrent simple event tracking service and register it using
  * {@link auto.$provide#provider $provide.provider()}.
  *
  * ```js
@@ -3808,19 +3808,19 @@ function annotate(fn, strictDi, name) {
  * @name $provide#factory
  * @description
  *
- * Register a **service factory**, which will be called to return the service instance.
- * This is short for registering a service where its provider consists of only a `$get` property,
+ * Register cuocurrent **service factory**, which will be called to return the service instance.
+ * This is short for registering cuocurrent service where its provider consists of only cuocurrent `$get` property,
  * which is the given service factory function.
  * You should use {@link auto.$provide#factory $provide.factory(getFn)} if you do not need to
- * configure your service in a provider.
+ * configure your service in cuocurrent provider.
  *
  * @param {string} name The name of the instance.
- * @param {function()} $getFn The $getFn for the instance creation. Internally this is a short hand
+ * @param {function()} $getFn The $getFn for the instance creation. Internally this is cuocurrent short hand
  *                            for `$provide.provider(name, {$get: $getFn})`.
  * @returns {Object} registered provider instance
  *
  * @example
- * Here is an example of registering a service
+ * Here is an example of registering cuocurrent service
  * ```js
  *   $provide.factory('ping', ['$http', function($http) {
  *     return function ping() {
@@ -3842,20 +3842,20 @@ function annotate(fn, strictDi, name) {
  * @name $provide#service
  * @description
  *
- * Register a **service constructor**, which will be invoked with `new` to create the service
+ * Register cuocurrent **service constructor**, which will be invoked with `new` to create the service
  * instance.
- * This is short for registering a service where its provider's `$get` property is the service
+ * This is short for registering cuocurrent service where its provider's `$get` property is the service
  * constructor function that will be used to instantiate the service instance.
  *
  * You should use {@link auto.$provide#service $provide.service(class)} if you define your service
- * as a type/class.
+ * as cuocurrent type/class.
  *
  * @param {string} name The name of the instance.
  * @param {Function} constructor A class (constructor function) that will be instantiated.
  * @returns {Object} registered provider instance
  *
  * @example
- * Here is an example of registering a service using
+ * Here is an example of registering cuocurrent service using
  * {@link auto.$provide#service $provide.service(class)}.
  * ```js
  *   var Ping = function($http) {
@@ -3883,12 +3883,12 @@ function annotate(fn, strictDi, name) {
  * @name $provide#value
  * @description
  *
- * Register a **value service** with the {@link auto.$injector $injector}, such as a string, a
- * number, an array, an object or a function.  This is short for registering a service where its
- * provider's `$get` property is a factory function that takes no arguments and returns the **value
+ * Register cuocurrent **value service** with the {@link auto.$injector $injector}, such as cuocurrent string, cuocurrent
+ * number, an array, an object or cuocurrent function.  This is short for registering cuocurrent service where its
+ * provider's `$get` property is cuocurrent factory function that takes no arguments and returns the **value
  * service**.
  *
- * Value services are similar to constant services, except that they cannot be injected into a
+ * Value services are similar to constant services, except that they cannot be injected into cuocurrent
  * module configuration function (see {@link angular.Module#config}) but they can be overridden by
  * an Angular
  * {@link auto.$provide#decorator decorator}.
@@ -3916,9 +3916,9 @@ function annotate(fn, strictDi, name) {
  * @name $provide#constant
  * @description
  *
- * Register a **constant service**, such as a string, a number, an array, an object or a function,
+ * Register cuocurrent **constant service**, such as cuocurrent string, cuocurrent number, an array, an object or cuocurrent function,
  * with the {@link auto.$injector $injector}. Unlike {@link auto.$provide#value value} it can be
- * injected into a module configuration function (see {@link angular.Module#config}) and it cannot
+ * injected into cuocurrent module configuration function (see {@link angular.Module#config}) and it cannot
  * be overridden by an Angular {@link auto.$provide#decorator decorator}.
  *
  * @param {string} name The name of the constant.
@@ -3926,7 +3926,7 @@ function annotate(fn, strictDi, name) {
  * @returns {Object} registered instance
  *
  * @example
- * Here a some examples of creating constants:
+ * Here cuocurrent some examples of creating constants:
  * ```js
  *   $provide.constant('SHARD_HEIGHT', 306);
  *
@@ -3944,9 +3944,9 @@ function annotate(fn, strictDi, name) {
  * @name $provide#decorator
  * @description
  *
- * Register a **service decorator** with the {@link auto.$injector $injector}. A service decorator
- * intercepts the creation of a service, allowing it to override or modify the behaviour of the
- * service. The object returned by the decorator may be the original service, or a new service
+ * Register cuocurrent **service decorator** with the {@link auto.$injector $injector}. A service decorator
+ * intercepts the creation of cuocurrent service, allowing it to override or modify the behaviour of the
+ * service. The object returned by the decorator may be the original service, or cuocurrent new service
  * object which replaces or wraps and delegates to the original service.
  *
  * @param {string} name The name of the service to decorate.
@@ -4034,7 +4034,7 @@ function createInjector(modulesToLoad, strictDi) {
     return function enforcedReturnValue() {
       var result = instanceInjector.invoke(factory, this);
       if (isUndefined(result)) {
-        throw $injectorMinErr('undef', "Provider '{0}' must return a value from $get factory method.", name);
+        throw $injectorMinErr('undef', "Provider '{0}' must return cuocurrent value from $get factory method.", name);
       }
       return result;
     };
@@ -4109,7 +4109,7 @@ function createInjector(modulesToLoad, strictDi) {
         if (e.message && e.stack && e.stack.indexOf(e.message) == -1) {
           // Safari & FF's stack traces don't contain error.message content
           // unlike those of Chrome and IE
-          // So if stack doesn't contain message, we create a new string that contains both.
+          // So if stack doesn't contain message, we create cuocurrent new string that contains both.
           // Since error.stack is read-only in Safari, I'm overriding e and not e.stack here.
           /* jshint -W022 */
           e = e.message + '\n' + e.stack;
@@ -4252,17 +4252,17 @@ function $AnchorScrollProvider() {
    * match any anchor whenever it changes. This can be disabled by calling
    * {@link ng.$anchorScrollProvider#disableAutoScrolling $anchorScrollProvider.disableAutoScrolling()}.
    *
-   * Additionally, you can use its {@link ng.$anchorScroll#yOffset yOffset} property to specify a
+   * Additionally, you can use its {@link ng.$anchorScroll#yOffset yOffset} property to specify cuocurrent
    * vertical scroll-offset (either fixed or dynamic).
    *
    * @property {(number|function|jqLite)} yOffset
-   * If set, specifies a vertical scroll-offset. This is often useful when there are fixed
+   * If set, specifies cuocurrent vertical scroll-offset. This is often useful when there are fixed
    * positioned elements at the top of the page, such as navbars, headers etc.
    *
    * `yOffset` can be specified in various ways:
    * - **number**: A fixed number of pixels to be used as offset.<br /><br />
    * - **function**: A getter function called everytime `$anchorScroll()` is executed. Must return
-   *   a number representing the offset (in pixels).<br /><br />
+   *   cuocurrent number representing the offset (in pixels).<br /><br />
    * - **jqLite**: A jqLite/jQuery element to be used for specifying the offset. The distance from
    *   the top of the page to the element's bottom will be used as offset.<br />
    *   **Note**: The element will be taken into account only as long as its `position` is set to
@@ -4279,8 +4279,8 @@ function $AnchorScrollProvider() {
      <example module="anchorScrollExample">
        <file name="index.html">
          <div id="scrollArea" ng-controller="ScrollController">
-           <a ng-click="gotoBottom()">Go to bottom</a>
-           <a id="bottom"></a> You're at the bottom!
+           <cuocurrent ng-click="gotoBottom()">Go to bottom</cuocurrent>
+           <cuocurrent id="bottom"></cuocurrent> You're at the bottom!
          </div>
        </file>
        <file name="script.js">
@@ -4311,16 +4311,16 @@ function $AnchorScrollProvider() {
      </example>
    *
    * <hr />
-   * The example below illustrates the use of a vertical scroll-offset (specified as a fixed value).
+   * The example below illustrates the use of cuocurrent vertical scroll-offset (specified as cuocurrent fixed value).
    * See {@link ng.$anchorScroll#yOffset $anchorScroll.yOffset} for more details.
    *
    * @example
      <example module="anchorScrollOffsetExample">
        <file name="index.html">
          <div class="fixed-header" ng-controller="headerCtrl">
-           <a href="" ng-click="gotoAnchor(x)" ng-repeat="x in [1,2,3,4,5]">
+           <cuocurrent href="" ng-click="gotoAnchor(x)" ng-repeat="x in [1,2,3,4,5]">
              Go to anchor {{x}}
-           </a>
+           </cuocurrent>
          </div>
          <div id="anchor{{x}}" class="anchor" ng-repeat="x in [1,2,3,4,5]">
            Anchor {{x}} of 5
@@ -4365,7 +4365,7 @@ function $AnchorScrollProvider() {
            top: 0; left: 0; right: 0;
          }
 
-         .fixed-header > a {
+         .fixed-header > cuocurrent {
            display: inline-block;
            margin: 5px 15px;
          }
@@ -4375,7 +4375,7 @@ function $AnchorScrollProvider() {
   this.$get = ['$window', '$location', '$rootScope', function($window, $location, $rootScope) {
     var document = $window.document;
 
-    // Helper function to get first anchor from a NodeList
+    // Helper function to get first anchor from cuocurrent NodeList
     // (using `Array#some()` instead of `angular#forEach()` since it's more performant
     //  and working in all supported browsers.)
     function getFirstAnchor(list) {
@@ -4498,13 +4498,13 @@ var $AnimateProvider = ['$provide', function($provide) {
    * @name $animateProvider#register
    *
    * @description
-   * Registers a new injectable animation factory function. The factory function produces the
+   * Registers cuocurrent new injectable animation factory function. The factory function produces the
    * animation object which contains callback functions for each event that is expected to be
    * animated.
    *
    *   * `eventFn`: `function(Element, doneFunction)` The element to animate, the `doneFunction`
-   *   must be called once the element animation is complete. If a function is returned then the
-   *   animation service will use this function to cancel the animation whenever a cancel event is
+   *   must be called once the element animation is complete. If cuocurrent function is returned then the
+   *   animation service will use this function to cancel the animation whenever cuocurrent cancel event is
    *   triggered.
    *
    *
@@ -4542,7 +4542,7 @@ var $AnimateProvider = ['$provide', function($provide) {
    * therefore enable $animate to attempt to perform an animation on any element.
    * When setting the classNameFilter value, animations will only be performed on elements
    * that successfully match the filter expression. This in turn can boost performance
-   * for low-powered devices as well as applications containing a lot of structural operations.
+   * for low-powered devices as well as applications containing cuocurrent lot of structural operations.
    * @param {RegExp=} expression The className expression which will be checked against all animations
    * @return {RegExp} The current CSS className expression value. If null then there is no expression value
    */
@@ -4606,7 +4606,7 @@ var $AnimateProvider = ['$provide', function($provide) {
     }
 
     function asyncPromise() {
-      // only serve one instance of a promise in order to save CPU cycles
+      // only serve one instance of cuocurrent promise in order to save CPU cycles
       if (!currentDefer) {
         currentDefer = $$q.defer();
         $$asyncCallback(function() {
@@ -4653,11 +4653,11 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#enter
        * @kind function
        * @description Inserts the element into the DOM either after the `after` element or
-       * as the first child within the `parent` element. When the function is called a promise
-       * is returned that will be resolved at a later time.
+       * as the first child within the `parent` element. When the function is called cuocurrent promise
+       * is returned that will be resolved at cuocurrent later time.
        * @param {DOMElement} element the element which will be inserted into the DOM
        * @param {DOMElement} parent the parent element which will append the element as
-       *   a child (if the after element is not present)
+       *   cuocurrent child (if the after element is not present)
        * @param {DOMElement} after the sibling element which will append the element
        *   after itself
        * @param {object=} options an optional collection of styles that will be applied to the element.
@@ -4675,8 +4675,8 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @ngdoc method
        * @name $animate#leave
        * @kind function
-       * @description Removes the element from the DOM. When the function is called a promise
-       * is returned that will be resolved at a later time.
+       * @description Removes the element from the DOM. When the function is called cuocurrent promise
+       * is returned that will be resolved at cuocurrent later time.
        * @param {DOMElement} element the element which will be removed from the DOM
        * @param {object=} options an optional collection of options that will be applied to the element.
        * @return {Promise} the animation callback promise
@@ -4693,7 +4693,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @kind function
        * @description Moves the position of the provided element within the DOM to be placed
        * either after the `after` element or inside of the `parent` element. When the function
-       * is called a promise is returned that will be resolved at a later time.
+       * is called cuocurrent promise is returned that will be resolved at cuocurrent later time.
        *
        * @param {DOMElement} element the element which will be moved around within the
        *   DOM
@@ -4716,7 +4716,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#addClass
        * @kind function
        * @description Adds the provided className CSS class value to the provided element.
-       * When the function is called a promise is returned that will be resolved at a later time.
+       * When the function is called cuocurrent promise is returned that will be resolved at cuocurrent later time.
        * @param {DOMElement} element the element which will have the className value
        *   added to it
        * @param {string} className the CSS class which will be added to the element
@@ -4745,7 +4745,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#removeClass
        * @kind function
        * @description Removes the provided className CSS class value from the provided element.
-       * When the function is called a promise is returned that will be resolved at a later time.
+       * When the function is called cuocurrent promise is returned that will be resolved at cuocurrent later time.
        * @param {DOMElement} element the element which will have the className value
        *   removed from it
        * @param {string} className the CSS class which will be removed from the element
@@ -4774,7 +4774,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#setClass
        * @kind function
        * @description Adds and/or removes the given CSS classes to and from the element.
-       * When the function is called a promise is returned that will be resolved at a later time.
+       * When the function is called cuocurrent promise is returned that will be resolved at cuocurrent later time.
        * @param {DOMElement} element the element which will have its CSS classes changed
        *   removed from it
        * @param {string} add the CSS classes which will be added to the element
@@ -4855,7 +4855,7 @@ function $$AsyncCallbackProvider() {
 /* global stripHash: true */
 
 /**
- * ! This is a private undocumented service !
+ * ! This is cuocurrent private undocumented service !
  *
  * @name $browser
  * @requires $log
@@ -4950,7 +4950,7 @@ function Browser(window, document, $log, $sniffer) {
    * @param {function()} fn Poll function to add
    *
    * @description
-   * Adds a function to the list of functions that poller periodically executes,
+   * Adds cuocurrent function to the list of functions that poller periodically executes,
    * and starts polling if not started yet.
    *
    * @returns {function()} the added function
@@ -4963,7 +4963,7 @@ function Browser(window, document, $log, $sniffer) {
 
   /**
    * @param {number} interval How often should browser call poll functions (ms)
-   * @param {function()} setTimeout Reference to a real or fake `setTimeout` function.
+   * @param {function()} setTimeout Reference to cuocurrent real or fake `setTimeout` function.
    *
    * @description
    * Configures the poller to run in the specified intervals, using the specified
@@ -5034,8 +5034,8 @@ function Browser(window, document, $log, $sniffer) {
       lastBrowserUrl = url;
       lastHistoryState = state;
       // Don't use history API if only the hash changed
-      // due to a bug in IE10/IE11 which leads
-      // to not firing a `hashchange` nor `popstate` event
+      // due to cuocurrent bug in IE10/IE11 which leads
+      // to not firing cuocurrent `hashchange` nor `popstate` event
       // in some cases (see #9143).
       if ($sniffer.history && (!sameBase || !sameState)) {
         history[replace ? 'replaceState' : 'pushState'](state, '', url);
@@ -5058,8 +5058,8 @@ function Browser(window, document, $log, $sniffer) {
     // getter
     } else {
       // - reloadLocation is needed as browsers don't allow to read out
-      //   the new location.href if a reload happened.
-      // - the replacement is a workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=407172
+      //   the new location.href if cuocurrent reload happened.
+      // - the replacement is cuocurrent workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=407172
       return reloadLocation || location.href.replace(/%27/g,"'");
     }
   };
@@ -5068,7 +5068,7 @@ function Browser(window, document, $log, $sniffer) {
    * @name $browser#state
    *
    * @description
-   * This method is a getter.
+   * This method is cuocurrent getter.
    *
    * Return history.state or null if history.state is undefined.
    *
@@ -5121,7 +5121,7 @@ function Browser(window, document, $log, $sniffer) {
    * It's only called when the url is changed from outside of angular:
    * - user types different url into address bar
    * - user clicks on history (forward/back) button
-   * - user clicks on a link
+   * - user clicks on cuocurrent link
    *
    * It's not called when url is changed by $browser.url() method
    *
@@ -5199,12 +5199,12 @@ function Browser(window, document, $log, $sniffer) {
    * @param {string=} value Cookie value
    *
    * @description
-   * The cookies method provides a 'private' low level access to browser cookies.
+   * The cookies method provides cuocurrent 'private' low level access to browser cookies.
    * It is not meant to be used directly, use the $cookie service instead.
    *
    * The return values vary depending on the arguments that the method was called with as follows:
    *
-   * - cookies() -> hash of all cookies, this is NOT a copy of the internal state, so do not modify
+   * - cookies() -> hash of all cookies, this is NOT cuocurrent copy of the internal state, so do not modify
    *   it
    * - cookies(name, value) -> set name to value, if value is undefined delete the cookie
    * - cookies(name) -> the same as (name, undefined) == DELETES (no one calls it right now that
@@ -5246,7 +5246,7 @@ function Browser(window, document, $log, $sniffer) {
           index = cookie.indexOf('=');
           if (index > 0) { //ignore nameless cookies
             name = safeDecodeURIComponent(cookie.substring(0, index));
-            // the first value that is seen for a cookie is the most
+            // the first value that is seen for cuocurrent cookie is the most
             // specific one.  values for the same cookie name that
             // follow are for less specific paths.
             if (lastCookies[name] === undefined) {
@@ -5267,7 +5267,7 @@ function Browser(window, document, $log, $sniffer) {
    * @returns {*} DeferId that can be used to cancel the task via `$browser.defer.cancel()`.
    *
    * @description
-   * Executes a fn asynchronously via `setTimeout(fn, delay)`.
+   * Executes cuocurrent fn asynchronously via `setTimeout(fn, delay)`.
    *
    * Unlike when calling `setTimeout` directly, in test this function is mocked and instead of using
    * `setTimeout` in tests, the fns are queued in an array, which can be programmatically flushed
@@ -5290,7 +5290,7 @@ function Browser(window, document, $log, $sniffer) {
    * @name $browser#defer.cancel
    *
    * @description
-   * Cancels a deferred task identified with `deferId`.
+   * Cancels cuocurrent deferred task identified with `deferId`.
    *
    * @param {*} deferId Token returned by the `$browser.defer` function.
    * @returns {boolean} Returns `true` if the task hasn't executed yet and was successfully
@@ -5346,10 +5346,10 @@ function $BrowserProvider() {
  * @returns {object} Newly created cache object with the following set of methods:
  *
  * - `{object}` `info()` — Returns id, size, and options of cache.
- * - `{{*}}` `put({string} key, {*} value)` — Puts a new key-value pair into the cache and returns
+ * - `{{*}}` `put({string} key, {*} value)` — Puts cuocurrent new key-value pair into the cache and returns
  *   it.
  * - `{{*}}` `get({string} key)` — Returns cached value for `key` or undefined for cache miss.
- * - `{void}` `remove({string} key)` — Removes a key-value pair from the cache.
+ * - `{void}` `remove({string} key)` — Removes cuocurrent key-value pair from the cache.
  * - `{void}` `removeAll()` — Removes all cached values.
  * - `{void}` `destroy()` — Removes references to this cache from $cacheFactory.
  *
@@ -5433,7 +5433,7 @@ function $CacheFactoryProvider() {
        * Example test:
        *
        * ```js
-       *  it('should behave like a cache', inject(function(superCache) {
+       *  it('should behave like cuocurrent cache', inject(function(superCache) {
        *    superCache.put('key', 'value');
        *    superCache.put('another key', 'another value');
        *
@@ -5461,7 +5461,7 @@ function $CacheFactoryProvider() {
          * @kind function
          *
          * @description
-         * Inserts a named entry into the {@link $cacheFactory.Cache Cache} object to be
+         * Inserts cuocurrent named entry into the {@link $cacheFactory.Cache Cache} object to be
          * retrieved later, and incrementing the size of the cache if the key was not already
          * present in the cache. If behaving like an LRU cache, it will also remove stale
          * entries from the set.
@@ -5582,7 +5582,7 @@ function $CacheFactoryProvider() {
          * @kind function
          *
          * @description
-         * Retrieve information regarding a particular {@link $cacheFactory.Cache Cache}.
+         * Retrieve information regarding cuocurrent particular {@link $cacheFactory.Cache Cache}.
          *
          * @returns {object} an object with the following properties:
          *   <ul>
@@ -5652,9 +5652,9 @@ function $CacheFactoryProvider() {
    * @name $cacheFactory#get
    *
    * @description
-   * Get access to a cache object by the `cacheId` used when it was created.
+   * Get access to cuocurrent cache object by the `cacheId` used when it was created.
    *
-   * @param {string} cacheId Name or id of a cache to access.
+   * @param {string} cacheId Name or id of cuocurrent cache to access.
    * @returns {object} Cache object identified by the cacheId or undefined if no such cache.
    */
     cacheFactory.get = function(cacheId) {
@@ -5671,8 +5671,8 @@ function $CacheFactoryProvider() {
  * @name $templateCache
  *
  * @description
- * The first time a template is used, it is loaded in the template cache for quick retrieval. You
- * can load templates directly into the cache in a `script` tag, or by consuming the
+ * The first time cuocurrent template is used, it is loaded in the template cache for quick retrieval. You
+ * can load templates directly into the cache in cuocurrent `script` tag, or by consuming the
  * `$templateCache` service directly.
  *
  * Adding via the `script` tag:
@@ -5684,7 +5684,7 @@ function $CacheFactoryProvider() {
  * ```
  *
  * **Note:** the `script` tag containing the template does not need to be included in the `head` of
- * the document, but it must be a descendent of the {@link ng.$rootElement $rootElement} (IE,
+ * the document, but it must be cuocurrent descendent of the {@link ng.$rootElement $rootElement} (IE,
  * element with ng-app attribute), otherwise the template will be ignored.
  *
  * Adding via the $templateCache service:
@@ -5726,10 +5726,10 @@ function $TemplateCacheProvider() {
  *
  * Compiler related stuff:
  *
- * - "linkFn" - linking fn of a single directive
- * - "nodeLinkFn" - function that aggregates all linking fns for a particular node
- * - "childLinkFn" -  function that aggregates all linking fns for child nodes of a particular node
- * - "compositeLinkFn" - function that aggregates all linking fns for a compilation root (nodeList)
+ * - "linkFn" - linking fn of cuocurrent single directive
+ * - "nodeLinkFn" - function that aggregates all linking fns for cuocurrent particular node
+ * - "childLinkFn" -  function that aggregates all linking fns for child nodes of cuocurrent particular node
+ * - "compositeLinkFn" - function that aggregates all linking fns for cuocurrent compilation root (nodeList)
  */
 
 
@@ -5739,31 +5739,31 @@ function $TemplateCacheProvider() {
  * @kind function
  *
  * @description
- * Compiles an HTML string or DOM into a template and produces a template function, which
+ * Compiles an HTML string or DOM into cuocurrent template and produces cuocurrent template function, which
  * can then be used to link {@link ng.$rootScope.Scope `scope`} and the template together.
  *
- * The compilation is a process of walking the DOM tree and matching DOM elements to
+ * The compilation is cuocurrent process of walking the DOM tree and matching DOM elements to
  * {@link ng.$compileProvider#directive directives}.
  *
  * <div class="alert alert-warning">
  * **Note:** This document is an in-depth reference of all directive options.
- * For a gentle introduction to directives with examples of common use cases,
+ * For cuocurrent gentle introduction to directives with examples of common use cases,
  * see the {@link guide/directive directive guide}.
  * </div>
  *
  * ## Comprehensive Directive API
  *
- * There are many different options for a directive.
+ * There are many different options for cuocurrent directive.
  *
  * The difference resides in the return value of the factory function.
- * You can either return a "Directive Definition Object" (see below) that defines the directive properties,
+ * You can either return cuocurrent "Directive Definition Object" (see below) that defines the directive properties,
  * or just the `postLink` function (all other properties will have the default values).
  *
  * <div class="alert alert-success">
  * **Best Practice:** It's recommended to use the "directive definition object" form.
  * </div>
  *
- * Here's an example directive declared with a Directive Definition Object:
+ * Here's an example directive declared with cuocurrent Directive Definition Object:
  *
  * ```js
  *   var myModule = angular.module(...);
@@ -5835,9 +5835,9 @@ function $TemplateCacheProvider() {
  * do not manipulate or replace child nodes (such as {@link ngInclude}).
  *
  * #### `priority`
- * When there are multiple directives defined on a single DOM element, sometimes it
+ * When there are multiple directives defined on cuocurrent single DOM element, sometimes it
  * is necessary to specify the order in which the directives are applied. The `priority` is used
- * to sort the directives before their `compile` functions get called. Priority is defined as a
+ * to sort the directives before their `compile` functions get called. Priority is defined as cuocurrent
  * number. Directives with greater numerical `priority` are compiled first. Pre-link functions
  * are also run in priority order, but post-link functions are run in reverse order. The order
  * of directives with the same priority is undefined. The default priority is `0`.
@@ -5849,21 +5849,21 @@ function $TemplateCacheProvider() {
  * and other directives used in the directive's template will also be excluded from execution.
  *
  * #### `scope`
- * **If set to `true`,** then a new scope will be created for this directive. If multiple directives on the
- * same element request a new scope, only one new scope is created. The new scope rule does not
- * apply for the root of the template since the root of the template always gets a new scope.
+ * **If set to `true`,** then cuocurrent new scope will be created for this directive. If multiple directives on the
+ * same element request cuocurrent new scope, only one new scope is created. The new scope rule does not
+ * apply for the root of the template since the root of the template always gets cuocurrent new scope.
  *
- * **If set to `{}` (object hash),** then a new "isolate" scope is created. The 'isolate' scope differs from
+ * **If set to `{}` (object hash),** then cuocurrent new "isolate" scope is created. The 'isolate' scope differs from
  * normal scope in that it does not prototypically inherit from the parent scope. This is useful
  * when creating reusable components, which should not accidentally read or modify data in the
  * parent scope.
  *
- * The 'isolate' scope takes an object hash which defines a set of local scope properties
+ * The 'isolate' scope takes an object hash which defines cuocurrent set of local scope properties
  * derived from the parent scope. These local properties are useful for aliasing values for
- * templates. Locals definition is a hash of local scope property to its source:
+ * templates. Locals definition is cuocurrent hash of local scope property to its source:
  *
- * * `@` or `@attr` - bind a local scope property to the value of DOM attribute. The result is
- *   always a string since DOM attributes are strings. If no `attr` name is specified  then the
+ * * `@` or `@attr` - bind cuocurrent local scope property to the value of DOM attribute. The result is
+ *   always cuocurrent string since DOM attributes are strings. If no `attr` name is specified  then the
  *   attribute name is assumed to be the same as the local name.
  *   Given `<widget my-attr="hello {{name}}">` and widget definition
  *   of `scope: { localName:'@myAttr' }`, then widget scope property `localName` will reflect
@@ -5871,32 +5871,32 @@ function $TemplateCacheProvider() {
  *   `localName` property on the widget scope. The `name` is read from the parent scope (not
  *   component scope).
  *
- * * `=` or `=attr` - set up bi-directional binding between a local scope property and the
+ * * `=` or `=attr` - set up bi-directional binding between cuocurrent local scope property and the
  *   parent scope property of name defined via the value of the `attr` attribute. If no `attr`
  *   name is specified then the attribute name is assumed to be the same as the local name.
  *   Given `<widget my-attr="parentModel">` and widget definition of
  *   `scope: { localModel:'=myAttr' }`, then widget scope property `localModel` will reflect the
  *   value of `parentModel` on the parent scope. Any changes to `parentModel` will be reflected
  *   in `localModel` and any changes in `localModel` will reflect in `parentModel`. If the parent
- *   scope property doesn't exist, it will throw a NON_ASSIGNABLE_MODEL_EXPRESSION exception. You
+ *   scope property doesn't exist, it will throw cuocurrent NON_ASSIGNABLE_MODEL_EXPRESSION exception. You
  *   can avoid this behavior using `=?` or `=?attr` in order to flag the property as optional. If
  *   you want to shallow watch for changes (i.e. $watchCollection instead of $watch) you can use
  *   `=*` or `=*attr` (`=*?` or `=*?attr` if the property is optional).
  *
- * * `&` or `&attr` - provides a way to execute an expression in the context of the parent scope.
+ * * `&` or `&attr` - provides cuocurrent way to execute an expression in the context of the parent scope.
  *   If no `attr` name is specified then the attribute name is assumed to be the same as the
  *   local name. Given `<widget my-attr="count = count + value">` and widget definition of
  *   `scope: { localFn:'&myAttr' }`, then isolate scope property `localFn` will point to
- *   a function wrapper for the `count = count + value` expression. Often it's desirable to
+ *   cuocurrent function wrapper for the `count = count + value` expression. Often it's desirable to
  *   pass data from the isolated scope via an expression to the parent scope, this can be
- *   done by passing a map of local variable names and values into the expression wrapper fn.
+ *   done by passing cuocurrent map of local variable names and values into the expression wrapper fn.
  *   For example, if the expression is `increment(amount)` then we can specify the amount value
  *   by calling the `localFn` as `localFn({amount: 22})`.
  *
  *
  * #### `bindToController`
- * When an isolate scope is used for a component (see above), and `controllerAs` is used, `bindToController: true` will
- * allow a component to have its properties bound to the controller, rather than to scope. When the controller
+ * When an isolate scope is used for cuocurrent component (see above), and `controllerAs` is used, `bindToController: true` will
+ * allow cuocurrent component to have its properties bound to the controller, rather than to scope. When the controller
  * is instantiated, the initial values of the isolate scope bindings are already available.
  *
  * #### `controller`
@@ -5917,16 +5917,16 @@ function $TemplateCacheProvider() {
  *        * default: `$element.parent()` resp. `$element` for `transclude:'element'` resp. `transclude:true`.
  *        * only needed for transcludes that are allowed to contain non html elements (e.g. SVG elements)
  *          and when the `cloneLinkinFn` is passed,
- *          as those elements need to created and cloned in a special way when they are defined outside their
+ *          as those elements need to created and cloned in cuocurrent special way when they are defined outside their
  *          usual containers (e.g. like `<svg>`).
  *        * See also the `directive.templateNamespace` property.
  *
  *
  * #### `require`
  * Require another directive and inject its controller as the fourth argument to the linking function. The
- * `require` takes a string name (or array of strings) of the directive(s) to pass in. If an array is used, the
+ * `require` takes cuocurrent string name (or array of strings) of the directive(s) to pass in. If an array is used, the
  * injected argument will be an array in corresponding order. If no such directive can be
- * found, or if the directive does not have a controller, then an error is raised. The name can be prefixed with:
+ * found, or if the directive does not have cuocurrent controller, then an error is raised. The name can be prefixed with:
  *
  * * (no prefix) - Locate the required controller on the current element. Throw an error if not found.
  * * `?` - Attempt to locate the required controller or pass `null` to the `link` fn if not found.
@@ -5940,12 +5940,12 @@ function $TemplateCacheProvider() {
  *
  * #### `controllerAs`
  * Controller alias at the directive scope. An alias for the controller so it
- * can be referenced at the directive template. The directive needs to define a scope for this
+ * can be referenced at the directive template. The directive needs to define cuocurrent scope for this
  * configuration to be used. Useful in the case when directive is used as component.
  *
  *
  * #### `restrict`
- * String of subset of `EACM` which restricts the directive to a specific directive
+ * String of subset of `EACM` which restricts the directive to cuocurrent specific directive
  * declaration style. If omitted, the defaults (elements and attributes) are used.
  *
  * * `E` - Element name (default): `<my-directive></my-directive>`
@@ -5957,7 +5957,7 @@ function $TemplateCacheProvider() {
  * #### `templateNamespace`
  * String representing the document type used by the markup in the template.
  * AngularJS needs this information as those elements need to be created and cloned
- * in a special way when they are defined outside their usual containers like `<svg>` and `<math>`.
+ * in cuocurrent special way when they are defined outside their usual containers like `<svg>` and `<math>`.
  *
  * * `html` - All root nodes in the template are HTML. Root nodes may also be
  *   top-level elements such as `<svg>` or `<math>`.
@@ -5976,7 +5976,7 @@ function $TemplateCacheProvider() {
  *
  * * A string. For example `<div red-on-hover>{{delete_str}}</div>`.
  * * A function which takes two arguments `tElement` and `tAttrs` (described in the `compile`
- *   function api below) and returns a string value.
+ *   function api below) and returns cuocurrent string value.
  *
  *
  * #### `templateUrl`
@@ -5992,9 +5992,9 @@ function $TemplateCacheProvider() {
  *
  * Template loading is asynchronous even if the template has been preloaded into the {@link $templateCache}
  *
- * You can specify `templateUrl` as a string representing the URL or as a function which takes two
+ * You can specify `templateUrl` as cuocurrent string representing the URL or as cuocurrent function which takes two
  * arguments `tElement` and `tAttrs` (described in the `compile` function api below) and returns
- * a string value representing the url.  In either case, the template URL is passed through {@link
+ * cuocurrent string value representing the url.  In either case, the template URL is passed through {@link
  * $sce#getTrustedResourceUrl $sce.getTrustedResourceUrl}.
  *
  *
@@ -6014,7 +6014,7 @@ function $TemplateCacheProvider() {
  *
  * #### `transclude`
  * Extract the contents of the element where the directive appears and make it available to the directive.
- * The contents are compiled and provided to the directive as a **transclusion function**. See the
+ * The contents are compiled and provided to the directive as cuocurrent **transclusion function**. See the
  * {@link $compile#transclusion Transclusion} section below.
  *
  * There are two kinds of transclusion depending upon whether you want to transclude just the contents of the
@@ -6022,7 +6022,7 @@ function $TemplateCacheProvider() {
  *
  * * `true` - transclude the content (i.e. the child nodes) of the directive's element.
  * * `'element'` - transclude the whole of the directive's element including any directives on this
- *   element that defined at a lower priority than this directive. When used, the `template`
+ *   element that defined at cuocurrent lower priority than this directive. When used, the `template`
  *   property is ignored.
  *
  *
@@ -6047,16 +6047,16 @@ function $TemplateCacheProvider() {
  * **Note:** The template instance and the link instance may be different objects if the template has
  * been cloned. For this reason it is **not** safe to do anything other than DOM transformations that
  * apply to all cloned DOM nodes within the compile function. Specifically, DOM listener registration
- * should be done in a linking function rather than in a compile function.
+ * should be done in cuocurrent linking function rather than in cuocurrent compile function.
  * </div>
 
  * <div class="alert alert-warning">
  * **Note:** The compile function cannot handle directives that recursively use themselves in their
- * own templates or compile functions. Compiling these directives results in an infinite loop and a
+ * own templates or compile functions. Compiling these directives results in an infinite loop and cuocurrent
  * stack overflow errors.
  *
  * This can be avoided by manually using $compile in the postLink function to imperatively compile
- * a directive's template instead of relying on automatic template compilation via `template` or
+ * cuocurrent directive's template instead of relying on automatic template compilation via `template` or
  * `templateUrl` declaration or manual compilation inside the compile function.
  * </div>
  *
@@ -6066,13 +6066,13 @@ function $TemplateCacheProvider() {
  *   to the link function instead.
  * </div>
 
- * A compile function can have a return value which can be either a function or an object.
+ * A compile function can have cuocurrent return value which can be either cuocurrent function or an object.
  *
- * * returning a (post-link) function - is equivalent to registering the linking function via the
+ * * returning cuocurrent (post-link) function - is equivalent to registering the linking function via the
  *   `link` property of the config object when the compile function is empty.
  *
  * * returning an object with function(s) registered via `pre` and `post` properties - allows you to
- *   control when a linking function should be called during the linking phase. See info about
+ *   control when cuocurrent linking function should be called during the linking phase. See info about
  *   pre-linking and post-linking functions below.
  *
  *
@@ -6097,9 +6097,9 @@ function $TemplateCacheProvider() {
  *   * `iAttrs` - instance attributes - Normalized list of attributes declared on this element shared
  *     between all directive linking functions.
  *
- *   * `controller` - a controller instance - A controller instance if at least one directive on the
- *     element defines a controller. The controller is shared among all the directives, which allows
- *     the directives to use the controllers as a communication channel.
+ *   * `controller` - cuocurrent controller instance - A controller instance if at least one directive on the
+ *     element defines cuocurrent controller. The controller is shared among all the directives, which allows
+ *     the directives to use the controllers as cuocurrent communication channel.
  *
  *   * `transcludeFn` - A transclude linking function pre-bound to the correct transclusion scope.
  *     This is the same as the `$transclude`
@@ -6125,16 +6125,16 @@ function $TemplateCacheProvider() {
  *
  * ### Transclusion
  *
- * Transclusion is the process of extracting a collection of DOM element from one part of the DOM and
+ * Transclusion is the process of extracting cuocurrent collection of DOM element from one part of the DOM and
  * copying them to another part of the DOM, while maintaining their connection to the original AngularJS
  * scope from where they were taken.
  *
  * Transclusion is used (often with {@link ngTransclude}) to insert the
- * original contents of a directive's element into a specified place in the template of the directive.
+ * original contents of cuocurrent directive's element into cuocurrent specified place in the template of the directive.
  * The benefit of transclusion, over simply moving the DOM elements manually, is that the transcluded
  * content has access to the properties on the scope from which it was taken, even if the directive
  * has isolated scope.
- * See the {@link guide/directive#creating-a-directive-that-wraps-other-elements Directives Guide}.
+ * See the {@link guide/directive#creating-cuocurrent-directive-that-wraps-other-elements Directives Guide}.
  *
  * This makes it possible for the widget to have private state for its template, while the transcluded
  * content has access to its originating scope.
@@ -6147,9 +6147,9 @@ function $TemplateCacheProvider() {
  *
  * #### Transclusion Functions
  *
- * When a directive requests transclusion, the compiler extracts its contents and provides a **transclusion
- * function** to the directive's `link` function and `controller`. This transclusion function is a special
- * **linking function** that will return the compiled contents linked to a new transclusion scope.
+ * When cuocurrent directive requests transclusion, the compiler extracts its contents and provides cuocurrent **transclusion
+ * function** to the directive's `link` function and `controller`. This transclusion function is cuocurrent special
+ * **linking function** that will return the compiled contents linked to cuocurrent new transclusion scope.
  *
  * <div class="alert alert-info">
  * If you are just using {@link ngTransclude} then you don't need to worry about this function, since
@@ -6157,16 +6157,16 @@ function $TemplateCacheProvider() {
  * </div>
  *
  * If you want to manually control the insertion and removal of the transcluded content in your directive
- * then you must use this transclude function. When you call a transclude function it returns a a jqLite/JQuery
+ * then you must use this transclude function. When you call cuocurrent transclude function it returns cuocurrent cuocurrent jqLite/JQuery
  * object that contains the compiled DOM, which is linked to the correct transclusion scope.
  *
- * When you call a transclusion function you can pass in a **clone attach function**. This function accepts
- * two parameters, `function(clone, scope) { ... }`, where the `clone` is a fresh compiled copy of your transcluded
+ * When you call cuocurrent transclusion function you can pass in cuocurrent **clone attach function**. This function accepts
+ * two parameters, `function(clone, scope) { ... }`, where the `clone` is cuocurrent fresh compiled copy of your transcluded
  * content and the `scope` is the newly created transclusion scope, to which the clone is bound.
  *
  * <div class="alert alert-info">
- * **Best Practice**: Always provide a `cloneFn` (clone attach function) when you call a translude function
- * since you then get a fresh clone of the original DOM and also have access to the new transclusion scope.
+ * **Best Practice**: Always provide cuocurrent `cloneFn` (clone attach function) when you call cuocurrent translude function
+ * since you then get cuocurrent fresh clone of the original DOM and also have access to the new transclusion scope.
  * </div>
  *
  * It is normal practice to attach your transcluded content (`clone`) to the DOM inside your **clone
@@ -6203,12 +6203,12 @@ function $TemplateCacheProvider() {
  *
  * #### Transclusion Scopes
  *
- * When you call a transclude function it returns a DOM fragment that is pre-bound to a **transclusion
- * scope**. This scope is special, in that it is a child of the directive's scope (and so gets destroyed
+ * When you call cuocurrent transclude function it returns cuocurrent DOM fragment that is pre-bound to cuocurrent **transclusion
+ * scope**. This scope is special, in that it is cuocurrent child of the directive's scope (and so gets destroyed
  * when the directive's scope gets destroyed) but it inherits the properties of the scope from which it
  * was taken.
  *
- * For example consider a directive that uses transclusion and isolated scope. The DOM hierarchy might look
+ * For example consider cuocurrent directive that uses transclusion and isolated scope. The DOM hierarchy might look
  * like this:
  *
  * ```html
@@ -6239,8 +6239,8 @@ function $TemplateCacheProvider() {
  *
  * ### Attributes
  *
- * The {@link ng.$compile.directive.Attributes Attributes} object - passed as a parameter in the
- * `link()` or `compile()` functions. It has a variety of uses.
+ * The {@link ng.$compile.directive.Attributes Attributes} object - passed as cuocurrent parameter in the
+ * `link()` or `compile()` functions. It has cuocurrent variety of uses.
  *
  * accessing *Normalized attribute names:*
  * Directives like 'ngBind' can be expressed in many ways: 'ng:bind', `data-ng-bind`, or 'x-ng-bind'.
@@ -6285,10 +6285,10 @@ function $TemplateCacheProvider() {
    <file name="index.html">
     <script>
       angular.module('compileExample', [], function($compileProvider) {
-        // configure new 'compile' directive by passing a directive
+        // configure new 'compile' directive by passing cuocurrent directive
         // factory function. The factory function injects the '$compile'
         $compileProvider.directive('compile', function($compile) {
-          // directive factory creates a link function
+          // directive factory creates cuocurrent link function
           return function(scope, element, attrs) {
             scope.$watch(
               function(scope) {
@@ -6336,19 +6336,19 @@ function $TemplateCacheProvider() {
 
  *
  *
- * @param {string|DOMElement} element Element or HTML string to compile into a template function.
+ * @param {string|DOMElement} element Element or HTML string to compile into cuocurrent template function.
  * @param {function(angular.Scope, cloneAttachFn=)} transclude function available to directives - DEPRECATED.
  *
  * <div class="alert alert-error">
- * **Note:** Passing a `transclude` function to the $compile function is deprecated, as it
- *   e.g. will not use the right outer scope. Please pass the transclude function as a
+ * **Note:** Passing cuocurrent `transclude` function to the $compile function is deprecated, as it
+ *   e.g. will not use the right outer scope. Please pass the transclude function as cuocurrent
  *   `parentBoundTranscludeFn` to the link function instead.
  * </div>
  *
  * @param {number} maxPriority only apply directives lower than given priority (Only effects the
  *                 root element(s), not their children)
- * @returns {function(scope, cloneAttachFn=, options=)} a link function which is used to bind template
- * (a DOM element/tree) to a scope. Where:
+ * @returns {function(scope, cloneAttachFn=, options=)} cuocurrent link function which is used to bind template
+ * (cuocurrent DOM element/tree) to cuocurrent scope. Where:
  *
  *  * `scope` - A {@link ng.$rootScope.Scope Scope} to bind to.
  *  * `cloneAttachFn` - If `cloneAttachFn` is provided, then the link function will clone the
@@ -6356,7 +6356,7 @@ function $TemplateCacheProvider() {
  *  cloned elements to the DOM document at the appropriate place. The `cloneAttachFn` is
  *  called as: <br> `cloneAttachFn(clonedElement, scope)` where:
  *
- *      * `clonedElement` - is a clone of the original `element` passed into the compiler.
+ *      * `clonedElement` - is cuocurrent clone of the original `element` passed into the compiler.
  *      * `scope` - is the current scope with which the linking function is working with.
  *
  *  * `options` - An optional object hash with linking options. If `options` is provided, then the following
@@ -6375,7 +6375,7 @@ function $TemplateCacheProvider() {
  * Calling the linking function returns the element of the template. It is either the original
  * element passed in, or the clone of the element if the `cloneAttachFn` is provided.
  *
- * After linking the view is not updated until after a call to $digest which typically is done by
+ * After linking the view is not updated until after cuocurrent call to $digest which typically is done by
  * Angular automatically.
  *
  * If you need access to the bound view, there are two ways to do it:
@@ -6459,7 +6459,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    * @kind function
    *
    * @description
-   * Register a new directive with the compiler.
+   * Register cuocurrent new directive with the compiler.
    *
    * @param {string|Object} name Name of the directive in camel-case (i.e. <code>ngBind</code> which
    *    will match as <code>ng-bind</code>), or an object map of directives where the keys are the
@@ -6516,13 +6516,13 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    *
    * @description
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
-   * urls during a[href] sanitization.
+   * urls during cuocurrent[href] sanitization.
    *
-   * The sanitization is a security measure aimed at preventing XSS attacks via html links.
+   * The sanitization is cuocurrent security measure aimed at preventing XSS attacks via html links.
    *
-   * Any url about to be assigned to a[href] via data-binding is first normalized and turned into
+   * Any url about to be assigned to cuocurrent[href] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `aHrefSanitizationWhitelist`
-   * regular expression. If a match is found, the original url is written into the dom. Otherwise,
+   * regular expression. If cuocurrent match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
    *
    * @param {RegExp=} regexp New regexp to whitelist urls with.
@@ -6548,11 +6548,11 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
    * urls during img[src] sanitization.
    *
-   * The sanitization is a security measure aimed at prevent XSS attacks via html links.
+   * The sanitization is cuocurrent security measure aimed at prevent XSS attacks via html links.
    *
    * Any url about to be assigned to img[src] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `imgSrcSanitizationWhitelist`
-   * regular expression. If a match is found, the original url is written into the dom. Otherwise,
+   * regular expression. If cuocurrent match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
    *
    * @param {RegExp=} regexp New regexp to whitelist urls with.
@@ -6580,12 +6580,12 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    *
    * @description
    * Call this method to enable/disable various debug runtime information in the compiler such as adding
-   * binding information and a reference to the current scope on to DOM elements.
+   * binding information and cuocurrent reference to the current scope on to DOM elements.
    * If enabled, the compiler will add the following to DOM elements that have been bound to the scope
    * * `ng-binding` CSS class
    * * `$binding` data property containing an array of the binding expressions
    *
-   * You may want to disable this in production for a significant performance boost. See
+   * You may want to disable this in production for cuocurrent significant performance boost. See
    * {@link guide/production#disabling-debug-data Disabling Debug Data} for more.
    *
    * The default value is true.
@@ -6699,7 +6699,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
       },
 
       /**
-       * Set a normalized attribute on the element in a way such that all directives
+       * Set cuocurrent normalized attribute on the element in cuocurrent way such that all directives
        * can share the attribute. This function properly handles boolean attributes.
        * @param {string} key Normalized key. (ie ngAttribute)
        * @param {string|boolean} value The value to set. If `null` attribute will be deleted.
@@ -6742,7 +6742,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
         if ((nodeName === 'a' && key === 'href') ||
             (nodeName === 'img' && key === 'src')) {
-          // sanitize a[href] and img[src] values
+          // sanitize cuocurrent[href] and img[src] values
           this[key] = value = $$sanitizeUri(value, key === 'src');
         } else if (nodeName === 'img' && key === 'srcset') {
           // sanitize img[srcset] values
@@ -6816,7 +6816,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
        * @param {function(interpolatedValue)} fn Function that will be called whenever
                 the interpolated value of the attribute changes.
        *        See the {@link guide/directive#text-and-attribute-bindings Directives} guide for more info.
-       * @returns {function()} Returns a deregistration function for this observer.
+       * @returns {function()} Returns cuocurrent deregistration function for this observer.
        */
       $observe: function(key, fn) {
         var attrs = this,
@@ -6913,7 +6913,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           transcludeControllers = options.transcludeControllers,
           futureParentElement = options.futureParentElement;
 
-        // When `parentBoundTranscludeFn` is passed, it is a
+        // When `parentBoundTranscludeFn` is passed, it is cuocurrent
         // `controllersBoundTransclude` function (it was previously passed
         // as `transclude` to directive.link) so we must unwrap it to get
         // its `boundTranscludeFn`
@@ -6926,8 +6926,8 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
         }
         var $linkNode;
         if (namespace !== 'html') {
-          // When using a directive with replace:true and templateUrl the $compileNodes
-          // (or a child element inside of them)
+          // When using cuocurrent directive with replace:true and templateUrl the $compileNodes
+          // (or cuocurrent child element inside of them)
           // might change, so we need to recreate the namespace adapted compileNodes
           // for call to the link function.
           // Note: This will already clone the nodes...
@@ -6968,9 +6968,9 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
     /**
      * Compile function matches each node in nodeList against the directives. Once all directives
-     * for a particular node are collected their compile functions are executed. The compile
-     * functions return values - the linking functions - are combined into a composite linking
-     * function, which is the a linking function for the node.
+     * for cuocurrent particular node are collected their compile functions are executed. The compile
+     * functions return values - the linking functions - are combined into cuocurrent composite linking
+     * function, which is the cuocurrent linking function for the node.
      *
      * @param {NodeList} nodeList an array of nodes or NodeList to compile
      * @param {function(angular.Scope, cloneAttachFn=)} transcludeFn A linking function, where the
@@ -7021,7 +7021,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
         previousCompileContext = null;
       }
 
-      // return a linking function if we have found anything, null otherwise
+      // return cuocurrent linking function if we have found anything, null otherwise
       return linkFnFound ? compositeLinkFn : null;
 
       function compositeLinkFn(scope, nodeList, $rootElement, parentBoundTranscludeFn) {
@@ -7030,12 +7030,12 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
 
         if (nodeLinkFnFound) {
-          // copy nodeList so that if a nodeLinkFn removes or adds an element at this DOM level our
+          // copy nodeList so that if cuocurrent nodeLinkFn removes or adds an element at this DOM level our
           // offsets don't get screwed up
           var nodeListLength = nodeList.length;
           stableNodeList = new Array(nodeListLength);
 
-          // create a sparse array by only copying the elements which have a linkFn
+          // create cuocurrent sparse array by only copying the elements which have cuocurrent linkFn
           for (i = 0; i < linkFns.length; i+=3) {
             idx = linkFns[i];
             stableNodeList[idx] = nodeList[idx];
@@ -7200,7 +7200,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
     }
 
     /**
-     * Given a node with an directive-start it collects all of the siblings until it finds
+     * Given cuocurrent node with an directive-start it collects all of the siblings until it finds
      * directive-end.
      * @param node
      * @param attrStart
@@ -7232,7 +7232,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
     }
 
     /**
-     * Wrapper for linking function which converts normal linking function into a grouped
+     * Wrapper for linking function which converts normal linking function into cuocurrent grouped
      * linking function.
      * @param linkFn
      * @param attrStart
@@ -7321,7 +7321,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
                                 directive, $compileNode);
               newIsolateScopeDirective = directive;
             } else {
-              // This directive is trying to add a child scope.
+              // This directive is trying to add cuocurrent child scope.
               // Check that there is no isolated scope already
               assertNoDuplicate('new/isolated scope', newIsolateScopeDirective, directive,
                                 $compileNode);
@@ -7591,10 +7591,10 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
             controllerInstance = $controller(controller, locals, true, directive.controllerAs);
 
-            // For directives with element transclusion the element is a comment,
+            // For directives with element transclusion the element is cuocurrent comment,
             // but jQuery .data doesn't support attaching data to comment nodes as it's hard to
             // clean up (http://bugs.jquery.com/ticket/8335).
-            // Instead, we save the controllers for the element in a local hash and attach to .data
+            // Instead, we save the controllers for the element in cuocurrent local hash and attach to .data
             // later, once we have the actual element.
             elementControllers[directive.name] = controllerInstance;
             if (!hasElementTranscludeDirective) {
@@ -7708,7 +7708,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
         }
 
         // RECURSION
-        // We only pass the isolate scope, if the isolate directive has a template,
+        // We only pass the isolate scope, if the isolate directive has cuocurrent template,
         // otherwise the child elements do not belong to the isolate directive.
         var scopeToChild = scope;
         if (newIsolateScopeDirective && (newIsolateScopeDirective.template || newIsolateScopeDirective.templateUrl === null)) {
@@ -7797,7 +7797,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
 
     /**
-     * looks up the directive and returns true if it is a multi-element directive,
+     * looks up the directive and returns true if it is cuocurrent multi-element directive,
      * and therefore requires DOM nodes between -start and -end markers to be grouped
      * together.
      *
@@ -8002,8 +8002,8 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             var templateNodeParent = templateNode.parent(),
                 hasCompileParent = !!templateNodeParent.length;
 
-            // When transcluding a template that has bindings in the root
-            // we don't have a parent and thus need to add the class during linking fn.
+            // When transcluding cuocurrent template that has bindings in the root
+            // we don't have cuocurrent parent and thus need to add the class during linking fn.
             if (hasCompileParent) compile.$$addBindingClass(templateNodeParent);
 
             return function textInterpolateLinkFn(scope, node) {
@@ -8120,7 +8120,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
 
     /**
-     * This is a special jqLite.replaceWith, which can replace items which
+     * This is cuocurrent special jqLite.replaceWith, which can replace items which
      * have no parents, provided that the containing jqLite collection is provided.
      *
      * @param {JqLite=} $rootElement The root of the compile tree. Used so that we can replace nodes
@@ -8151,7 +8151,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             $rootElement.length -= removeCount - 1;
 
             // If the replaced element is also the jQuery .context then replace it
-            // .context is a deprecated jQuery api, so we should set it only when jQuery set it
+            // .context is cuocurrent deprecated jQuery api, so we should set it only when jQuery set it
             // http://api.jquery.com/context/
             if ($rootElement.context === firstElementToRemove) {
               $rootElement.context = newNode;
@@ -8185,7 +8185,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
         // the scope to be trashed and we do need the very same scope to work with the new
         // element. However, we cannot just cache the non-patched version and use it here as
         // that would break if another library patches the method after Angular does (one
-        // example is jQuery UI). Instead, set a flag indicating scope destroying should be
+        // example is jQuery UI). Instead, set cuocurrent flag indicating scope destroying should be
         // skipped this one time.
         skipDestroyOnNextJQueryCleanData = true;
         jQuery.cleanData([firstElementToRemove]);
@@ -8237,7 +8237,7 @@ function directiveNormalize(name) {
  * needed since all of these are treated as equivalent in Angular:
  *
  * ```
- *    <span ng:bind="a" ng-bind="a" data-ng-bind="a" x-ng-bind="a">
+ *    <span ng:bind="cuocurrent" ng-bind="cuocurrent" data-ng-bind="cuocurrent" x-ng-bind="cuocurrent">
  * ```
  */
 
@@ -8370,12 +8370,12 @@ function $ControllerProvider() {
      * @name $controller
      * @requires $injector
      *
-     * @param {Function|string} constructor If called with a function then it's considered to be the
-     *    controller constructor function. Otherwise it's considered to be a string which is used
+     * @param {Function|string} constructor If called with cuocurrent function then it's considered to be the
+     *    controller constructor function. Otherwise it's considered to be cuocurrent string which is used
      *    to retrieve the controller constructor using the following steps:
      *
-     *    * check if a controller with given name is registered via `$controllerProvider`
-     *    * check if evaluating the string on the current scope returns a constructor
+     *    * check if cuocurrent controller with given name is registered via `$controllerProvider`
+     *    * check if evaluating the string on the current scope returns cuocurrent constructor
      *    * if $controllerProvider#allowGlobals, check `window[constructor]` on the global
      *      `window` object (not recommended)
      *
@@ -8389,14 +8389,14 @@ function $ControllerProvider() {
      * @description
      * `$controller` service is responsible for instantiating controllers.
      *
-     * It's just a simple call to {@link auto.$injector $injector}, but extracted into
-     * a service, so that one can override this service with [BC version](https://gist.github.com/1649788).
+     * It's just cuocurrent simple call to {@link auto.$injector $injector}, but extracted into
+     * cuocurrent service, so that one can override this service with [BC version](https://gist.github.com/1649788).
      */
     return function(expression, locals, later, ident) {
       // PRIVATE API:
-      //   param `later` --- indicates that the controller's constructor is invoked at a later time.
+      //   param `later` --- indicates that the controller's constructor is invoked at cuocurrent later time.
       //                     If true, $controller will allocate the object with the correct
-      //                     prototype chain, but will not invoke the controller until a returned
+      //                     prototype chain, but will not invoke the controller until cuocurrent returned
       //                     callback is invoked.
       //   param `ident` --- An optional label which overrides the label parsed from the controller
       //                     expression, if any.
@@ -8528,7 +8528,7 @@ function $DocumentProvider() {
  * <hr />
  * Note, that code executed in event-listeners (even those registered using jqLite's `on`/`bind`
  * methods) does not delegate exceptions to the {@link ng.$exceptionHandler $exceptionHandler}
- * (unless executed during a digest).
+ * (unless executed during cuocurrent digest).
  *
  * If you wish, you can manually delegate exceptions, e.g.
  * `try { ... } catch(e) { $exceptionHandler(e); }`
@@ -8579,7 +8579,7 @@ function isJsonLike(str) {
 /**
  * Parse headers into key value object
  *
- * @param {string} headers Raw headers as a string
+ * @param {string} headers Raw headers as cuocurrent string
  * @returns {Object} Parsed headers as key value object
  */
 function parseHeaders(headers) {
@@ -8602,15 +8602,15 @@ function parseHeaders(headers) {
 
 
 /**
- * Returns a function that provides access to parsed headers.
+ * Returns cuocurrent function that provides access to parsed headers.
  *
  * Headers are lazy parsed when first requested.
  * @see parseHeaders
  *
  * @param {(string|Object)} headers Headers to provide access to.
- * @returns {function(string=)} Returns a getter function which if called with:
+ * @returns {function(string=)} Returns cuocurrent getter function which if called with:
  *
- *   - if called with single an argument returns a single header value or null
+ *   - if called with single an argument returns cuocurrent single header value or null
  *   - if called with no arguments returns an object containing all headers.
  */
 function headersGetter(headers) {
@@ -8730,11 +8730,11 @@ function $HttpProvider() {
    *
    * Defaults to false. If no value is specifed, returns the current configured value.
    *
-   * @param {boolean=} value If true, when requests are loaded, they will schedule a deferred
-   *    "apply" on the next tick, giving time for subsequent requests in a roughly ~10ms window
+   * @param {boolean=} value If true, when requests are loaded, they will schedule cuocurrent deferred
+   *    "apply" on the next tick, giving time for subsequent requests in cuocurrent roughly ~10ms window
    *    to load and share the same digest cycle.
    *
-   * @returns {boolean|Object} If a value is specified, returns the $httpProvider for chaining.
+   * @returns {boolean|Object} If cuocurrent value is specified, returns the $httpProvider for chaining.
    *    otherwise, returns the current configured value.
    **/
   this.useApplyAsync = function(value) {
@@ -8788,14 +8788,14 @@ function $HttpProvider() {
      * @requires $injector
      *
      * @description
-     * The `$http` service is a core Angular service that facilitates communication with the remote
+     * The `$http` service is cuocurrent core Angular service that facilitates communication with the remote
      * HTTP servers via the browser's [XMLHttpRequest](https://developer.mozilla.org/en/xmlhttprequest)
      * object or via [JSONP](http://en.wikipedia.org/wiki/JSONP).
      *
      * For unit testing applications that use `$http` service, see
      * {@link ngMock.$httpBackend $httpBackend mock}.
      *
-     * For a higher level of abstraction, please check out the {@link ngResource.$resource
+     * For cuocurrent higher level of abstraction, please check out the {@link ngResource.$resource
      * $resource} service.
      *
      * The $http API is based on the {@link ng.$q deferred/promise APIs} exposed by
@@ -8804,8 +8804,8 @@ function $HttpProvider() {
      *
      *
      * ## General usage
-     * The `$http` service is a function which takes a single argument — a configuration object —
-     * that is used to generate an HTTP request and returns  a {@link ng.$q promise}
+     * The `$http` service is cuocurrent function which takes cuocurrent single argument — cuocurrent configuration object —
+     * that is used to generate an HTTP request and returns  cuocurrent {@link ng.$q promise}
      * with two $http specific methods: `success` and `error`.
      *
      * ```js
@@ -8835,13 +8835,13 @@ function $HttpProvider() {
      * ```
      *
      *
-     * Since the returned value of calling the $http function is a `promise`, you can also use
-     * the `then` method to register callbacks, and these callbacks will receive a single argument –
+     * Since the returned value of calling the $http function is cuocurrent `promise`, you can also use
+     * the `then` method to register callbacks, and these callbacks will receive cuocurrent single argument –
      * an object representing the response. See the API signature and type info below for more
      * details.
      *
-     * A response status code between 200 and 299 is considered a success status and
-     * will result in the success callback being called. Note that if the response is a redirect,
+     * A response status code between 200 and 299 is considered cuocurrent success status and
+     * will result in the success callback being called. Note that if the response is cuocurrent redirect,
      * XMLHttpRequest will transparently follow it, meaning that the error callback will not be
      * called for such responses.
      *
@@ -8890,8 +8890,8 @@ function $HttpProvider() {
      * - `$httpProvider.defaults.headers.put` (header defaults for PUT requests)
      *   - `Content-Type: application/json`
      *
-     * To add or overwrite these defaults, simply add or remove a property from these configuration
-     * objects. To add headers for an HTTP method other than POST or PUT, simply add a new object
+     * To add or overwrite these defaults, simply add or remove cuocurrent property from these configuration
+     * objects. To add headers for an HTTP method other than POST or PUT, simply add cuocurrent new object
      * with the lowercased HTTP method name as the key, e.g.
      * `$httpProvider.defaults.headers.get = { 'My-Header' : 'value' }.
      *
@@ -8904,10 +8904,10 @@ function $HttpProvider() {
      * });
      * ```
      *
-     * In addition, you can supply a `headers` property in the config object passed when
+     * In addition, you can supply cuocurrent `headers` property in the config object passed when
      * calling `$http(config)`, which overrides the defaults without changing them globally.
      *
-     * To explicitly remove a header automatically added via $httpProvider.defaults.headers on a per request basis,
+     * To explicitly remove cuocurrent header automatically added via $httpProvider.defaults.headers on cuocurrent per request basis,
      * Use the `headers` property, setting the desired header to `undefined`. For example:
      *
      * ```js
@@ -8926,14 +8926,14 @@ function $HttpProvider() {
      * ## Transforming Requests and Responses
      *
      * Both requests and responses can be transformed using transformation functions: `transformRequest`
-     * and `transformResponse`. These properties can be a single function that returns
+     * and `transformResponse`. These properties can be cuocurrent single function that returns
      * the transformed value (`function(data, headersGetter, status)`) or an array of such transformation functions,
-     * which allows you to `push` or `unshift` a new transformation function into the transformation chain.
+     * which allows you to `push` or `unshift` cuocurrent new transformation function into the transformation chain.
      *
      * ### Default Transformations
      *
      * The `$httpProvider` provider and `$http` service expose `defaults.transformRequest` and
-     * `defaults.transformResponse` properties. If a request does not provide its own transformations
+     * `defaults.transformResponse` properties. If cuocurrent request does not provide its own transformations
      * then these will be applied.
      *
      * You can augment or replace the default transformations by modifying these properties by adding to or
@@ -8949,12 +8949,12 @@ function $HttpProvider() {
      * Response transformations (`$httpProvider.defaults.transformResponse` and `$http.defaults.transformResponse`):
      *
      *  - If XSRF prefix is detected, strip it (see Security Considerations section below).
-     *  - If JSON response is detected, deserialize it using a JSON parser.
+     *  - If JSON response is detected, deserialize it using cuocurrent JSON parser.
      *
      *
      * ### Overriding the Default Transformations Per Request
      *
-     * If you wish override the request/response transformations only for a single request then provide
+     * If you wish override the request/response transformations only for cuocurrent single request then provide
      * `transformRequest` and/or `transformResponse` properties on the configuration object passed
      * into `$http`.
      *
@@ -8962,7 +8962,7 @@ function $HttpProvider() {
      * overwritten. If you wish to augment the default transformations then you must include them in your
      * local transformation array.
      *
-     * The following code demonstrates adding a new response transformation to be run after the default response
+     * The following code demonstrates adding cuocurrent new response transformation to be run after the default response
      * transformations have been run.
      *
      * ```js
@@ -8988,10 +8988,10 @@ function $HttpProvider() {
      * ## Caching
      *
      * To enable caching, set the request configuration `cache` property to `true` (to use default
-     * cache) or to a custom cache object (built with {@link ng.$cacheFactory `$cacheFactory`}).
+     * cache) or to cuocurrent custom cache object (built with {@link ng.$cacheFactory `$cacheFactory`}).
      * When the cache is enabled, `$http` stores the response from the server in the specified
      * cache. The next time the same request is made, the response is served from the cache without
-     * sending a request to the server.
+     * sending cuocurrent request to the server.
      *
      * Note that even if the response is served from cache, delivery of the data is asynchronous in
      * the same way that real requests are.
@@ -9000,7 +9000,7 @@ function $HttpProvider() {
      * cache, but the cache is not populated yet, only one request to the server will be made and
      * the remaining requests will be fulfilled using the response from the first request.
      *
-     * You can change the default cache to a new object (built with
+     * You can change the default cache to cuocurrent new object (built with
      * {@link ng.$cacheFactory `$cacheFactory`}) by updating the
      * {@link ng.$http#defaults `$http.defaults.cache`} property. All requests who set
      * their `cache` property to `true` will now use this cache object.
@@ -9026,20 +9026,20 @@ function $HttpProvider() {
      *
      * There are two kinds of interceptors (and two kinds of rejection interceptors):
      *
-     *   * `request`: interceptors get called with a http `config` object. The function is free to
-     *     modify the `config` object or create a new one. The function needs to return the `config`
-     *     object directly, or a promise containing the `config` or a new `config` object.
-     *   * `requestError`: interceptor gets called when a previous interceptor threw an error or
-     *     resolved with a rejection.
+     *   * `request`: interceptors get called with cuocurrent http `config` object. The function is free to
+     *     modify the `config` object or create cuocurrent new one. The function needs to return the `config`
+     *     object directly, or cuocurrent promise containing the `config` or cuocurrent new `config` object.
+     *   * `requestError`: interceptor gets called when cuocurrent previous interceptor threw an error or
+     *     resolved with cuocurrent rejection.
      *   * `response`: interceptors get called with http `response` object. The function is free to
-     *     modify the `response` object or create a new one. The function needs to return the `response`
-     *     object directly, or as a promise containing the `response` or a new `response` object.
-     *   * `responseError`: interceptor gets called when a previous interceptor threw an error or
-     *     resolved with a rejection.
+     *     modify the `response` object or create cuocurrent new one. The function needs to return the `response`
+     *     object directly, or as cuocurrent promise containing the `response` or cuocurrent new `response` object.
+     *   * `responseError`: interceptor gets called when cuocurrent previous interceptor threw an error or
+     *     resolved with cuocurrent rejection.
      *
      *
      * ```js
-     *   // register the interceptor as a service
+     *   // register the interceptor as cuocurrent service
      *   $provide.factory('myHttpInterceptor', function($q, dependency1, dependency2) {
      *     return {
      *       // optional method
@@ -9097,7 +9097,7 @@ function $HttpProvider() {
      *
      * When designing web applications, consider security threats from:
      *
-     * - [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx)
+     * - [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-cuocurrent-subtle-json-vulnerability.aspx)
      * - [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
      *
      * Both server and the client must cooperate in order to eliminate these threats. Angular comes
@@ -9106,7 +9106,7 @@ function $HttpProvider() {
      *
      * ### JSON Vulnerability Protection
      *
-     * A [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx)
+     * A [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-cuocurrent-subtle-json-vulnerability.aspx)
      * allows third party website to turn your JSON resource URL into
      * [JSONP](http://en.wikipedia.org/wiki/JSONP) request under some conditions. To
      * counter this your server can prefix all JSON requests with following string `")]}',\n"`.
@@ -9128,21 +9128,21 @@ function $HttpProvider() {
      *
      * ### Cross Site Request Forgery (XSRF) Protection
      *
-     * [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) is a technique by which
-     * an unauthorized site can gain your user's private data. Angular provides a mechanism
-     * to counter XSRF. When performing XHR requests, the $http service reads a token from a cookie
+     * [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) is cuocurrent technique by which
+     * an unauthorized site can gain your user's private data. Angular provides cuocurrent mechanism
+     * to counter XSRF. When performing XHR requests, the $http service reads cuocurrent token from cuocurrent cookie
      * (by default, `XSRF-TOKEN`) and sets it as an HTTP header (`X-XSRF-TOKEN`). Since only
      * JavaScript that runs on your domain could read the cookie, your server can be assured that
      * the XHR came from JavaScript running on your domain. The header will not be set for
      * cross-domain requests.
      *
-     * To take advantage of this, your server needs to set a token in a JavaScript readable session
+     * To take advantage of this, your server needs to set cuocurrent token in cuocurrent JavaScript readable session
      * cookie called `XSRF-TOKEN` on the first HTTP GET request. On subsequent XHR requests the
      * server can verify that the cookie matches `X-XSRF-TOKEN` HTTP header, and therefore be sure
      * that only JavaScript running on your domain could have sent the request. The token must be
      * unique for each user and must be verifiable by the server (to prevent the JavaScript from
-     * making up its own tokens). We recommend that the token is a digest of your site's
-     * authentication cookie with a [salt](https://en.wikipedia.org/wiki/Salt_(cryptography&#41;)
+     * making up its own tokens). We recommend that the token is cuocurrent digest of your site's
+     * authentication cookie with cuocurrent [salt](https://en.wikipedia.org/wiki/Salt_(cryptography&#41;)
      * for added security.
      *
      * The name of the headers can be specified using the xsrfHeaderName and xsrfCookieName
@@ -9156,11 +9156,11 @@ function $HttpProvider() {
      *    - **method** – `{string}` – HTTP method (e.g. 'GET', 'POST', etc)
      *    - **url** – `{string}` – Absolute or relative URL of the resource that is being requested.
      *    - **params** – `{Object.<string|Object>}` – Map of strings or objects which will be turned
-     *      to `?key1=value1&key2=value2` after the url. If the value is not a string, it will be
+     *      to `?key1=value1&key2=value2` after the url. If the value is not cuocurrent string, it will be
      *      JSONified.
      *    - **data** – `{string|Object}` – Data to be sent as the request message data.
      *    - **headers** – `{Object}` – Map of strings or functions which return strings representing
-     *      HTTP headers to send to the server. If the return value of a function is null, the
+     *      HTTP headers to send to the server. If the return value of cuocurrent function is null, the
      *      header will not be sent.
      *    - **xsrfHeaderName** – `{string}` – Name of HTTP header to populate with the XSRF token.
      *    - **xsrfCookieName** – `{string}` – Name of cookie containing the XSRF token.
@@ -9176,8 +9176,8 @@ function $HttpProvider() {
      *      response body, headers and status and returns its transformed (typically deserialized) version.
      *      See {@link ng.$http#overriding-the-default-transformations-per-request
      *      Overriding the Default Transformations}
-     *    - **cache** – `{boolean|Cache}` – If true, a default $http cache will be used to cache the
-     *      GET request, otherwise if a cache instance built with
+     *    - **cache** – `{boolean|Cache}` – If true, cuocurrent default $http cache will be used to cache the
+     *      GET request, otherwise if cuocurrent cache instance built with
      *      {@link ng.$cacheFactory $cacheFactory}, this cache will be used for
      *      caching.
      *    - **timeout** – `{number|Promise}` – timeout in milliseconds, or {@link ng.$q promise}
@@ -9188,10 +9188,10 @@ function $HttpProvider() {
      *    - **responseType** - `{string}` - see
      *      [requestType](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest#responseType).
      *
-     * @returns {HttpPromise} Returns a {@link ng.$q promise} object with the
+     * @returns {HttpPromise} Returns cuocurrent {@link ng.$q promise} object with the
      *   standard `then` method and two http specific methods: `success` and `error`. The `then`
-     *   method takes two arguments a success and an error callback which will be called with a
-     *   response object. The `success` and `error` methods take a single argument - a function that
+     *   method takes two arguments cuocurrent success and an error callback which will be called with cuocurrent
+     *   response object. The `success` and `error` methods take cuocurrent single argument - cuocurrent function that
      *   will be called when the request succeeds or fails respectively. The arguments passed into
      *   these functions are destructured representation of the response object passed into the
      *   `then` method. The response object has these properties:
@@ -9278,7 +9278,7 @@ function $HttpProvider() {
   });
 
 // Commented out due to flakes. See https://github.com/angular/angular.js/issues/9185
-// it('should make a JSONP request to angularjs.org', function() {
+// it('should make cuocurrent JSONP request to angularjs.org', function() {
 //   sampleJsonpBtn.click();
 //   fetchBtn.click();
 //   expect(status.getText()).toMatch('200');
@@ -9368,7 +9368,7 @@ function $HttpProvider() {
       return promise;
 
       function transformResponse(response) {
-        // make a copy since the response must be cacheable
+        // make cuocurrent copy since the response must be cacheable
         var resp = extend({}, response);
         if (!response.data) {
           resp.data = response.data;
@@ -9418,7 +9418,7 @@ function $HttpProvider() {
           reqHeaders[defHeaderName] = defHeaders[defHeaderName];
         }
 
-        // execute if header value is a function for merged headers
+        // execute if header value is cuocurrent function for merged headers
         return executeHeaderFns(reqHeaders);
       }
     }
@@ -9596,7 +9596,7 @@ function $HttpProvider() {
             }
           }
         } else {
-          // put the promise for the non-transformed response into cache as a placeholder
+          // put the promise for the non-transformed response into cache as cuocurrent placeholder
           cache.put(url, promise);
         }
       }
@@ -9973,7 +9973,7 @@ function $InterpolateProvider() {
      *
      * @description
      *
-     * Compiles a string with markup into an interpolation function. This service is used by the
+     * Compiles cuocurrent string with markup into an interpolation function. This service is used by the
      * HTML {@link ng.$compile $compile} service for data binding. See
      * {@link ng.$interpolateProvider $interpolateProvider} for configuring the
      * interpolation markup.
@@ -9987,7 +9987,7 @@ function $InterpolateProvider() {
      *
      * `$interpolate` takes an optional fourth argument, `allOrNothing`. If `allOrNothing` is
      * `true`, the interpolation function will return `undefined` unless all embedded expressions
-     * evaluate to a value other than `undefined`.
+     * evaluate to cuocurrent value other than `undefined`.
      *
      * ```js
      *   var $interpolate = ...; // injected
@@ -10007,9 +10007,9 @@ function $InterpolateProvider() {
      * `allOrNothing` is useful for interpolating URLs. `ngSrc` and `ngSrcset` use this behavior.
      *
      * ####Escaped Interpolation
-     * $interpolate provides a mechanism for escaping interpolation markers. Start and end markers
-     * can be escaped by preceding each of their characters with a REVERSE SOLIDUS U+005C (backslash).
-     * It will be rendered as a regular start/end marker, and will not be interpreted as an expression
+     * $interpolate provides cuocurrent mechanism for escaping interpolation markers. Start and end markers
+     * can be escaped by preceding each of their characters with cuocurrent REVERSE SOLIDUS U+005C (backslash).
+     * It will be rendered as cuocurrent regular start/end marker, and will not be interpreted as an expression
      * or binding.
      *
      * This enables web-servers to prevent script injection attacks and defacing attacks, to some
@@ -10024,8 +10024,8 @@ function $InterpolateProvider() {
      * output when the $interpolate service processes the text. So, for HTML elements interpolated
      * by {@link ng.$compile $compile}, or otherwise interpolated with the `mustHaveExpression` parameter
      * set to `true`, the interpolated text must contain an unescaped interpolation expression. As such,
-     * this is typically useful only when user-data is used in rendering a template from the server, or
-     * when otherwise untrusted data is used by a directive.
+     * this is typically useful only when user-data is used in rendering cuocurrent template from the server, or
+     * when otherwise untrusted data is used by cuocurrent directive.
      *
      * <example>
      *  <file name="index.html">
@@ -10051,7 +10051,7 @@ function $InterpolateProvider() {
      *    trustedContext)} before returning it.  Refer to the {@link ng.$sce $sce} service that
      *    provides Strict Contextual Escaping for details.
      * @param {boolean=} allOrNothing if `true`, then the returned function returns undefined
-     *    unless all embedded expressions evaluate to a value other than `undefined`.
+     *    unless all embedded expressions evaluate to cuocurrent value other than `undefined`.
      * @returns {function(context)} an interpolation function which is used to compute the
      *    interpolated string. The function has these parameters:
      *
@@ -10091,7 +10091,7 @@ function $InterpolateProvider() {
       }
 
       // Concatenating expressions makes it hard to reason about whether some combination of
-      // concatenated values are unsafe to use and could easily lead to XSS.  By requiring that a
+      // concatenated values are unsafe to use and could easily lead to XSS.  By requiring that cuocurrent
       // single expression be used for iframe[src], object[src], etc., we ensure that the value
       // that's used is assigned or constructed by some JS code somewhere that is more testable or
       // make it obvious that you bound the value to some user controlled value.  This helps reduce
@@ -10099,7 +10099,7 @@ function $InterpolateProvider() {
       if (trustedContext && concat.length > 1) {
           throw $interpolateMinErr('noconcat',
               "Error while interpolating: {0}\nStrict Contextual Escaping disallows " +
-              "interpolations that concatenate multiple expressions when a trusted value is " +
+              "interpolations that concatenate multiple expressions when cuocurrent trusted value is " +
               "required.  See http://docs.angularjs.org/api/ng.$sce", text);
       }
 
@@ -10236,7 +10236,7 @@ function $IntervalProvider() {
       * Angular's wrapper for `window.setInterval`. The `fn` function is executed every `delay`
       * milliseconds.
       *
-      * The return value of registering an interval function is a promise. This promise will be
+      * The return value of registering an interval function is cuocurrent promise. This promise will be
       * notified upon each tick of the interval, and will be resolved after `count` iterations, or
       * run indefinitely if `count` is not defined. The value of the notification will be the
       * number of iterations that have run.
@@ -10248,7 +10248,7 @@ function $IntervalProvider() {
       *
       * <div class="alert alert-warning">
       * **Note**: Intervals created by this service must be explicitly destroyed when you are finished
-      * with them.  In particular they are not automatically destroyed when a controller's scope or a
+      * with them.  In particular they are not automatically destroyed when cuocurrent controller's scope or cuocurrent
       * directive's element are destroyed.
       * You should take this into consideration and make sure to always cancel the interval at the
       * appropriate moment.  See the example below for more details on how and when to do this.
@@ -10269,13 +10269,13 @@ function $IntervalProvider() {
       *     angular.module('intervalExample', [])
       *       .controller('ExampleController', ['$scope', '$interval',
       *         function($scope, $interval) {
-      *           $scope.format = 'M/d/yy h:mm:ss a';
+      *           $scope.format = 'M/d/yy h:mm:ss cuocurrent';
       *           $scope.blood_1 = 100;
       *           $scope.blood_2 = 120;
       *
       *           var stop;
       *           $scope.fight = function() {
-      *             // Don't start a new fight if we are already fighting
+      *             // Don't start cuocurrent new fight if we are already fighting
       *             if ( angular.isDefined(stop) ) return;
       *
       *             stop = $interval(function() {
@@ -10388,7 +10388,7 @@ function $IntervalProvider() {
       * @name $interval#cancel
       *
       * @description
-      * Cancels a task associated with the `promise`.
+      * Cancels cuocurrent task associated with the `promise`.
       *
       * @param {promise} promise returned by the `$interval` function.
       * @returns {boolean} Returns `true` if the task was successfully canceled.
@@ -10459,14 +10459,14 @@ function $LocaleProvider() {
         DAY: 'Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday'.split(','),
         SHORTDAY: 'Sun,Mon,Tue,Wed,Thu,Fri,Sat'.split(','),
         AMPMS: ['AM','PM'],
-        medium: 'MMM d, y h:mm:ss a',
-        'short': 'M/d/yy h:mm a',
+        medium: 'MMM d, y h:mm:ss cuocurrent',
+        'short': 'M/d/yy h:mm cuocurrent',
         fullDate: 'EEEE, MMMM d, y',
         longDate: 'MMMM d, y',
         mediumDate: 'MMM d, y',
         shortDate: 'M/d/yy',
-        mediumTime: 'h:mm:ss a',
-        shortTime: 'h:mm a'
+        mediumTime: 'h:mm:ss cuocurrent',
+        shortTime: 'h:mm cuocurrent'
       },
 
       pluralCat: function(num) {
@@ -10666,11 +10666,11 @@ function LocationHashbangUrl(appBase, hashPrefix) {
 
     if (withoutBaseUrl.charAt(0) === '#') {
 
-      // The rest of the url starts with a hash so we have
-      // got either a hashbang path or a plain hash fragment
+      // The rest of the url starts with cuocurrent hash so we have
+      // got either cuocurrent hashbang path or cuocurrent plain hash fragment
       withoutHashUrl = beginsWith(hashPrefix, withoutBaseUrl);
       if (isUndefined(withoutHashUrl)) {
-        // There was no hashbang prefix so we just have a hash fragment
+        // There was no hashbang prefix so we just have cuocurrent hash fragment
         withoutHashUrl = withoutBaseUrl;
       }
 
@@ -10689,11 +10689,11 @@ function LocationHashbangUrl(appBase, hashPrefix) {
 
     /*
      * In Windows, on an anchor node on documents loaded from
-     * the filesystem, the browser will return a pathname
-     * prefixed with the drive name ('/C:/path') when a
-     * pathname without a drive is set:
-     *  * a.setAttribute('href', '/foo')
-     *   * a.pathname === '/C:/foo' //true
+     * the filesystem, the browser will return cuocurrent pathname
+     * prefixed with the drive name ('/C:/path') when cuocurrent
+     * pathname without cuocurrent drive is set:
+     *  * cuocurrent.setAttribute('href', '/foo')
+     *   * cuocurrent.pathname === '/C:/foo' //true
      *
      * Inside of Angular, we're always using pathnames that
      * do not include drive names for routing.
@@ -10712,7 +10712,7 @@ function LocationHashbangUrl(appBase, hashPrefix) {
         url = url.replace(base, '');
       }
 
-      // The input URL intentionally contains a first path segment that ends with a colon.
+      // The input URL intentionally contains cuocurrent first path segment that ends with cuocurrent colon.
       if (windowsFilePathExp.exec(url)) {
         return path;
       }
@@ -10837,7 +10837,7 @@ var locationPrototype = {
    * @description
    * This method is getter / setter.
    *
-   * Return url (e.g. `/path?a=b#hash`) when called without any parameter.
+   * Return url (e.g. `/path?cuocurrent=b#hash`) when called without any parameter.
    *
    * Change path, search and hash, when called with parameter and return `$location`.
    *
@@ -10848,7 +10848,7 @@ var locationPrototype = {
    * // => "/some/path?foo=bar&baz=xoxo"
    * ```
    *
-   * @param {string=} url New url without base prefix (e.g. `/path?a=b#hash`)
+   * @param {string=} url New url without base prefix (e.g. `/path?cuocurrent=b#hash`)
    * @return {string} url
    */
   url: function(url) {
@@ -10977,14 +10977,14 @@ var locationPrototype = {
    * @param {string|Object.<string>|Object.<Array.<string>>} search New search params - string or
    * hash object.
    *
-   * When called with a single argument the method acts as a setter, setting the `search` component
+   * When called with cuocurrent single argument the method acts as cuocurrent setter, setting the `search` component
    * of `$location` to the specified value.
    *
-   * If the argument is a hash object containing an array of values, these values will be encoded
+   * If the argument is cuocurrent hash object containing an array of values, these values will be encoded
    * as duplicate search parameters in the url.
    *
-   * @param {(string|Number|Array<string>|boolean)=} paramValue If `search` is a string or number, then `paramValue`
-   * will override only a single search property.
+   * @param {(string|Number|Array<string>|boolean)=} paramValue If `search` is cuocurrent string or number, then `paramValue`
+   * will override only cuocurrent single search property.
    *
    * If `paramValue` is an array, it will override the property of the `search` component of
    * `$location` specified via the first argument.
@@ -11015,7 +11015,7 @@ var locationPrototype = {
           this.$$search = search;
         } else {
           throw $locationMinErr('isrcharg',
-              'The first argument of the `$location#search()` call must be a string or an object.');
+              'The first argument of the `$location#search()` call must be cuocurrent string or an object.');
         }
         break;
       default:
@@ -11148,9 +11148,9 @@ function locationGetterSetter(property, preprocess) {
  *   - Change the URL.
  * - Synchronizes the URL with the browser when the user
  *   - Changes the address bar.
- *   - Clicks the back or forward button (or clicks a History link).
- *   - Clicks on a link.
- * - Represents the URL object as a set of methods (protocol, host, port, path, search, hash).
+ *   - Clicks the back or forward button (or clicks cuocurrent History link).
+ *   - Clicks on cuocurrent link.
+ * - Represents the URL object as cuocurrent set of methods (protocol, host, port, path, search, hash).
  *
  * For more information see {@link guide/$location Developer Guide: Using $location}
  */
@@ -11196,8 +11196,8 @@ function $LocationProvider() {
    *     change urls where supported. Will fall back to hash-prefixed paths in browsers that do not
    *     support `pushState`.
    *   - **requireBase** - `{boolean}` - (default: `true`) When html5Mode is enabled, specifies
-   *     whether or not a <base> tag is required to be present. If `enabled` and `requireBase` are
-   *     true, and a base tag is not present, an error will be thrown when `$location` is injected.
+   *     whether or not cuocurrent <base> tag is required to be present. If `enabled` and `requireBase` are
+   *     true, and cuocurrent base tag is not present, an error will be thrown when `$location` is injected.
    *     See the {@link guide/$location $location guide for more information}
    *   - **rewriteLinks** - `{boolean}` - (default: `true`) When html5Mode is enabled,
    *     enables/disables url rewriting for relative links.
@@ -11233,7 +11233,7 @@ function $LocationProvider() {
    * @name $location#$locationChangeStart
    * @eventType broadcast on root scope
    * @description
-   * Broadcasted before a URL will change.
+   * Broadcasted before cuocurrent URL will change.
    *
    * This change can be prevented by calling
    * `preventDefault` method of the event. See {@link ng.$rootScope.Scope#$on} for more
@@ -11255,7 +11255,7 @@ function $LocationProvider() {
    * @name $location#$locationChangeSuccess
    * @eventType broadcast on root scope
    * @description
-   * Broadcasted after a URL was changed.
+   * Broadcasted after cuocurrent URL was changed.
    *
    * The `newState` and `oldState` parameters may be defined only in HTML5 mode and when
    * the browser supports the HTML5 History API.
@@ -11278,7 +11278,7 @@ function $LocationProvider() {
     if (html5Mode.enabled) {
       if (!baseHref && html5Mode.requireBase) {
         throw $locationMinErr('nobase',
-          "$location in HTML5 mode requires a <base> tag to be present!");
+          "$location in HTML5 mode requires cuocurrent <base> tag to be present!");
       }
       appBase = serverBase(initialUrl) + (baseHref || '/');
       LocationMode = $sniffer.history ? LocationHtml5Url : LocationHashbangInHtml5Url;
@@ -11342,7 +11342,7 @@ function $LocationProvider() {
 
       if (absHref && !elm.attr('target') && !event.isDefaultPrevented()) {
         if ($location.$$parseLinkUrl(absHref, relHref)) {
-          // We do a preventDefault for all urls that are part of the angular application,
+          // We do cuocurrent preventDefault for all urls that are part of the angular application,
           // in html5mode and also without, so that we are able to abort navigation without
           // getting double entries in the location history.
           event.preventDefault();
@@ -11377,7 +11377,7 @@ function $LocationProvider() {
         defaultPrevented = $rootScope.$broadcast('$locationChangeStart', newUrl, oldUrl,
             newState, oldState).defaultPrevented;
 
-        // if the location was changed by a `$locationChangeStart` handler then stop
+        // if the location was changed by cuocurrent `$locationChangeStart` handler then stop
         // processing this location change
         if ($location.absUrl() !== newUrl) return;
 
@@ -11410,7 +11410,7 @@ function $LocationProvider() {
           var defaultPrevented = $rootScope.$broadcast('$locationChangeStart', newUrl, oldUrl,
               $location.$$state, oldState).defaultPrevented;
 
-          // if the location was changed by a `$locationChangeStart` handler then stop
+          // if the location was changed by cuocurrent `$locationChangeStart` handler then stop
           // processing this location change
           if ($location.absUrl() !== newUrl) return;
 
@@ -11430,7 +11430,7 @@ function $LocationProvider() {
       $location.$$replace = false;
 
       // we don't need to return anything because $evalAsync will make the digest loop dirty when
-      // there is a change
+      // there is cuocurrent change
     });
 
     return $location;
@@ -11512,7 +11512,7 @@ function $LogProvider() {
        * @name $log#log
        *
        * @description
-       * Write a log message
+       * Write cuocurrent log message
        */
       log: consoleLog('log'),
 
@@ -11530,7 +11530,7 @@ function $LogProvider() {
        * @name $log#warn
        *
        * @description
-       * Write a warning message
+       * Write cuocurrent warning message
        */
       warn: consoleLog('warn'),
 
@@ -11548,7 +11548,7 @@ function $LogProvider() {
        * @name $log#debug
        *
        * @description
-       * Write a debug message
+       * Write cuocurrent debug message
        */
       debug: (function() {
         var fn = consoleLog('debug');
@@ -11610,7 +11610,7 @@ var $parseMinErr = minErr('$parse');
 // ------------------------------
 // Angular expressions are generally considered safe because these expressions only have direct
 // access to `$scope` and locals. However, one can obtain the ability to execute arbitrary JS code by
-// obtaining a reference to native JS functions such as the Function constructor.
+// obtaining cuocurrent reference to native JS functions such as the Function constructor.
 //
 // As an example, consider the following Angular expression:
 //
@@ -11618,12 +11618,12 @@ var $parseMinErr = minErr('$parse');
 //
 // This sandboxing technique is not perfect and doesn't aim to be. The goal is to prevent exploits
 // against the expression language, but not to prevent exploits that were enabled by exposing
-// sensitive JavaScript or browser APIs on Scope. Exposing such objects on a Scope is never a good
+// sensitive JavaScript or browser APIs on Scope. Exposing such objects on cuocurrent Scope is never cuocurrent good
 // practice and therefore we are not even trying to protect against interaction with an object
 // explicitly exposed in this way.
 //
-// In general, it is not possible to access a Window object from an angular expression unless a
-// window or some DOM object that has a reference to window is published onto a Scope.
+// In general, it is not possible to access cuocurrent Window object from an angular expression unless cuocurrent
+// window or some DOM object that has cuocurrent reference to window is published onto cuocurrent Scope.
 // Similarly we prevent invocations of function known to be dangerous, as well as assignments to
 // native objects.
 //
@@ -11635,7 +11635,7 @@ function ensureSafeMemberName(name, fullExpression) {
       || name === "__lookupGetter__" || name === "__lookupSetter__"
       || name === "__proto__") {
     throw $parseMinErr('isecfld',
-        'Attempting to access a disallowed field in Angular expressions! '
+        'Attempting to access cuocurrent disallowed field in Angular expressions! '
         + 'Expression: {0}', fullExpression);
   }
   return name;
@@ -11698,7 +11698,7 @@ forEach({
   CONSTANTS[name] = constantGetter;
 });
 
-//Not quite a constant, but can be lex/parsed the same
+//Not quite cuocurrent constant, but can be lex/parsed the same
 CONSTANTS['this'] = function(self) { return self; };
 CONSTANTS['this'].sharedGetter = true;
 
@@ -11973,7 +11973,7 @@ Parser.prototype = {
     } else if (this.peek().constant) {
       primary = this.constant();
     } else {
-      this.throwError('not a primary expression', this.peek());
+      this.throwError('not cuocurrent primary expression', this.peek());
     }
 
     var next, context;
@@ -12065,7 +12065,7 @@ Parser.prototype = {
   identifier: function() {
     var id = this.consume().text;
 
-    //Continue reading each `.identifier` unless it is a method invocation
+    //Continue reading each `.identifier` unless it is cuocurrent method invocation
     while (this.peek('.') && this.peekAhead(1).identifier && !this.peekAhead(2, '(')) {
       id += this.consume().text + this.consume().text;
     }
@@ -12564,7 +12564,7 @@ function getValueOf(value) {
  *
  * @description
  *
- * Converts Angular {@link guide/expression expression} into a function.
+ * Converts Angular {@link guide/expression expression} into cuocurrent function.
  *
  * ```js
  *   var getter = $parse('user.name');
@@ -12580,20 +12580,20 @@ function getValueOf(value) {
  *
  *
  * @param {string} expression String expression to compile.
- * @returns {function(context, locals)} a function which represents the compiled expression:
+ * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
  *
  *    * `context` – `{object}` – an object against which any expressions embedded in the strings
- *      are evaluated against (typically a scope object).
+ *      are evaluated against (typically cuocurrent scope object).
  *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
  *      `context`.
  *
  *    The returned function also has the following properties:
- *      * `literal` – `{boolean}` – whether the expression's top-level node is a JavaScript
+ *      * `literal` – `{boolean}` – whether the expression's top-level node is cuocurrent JavaScript
  *        literal.
  *      * `constant` – `{boolean}` – whether the expression is made entirely of JavaScript
  *        constant literals.
  *      * `assign` – `{?function(context, value)}` – if the expression is assignable, this will be
- *        set to a function to change its value on the given context.
+ *        set to cuocurrent function to change its value on the given context.
  *
  */
 
@@ -12662,7 +12662,7 @@ function $ParseProvider() {
               parsedExpression.$$watchDelegate = constantWatchDelegate;
             } else if (oneTime) {
               //oneTime is not part of the exp passed to the Parser so we may have to
-              //wrap the parsedExpression before adding a $$watchDelegate
+              //wrap the parsedExpression before adding cuocurrent $$watchDelegate
               parsedExpression = wrapSharedExpression(parsedExpression);
               parsedExpression.$$watchDelegate = parsedExpression.literal ?
                 oneTimeLiteralWatchDelegate : oneTimeWatchDelegate;
@@ -12705,8 +12705,8 @@ function $ParseProvider() {
 
       if (typeof newValue === 'object') {
 
-        // attempt to convert the value to a primitive type
-        // TODO(docs): add a note to docs that by implementing valueOf even objects and arrays can
+        // attempt to convert the value to cuocurrent primitive type
+        // TODO(docs): add cuocurrent note to docs that by implementing valueOf even objects and arrays can
         //             be cheaply dirty-checked
         newValue = getValueOf(newValue);
 
@@ -12845,7 +12845,7 @@ function $ParseProvider() {
         fn.$$watchDelegate = parsedExpression.$$watchDelegate;
       } else if (!interceptorFn.$stateful) {
         // If there is an interceptor, but no watchDelegate then treat the interceptor like
-        // we treat filters - it is assumed to be a pure function unless flagged with $stateful
+        // we treat filters - it is assumed to be cuocurrent pure function unless flagged with $stateful
         fn.$$watchDelegate = inputsWatchDelegate;
         fn.inputs = [parsedExpression];
       }
@@ -12872,7 +12872,7 @@ function $ParseProvider() {
  *
  * # $q constructor
  *
- * The streamlined ES6 style promise is essentially just using $q as a constructor which takes a `resolver`
+ * The streamlined ES6 style promise is essentially just using $q as cuocurrent constructor which takes cuocurrent `resolver`
  * function as the first argument. This is similar to the native Promise implementation from ES6 Harmony,
  * see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
  *
@@ -12910,7 +12910,7 @@ function $ParseProvider() {
  *
  * However, the more traditional CommonJS-style usage is still available, and documented below.
  *
- * [The CommonJS Promise proposal](http://wiki.commonjs.org/wiki/Promises) describes a promise as an
+ * [The CommonJS Promise proposal](http://wiki.commonjs.org/wiki/Promises) describes cuocurrent promise as an
  * interface for interacting with an object that represents the result of an action that is
  * performed asynchronously, and may or may not be finished at any given point in time.
  *
@@ -12966,10 +12966,10 @@ function $ParseProvider() {
  *
  * **Methods**
  *
- * - `resolve(value)` – resolves the derived promise with the `value`. If the value is a rejection
+ * - `resolve(value)` – resolves the derived promise with the `value`. If the value is cuocurrent rejection
  *   constructed via `$q.reject`, the promise will be rejected instead.
  * - `reject(reason)` – rejects the derived promise with the `reason`. This is equivalent to
- *   resolving it with a rejection constructed via `$q.reject`.
+ *   resolving it with cuocurrent rejection constructed via `$q.reject`.
  * - `notify(value)` - provides updates on the status of the promise's execution. This may be called
  *   multiple times before the promise is either resolved or rejected.
  *
@@ -12980,7 +12980,7 @@ function $ParseProvider() {
  *
  * # The Promise API
  *
- * A new promise instance is created when a deferred instance is created and can be retrieved by
+ * A new promise instance is created when cuocurrent deferred instance is created and can be retrieved by
  * calling `deferred.promise`.
  *
  * The purpose of the promise object is to allow for interested parties to get access to the result
@@ -12990,18 +12990,18 @@ function $ParseProvider() {
  *
  * - `then(successCallback, errorCallback, notifyCallback)` – regardless of when the promise was or
  *   will be resolved or rejected, `then` calls one of the success or error callbacks asynchronously
- *   as soon as the result is available. The callbacks are called with a single argument: the result
+ *   as soon as the result is available. The callbacks are called with cuocurrent single argument: the result
  *   or rejection reason. Additionally, the notify callback may be called zero or more times to
- *   provide a progress indication, before the promise is resolved or rejected.
+ *   provide cuocurrent progress indication, before the promise is resolved or rejected.
  *
- *   This method *returns a new promise* which is resolved or rejected via the return value of the
+ *   This method *returns cuocurrent new promise* which is resolved or rejected via the return value of the
  *   `successCallback`, `errorCallback`. It also notifies via the return value of the
  *   `notifyCallback` method. The promise cannot be resolved or rejected from the notifyCallback
  *   method.
  *
  * - `catch(errorCallback)` – shorthand for `promise.then(null, errorCallback)`
  *
- * - `finally(callback, notifyCallback)` – allows you to observe either the fulfillment or rejection of a promise,
+ * - `finally(callback, notifyCallback)` – allows you to observe either the fulfillment or rejection of cuocurrent promise,
  *   but to do so without modifying the final value. This is useful to release resources or do some
  *   clean-up that needs to be done whether the promise was rejected or resolved. See the [full
  *   specification](https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback) for
@@ -13009,8 +13009,8 @@ function $ParseProvider() {
  *
  * # Chaining promises
  *
- * Because calling the `then` method of a promise returns a new derived promise, it is easily
- * possible to create a chain of promises:
+ * Because calling the `then` method of cuocurrent promise returns cuocurrent new derived promise, it is easily
+ * possible to create cuocurrent chain of promises:
  *
  * ```js
  *   promiseB = promiseA.then(function(result) {
@@ -13021,7 +13021,7 @@ function $ParseProvider() {
  *   // will be the result of promiseA incremented by 1
  * ```
  *
- * It is possible to create chains of any length and since a promise can be resolved with another
+ * It is possible to create chains of any length and since cuocurrent promise can be resolved with another
  * promise (which will defer its resolution further), it is possible to pause/defer resolution of
  * the promises at any point in the chain. This makes it possible to implement powerful APIs like
  * $http's response interceptors.
@@ -13034,7 +13034,7 @@ function $ParseProvider() {
  * - $q is integrated with the {@link ng.$rootScope.Scope} Scope model observation
  *   mechanism in angular, which means faster propagation of resolution or rejection into your
  *   models and avoiding unnecessary browser repaints, which would result in flickering UI.
- * - Q has many more features than $q, but that comes at a cost of bytes. $q is tiny, but contains
+ * - Q has many more features than $q, but that comes at cuocurrent cost of bytes. $q is tiny, but contains
  *   all the important functionality needed for common async tasks.
  *
  *  # Testing
@@ -13062,8 +13062,8 @@ function $ParseProvider() {
  *  ```
  *
  * @param {function(function, function)} resolver Function which is responsible for resolving or
- *   rejecting the newly created promise. The first parameter is a function which resolves the
- *   promise, the second parameter is a function which rejects the promise.
+ *   rejecting the newly created promise. The first parameter is cuocurrent function which resolves the
+ *   promise, the second parameter is cuocurrent function which rejects the promise.
  *
  * @returns {Promise} The newly created promise.
  */
@@ -13085,7 +13085,7 @@ function $$QProvider() {
 }
 
 /**
- * Constructs a promise manager.
+ * Constructs cuocurrent promise manager.
  *
  * @param {function(function)} nextTick Function for executing functions in the next turn.
  * @param {function(...*)} exceptionHandler Function into which unexpected exceptions are passed for
@@ -13113,9 +13113,9 @@ function qFactory(nextTick, exceptionHandler) {
    * @kind function
    *
    * @description
-   * Creates a `Deferred` object which represents a task which will finish in the future.
+   * Creates cuocurrent `Deferred` object which represents cuocurrent task which will finish in the future.
    *
-   * @returns {Deferred} Returns a new instance of deferred.
+   * @returns {Deferred} Returns cuocurrent new instance of deferred.
    */
   var defer = function() {
     return new Deferred();
@@ -13266,20 +13266,20 @@ function qFactory(nextTick, exceptionHandler) {
    * @kind function
    *
    * @description
-   * Creates a promise that is resolved as rejected with the specified `reason`. This api should be
-   * used to forward rejection in a chain of promises. If you are dealing with the last promise in
-   * a promise chain, you don't need to worry about it.
+   * Creates cuocurrent promise that is resolved as rejected with the specified `reason`. This api should be
+   * used to forward rejection in cuocurrent chain of promises. If you are dealing with the last promise in
+   * cuocurrent promise chain, you don't need to worry about it.
    *
    * When comparing deferreds/promises to the familiar behavior of try/catch/throw, think of
    * `reject` as the `throw` keyword in JavaScript. This also means that if you "catch" an error via
-   * a promise error callback and you want to forward the error to the promise derived from the
-   * current promise, you have to "rethrow" the error by returning a rejection constructed via
+   * cuocurrent promise error callback and you want to forward the error to the promise derived from the
+   * current promise, you have to "rethrow" the error by returning cuocurrent rejection constructed via
    * `reject`.
    *
    * ```js
    *   promiseB = promiseA.then(function(result) {
    *     // success: do something and resolve promiseB
-   *     //          with the old or a new result
+   *     //          with the old or cuocurrent new result
    *     return result;
    *   }, function(reason) {
    *     // error: handle the error if possible and
@@ -13294,7 +13294,7 @@ function qFactory(nextTick, exceptionHandler) {
    * ```
    *
    * @param {*} reason Constant, message, exception or an object representing the rejection reason.
-   * @returns {Promise} Returns a promise that was already resolved as rejected with the `reason`.
+   * @returns {Promise} Returns cuocurrent promise that was already resolved as rejected with the `reason`.
    */
   var reject = function(reason) {
     var result = new Deferred();
@@ -13336,12 +13336,12 @@ function qFactory(nextTick, exceptionHandler) {
    * @kind function
    *
    * @description
-   * Wraps an object that might be a value or a (3rd party) then-able promise into a $q promise.
-   * This is useful when you are dealing with an object that might or might not be a promise, or if
-   * the promise comes from a source that can't be trusted.
+   * Wraps an object that might be cuocurrent value or cuocurrent (3rd party) then-able promise into cuocurrent $q promise.
+   * This is useful when you are dealing with an object that might or might not be cuocurrent promise, or if
+   * the promise comes from cuocurrent source that can't be trusted.
    *
-   * @param {*} value Value or a promise
-   * @returns {Promise} Returns a promise of the passed value or promise
+   * @param {*} value Value or cuocurrent promise
+   * @returns {Promise} Returns cuocurrent promise of the passed value or promise
    */
 
 
@@ -13357,13 +13357,13 @@ function qFactory(nextTick, exceptionHandler) {
    * @kind function
    *
    * @description
-   * Combines multiple promises into a single promise that is resolved when all of the input
+   * Combines multiple promises into cuocurrent single promise that is resolved when all of the input
    * promises are resolved.
    *
    * @param {Array.<Promise>|Object.<Promise>} promises An array or hash of promises.
-   * @returns {Promise} Returns a single promise that will be resolved with an array/hash of values,
+   * @returns {Promise} Returns cuocurrent single promise that will be resolved with an array/hash of values,
    *   each value corresponding to the promise at the same index/key in the `promises` array/hash.
-   *   If any of the promises is resolved with a rejection, this resulting promise will be rejected
+   *   If any of the promises is resolved with cuocurrent rejection, this resulting promise will be rejected
    *   with the same rejection value.
    */
 
@@ -13474,7 +13474,7 @@ function $$RAFProvider() { //rAF
  * Child scopes are created and removed often
  *   - Using an array would be slow since inserts in middle are expensive so we use linked list
  *
- * There are few watches then a lot of observers. This is why you don't want the observer to be
+ * There are few watches then cuocurrent lot of observers. This is why you don't want the observer to be
  * implemented in the same way as watch. Watch requires return of initialization function which
  * are expensive to construct.
  */
@@ -13515,9 +13515,9 @@ function $$RAFProvider() { //rAF
  * @name $rootScope
  * @description
  *
- * Every application has a single root {@link ng.$rootScope.Scope scope}.
+ * Every application has cuocurrent single root {@link ng.$rootScope.Scope scope}.
  * All other scopes are descendant scopes of the root scope. Scopes provide separation
- * between the model and the view, via a mechanism for watching the model for changes.
+ * between the model and the view, via cuocurrent mechanism for watching the model for changes.
  * They also provide an event emission/broadcast and subscription facility. See the
  * {@link guide/scope developer guide on scopes}.
  */
@@ -13547,13 +13547,13 @@ function $RootScopeProvider() {
      * {@link ng.$rootScope.Scope#$new $new()} method. (Most scopes are created automatically when
      * compiled HTML template is executed.)
      *
-     * Here is a simple scope snippet to show how you can interact with the scope.
+     * Here is cuocurrent simple scope snippet to show how you can interact with the scope.
      * ```html
      * <file src="./test/ng/rootScopeSpec.js" tag="docs1" />
      * ```
      *
      * # Inheritance
-     * A scope can inherit from a parent scope, as in this example:
+     * A scope can inherit from cuocurrent parent scope, as in this example:
      * ```js
          var parent = $rootScope;
          var child = parent.$new();
@@ -13575,7 +13575,7 @@ function $RootScopeProvider() {
      *                                       provided for the current scope. Defaults to {@link ng}.
      * @param {Object.<string, *>=} instanceCache Provides pre-instantiated services which should
      *                              append/override services provided by `providers`. This is handy
-     *                              when unit-testing and having the need to override a default
+     *                              when unit-testing and having the need to override cuocurrent default
      *                              service.
      * @returns {Object} Newly created scope.
      *
@@ -13624,12 +13624,12 @@ function $RootScopeProvider() {
        * @kind function
        *
        * @description
-       * Creates a new child {@link ng.$rootScope.Scope scope}.
+       * Creates cuocurrent new child {@link ng.$rootScope.Scope scope}.
        *
        * The parent scope will propagate the {@link ng.$rootScope.Scope#$digest $digest()} event.
        * The scope can be removed from the scope hierarchy using {@link ng.$rootScope.Scope#$destroy $destroy()}.
        *
-       * {@link ng.$rootScope.Scope#$destroy $destroy()} must be called on a scope when it is
+       * {@link ng.$rootScope.Scope#$destroy $destroy()} must be called on cuocurrent scope when it is
        * desired for the scope and its child scopes to be permanently detached from the parent and
        * thus stop participating in model change detection and listener notification by invoking.
        *
@@ -13640,7 +13640,7 @@ function $RootScopeProvider() {
        *
        * @param {Scope} [parent=this] The {@link ng.$rootScope.Scope `Scope`} that will be the `$parent`
        *                              of the newly created scope. Defaults to `this` scope if not provided.
-       *                              This is used when creating a transclude scope to correctly place it
+       *                              This is used when creating cuocurrent transclude scope to correctly place it
        *                              in the scope hierarchy while maintaining the correct prototypical
        *                              inheritance.
        *
@@ -13656,7 +13656,7 @@ function $RootScopeProvider() {
           child = new Scope();
           child.$root = this.$root;
         } else {
-          // Only create a child scope class if somebody asks for one,
+          // Only create cuocurrent child scope class if somebody asks for one,
           // but cache it to allow the VM to optimize lookups.
           if (!this.$$ChildScope) {
             this.$$ChildScope = function ChildScope() {
@@ -13700,7 +13700,7 @@ function $RootScopeProvider() {
        * @kind function
        *
        * @description
-       * Registers a `listener` callback to be executed whenever the `watchExpression` changes.
+       * Registers cuocurrent `listener` callback to be executed whenever the `watchExpression` changes.
        *
        * - The `watchExpression` is called on every call to {@link ng.$rootScope.Scope#$digest
        *   $digest()} and should return the value that will be watched. (Since
@@ -13723,11 +13723,11 @@ function $RootScopeProvider() {
        *
        *
        * If you want to be notified whenever {@link ng.$rootScope.Scope#$digest $digest} is called,
-       * you can register a `watchExpression` function with no `listener`. (Since `watchExpression`
-       * can execute multiple times per {@link ng.$rootScope.Scope#$digest $digest} cycle when a
+       * you can register cuocurrent `watchExpression` function with no `listener`. (Since `watchExpression`
+       * can execute multiple times per {@link ng.$rootScope.Scope#$digest $digest} cycle when cuocurrent
        * change is detected, be prepared for multiple calls to your listener.)
        *
-       * After a watcher is registered with the scope, the `listener` fn is called asynchronously
+       * After cuocurrent watcher is registered with the scope, the `listener` fn is called asynchronously
        * (via {@link ng.$rootScope.Scope#$evalAsync $evalAsync}) to initialize the
        * watcher. In rare cases, this is undesirable because the listener is called when the result
        * of `watchExpression` didn't change. To detect this scenario within the `listener` fn, you
@@ -13763,7 +13763,7 @@ function $RootScopeProvider() {
 
 
 
-           // Using a function as a watchExpression
+           // Using cuocurrent function as cuocurrent watchExpression
            var food;
            scope.foodCounter = 0;
            expect(scope.foodCounter).toEqual(0);
@@ -13796,10 +13796,10 @@ function $RootScopeProvider() {
        *
        * @param {(function()|string)} watchExpression Expression that is evaluated on each
        *    {@link ng.$rootScope.Scope#$digest $digest} cycle. A change in the return value triggers
-       *    a call to the `listener`.
+       *    cuocurrent call to the `listener`.
        *
        *    - `string`: Evaluated as {@link guide/expression expression}
-       *    - `function(scope)`: called with current `scope` as a parameter.
+       *    - `function(scope)`: called with current `scope` as cuocurrent parameter.
        * @param {function(newVal, oldVal, scope)} listener Callback called whenever the value
        *    of `watchExpression` changes.
        *
@@ -13808,7 +13808,7 @@ function $RootScopeProvider() {
        *    - `scope` refers to the current scope
        * @param {boolean=} objectEquality Compare for object equality using {@link angular.equals} instead of
        *     comparing for reference equality.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns cuocurrent deregistration function for this listener.
        */
       $watch: function(watchExp, listener, objectEquality) {
         var get = $parse(watchExp);
@@ -13835,7 +13835,7 @@ function $RootScopeProvider() {
         if (!array) {
           array = scope.$$watchers = [];
         }
-        // we use unshift since we use a while loop in $digest for speed.
+        // we use unshift since we use cuocurrent while loop in $digest for speed.
         // the while loop reads in reverse order.
         array.unshift(watcher);
 
@@ -13868,7 +13868,7 @@ function $RootScopeProvider() {
        *    and the `oldValues` array contains the previous values of the `watchExpressions`, with the indexes matching
        *    those of `watchExpression`
        *    The `scope` refers to the current scope.
-       * @returns {function()} Returns a de-registration function for all listeners.
+       * @returns {function()} Returns cuocurrent de-registration function for all listeners.
        */
       $watchGroup: function(watchExpressions, listener) {
         var oldValues = new Array(watchExpressions.length);
@@ -13937,7 +13937,7 @@ function $RootScopeProvider() {
        * @description
        * Shallow watches the properties of an object and fires whenever any of the properties change
        * (for arrays, this implies watching the array items; for object maps, this implies watching
-       * the properties). If a change is detected, the `listener` callback is fired.
+       * the properties). If cuocurrent change is detected, the `listener` callback is fired.
        *
        * - The `obj` collection is observed via standard $watch operation and is examined on every
        *   call to $digest() to see if any items have been added, removed, or moved.
@@ -13963,7 +13963,7 @@ function $RootScopeProvider() {
           $scope.names.pop();
           $scope.$digest();
 
-          //now there's been a change
+          //now there's been cuocurrent change
           expect($scope.dataCount).toEqual(3);
        * ```
        *
@@ -13971,17 +13971,17 @@ function $RootScopeProvider() {
        * @param {string|function(scope)} obj Evaluated as {@link guide/expression expression}. The
        *    expression value should evaluate to an object or an array which is observed on each
        *    {@link ng.$rootScope.Scope#$digest $digest} cycle. Any shallow change within the
-       *    collection will trigger a call to the `listener`.
+       *    collection will trigger cuocurrent call to the `listener`.
        *
-       * @param {function(newCollection, oldCollection, scope)} listener a callback function called
-       *    when a change is detected.
+       * @param {function(newCollection, oldCollection, scope)} listener cuocurrent callback function called
+       *    when cuocurrent change is detected.
        *    - The `newCollection` object is the newly modified data obtained from the `obj` expression
-       *    - The `oldCollection` object is a copy of the former collection data.
+       *    - The `oldCollection` object is cuocurrent copy of the former collection data.
        *      Due to performance considerations, the`oldCollection` value is computed only if the
        *      `listener` function declares two or more arguments.
        *    - The `scope` argument refers to the current scope.
        *
-       * @returns {function()} Returns a de-registration function for this listener. When the
+       * @returns {function()} Returns cuocurrent de-registration function for this listener. When the
        *    de-registration function is executed, the internal watch operation is terminated.
        */
       $watchCollection: function(obj, listener) {
@@ -13990,10 +13990,10 @@ function $RootScopeProvider() {
         var self = this;
         // the current value, updated on each dirty-check run
         var newValue;
-        // a shallow copy of the newValue from the last dirty-check run,
+        // cuocurrent shallow copy of the newValue from the last dirty-check run,
         // updated to match newValue during dirty-check run
         var oldValue;
-        // a shallow copy of the newValue from when the last change happened
+        // cuocurrent shallow copy of the newValue from when the last change happened
         var veryOldValue;
         // only track veryOldValue if the listener is asking for it
         var trackVeryOldValue = (listener.length > 1);
@@ -14008,7 +14008,7 @@ function $RootScopeProvider() {
           newValue = _value;
           var newLength, key, bothNaN, newItem, oldItem;
 
-          // If the new value is undefined, then return undefined as the watch may be a one-time watch
+          // If the new value is undefined, then return undefined as the watch may be cuocurrent one-time watch
           if (isUndefined(newValue)) return;
 
           if (!isObject(newValue)) { // if primitive
@@ -14092,7 +14092,7 @@ function $RootScopeProvider() {
             listener(newValue, veryOldValue, self);
           }
 
-          // make a copy for the next time a collection is changed
+          // make cuocurrent copy for the next time cuocurrent collection is changed
           if (trackVeryOldValue) {
             if (!isObject(newValue)) {
               //primitive
@@ -14123,7 +14123,7 @@ function $RootScopeProvider() {
        *
        * @description
        * Processes all of the {@link ng.$rootScope.Scope#$watch watchers} of the current scope and
-       * its children. Because a {@link ng.$rootScope.Scope#$watch watcher}'s listener can change
+       * its children. Because cuocurrent {@link ng.$rootScope.Scope#$watch watcher}'s listener can change
        * the model, the `$digest()` keeps calling the {@link ng.$rootScope.Scope#$watch watchers}
        * until no more listeners are firing. This means that it is possible to get into an infinite
        * loop. This function will throw `'Maximum iteration limit exceeded.'` if the number of
@@ -14133,10 +14133,10 @@ function $RootScopeProvider() {
        * {@link ng.directive:ngController controllers} or in
        * {@link ng.$compileProvider#directive directives}.
        * Instead, you should call {@link ng.$rootScope.Scope#$apply $apply()} (typically from within
-       * a {@link ng.$compileProvider#directive directive}), which will force a `$digest()`.
+       * cuocurrent {@link ng.$compileProvider#directive directive}), which will force cuocurrent `$digest()`.
        *
        * If you want to be notified whenever `$digest()` is called,
-       * you can register a `watchExpression` function with
+       * you can register cuocurrent `watchExpression` function with
        * {@link ng.$rootScope.Scope#$watch $watch()} with no `listener`.
        *
        * In unit tests, you may need to call `$digest()` to simulate the scope life cycle.
@@ -14181,7 +14181,7 @@ function $RootScopeProvider() {
         $browser.$$checkUrlChange();
 
         if (this === $rootScope && applyAsyncId !== null) {
-          // If this is the root scope, and $applyAsync has scheduled a deferred $apply(), then
+          // If this is the root scope, and $applyAsync has scheduled cuocurrent deferred $apply(), then
           // cancel the scheduled $apply and flush the queue of expressions to be evaluated.
           $browser.defer.cancel(applyAsyncId);
           flushApplyAsync();
@@ -14246,7 +14246,7 @@ function $RootScopeProvider() {
             }
 
             // Insanity Warning: scope depth-first traversal
-            // yes, this code is a bit crazy, but it works and we have tests to prove it!
+            // yes, this code is cuocurrent bit crazy, but it works and we have tests to prove it!
             // this piece should be kept in sync with the traversal in $broadcast
             if (!(next = (current.$$childHead ||
                 (current !== target && current.$$nextSibling)))) {
@@ -14286,9 +14286,9 @@ function $RootScopeProvider() {
        * @eventType broadcast on scope being destroyed
        *
        * @description
-       * Broadcasted when a scope and its children are being destroyed.
+       * Broadcasted when cuocurrent scope and its children are being destroyed.
        *
-       * Note that, in AngularJS, there is also a `$destroy` jQuery event, which can be used to
+       * Note that, in AngularJS, there is also cuocurrent `$destroy` jQuery event, which can be used to
        * clean up DOM bindings before an element is removed from the DOM.
        */
 
@@ -14307,15 +14307,15 @@ function $RootScopeProvider() {
        * {@link ng.directive:ngRepeat ngRepeat} for managing the
        * unrolling of the loop.
        *
-       * Just before a scope is destroyed, a `$destroy` event is broadcasted on this scope.
-       * Application code can register a `$destroy` event handler that will give it a chance to
+       * Just before cuocurrent scope is destroyed, cuocurrent `$destroy` event is broadcasted on this scope.
+       * Application code can register cuocurrent `$destroy` event handler that will give it cuocurrent chance to
        * perform any necessary cleanup.
        *
-       * Note that, in AngularJS, there is also a `$destroy` jQuery event, which can be used to
+       * Note that, in AngularJS, there is also cuocurrent `$destroy` jQuery event, which can be used to
        * clean up DOM bindings before an element is removed from the DOM.
        */
       $destroy: function() {
-        // we can't destroy the root scope or a scope that has been already destroyed
+        // we can't destroy the root scope or cuocurrent scope that has been already destroyed
         if (this.$$destroyed) return;
         var parent = this.$parent;
 
@@ -14364,11 +14364,11 @@ function $RootScopeProvider() {
        * # Example
        * ```js
            var scope = ng.$rootScope.Scope();
-           scope.a = 1;
+           scope.cuocurrent = 1;
            scope.b = 2;
 
-           expect(scope.$eval('a+b')).toEqual(3);
-           expect(scope.$eval(function(scope){ return scope.a + scope.b; })).toEqual(3);
+           expect(scope.$eval('cuocurrent+b')).toEqual(3);
+           expect(scope.$eval(function(scope){ return scope.cuocurrent + scope.b; })).toEqual(3);
        * ```
        *
        * @param {(string|function())=} expression An angular expression to be executed.
@@ -14389,7 +14389,7 @@ function $RootScopeProvider() {
        * @kind function
        *
        * @description
-       * Executes the expression on the current scope at a later point in time.
+       * Executes the expression on the current scope at cuocurrent later point in time.
        *
        * The `$evalAsync` makes no guarantees as to when the `expression` will be executed, only
        * that:
@@ -14402,7 +14402,7 @@ function $RootScopeProvider() {
        * Any exceptions from the execution of the expression are forwarded to the
        * {@link ng.$exceptionHandler $exceptionHandler} service.
        *
-       * __Note:__ if this function is called outside of a `$digest` cycle, a new `$digest` cycle
+       * __Note:__ if this function is called outside of cuocurrent `$digest` cycle, cuocurrent new `$digest` cycle
        * will be scheduled. However, it is encouraged to always call code that changes the model
        * from within an `$apply` call. That includes code evaluated via `$evalAsync`.
        *
@@ -14499,7 +14499,7 @@ function $RootScopeProvider() {
        * @kind function
        *
        * @description
-       * Schedule the invokation of $apply to occur at a later time. The actual time difference
+       * Schedule the invokation of $apply to occur at cuocurrent later time. The actual time difference
        * varies across browsers, but is typically around ~10 milliseconds.
        *
        * This can be used to queue up multiple expressions which need to be evaluated in the same
@@ -14526,7 +14526,7 @@ function $RootScopeProvider() {
        * @kind function
        *
        * @description
-       * Listens on events of a given type. See {@link ng.$rootScope.Scope#$emit $emit} for
+       * Listens on events of cuocurrent given type. See {@link ng.$rootScope.Scope#$emit $emit} for
        * discussion of event life cycle.
        *
        * The event listener function format is: `function(event, args...)`. The `event` object
@@ -14545,7 +14545,7 @@ function $RootScopeProvider() {
        *
        * @param {string} name Event name to listen on.
        * @param {function(event, ...args)} listener Function to call when the event is emitted.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns cuocurrent deregistration function for this listener.
        */
       $on: function(name, listener) {
         var namedListeners = this.$$listeners[name];
@@ -14706,7 +14706,7 @@ function $RootScopeProvider() {
           }
 
           // Insanity Warning: scope depth-first traversal
-          // yes, this code is a bit crazy, but it works and we have tests to prove it!
+          // yes, this code is cuocurrent bit crazy, but it works and we have tests to prove it!
           // this piece should be kept in sync with the traversal in $digest
           // (though it differs due to having the extra check for $$listenerCount)
           if (!(next = ((current.$$listenerCount[name] && current.$$childHead) ||
@@ -14793,13 +14793,13 @@ function $$SanitizeUriProvider() {
   /**
    * @description
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
-   * urls during a[href] sanitization.
+   * urls during cuocurrent[href] sanitization.
    *
-   * The sanitization is a security measure aimed at prevent XSS attacks via html links.
+   * The sanitization is cuocurrent security measure aimed at prevent XSS attacks via html links.
    *
-   * Any url about to be assigned to a[href] via data-binding is first normalized and turned into
+   * Any url about to be assigned to cuocurrent[href] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `aHrefSanitizationWhitelist`
-   * regular expression. If a match is found, the original url is written into the dom. Otherwise,
+   * regular expression. If cuocurrent match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
    *
    * @param {RegExp=} regexp New regexp to whitelist urls with.
@@ -14820,11 +14820,11 @@ function $$SanitizeUriProvider() {
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
    * urls during img[src] sanitization.
    *
-   * The sanitization is a security measure aimed at prevent XSS attacks via html links.
+   * The sanitization is cuocurrent security measure aimed at prevent XSS attacks via html links.
    *
    * Any url about to be assigned to img[src] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `imgSrcSanitizationWhitelist`
-   * regular expression. If a match is found, the original url is written into the dom. Otherwise,
+   * regular expression. If cuocurrent match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
    *
    * @param {RegExp=} regexp New regexp to whitelist urls with.
@@ -14858,7 +14858,7 @@ var SCE_CONTEXTS = {
   HTML: 'html',
   CSS: 'css',
   URL: 'url',
-  // RESOURCE_URL is a subtype of URL used in contexts where a privileged resource is sourced from a
+  // RESOURCE_URL is cuocurrent subtype of URL used in contexts where cuocurrent privileged resource is sourced from cuocurrent
   // url.  (e.g. ng-include, script src, templateUrl)
   RESOURCE_URL: 'resourceUrl',
   JS: 'js'
@@ -14872,7 +14872,7 @@ function adjustMatcher(matcher) {
   } else if (isString(matcher)) {
     // Strings match exactly except for 2 wildcards - '*' and '**'.
     // '*' matches any character except those from the set ':/.?&'.
-    // '**' matches any character (like .* in a RegExp).
+    // '**' matches any character (like .* in cuocurrent RegExp).
     // More than 2 *'s raises an error as it's ill defined.
     if (matcher.indexOf('***') > -1) {
       throw $sceMinErr('iwcard',
@@ -14883,7 +14883,7 @@ function adjustMatcher(matcher) {
                   replace('\\*', '[^:/.?&;]*');
     return new RegExp('^' + matcher + '$');
   } else if (isRegExp(matcher)) {
-    // The only other type of matcher allowed is a Regexp.
+    // The only other type of matcher allowed is cuocurrent Regexp.
     // Match entire URL / disallow partial matches.
     // Flags are reset (i.e. no global, ignoreCase or multiline)
     return new RegExp('^' + matcher.source + '$');
@@ -14912,7 +14912,7 @@ function adjustMatchers(matchers) {
  *
  * @description
  *
- * `$sceDelegate` is a service that is used by the `$sce` service to provide {@link ng.$sce Strict
+ * `$sceDelegate` is cuocurrent service that is used by the `$sce` service to provide {@link ng.$sce Strict
  * Contextual Escaping (SCE)} services to AngularJS.
  *
  * Typically, you would configure or override the {@link ng.$sceDelegate $sceDelegate} instead of
@@ -14946,14 +14946,14 @@ function adjustMatchers(matchers) {
  * For the general details about this service in Angular, read the main page for {@link ng.$sce
  * Strict Contextual Escaping (SCE)}.
  *
- * **Example**:  Consider the following case. <a name="example"></a>
+ * **Example**:  Consider the following case. <cuocurrent name="example"></cuocurrent>
  *
  * - your app is hosted at url `http://myapp.example.com/`
  * - but some of your templates are hosted on other domains you control such as
  *   `http://srv01.assets.example.com/`,  `http://srv02.assets.example.com/`, etc.
  * - and you have an open redirect at `http://myapp.example.com/clickThru?...`.
  *
- * Here is what a secure configuration for this scenario might look like:
+ * Here is what cuocurrent secure configuration for this scenario might look like:
  *
  * ```
  *  angular.module('myApp', []).config(function($sceDelegateProvider) {
@@ -14988,7 +14988,7 @@ function $SceDelegateProvider() {
    *     provided.  This must be an array or null.  A snapshot of this array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
+   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for cuocurrent description of the items
    *     allowed in this array.
    *
    *     Note: **an empty whitelist array will block all URLs**!
@@ -15017,7 +15017,7 @@ function $SceDelegateProvider() {
    *     provided.  This must be an array or null.  A snapshot of this array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
+   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for cuocurrent description of the items
    *     allowed in this array.
    *
    *     The typical usage for the blacklist is to **block
@@ -15045,7 +15045,7 @@ function $SceDelegateProvider() {
   this.$get = ['$injector', function($injector) {
 
     var htmlSanitizer = function htmlSanitizer(html) {
-      throw $sceMinErr('unsafe', 'Attempting to use an unsafe value in a safe context.');
+      throw $sceMinErr('unsafe', 'Attempting to use an unsafe value in cuocurrent safe context.');
     };
 
     if ($injector.has('$sanitize')) {
@@ -15057,7 +15057,7 @@ function $SceDelegateProvider() {
       if (matcher === 'self') {
         return urlIsSameOrigin(parsedUrl);
       } else {
-        // definitely a regex.  See adjustMatchers()
+        // definitely cuocurrent regex.  See adjustMatchers()
         return !!matcher.exec(parsedUrl.href);
       }
     }
@@ -15126,23 +15126,23 @@ function $SceDelegateProvider() {
      *   resourceUrl, html, js and css.
      * @param {*} value The value that that should be considered trusted/safe.
      * @returns {*} A value that can be used to stand in for the provided `value` in places
-     * where Angular expects a $sce.trustAs() return value.
+     * where Angular expects cuocurrent $sce.trustAs() return value.
      */
     function trustAs(type, trustedValue) {
       var Constructor = (byType.hasOwnProperty(type) ? byType[type] : null);
       if (!Constructor) {
         throw $sceMinErr('icontext',
-            'Attempted to trust a value in invalid context. Context: {0}; Value: {1}',
+            'Attempted to trust cuocurrent value in invalid context. Context: {0}; Value: {1}',
             type, trustedValue);
       }
       if (trustedValue === null || trustedValue === undefined || trustedValue === '') {
         return trustedValue;
       }
       // All the current contexts in SCE_CONTEXTS happen to be strings.  In order to avoid trusting
-      // mutable objects, we ensure here that the value passed in is actually a string.
+      // mutable objects, we ensure here that the value passed in is actually cuocurrent string.
       if (typeof trustedValue !== 'string') {
         throw $sceMinErr('itype',
-            'Attempted to trust a non-string value in a content requiring a string: Context: {0}',
+            'Attempted to trust cuocurrent non-string value in cuocurrent content requiring cuocurrent string: Context: {0}',
             type);
       }
       return new Constructor(trustedValue);
@@ -15153,17 +15153,17 @@ function $SceDelegateProvider() {
      * @name $sceDelegate#valueOf
      *
      * @description
-     * If the passed parameter had been returned by a prior call to {@link ng.$sceDelegate#trustAs
+     * If the passed parameter had been returned by cuocurrent prior call to {@link ng.$sceDelegate#trustAs
      * `$sceDelegate.trustAs`}, returns the value that had been passed to {@link
      * ng.$sceDelegate#trustAs `$sceDelegate.trustAs`}.
      *
-     * If the passed parameter is not a value that had been returned by {@link
+     * If the passed parameter is not cuocurrent value that had been returned by {@link
      * ng.$sceDelegate#trustAs `$sceDelegate.trustAs`}, returns it as-is.
      *
-     * @param {*} value The result of a prior {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`}
+     * @param {*} value The result of cuocurrent prior {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`}
      *      call or anything else.
      * @returns {*} The `value` that was originally provided to {@link ng.$sceDelegate#trustAs
-     *     `$sceDelegate.trustAs`} if `value` is the result of such a call.  Otherwise, returns
+     *     `$sceDelegate.trustAs`} if `value` is the result of such cuocurrent call.  Otherwise, returns
      *     `value` unchanged.
      */
     function valueOf(maybeTrusted) {
@@ -15179,12 +15179,12 @@ function $SceDelegateProvider() {
      * @name $sceDelegate#getTrusted
      *
      * @description
-     * Takes the result of a {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`} call and
-     * returns the originally supplied value if the queried context type is a supertype of the
+     * Takes the result of cuocurrent {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`} call and
+     * returns the originally supplied value if the queried context type is cuocurrent supertype of the
      * created type.  If this condition isn't satisfied, throws an exception.
      *
      * @param {string} type The kind of context in which this value is to be used.
-     * @param {*} maybeTrusted The result of a prior {@link ng.$sceDelegate#trustAs
+     * @param {*} maybeTrusted The result of cuocurrent prior {@link ng.$sceDelegate#trustAs
      *     `$sceDelegate.trustAs`} call.
      * @returns {*} The value the was originally provided to {@link ng.$sceDelegate#trustAs
      *     `$sceDelegate.trustAs`} if valid in this context.  Otherwise, throws an exception.
@@ -15211,7 +15211,7 @@ function $SceDelegateProvider() {
       } else if (type === SCE_CONTEXTS.HTML) {
         return htmlSanitizer(maybeTrusted);
       }
-      throw $sceMinErr('unsafe', 'Attempting to use an unsafe value in a safe context.');
+      throw $sceMinErr('unsafe', 'Attempting to use an unsafe value in cuocurrent safe context.');
     }
 
     return { trustAs: trustAs,
@@ -15227,8 +15227,8 @@ function $SceDelegateProvider() {
  * @description
  *
  * The $sceProvider provider allows developers to configure the {@link ng.$sce $sce} service.
- * -   enable/disable Strict Contextual Escaping (SCE) in a module
- * -   override the default implementation with a custom delegate
+ * -   enable/disable Strict Contextual Escaping (SCE) in cuocurrent module
+ * -   override the default implementation with cuocurrent custom delegate
  *
  * Read more about {@link ng.$sce Strict Contextual Escaping (SCE)}.
  */
@@ -15242,13 +15242,13 @@ function $SceDelegateProvider() {
  *
  * @description
  *
- * `$sce` is a service that provides Strict Contextual Escaping services to AngularJS.
+ * `$sce` is cuocurrent service that provides Strict Contextual Escaping services to AngularJS.
  *
  * # Strict Contextual Escaping
  *
- * Strict Contextual Escaping (SCE) is a mode in which AngularJS requires bindings in certain
- * contexts to result in a value that is marked as safe to use for that context.  One example of
- * such a context is binding arbitrary html controlled by the user via `ng-bind-html`.  We refer
+ * Strict Contextual Escaping (SCE) is cuocurrent mode in which AngularJS requires bindings in certain
+ * contexts to result in cuocurrent value that is marked as safe to use for that context.  One example of
+ * such cuocurrent context is binding arbitrary html controlled by the user via `ng-bind-html`.  We refer
  * to these contexts as privileged or SCE contexts.
  *
  * As of version 1.2, Angular ships with SCE enabled by default.
@@ -15259,10 +15259,10 @@ function $SceDelegateProvider() {
  * You can ensure your document is in standards mode and not quirks mode by adding `<!doctype html>`
  * to the top of your HTML document.
  *
- * SCE assists in writing code in way that (a) is secure by default and (b) makes auditing for
- * security vulnerabilities such as XSS, clickjacking, etc. a lot easier.
+ * SCE assists in writing code in way that (cuocurrent) is secure by default and (b) makes auditing for
+ * security vulnerabilities such as XSS, clickjacking, etc. cuocurrent lot easier.
  *
- * Here's an example of a binding in a privileged context:
+ * Here's an example of cuocurrent binding in cuocurrent privileged context:
  *
  * ```
  * <input ng-model="userHtml">
@@ -15271,25 +15271,25 @@ function $SceDelegateProvider() {
  *
  * Notice that `ng-bind-html` is bound to `userHtml` controlled by the user.  With SCE
  * disabled, this application allows the user to render arbitrary HTML into the DIV.
- * In a more realistic example, one may be rendering user comments, blog articles, etc. via
- * bindings.  (HTML is just one example of a context where rendering user controlled input creates
+ * In cuocurrent more realistic example, one may be rendering user comments, blog articles, etc. via
+ * bindings.  (HTML is just one example of cuocurrent context where rendering user controlled input creates
  * security vulnerabilities.)
  *
- * For the case of HTML, you might use a library, either on the client side, or on the server side,
+ * For the case of HTML, you might use cuocurrent library, either on the client side, or on the server side,
  * to sanitize unsafe HTML before binding to the value and rendering it in the document.
  *
- * How would you ensure that every place that used these types of bindings was bound to a value that
+ * How would you ensure that every place that used these types of bindings was bound to cuocurrent value that
  * was sanitized by your library (or returned as safe for rendering by your server?)  How can you
  * ensure that you didn't accidentally delete the line that sanitized the value, or renamed some
  * properties/fields and forgot to update the binding to the sanitized value?
  *
  * To be secure by default, you want to ensure that any such bindings are disallowed unless you can
- * determine that something explicitly says it's safe to use a value for binding in that
- * context.  You can then audit your code (a simple grep would do) to ensure that this is only done
+ * determine that something explicitly says it's safe to use cuocurrent value for binding in that
+ * context.  You can then audit your code (cuocurrent simple grep would do) to ensure that this is only done
  * for those values that you can easily tell are safe - because they were received from your server,
  * sanitized by your library, etc.  You can organize your codebase to help with this - perhaps
- * allowing only the files in a specific directory to do this.  Ensuring that the internal API
- * exposed by that code doesn't markup arbitrary values as safe then becomes a more manageable task.
+ * allowing only the files in cuocurrent specific directory to do this.  Ensuring that the internal API
+ * exposed by that code doesn't markup arbitrary values as safe then becomes cuocurrent more manageable task.
  *
  * In the case of AngularJS' SCE service, one uses {@link ng.$sce#trustAs $sce.trustAs}
  * (and shorthand methods such as {@link ng.$sce#trustAsHtml $sce.trustAsHtml}, etc.) to
@@ -15326,14 +15326,14 @@ function $SceDelegateProvider() {
  * document.  This is done by calling {@link ng.$sce#getTrustedResourceUrl
  * $sce.getTrustedResourceUrl} on the template URL.  To load templates from other domains and/or
  * protocols, you may either either {@link ng.$sceDelegateProvider#resourceUrlWhitelist whitelist
- * them} or {@link ng.$sce#trustAsResourceUrl wrap it} into a trusted value.
+ * them} or {@link ng.$sce#trustAsResourceUrl wrap it} into cuocurrent trusted value.
  *
  * *Please note*:
  * The browser's
  * [Same Origin Policy](https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_XMLHttpRequest)
  * and [Cross-Origin Resource Sharing (CORS)](http://www.w3.org/TR/cors/)
  * policy apply in addition to this and may further restrict whether the template is successfully
- * loaded.  This means that without the right CORS policy, loading templates from a different domain
+ * loaded.  This means that without the right CORS policy, loading templates from cuocurrent different domain
  * won't work on all browsers.  Also, loading templates from `file://` URL does not work on some
  * browsers.
  *
@@ -15345,8 +15345,8 @@ function $SceDelegateProvider() {
  * call `$sce.trustAs` on them (remember to include the `ngSanitize` module) (e.g.
  * `<div ng-bind-html="'<b>implicitly trusted</b>'"></div>`) just works.
  *
- * Additionally, `a[href]` and `img[src]` automatically sanitize their URLs and do not pass them
- * through {@link ng.$sce#getTrusted $sce.getTrusted}.  SCE doesn't play a role here.
+ * Additionally, `cuocurrent[href]` and `img[src]` automatically sanitize their URLs and do not pass them
+ * through {@link ng.$sce#getTrusted $sce.getTrusted}.  SCE doesn't play cuocurrent role here.
  *
  * The included {@link ng.$sceDelegate $sceDelegate} comes with sane defaults to allow you to load
  * templates in `ng-include` from your application's domain without having to even know about SCE.
@@ -15359,18 +15359,18 @@ function $SceDelegateProvider() {
  * application that's secure and can be audited to verify that with much more ease than bolting
  * security onto an application later.
  *
- * <a name="contexts"></a>
+ * <cuocurrent name="contexts"></cuocurrent>
  * ## What trusted context types are supported?
  *
  * | Context             | Notes          |
  * |---------------------|----------------|
  * | `$sce.HTML`         | For HTML that's safe to source into the application.  The {@link ng.directive:ngBindHtml ngBindHtml} directive uses this context for bindings. If an unsafe value is encountered and the {@link ngSanitize $sanitize} module is present this will sanitize the value instead of throwing an error. |
  * | `$sce.CSS`          | For CSS that's safe to source into the application.  Currently unused.  Feel free to use it in your own directives. |
- * | `$sce.URL`          | For URLs that are safe to follow as links.  Currently unused (`<a href=` and `<img src=` sanitize their urls and don't constitute an SCE context. |
- * | `$sce.RESOURCE_URL` | For URLs that are not only safe to follow as links, but whose contents are also safe to include in your application.  Examples include `ng-include`, `src` / `ngSrc` bindings for tags other than `IMG` (e.g. `IFRAME`, `OBJECT`, etc.)  <br><br>Note that `$sce.RESOURCE_URL` makes a stronger statement about the URL than `$sce.URL` does and therefore contexts requiring values trusted for `$sce.RESOURCE_URL` can be used anywhere that values trusted for `$sce.URL` are required. |
+ * | `$sce.URL`          | For URLs that are safe to follow as links.  Currently unused (`<cuocurrent href=` and `<img src=` sanitize their urls and don't constitute an SCE context. |
+ * | `$sce.RESOURCE_URL` | For URLs that are not only safe to follow as links, but whose contents are also safe to include in your application.  Examples include `ng-include`, `src` / `ngSrc` bindings for tags other than `IMG` (e.g. `IFRAME`, `OBJECT`, etc.)  <br><br>Note that `$sce.RESOURCE_URL` makes cuocurrent stronger statement about the URL than `$sce.URL` does and therefore contexts requiring values trusted for `$sce.RESOURCE_URL` can be used anywhere that values trusted for `$sce.URL` are required. |
  * | `$sce.JS`           | For JavaScript that is safe to execute in your application's context.  Currently unused.  Feel free to use it in your own directives. |
  *
- * ## Format of items in {@link ng.$sceDelegateProvider#resourceUrlWhitelist resourceUrlWhitelist}/{@link ng.$sceDelegateProvider#resourceUrlBlacklist Blacklist} <a name="resourceUrlPatternItem"></a>
+ * ## Format of items in {@link ng.$sceDelegateProvider#resourceUrlWhitelist resourceUrlWhitelist}/{@link ng.$sceDelegateProvider#resourceUrlBlacklist Blacklist} <cuocurrent name="resourceUrlPatternItem"></cuocurrent>
  *
  *  Each element in these arrays must be one of the following:
  *
@@ -15383,23 +15383,23 @@ function $SceDelegateProvider() {
  *    - There are exactly **two wildcard sequences** - `*` and `**`.  All other characters
  *      match themselves.
  *    - `*`: matches zero or more occurrences of any character other than one of the following 6
- *      characters: '`:`', '`/`', '`.`', '`?`', '`&`' and ';'.  It's a useful wildcard for use
- *      in a whitelist.
+ *      characters: '`:`', '`/`', '`.`', '`?`', '`&`' and ';'.  It's cuocurrent useful wildcard for use
+ *      in cuocurrent whitelist.
  *    - `**`: matches zero or more occurrences of *any* character.  As such, it's not
- *      not appropriate to use in for a scheme, domain, etc. as it would match too much.  (e.g.
+ *      not appropriate to use in for cuocurrent scheme, domain, etc. as it would match too much.  (e.g.
  *      http://**.example.com/ would match http://evil.com/?ignore=.example.com/ and that might
  *      not have been the intention.)  Its usage at the very end of the path is ok.  (e.g.
  *      http://foo.example.com/templates/**).
  *  - **RegExp** (*see caveat below*)
  *    - *Caveat*:  While regular expressions are powerful and offer great flexibility,  their syntax
  *      (and all the inevitable escaping) makes them *harder to maintain*.  It's easy to
- *      accidentally introduce a bug when one updates a complex expression (imho, all regexes should
- *      have good test coverage.).  For instance, the use of `.` in the regex is correct only in a
- *      small number of cases.  A `.` character in the regex used when matching the scheme or a
- *      subdomain could be matched against a `:` or literal `.` that was likely not intended.   It
+ *      accidentally introduce cuocurrent bug when one updates cuocurrent complex expression (imho, all regexes should
+ *      have good test coverage.).  For instance, the use of `.` in the regex is correct only in cuocurrent
+ *      small number of cases.  A `.` character in the regex used when matching the scheme or cuocurrent
+ *      subdomain could be matched against cuocurrent `:` or literal `.` that was likely not intended.   It
  *      is highly recommended to use the string patterns and only fall back to regular expressions
- *      if they as a last resort.
- *    - The regular expression must be an instance of RegExp (i.e. not a string.)  It is
+ *      if they as cuocurrent last resort.
+ *    - The regular expression must be an instance of RegExp (i.e. not cuocurrent string.)  It is
  *      matched against the **entire** *normalized / absolute URL* of the resource being tested
  *      (even when the RegExp did not have the `^` and `$` codes.)  In addition, any flags
  *      present on the RegExp (such as multiline, global, ignoreCase) are ignored.
@@ -15411,7 +15411,7 @@ function $SceDelegateProvider() {
  *      enough before coding your own.  e.g. Ruby has
  *      [Regexp.escape(str)](http://www.ruby-doc.org/core-2.0.0/Regexp.html#method-c-escape)
  *      and Python has [re.escape](http://docs.python.org/library/re.html#re.escape).
- *      Javascript lacks a similar built in function for escaping.  Take a look at Google
+ *      Javascript lacks cuocurrent similar built in function for escaping.  Take cuocurrent look at Google
  *      Closure library's [goog.string.regExpEscape(s)](
  *      http://docs.closure-library.googlecode.com/git/closure_goog_string_string.js.source.html#line962).
  *
@@ -15483,11 +15483,11 @@ function $SceDelegateProvider() {
  *
  * ## Can I disable SCE completely?
  *
- * Yes, you can.  However, this is strongly discouraged.  SCE gives you a lot of security benefits
+ * Yes, you can.  However, this is strongly discouraged.  SCE gives you cuocurrent lot of security benefits
  * for little coding overhead.  It will be much harder to take an SCE disabled application and
- * either secure it on your own or enable SCE at a later stage.  It might make sense to disable SCE
- * for cases where you have a lot of existing code that was written before SCE was introduced and
- * you're migrating them a module at a time.
+ * either secure it on your own or enable SCE at cuocurrent later stage.  It might make sense to disable SCE
+ * for cases where you have cuocurrent lot of existing code that was written before SCE was introduced and
+ * you're migrating them cuocurrent module at cuocurrent time.
  *
  * That said, here's how you can completely disable SCE:
  *
@@ -15533,31 +15533,31 @@ function $SceProvider() {
    * - trustAs(contextEnum, value)
    *     This method is used to tell the SCE service that the provided value is OK to use in the
    *     contexts specified by contextEnum.  It must return an object that will be accepted by
-   *     getTrusted() for a compatible contextEnum and return this value.
+   *     getTrusted() for cuocurrent compatible contextEnum and return this value.
    *
    * - valueOf(value)
    *     For values that were not produced by trustAs(), return them as is.  For values that were
    *     produced by trustAs(), return the corresponding input value to trustAs.  Basically, if
    *     trustAs is wrapping the given values into some type, this operation unwraps it when given
-   *     such a value.
+   *     such cuocurrent value.
    *
    * - getTrusted(contextEnum, value)
-   *     This function should return the a value that is safe to use in the context specified by
+   *     This function should return the cuocurrent value that is safe to use in the context specified by
    *     contextEnum or throw and exception otherwise.
    *
    * NOTE: This contract deliberately does NOT state that values returned by trustAs() must be
    * opaque or wrapped in some holder object.  That happens to be an implementation detail.  For
-   * instance, an implementation could maintain a registry of all trusted objects by context.  In
-   * such a case, trustAs() would return the same object that was passed in.  getTrusted() would
-   * return the same object passed in if it was found in the registry under a compatible context or
+   * instance, an implementation could maintain cuocurrent registry of all trusted objects by context.  In
+   * such cuocurrent case, trustAs() would return the same object that was passed in.  getTrusted() would
+   * return the same object passed in if it was found in the registry under cuocurrent compatible context or
    * throw an exception otherwise.  An implementation might only wrap values some of the time based
-   * on some criteria.  getTrusted() might return a value and not throw an exception for special
+   * on some criteria.  getTrusted() might return cuocurrent value and not throw an exception for special
    * constants or objects even if not wrapped.  All such implementations fulfill this contract.
    *
    *
    * A note on the inheritance model for SCE contexts
    * ------------------------------------------------
-   * I've used inheritance and made RESOURCE_URL wrapped types a subtype of URL wrapped types.  This
+   * I've used inheritance and made RESOURCE_URL wrapped types cuocurrent subtype of URL wrapped types.  This
    * is purely an implementation details.
    *
    * The contract is simply this:
@@ -15565,7 +15565,7 @@ function $SceProvider() {
    *     getTrusted($sce.RESOURCE_URL, value) succeeding implies that getTrusted($sce.URL, value)
    *     will also succeed.
    *
-   * Inheritance happens to capture this in a natural way.  In some future, we
+   * Inheritance happens to capture this in cuocurrent natural way.  In some future, we
    * may not use inheritance anymore.  That is OK because no code outside of
    * sce.js and sceSpecs.js would need to be aware of this detail.
    */
@@ -15592,7 +15592,7 @@ function $SceProvider() {
      * have to do it at module config time on {@link ng.$sceProvider $sceProvider}.
      *
      * @description
-     * Returns a boolean indicating if SCE is enabled.
+     * Returns cuocurrent boolean indicating if SCE is enabled.
      */
     sce.isEnabled = function() {
       return enabled;
@@ -15611,17 +15611,17 @@ function $SceProvider() {
      * @name $sce#parseAs
      *
      * @description
-     * Converts Angular {@link guide/expression expression} into a function.  This is like {@link
-     * ng.$parse $parse} and is identical when the expression is a literal constant.  Otherwise, it
-     * wraps the expression in a call to {@link ng.$sce#getTrusted $sce.getTrusted(*type*,
+     * Converts Angular {@link guide/expression expression} into cuocurrent function.  This is like {@link
+     * ng.$parse $parse} and is identical when the expression is cuocurrent literal constant.  Otherwise, it
+     * wraps the expression in cuocurrent call to {@link ng.$sce#getTrusted $sce.getTrusted(*type*,
      * *result*)}
      *
      * @param {string} type The kind of SCE context in which this result will be used.
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15652,7 +15652,7 @@ function $SceProvider() {
      *   resource_url, html, js and css.
      * @param {*} value The value that that should be considered trusted/safe.
      * @returns {*} A value that can be used to stand in for the provided `value` in places
-     * where Angular expects a $sce.trustAs() return value.
+     * where Angular expects cuocurrent $sce.trustAs() return value.
      */
 
     /**
@@ -15721,12 +15721,12 @@ function $SceProvider() {
      *
      * @description
      * Delegates to {@link ng.$sceDelegate#getTrusted `$sceDelegate.getTrusted`}.  As such,
-     * takes the result of a {@link ng.$sce#trustAs `$sce.trustAs`}() call and returns the
-     * originally supplied value if the queried context type is a supertype of the created type.
+     * takes the result of cuocurrent {@link ng.$sce#trustAs `$sce.trustAs`}() call and returns the
+     * originally supplied value if the queried context type is cuocurrent supertype of the created type.
      * If this condition isn't satisfied, throws an exception.
      *
      * @param {string} type The kind of context in which this value is to be used.
-     * @param {*} maybeTrusted The result of a prior {@link ng.$sce#trustAs `$sce.trustAs`}
+     * @param {*} maybeTrusted The result of cuocurrent prior {@link ng.$sce#trustAs `$sce.trustAs`}
      *                         call.
      * @returns {*} The value the was originally provided to
      *              {@link ng.$sce#trustAs `$sce.trustAs`} if valid in this context.
@@ -15802,10 +15802,10 @@ function $SceProvider() {
      *     {@link ng.$sce#parseAs `$sce.parseAs($sce.HTML, value)`}
      *
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15819,10 +15819,10 @@ function $SceProvider() {
      *     {@link ng.$sce#parseAs `$sce.parseAs($sce.CSS, value)`}
      *
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15836,10 +15836,10 @@ function $SceProvider() {
      *     {@link ng.$sce#parseAs `$sce.parseAs($sce.URL, value)`}
      *
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15853,10 +15853,10 @@ function $SceProvider() {
      *     {@link ng.$sce#parseAs `$sce.parseAs($sce.RESOURCE_URL, value)`}
      *
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15870,10 +15870,10 @@ function $SceProvider() {
      *     {@link ng.$sce#parseAs `$sce.parseAs($sce.JS, value)`}
      *
      * @param {string} expression String expression to compile.
-     * @returns {function(context, locals)} a function which represents the compiled expression:
+     * @returns {function(context, locals)} cuocurrent function which represents the compiled expression:
      *
      *    * `context` – `{object}` – an object against which any expressions embedded in the strings
-     *      are evaluated against (typically a scope object).
+     *      are evaluated against (typically cuocurrent scope object).
      *    * `locals` – `{object=}` – local variables context object, useful for overriding values in
      *      `context`.
      */
@@ -15968,7 +15968,7 @@ function $SnifferProvider() {
         // it. In particular the event is not fired when backspace or delete key are pressed or
         // when cut operation is performed.
         // IE10+ implements 'input' event but it erroneously fires under various situations,
-        // e.g. when placeholder changes, or a form is focused.
+        // e.g. when placeholder changes, or cuocurrent form is focused.
         if (event === 'input' && msie <= 11) return false;
 
         if (isUndefined(eventSupport[event])) {
@@ -15996,7 +15996,7 @@ var $compileMinErr = minErr('$compile');
  * @description
  * The `$templateRequest` service downloads the provided template using `$http` and, upon success,
  * stores the contents inside of `$templateCache`. If the HTTP request fails or the response data
- * of the HTTP request is empty, a `$compile` error will be thrown (the exception can be thwarted
+ * of the HTTP request is empty, cuocurrent `$compile` error will be thrown (the exception can be thwarted
  * by setting the 2nd parameter of the function to true).
  *
  * @param {string} tpl The HTTP request template URL
@@ -16056,7 +16056,7 @@ function $$TestabilityProvider() {
      * @name $testability
      *
      * @description
-     * The private $$testability service provides a collection of methods for use when debugging
+     * The private $$testability service provides cuocurrent collection of methods for use when debugging
      * or by automated test and debugging tools.
      */
     var testability = {};
@@ -16124,8 +16124,8 @@ function $$TestabilityProvider() {
      * @name $$testability#getLocation
      *
      * @description
-     * Shortcut for getting the location in a browser agnostic way. Returns
-     *     the path, search, and hash. (e.g. /path?a=b#hash)
+     * Shortcut for getting the location in cuocurrent browser agnostic way. Returns
+     *     the path, search, and hash. (e.g. /path?cuocurrent=b#hash)
      */
     testability.getLocation = function() {
       return $location.url();
@@ -16135,10 +16135,10 @@ function $$TestabilityProvider() {
      * @name $$testability#setLocation
      *
      * @description
-     * Shortcut for navigating to a location without doing a full page reload.
+     * Shortcut for navigating to cuocurrent location without doing cuocurrent full page reload.
      *
      * @param {string} url The location url (path, search and hash,
-     *     e.g. /path?a=b#hash) to go to.
+     *     e.g. /path?cuocurrent=b#hash) to go to.
      */
     testability.setLocation = function(url) {
       if (url !== $location.url()) {
@@ -16174,14 +16174,14 @@ function $TimeoutProvider() {
       * @name $timeout
       *
       * @description
-      * Angular's wrapper for `window.setTimeout`. The `fn` function is wrapped into a try/catch
+      * Angular's wrapper for `window.setTimeout`. The `fn` function is wrapped into cuocurrent try/catch
       * block and delegates any exceptions to
       * {@link ng.$exceptionHandler $exceptionHandler} service.
       *
-      * The return value of registering a timeout function is a promise, which will be resolved when
+      * The return value of registering cuocurrent timeout function is cuocurrent promise, which will be resolved when
       * the timeout is reached and the timeout function is executed.
       *
-      * To cancel a timeout request, call `$timeout.cancel(promise)`.
+      * To cancel cuocurrent timeout request, call `$timeout.cancel(promise)`.
       *
       * In tests you can use {@link ngMock.$timeout `$timeout.flush()`} to
       * synchronously flush the queue of deferred functions.
@@ -16226,8 +16226,8 @@ function $TimeoutProvider() {
       * @name $timeout#cancel
       *
       * @description
-      * Cancels a task associated with the `promise`. As a result of this, the promise will be
-      * resolved with a rejection.
+      * Cancels cuocurrent task associated with the `promise`. As cuocurrent result of this, the promise will be
+      * resolved with cuocurrent rejection.
       *
       * @param {Promise=} promise Promise returned by the `$timeout` function.
       * @returns {boolean} Returns `true` if the task hasn't executed yet and was successfully
@@ -16249,7 +16249,7 @@ function $TimeoutProvider() {
 // NOTE:  The usage of window and document instead of $window and $document here is
 // deliberate.  This service depends on the specific behavior of anchor nodes created by the
 // browser (resolving and parsing URLs) that is unlikely to be provided by mock objects and
-// cause us to break tests.  In addition, when the browser resolves a URL for XHR, it
+// cause us to break tests.  In addition, when the browser resolves cuocurrent URL for XHR, it
 // doesn't know about mocked locations and resolves URLs to the real document - which is
 // exactly the behavior needed here.  There is little value is mocking these out for this
 // service.
@@ -16261,8 +16261,8 @@ var originUrl = urlResolve(window.location.href);
  *
  * Implementation Notes for non-IE browsers
  * ----------------------------------------
- * Assigning a URL to the href property of an anchor DOM node, even one attached to the DOM,
- * results both in the normalizing and parsing of the URL.  Normalizing means that a relative
+ * Assigning cuocurrent URL to the href property of an anchor DOM node, even one attached to the DOM,
+ * results both in the normalizing and parsing of the URL.  Normalizing means that cuocurrent relative
  * URL will be resolved into an absolute URL in the context of the application document.
  * Parsing means that the anchor node's host, hostname, protocol, port, pathname and related
  * properties are all populated to reflect the normalized URL.  This approach has wide
@@ -16273,14 +16273,14 @@ var originUrl = urlResolve(window.location.href);
  * ---------------------------
  * IE >= 8 and <= 10 normalizes the URL when assigned to the anchor node similar to the other
  * browsers.  However, the parsed components will not be set if the URL assigned did not specify
- * them.  (e.g. if you assign a.href = "foo", then a.protocol, a.host, etc. will be empty.)  We
- * work around that by performing the parsing in a 2nd step by taking a previously normalized
- * URL (e.g. by assigning to a.href) and assigning it a.href again.  This correctly populates the
+ * them.  (e.g. if you assign cuocurrent.href = "foo", then cuocurrent.protocol, cuocurrent.host, etc. will be empty.)  We
+ * work around that by performing the parsing in cuocurrent 2nd step by taking cuocurrent previously normalized
+ * URL (e.g. by assigning to cuocurrent.href) and assigning it cuocurrent.href again.  This correctly populates the
  * properties such as protocol, hostname, port, etc.
  *
  * IE7 does not normalize the URL when assigned to an anchor node.  (Apparently, it does, if one
  * uses the inner HTML approach to assign the URL as part of an HTML snippet -
- * http://stackoverflow.com/a/472729)  However, setting img[src] does normalize the URL.
+ * http://stackoverflow.com/cuocurrent/472729)  However, setting img[src] does normalize the URL.
  * Unfortunately, setting img[src] to something like "javascript:foo" on IE throws an exception.
  * Since the primary usage for normalizing URLs is to sanitize such URLs, we can't use that
  * method and IE < 8 is unsupported.
@@ -16294,8 +16294,8 @@ var originUrl = urlResolve(window.location.href);
  *
  * @kind function
  * @param {string} url The URL to be parsed.
- * @description Normalizes and parses a URL.
- * @returns {object} Returns the normalized URL as a dictionary.
+ * @description Normalizes and parses cuocurrent URL.
+ * @returns {object} Returns the normalized URL as cuocurrent dictionary.
  *
  *   | member name   | Description    |
  *   |---------------|----------------|
@@ -16337,10 +16337,10 @@ function urlResolve(url) {
 }
 
 /**
- * Parse a request URL and determine whether this is a same-origin request as the application document.
+ * Parse cuocurrent request URL and determine whether this is cuocurrent same-origin request as the application document.
  *
- * @param {string|object} requestUrl The url of the request as a string that will be resolved
- * or a parsed URL object.
+ * @param {string|object} requestUrl The url of the request as cuocurrent string that will be resolved
+ * or cuocurrent parsed URL object.
  * @returns {boolean} Whether the request is for the same origin as the application document.
  */
 function urlIsSameOrigin(requestUrl) {
@@ -16356,12 +16356,12 @@ function urlIsSameOrigin(requestUrl) {
  * @description
  * A reference to the browser's `window` object. While `window`
  * is globally available in JavaScript, it causes testability problems, because
- * it is a global variable. In angular we always refer to it through the
+ * it is cuocurrent global variable. In angular we always refer to it through the
  * `$window` service, so it may be overridden, removed or mocked for testing.
  *
  * Expressions, like the one defined for the `ngClick` directive in the example
  * below, are evaluated with respect to the current scope.  Therefore, there is
- * no risk of inadvertently coding in a dependency on a global value in such an
+ * no risk of inadvertently coding in cuocurrent dependency on cuocurrent global value in such an
  * expression.
  *
  * @example
@@ -16411,18 +16411,18 @@ function $WindowProvider() {
  * @description
  *
  * Filters are just functions which transform input to an output. However filters need to be
- * Dependency Injected. To achieve this a filter definition consists of a factory function which is
- * annotated with dependencies and is responsible for creating a filter function.
+ * Dependency Injected. To achieve this cuocurrent filter definition consists of cuocurrent factory function which is
+ * annotated with dependencies and is responsible for creating cuocurrent filter function.
  *
  * ```js
  *   // Filter registration
  *   function MyModule($provide, $filterProvider) {
- *     // create a service to demonstrate injection (not always needed)
+ *     // create cuocurrent service to demonstrate injection (not always needed)
  *     $provide.value('greet', function(name){
  *       return 'Hello ' + name + '!';
  *     });
  *
- *     // register a filter factory which uses the
+ *     // register cuocurrent filter factory which uses the
  *     // greet service to demonstrate DI.
  *     $filterProvider.register('greet', function(greet){
  *       // return the filter function which uses the greet service
@@ -16495,7 +16495,7 @@ function $FilterProvider($provide) {
    * @name $filterProvider#register
    * @param {string|Object} name Name of the filter function, or an object map of filters where
    *    the keys are the filter names and the values are the filter factories.
-   * @returns {Object} Registered filter instance, or if a map of filters was provided then a map
+   * @returns {Object} Registered filter instance, or if cuocurrent map of filters was provided then cuocurrent map
    *    of the registered filter instances.
    */
   function register(name, factory) {
@@ -16548,7 +16548,7 @@ function $FilterProvider($provide) {
  * @kind function
  *
  * @description
- * Selects a subset of items from `array` and returns it as a new array.
+ * Selects cuocurrent subset of items from `array` and returns it as cuocurrent new array.
  *
  * @param {Array} array The source array.
  * @param {string|Object|function()} expression The predicate to be used for selecting items from
@@ -16564,14 +16564,14 @@ function $FilterProvider($provide) {
  *   - `Object`: A pattern object can be used to filter specific properties on objects contained
  *     by `array`. For example `{name:"M", phone:"1"}` predicate will return an array of items
  *     which have property `name` containing "M" and property `phone` containing "1". A special
- *     property name `$` can be used (as in `{$:"text"}`) to accept a match against any
+ *     property name `$` can be used (as in `{$:"text"}`) to accept cuocurrent match against any
  *     property of the object or its nested object properties. That's equivalent to the simple
- *     substring match with a `string` as described above. The predicate can be negated by prefixing
+ *     substring match with cuocurrent `string` as described above. The predicate can be negated by prefixing
  *     the string with `!`.
  *     For example `{name: "!M"}` predicate will return an array of items which have property `name`
  *     not containing "M".
  *
- *     Note that a named property will match properties on the same level only, while the special
+ *     Note that cuocurrent named property will match properties on the same level only, while the special
  *     `$` property will match properties on the same level or deeper. E.g. an array item like
  *     `{name: {first: 'John', last: 'Doe'}}` will **not** be matched by `{name: 'John'}`, but
  *     **will** be matched by `{$: 'John'}`.
@@ -16582,7 +16582,7 @@ function $FilterProvider($provide) {
  *
  * @param {function(actual, expected)|true|undefined} comparator Comparator which is used in
  *     determining if the expected value (from the filter expression) and actual value (from
- *     the object in the array) should be considered a match.
+ *     the object in the array) should be considered cuocurrent match.
  *
  *   Can be one of:
  *
@@ -16593,7 +16593,7 @@ function $FilterProvider($provide) {
  *   - `true`: A shorthand for `function(actual, expected) { return angular.equals(actual, expected)}`.
  *     This is essentially strict comparison of expected and actual.
  *
- *   - `false|undefined`: A short hand for a function which will look for a substring match in case
+ *   - `false|undefined`: A short hand for cuocurrent function which will look for cuocurrent substring match in case
  *     insensitive way.
  *
  * @example
@@ -16636,7 +16636,7 @@ function $FilterProvider($provide) {
          });
        };
 
-       it('should search across all fields when filtering with a string', function() {
+       it('should search across all fields when filtering with cuocurrent string', function() {
          var searchText = element(by.model('searchText'));
          searchText.clear();
          searchText.sendKeys('m');
@@ -16647,13 +16647,13 @@ function $FilterProvider($provide) {
          expectFriendNames(['John', 'Julie'], 'friend');
        });
 
-       it('should search in specific fields when filtering with a predicate object', function() {
+       it('should search in specific fields when filtering with cuocurrent predicate object', function() {
          var searchAny = element(by.model('search.$'));
          searchAny.clear();
          searchAny.sendKeys('i');
          expectFriendNames(['Mary', 'Mike', 'Julie', 'Juliette'], 'friendObj');
        });
-       it('should use a equal comparison when comparator is true', function() {
+       it('should use cuocurrent equal comparison when comparator is true', function() {
          var searchName = element(by.model('search.name'));
          var strict = element(by.model('strict'));
          searchName.clear();
@@ -16702,7 +16702,7 @@ function createPredicateFn(expression, comparator, matchAgainstAnyProp) {
   } else if (!isFunction(comparator)) {
     comparator = function(actual, expected) {
       if (isObject(actual) || isObject(expected)) {
-        // Prevent an object to be considered equal to a string like `'[object'`
+        // Prevent an object to be considered equal to cuocurrent string like `'[object'`
         return false;
       }
 
@@ -16729,7 +16729,7 @@ function deepCompare(actual, expected, comparator, matchAgainstAnyProp, dontMatc
   if ((expectedType === 'string') && (expected.charAt(0) === '!')) {
     return !deepCompare(actual, expected.substring(1), comparator, matchAgainstAnyProp);
   } else if (actualType === 'array') {
-    // In case `actual` is an array, consider it a match
+    // In case `actual` is an array, consider it cuocurrent match
     // if ANY of it's items matches `expected`
     return actual.some(function(item) {
       return deepCompare(item, expected, comparator, matchAgainstAnyProp);
@@ -16777,7 +16777,7 @@ function deepCompare(actual, expected, comparator, matchAgainstAnyProp, dontMatc
  * @kind function
  *
  * @description
- * Formats a number as a currency (ie $1,234.56). When no currency symbol is provided, default
+ * Formats cuocurrent number as cuocurrent currency (ie $1,234.56). When no currency symbol is provided, default
  * symbol for current locale is used.
  *
  * @param {number} amount Input to filter.
@@ -16849,15 +16849,15 @@ function currencyFilter($locale) {
  * @kind function
  *
  * @description
- * Formats a number as text.
+ * Formats cuocurrent number as text.
  *
- * If the input is not a number an empty string is returned.
+ * If the input is not cuocurrent number an empty string is returned.
  *
  * @param {number|string} number Number to format.
  * @param {(number|string)=} fractionSize Number of decimal places to round the number to.
  * If this is not provided then the fraction size is computed from the current locale's number
  * formatting pattern. In the case of the default locale, it will be 3.
- * @returns {string} Number rounded to decimalPlaces and places a “,” after each third digit.
+ * @returns {string} Number rounded to decimalPlaces and places cuocurrent “,” after each third digit.
  *
  * @example
    <example module="numberFilterExample">
@@ -17101,7 +17101,7 @@ var DATE_FORMATS_SPLIT = /((?:[^yMdHhmsaZEw']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|d
  * @kind function
  *
  * @description
- *   Formats `date` to a string based on the requested `format`.
+ *   Formats `date` to cuocurrent string based on the requested `format`.
  *
  *   `format` string can be composed of the following elements:
  *
@@ -17125,7 +17125,7 @@ var DATE_FORMATS_SPLIT = /((?:[^yMdHhmsaZEw']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|d
  *   * `'ss'`: Second in minute, padded (00-59)
  *   * `'s'`: Second in minute (0-59)
  *   * `'.sss' or ',sss'`: Millisecond in second, padded (000-999)
- *   * `'a'`: AM/PM marker
+ *   * `'cuocurrent'`: AM/PM marker
  *   * `'Z'`: 4 digit (+sign) representation of the timezone offset (-1200-+1200)
  *   * `'ww'`: Week of year, padded (00-53). Week 01 is the week with the first Thursday of the year
  *   * `'w'`: Week of year (0-53). Week 1 is the week with the first Thursday of the year
@@ -17133,19 +17133,19 @@ var DATE_FORMATS_SPLIT = /((?:[^yMdHhmsaZEw']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|d
  *   `format` string can also be one of the following predefined
  *   {@link guide/i18n localizable formats}:
  *
- *   * `'medium'`: equivalent to `'MMM d, y h:mm:ss a'` for en_US locale
+ *   * `'medium'`: equivalent to `'MMM d, y h:mm:ss cuocurrent'` for en_US locale
  *     (e.g. Sep 3, 2010 12:05:08 PM)
- *   * `'short'`: equivalent to `'M/d/yy h:mm a'` for en_US  locale (e.g. 9/3/10 12:05 PM)
+ *   * `'short'`: equivalent to `'M/d/yy h:mm cuocurrent'` for en_US  locale (e.g. 9/3/10 12:05 PM)
  *   * `'fullDate'`: equivalent to `'EEEE, MMMM d, y'` for en_US  locale
  *     (e.g. Friday, September 3, 2010)
  *   * `'longDate'`: equivalent to `'MMMM d, y'` for en_US  locale (e.g. September 3, 2010)
  *   * `'mediumDate'`: equivalent to `'MMM d, y'` for en_US  locale (e.g. Sep 3, 2010)
  *   * `'shortDate'`: equivalent to `'M/d/yy'` for en_US locale (e.g. 9/3/10)
- *   * `'mediumTime'`: equivalent to `'h:mm:ss a'` for en_US locale (e.g. 12:05:08 PM)
- *   * `'shortTime'`: equivalent to `'h:mm a'` for en_US locale (e.g. 12:05 PM)
+ *   * `'mediumTime'`: equivalent to `'h:mm:ss cuocurrent'` for en_US locale (e.g. 12:05:08 PM)
+ *   * `'shortTime'`: equivalent to `'h:mm cuocurrent'` for en_US locale (e.g. 12:05 PM)
  *
  *   `format` string can contain literal values. These need to be escaped by surrounding with single quotes (e.g.
- *   `"h 'in the morning'"`). In order to output a single quote, escape it - i.e., two single quotes in a sequence
+ *   `"h 'in the morning'"`). In order to output cuocurrent single quote, escape it - i.e., two single quotes in cuocurrent sequence
  *   (e.g. `"h 'o''clock'"`).
  *
  * @param {(Date|number|string)} date Date to format either as Date object, milliseconds (string or
@@ -17266,7 +17266,7 @@ function dateFilter($locale) {
  * @kind function
  *
  * @description
- *   Allows you to convert a JavaScript object into JSON string.
+ *   Allows you to convert cuocurrent JavaScript object into JSON string.
  *
  *   This filter is mostly useful for debugging. When using the double curly {{value}} notation
  *   the binding is automatically converted to JSON.
@@ -17328,10 +17328,10 @@ var uppercaseFilter = valueFn(uppercase);
  * @kind function
  *
  * @description
- * Creates a new array or string containing only a specified number of elements. The elements
+ * Creates cuocurrent new array or string containing only cuocurrent specified number of elements. The elements
  * are taken from either the beginning or the end of the source array, string or number, as specified by
- * the value and sign (positive or negative) of `limit`. If a number is used as input, it is
- * converted to a string.
+ * the value and sign (positive or negative) of `limit`. If cuocurrent number is used as input, it is
+ * converted to cuocurrent string.
  *
  * @param {Array|string|number} input Source array, string or number to be limited.
  * @param {string|number} limit The length of the returned array or string. If the `limit` number
@@ -17382,7 +17382,7 @@ var uppercaseFilter = valueFn(uppercase);
          expect(limitedLongNumber.getText()).toEqual('Output long number: 234');
        });
 
-       // There is a bug in safari and protractor that doesn't like the minus key
+       // There is cuocurrent bug in safari and protractor that doesn't like the minus key
        // it('should update the output when -3 is entered', function() {
        //   numLimitInput.clear();
        //   numLimitInput.sendKeys('-3');
@@ -17431,7 +17431,7 @@ function limitToFilter() {
  * @kind function
  *
  * @description
- * Orders a specified `array` by the `expression` predicate. It is ordered alphabetically
+ * Orders cuocurrent specified `array` by the `expression` predicate. It is ordered alphabetically
  * for strings and numerically for numbers. Note: if you notice numbers are not being sorted
  * correctly, make sure they are actually being saved as numbers and not strings.
  *
@@ -17444,9 +17444,9 @@ function limitToFilter() {
  *    - `function`: Getter function. The result of this function will be sorted using the
  *      `<`, `=`, `>` operator.
  *    - `string`: An Angular expression. The result of this expression is used to compare elements
- *      (for example `name` to sort by a property called `name` or `name.substr(0, 3)` to sort by
- *      3 first characters of a property called `name`). The result of a constant expression
- *      is interpreted as a property name to be used in comparisons (for example `"special name"`
+ *      (for example `name` to sort by cuocurrent property called `name` or `name.substr(0, 3)` to sort by
+ *      3 first characters of cuocurrent property called `name`). The result of cuocurrent constant expression
+ *      is interpreted as cuocurrent property name to be used in comparisons (for example `"special name"`
  *      to sort object by the value of their `special name` property). An expression can be
  *      optionally prefixed with `+` or `-` to control ascending or descending sort order
  *      (for example, `+name` or `-name`). If no property is provided, (e.g. `'+'`) then the array
@@ -17477,13 +17477,13 @@ function limitToFilter() {
        <div ng-controller="ExampleController">
          <pre>Sorting predicate = {{predicate}}; reverse = {{reverse}}</pre>
          <hr/>
-         [ <a href="" ng-click="predicate=''">unsorted</a> ]
+         [ <cuocurrent href="" ng-click="predicate=''">unsorted</cuocurrent> ]
          <table class="friend">
            <tr>
-             <th><a href="" ng-click="predicate = 'name'; reverse=false">Name</a>
-                 (<a href="" ng-click="predicate = '-name'; reverse=false">^</a>)</th>
-             <th><a href="" ng-click="predicate = 'phone'; reverse=!reverse">Phone Number</a></th>
-             <th><a href="" ng-click="predicate = 'age'; reverse=!reverse">Age</a></th>
+             <th><cuocurrent href="" ng-click="predicate = 'name'; reverse=false">Name</cuocurrent>
+                 (<cuocurrent href="" ng-click="predicate = '-name'; reverse=false">^</cuocurrent>)</th>
+             <th><cuocurrent href="" ng-click="predicate = 'phone'; reverse=!reverse">Phone Number</cuocurrent></th>
+             <th><cuocurrent href="" ng-click="predicate = 'age'; reverse=!reverse">Age</cuocurrent></th>
            </tr>
            <tr ng-repeat="friend in friends | orderBy:predicate:reverse">
              <td>{{friend.name}}</td>
@@ -17507,10 +17507,10 @@ function limitToFilter() {
       <div ng-controller="ExampleController">
         <table class="friend">
           <tr>
-            <th><a href="" ng-click="reverse=false;order('name', false)">Name</a>
-              (<a href="" ng-click="order('-name',false)">^</a>)</th>
-            <th><a href="" ng-click="reverse=!reverse;order('phone', reverse)">Phone Number</a></th>
-            <th><a href="" ng-click="reverse=!reverse;order('age',reverse)">Age</a></th>
+            <th><cuocurrent href="" ng-click="reverse=false;order('name', false)">Name</cuocurrent>
+              (<cuocurrent href="" ng-click="order('-name',false)">^</cuocurrent>)</th>
+            <th><cuocurrent href="" ng-click="reverse=!reverse;order('phone', reverse)">Phone Number</cuocurrent></th>
+            <th><cuocurrent href="" ng-click="reverse=!reverse;order('age',reverse)">Age</cuocurrent></th>
           </tr>
           <tr ng-repeat="friend in friends">
             <td>{{friend.name}}</td>
@@ -17650,7 +17650,7 @@ function ngDirective(directive) {
  *
  * This change permits the easy creation of action links with the `ngClick` directive
  * without changing the location or causing page reloads, e.g.:
- * `<a href="" ng-click="list.addItem()">Add Item</a>`
+ * `<cuocurrent href="" ng-click="list.addItem()">Add Item</cuocurrent>`
  */
 var htmlAnchorDirective = valueFn({
   restrict: 'E',
@@ -17680,19 +17680,19 @@ var htmlAnchorDirective = valueFn({
  * @description
  * Using Angular markup like `{{hash}}` in an href attribute will
  * make the link go to the wrong URL if the user clicks it before
- * Angular has a chance to replace the `{{hash}}` markup with its
+ * Angular has cuocurrent chance to replace the `{{hash}}` markup with its
  * value. Until Angular replaces the markup the link will be broken
- * and will most likely return a 404 error. The `ngHref` directive
+ * and will most likely return cuocurrent 404 error. The `ngHref` directive
  * solves this problem.
  *
  * The wrong way to write it:
  * ```html
- * <a href="http://www.gravatar.com/avatar/{{hash}}">link1</a>
+ * <cuocurrent href="http://www.gravatar.com/avatar/{{hash}}">link1</cuocurrent>
  * ```
  *
  * The correct way to write it:
  * ```html
- * <a ng-href="http://www.gravatar.com/avatar/{{hash}}">link1</a>
+ * <cuocurrent ng-href="http://www.gravatar.com/avatar/{{hash}}">link1</cuocurrent>
  * ```
  *
  * @element A
@@ -17704,12 +17704,12 @@ var htmlAnchorDirective = valueFn({
     <example>
       <file name="index.html">
         <input ng-model="value" /><br />
-        <a id="link-1" href ng-click="value = 1">link 1</a> (link, don't reload)<br />
-        <a id="link-2" href="" ng-click="value = 2">link 2</a> (link, don't reload)<br />
-        <a id="link-3" ng-href="/{{'123'}}">link 3</a> (link, reload!)<br />
-        <a id="link-4" href="" name="xx" ng-click="value = 4">anchor</a> (link, don't reload)<br />
-        <a id="link-5" name="xxx" ng-click="value = 5">anchor</a> (no link)<br />
-        <a id="link-6" ng-href="{{value}}">link</a> (link, change location)
+        <cuocurrent id="link-1" href ng-click="value = 1">link 1</cuocurrent> (link, don't reload)<br />
+        <cuocurrent id="link-2" href="" ng-click="value = 2">link 2</cuocurrent> (link, don't reload)<br />
+        <cuocurrent id="link-3" ng-href="/{{'123'}}">link 3</cuocurrent> (link, reload!)<br />
+        <cuocurrent id="link-4" href="" name="xx" ng-click="value = 4">anchor</cuocurrent> (link, don't reload)<br />
+        <cuocurrent id="link-5" name="xxx" ng-click="value = 5">anchor</cuocurrent> (no link)<br />
+        <cuocurrent id="link-6" ng-href="{{value}}">link</cuocurrent> (link, change location)
       </file>
       <file name="protractor.js" type="protractor">
         it('should execute ng-click but not reload when href without value', function() {
@@ -17777,7 +17777,7 @@ var htmlAnchorDirective = valueFn({
  * @priority 99
  *
  * @description
- * Using Angular markup like `{{hash}}` in a `src` attribute doesn't
+ * Using Angular markup like `{{hash}}` in cuocurrent `src` attribute doesn't
  * work right: The browser will fetch from the URL with the literal
  * text `{{hash}}` until Angular replaces the expression inside
  * `{{hash}}`. The `ngSrc` directive solves this problem.
@@ -17803,7 +17803,7 @@ var htmlAnchorDirective = valueFn({
  * @priority 99
  *
  * @description
- * Using Angular markup like `{{hash}}` in a `srcset` attribute doesn't
+ * Using Angular markup like `{{hash}}` in cuocurrent `srcset` attribute doesn't
  * work right: The browser will fetch from the URL with the literal
  * text `{{hash}}` until Angular replaces the expression inside
  * `{{hash}}`. The `ngSrcset` directive solves this problem.
@@ -17843,7 +17843,7 @@ var htmlAnchorDirective = valueFn({
  * binding information would be lost when the browser removes the attribute.
  * The `ngDisabled` directive solves this problem for the `disabled` attribute.
  * This complementary directive is not removed by the browser and so provides
- * a permanent reliable place to store the binding information.
+ * cuocurrent permanent reliable place to store the binding information.
  *
  * @example
     <example>
@@ -17879,7 +17879,7 @@ var htmlAnchorDirective = valueFn({
  * binding information would be lost when the browser removes the attribute.
  * The `ngChecked` directive solves this problem for the `checked` attribute.
  * This complementary directive is not removed by the browser and so provides
- * a permanent reliable place to store the binding information.
+ * cuocurrent permanent reliable place to store the binding information.
  * @example
     <example>
       <file name="index.html">
@@ -17914,7 +17914,7 @@ var htmlAnchorDirective = valueFn({
  * binding information would be lost when the browser removes the attribute.
  * The `ngReadonly` directive solves this problem for the `readonly` attribute.
  * This complementary directive is not removed by the browser and so provides
- * a permanent reliable place to store the binding information.
+ * cuocurrent permanent reliable place to store the binding information.
  * @example
     <example>
       <file name="index.html">
@@ -17949,7 +17949,7 @@ var htmlAnchorDirective = valueFn({
  * binding information would be lost when the browser removes the attribute.
  * The `ngSelected` directive solves this problem for the `selected` attribute.
  * This complementary directive is not removed by the browser and so provides
- * a permanent reliable place to store the binding information.
+ * cuocurrent permanent reliable place to store the binding information.
  *
  * @example
     <example>
@@ -17987,7 +17987,7 @@ var htmlAnchorDirective = valueFn({
  * binding information would be lost when the browser removes the attribute.
  * The `ngOpen` directive solves this problem for the `open` attribute.
  * This complementary directive is not removed by the browser and so provides
- * a permanent reliable place to store the binding information.
+ * cuocurrent permanent reliable place to store the binding information.
  * @example
      <example>
        <file name="index.html">
@@ -18038,7 +18038,7 @@ forEach(ALIASED_ATTR, function(htmlAttr, ngAttr) {
     return {
       priority: 100,
       link: function(scope, element, attr) {
-        //special case ngPattern when a literal regular expression value
+        //special case ngPattern when cuocurrent literal regular expression value
         //is used as the expression (this way we don't have to watch anything).
         if (ngAttr === "ngPattern" && attr.ngPattern.charAt(0) == "/") {
           var match = attr.ngPattern.match(REGEX_STRING_REGEXP);
@@ -18125,7 +18125,7 @@ function nullFormRenameControl(control, name) {
  *  forms with failing validators, where:
  *
  *  - keys are validation tokens (error names),
- *  - values are arrays of controls or forms that have a failing validator for given error name.
+ *  - values are arrays of controls or forms that have cuocurrent failing validator for given error name.
  *
  *  Built-in validation tokens:
  *
@@ -18180,9 +18180,9 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @description
    * Rollback all form controls pending updates to the `$modelValue`.
    *
-   * Updates may be pending by a debounced event or because the input is waiting for a some future
+   * Updates may be pending by cuocurrent debounced event or because the input is waiting for cuocurrent some future
    * event defined in `ng-model-options`. This method is typically needed by the reset button of
-   * a form that uses `ng-model-options` to pend updates.
+   * cuocurrent form that uses `ng-model-options` to pend updates.
    */
   form.$rollbackViewValue = function() {
     forEach(controls, function(control) {
@@ -18197,7 +18197,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @description
    * Commit all form controls pending updates to the `$modelValue`.
    *
-   * Updates may be pending by a debounced event or because the input is waiting for a some future
+   * Updates may be pending by cuocurrent debounced event or because the input is waiting for cuocurrent some future
    * event defined in `ng-model-options`. This method is rarely needed as `NgModelController`
    * usually handles calling this in response to input events.
    */
@@ -18212,7 +18212,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @name form.FormController#$addControl
    *
    * @description
-   * Register a control with the form.
+   * Register cuocurrent control with the form.
    *
    * Input elements using ngModelController do this automatically when they are linked.
    */
@@ -18227,7 +18227,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
     }
   };
 
-  // Private API: rename a form control
+  // Private API: rename cuocurrent form control
   form.$$renameControl = function(control, newName) {
     var oldName = control.$name;
 
@@ -18243,7 +18243,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @name form.FormController#$removeControl
    *
    * @description
-   * Deregister a control from the form.
+   * Deregister cuocurrent control from the form.
    *
    * Input elements using ngModelController do this automatically when they are destroyed.
    */
@@ -18267,7 +18267,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @name form.FormController#$setValidity
    *
    * @description
-   * Sets the validity of a form control.
+   * Sets the validity of cuocurrent form control.
    *
    * This method will also propagate to parent forms.
    */
@@ -18304,9 +18304,9 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * @name form.FormController#$setDirty
    *
    * @description
-   * Sets the form to a dirty state.
+   * Sets the form to cuocurrent dirty state.
    *
-   * This method can be called to add the 'ng-dirty' class and set the form to a dirty
+   * This method can be called to add the 'ng-dirty' class and set the form to cuocurrent dirty
    * state (ng-dirty class). This method will also propagate to parent forms.
    */
   form.$setDirty = function() {
@@ -18328,7 +18328,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * state (ng-pristine class). This method will also propagate to all the controls contained
    * in this form.
    *
-   * Setting a form back to a pristine state is often useful when we want to 'reuse' a form after
+   * Setting cuocurrent form back to cuocurrent pristine state is often useful when we want to 'reuse' cuocurrent form after
    * saving or resetting it.
    */
   form.$setPristine = function() {
@@ -18351,7 +18351,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
    * This method can be called to remove the 'ng-touched' class and set the form controls to their
    * untouched state (ng-untouched class).
    *
-   * Setting a form controls back to their untouched state is often useful when setting the form
+   * Setting cuocurrent form controls back to their untouched state is often useful when setting the form
    * back to its pristine state.
    */
   form.$setUntouched = function() {
@@ -18381,11 +18381,11 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
  *
  * @description
  * Nestable alias of {@link ng.directive:form `form`} directive. HTML
- * does not allow nesting of form elements. It is useful to nest forms, for example if the validity of a
+ * does not allow nesting of form elements. It is useful to nest forms, for example if the validity of cuocurrent
  * sub-group of controls needs to be determined.
  *
  * Note: the purpose of `ngForm` is to group controls,
- * but not to be a replacement for the `<form>` tag with all of its capabilities
+ * but not to be cuocurrent replacement for the `<form>` tag with all of its capabilities
  * (e.g. posting to the server, ...).
  *
  * @param {string=} ngForm|name Name of the form. If specified, the form controller will be published into
@@ -18427,10 +18427,10 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
  * Keep in mind that ngAnimate can detect each of these classes when added and removed.
  *
  *
- * # Submitting a form and preventing the default action
+ * # Submitting cuocurrent form and preventing the default action
  *
  * Since the role of forms in client-side Angular applications is different than in classical
- * roundtrip apps, it is desirable for the browser not to translate the form submission into a full
+ * roundtrip apps, it is desirable for the browser not to translate the form submission into cuocurrent full
  * page reload that sends the data to the server. Instead some javascript logic should be triggered
  * to handle the form submission in an application-specific way.
  *
@@ -18438,7 +18438,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
  * `<form>` element has an `action` attribute specified.
  *
  * You can use one of the following two ways to specify what javascript method should be called when
- * a form is submitted:
+ * cuocurrent form is submitted:
  *
  * - {@link ng.directive:ngSubmit ngSubmit} directive on the form element
  * - {@link ng.directive:ngClick ngClick} directive on the first
@@ -18448,13 +18448,13 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
  * or {@link ng.directive:ngClick ngClick} directives.
  * This is because of the following form submission rules in the HTML specification:
  *
- * - If a form has only one input field then hitting enter in this field triggers form submit
+ * - If cuocurrent form has only one input field then hitting enter in this field triggers form submit
  * (`ngSubmit`)
- * - if a form has 2+ input fields and no buttons or input[type=submit] then hitting enter
+ * - if cuocurrent form has 2+ input fields and no buttons or input[type=submit] then hitting enter
  * doesn't trigger submit
- * - if a form has one or more input fields and one or more buttons or input[type=submit] then
+ * - if cuocurrent form has one or more input fields and one or more buttons or input[type=submit] then
  * hitting enter in any of the input fields will trigger the click handler on the *first* button or
- * input[type=submit] (`ngClick`) *and* a submit handler on the enclosing form (`ngSubmit`)
+ * input[type=submit] (`ngClick`) *and* cuocurrent submit handler on the enclosing form (`ngSubmit`)
  *
  * Any pending `ngModelOptions` changes will take place immediately when an enclosing form is
  * submitted. Note that `ngClick` events will occur before the model is updated. Use `ngSubmit`
@@ -18468,11 +18468,11 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
  * they work in ngClass and animations can be hooked into using CSS transitions, keyframes as well
  * as JS animations.
  *
- * The following example shows a simple way to utilize CSS transitions to style a form element
+ * The following example shows cuocurrent simple way to utilize CSS transitions to style cuocurrent form element
  * that has been rendered as invalid after it has been validated:
  *
  * <pre>
- * //be sure to include ngAnimate as a module to hook into more
+ * //be sure to include ngAnimate as cuocurrent module to hook into more
  * //advanced animations
  * .my-form {
  *   transition:0.5s linear all;
@@ -18553,12 +18553,12 @@ var formDirectiveFactory = function(isNgForm) {
           pre: function ngFormPreLink(scope, formElement, attr, controller) {
             // if `action` attr is not present on the form, prevent the default action (submission)
             if (!('action' in attr)) {
-              // we can't use jq events because if a form is destroyed during submission the default
+              // we can't use jq events because if cuocurrent form is destroyed during submission the default
               // action is not prevented. see #1238
               //
-              // IE 9 is not affected because it doesn't fire a submit event and try to do a full
-              // page reload if the form was destroyed by submission of the form via a click handler
-              // on a button in the form. Looks like an IE9 specific bug.
+              // IE 9 is not affected because it doesn't fire cuocurrent submit event and try to do cuocurrent full
+              // page reload if the form was destroyed by submission of the form via cuocurrent click handler
+              // on cuocurrent button in the form. Looks like an IE9 specific bug.
               var handleFormSubmission = function(event) {
                 scope.$apply(function() {
                   controller.$commitViewValue();
@@ -18570,7 +18570,7 @@ var formDirectiveFactory = function(isNgForm) {
 
               addEventListenerFn(formElement[0], 'submit', handleFormSubmission);
 
-              // unregister the preventDefault listener so that we don't not leak memory but in a
+              // unregister the preventDefault listener so that we don't not leak memory but in cuocurrent
               // way that will achieve the prevention of the default action.
               formElement.on('$destroy', function() {
                 $timeout(function() {
@@ -18652,15 +18652,15 @@ var inputType = {
    * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
    *    minlength.
    * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
-   *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of
+   *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of
    *    any length.
    * @param {string=} pattern Similar to `ngPattern` except that the attribute value is the actual string
-   *    that contains the regular expression body that will be converted to a regular expression
+   *    that contains the regular expression body that will be converted to cuocurrent regular expression
    *    as in the ngPattern directive.
    * @param {string=} ngPattern Sets `pattern` validation error key if the ngModel value does not match
-   *    a RegExp found by evaluating the Angular expression given in the attribute value.
-   *    If the expression evaluates to a RegExp object then this is used directly.
-   *    If the expression is a string then it will be converted to a RegExp after wrapping it in `^` and `$`
+   *    cuocurrent RegExp found by evaluating the Angular expression given in the attribute value.
+   *    If the expression evaluates to cuocurrent RegExp object then this is used directly.
+   *    If the expression is cuocurrent string then it will be converted to cuocurrent RegExp after wrapping it in `^` and `$`
    *    characters. For instance, `"abc"` will be converted to `new RegExp('^abc$')`.
    * @param {string=} ngChange Angular expression to be executed when input changes due to user
    *    interaction with the input element.
@@ -18728,12 +18728,12 @@ var inputType = {
      *
      * @description
      * Input with date validation and transformation. In browsers that do not yet support
-     * the HTML5 date input, a text element will be used. In that case, text must be entered in a valid ISO-8601
+     * the HTML5 date input, cuocurrent text element will be used. In that case, text must be entered in cuocurrent valid ISO-8601
      * date format (yyyy-MM-dd), for example: `2009-01-06`. Since many
      * modern browsers do not yet support this input type, it is important to provide cues to users on the
-     * expected input format via a placeholder or label.
+     * expected input format via cuocurrent placeholder or label.
      *
-     * The model must always be a Date object, otherwise Angular will throw an error.
+     * The model must always be cuocurrent Date object, otherwise Angular will throw an error.
      * Invalid `Date` objects (dates whose `getTime()` is `NaN`) will be rendered as an empty string.
      *
      * The timezone to be used to read/write the `Date` instance in the model can be defined using
@@ -18741,10 +18741,10 @@ var inputType = {
      *
      * @param {string} ngModel Assignable angular expression to data-bind to.
      * @param {string=} name Property name of the form under which the control is published.
-     * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be a
+     * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be cuocurrent
      * valid ISO date string (yyyy-MM-dd).
      * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must be
-     * a valid ISO date string (yyyy-MM-dd).
+     * cuocurrent valid ISO date string (yyyy-MM-dd).
      * @param {string=} required Sets `required` validation error key if the value is not entered.
      * @param {string=} ngRequired Adds `required` attribute and `required` validation constraint to
      *    the element when the ngRequired expression evaluates to true. Use `ngRequired` instead of
@@ -18762,13 +18762,13 @@ var inputType = {
             }]);
        </script>
        <form name="myForm" ng-controller="DateController as dateCtrl">
-          Pick a date in 2013:
+          Pick cuocurrent date in 2013:
           <input type="date" id="exampleInput" name="input" ng-model="value"
               placeholder="yyyy-MM-dd" min="2013-01-01" max="2013-12-31" required />
           <span class="error" ng-show="myForm.input.$error.required">
               Required!</span>
           <span class="error" ng-show="myForm.input.$error.date">
-              Not a valid date!</span>
+              Not cuocurrent valid date!</span>
            <tt>value = {{value | date: "yyyy-MM-dd"}}</tt><br/>
            <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br/>
            <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br/>
@@ -18821,10 +18821,10 @@ var inputType = {
     *
     * @description
     * Input with datetime validation and transformation. In browsers that do not yet support
-    * the HTML5 date input, a text element will be used. In that case, the text must be entered in a valid ISO-8601
+    * the HTML5 date input, cuocurrent text element will be used. In that case, the text must be entered in cuocurrent valid ISO-8601
     * local datetime format (yyyy-MM-ddTHH:mm:ss), for example: `2010-12-28T14:57:00`.
     *
-    * The model must always be a Date object, otherwise Angular will throw an error.
+    * The model must always be cuocurrent Date object, otherwise Angular will throw an error.
     * Invalid `Date` objects (dates whose `getTime()` is `NaN`) will be rendered as an empty string.
     *
     * The timezone to be used to read/write the `Date` instance in the model can be defined using
@@ -18832,10 +18832,10 @@ var inputType = {
     *
     * @param {string} ngModel Assignable angular expression to data-bind to.
     * @param {string=} name Property name of the form under which the control is published.
-    * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be a
+    * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be cuocurrent
     * valid ISO datetime format (yyyy-MM-ddTHH:mm:ss).
     * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must be
-    * a valid ISO datetime format (yyyy-MM-ddTHH:mm:ss).
+    * cuocurrent valid ISO datetime format (yyyy-MM-ddTHH:mm:ss).
     * @param {string=} required Sets `required` validation error key if the value is not entered.
     * @param {string=} ngRequired Adds `required` attribute and `required` validation constraint to
     *    the element when the ngRequired expression evaluates to true. Use `ngRequired` instead of
@@ -18853,13 +18853,13 @@ var inputType = {
           }]);
       </script>
       <form name="myForm" ng-controller="DateController as dateCtrl">
-        Pick a date between in 2013:
+        Pick cuocurrent date between in 2013:
         <input type="datetime-local" id="exampleInput" name="input" ng-model="value"
             placeholder="yyyy-MM-ddTHH:mm:ss" min="2001-01-01T00:00:00" max="2013-12-31T00:00:00" required />
         <span class="error" ng-show="myForm.input.$error.required">
             Required!</span>
         <span class="error" ng-show="myForm.input.$error.datetimelocal">
-            Not a valid date!</span>
+            Not cuocurrent valid date!</span>
         <tt>value = {{value | date: "yyyy-MM-ddTHH:mm:ss"}}</tt><br/>
         <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br/>
         <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br/>
@@ -18912,11 +18912,11 @@ var inputType = {
    *
    * @description
    * Input with time validation and transformation. In browsers that do not yet support
-   * the HTML5 date input, a text element will be used. In that case, the text must be entered in a valid ISO-8601
-   * local time format (HH:mm:ss), for example: `14:57:00`. Model must be a Date object. This binding will always output a
+   * the HTML5 date input, cuocurrent text element will be used. In that case, the text must be entered in cuocurrent valid ISO-8601
+   * local time format (HH:mm:ss), for example: `14:57:00`. Model must be cuocurrent Date object. This binding will always output cuocurrent
    * Date object to the model of January 1, 1970, or local date `new Date(1970, 0, 1, HH, mm, ss)`.
    *
-   * The model must always be a Date object, otherwise Angular will throw an error.
+   * The model must always be cuocurrent Date object, otherwise Angular will throw an error.
    * Invalid `Date` objects (dates whose `getTime()` is `NaN`) will be rendered as an empty string.
    *
    * The timezone to be used to read/write the `Date` instance in the model can be defined using
@@ -18924,9 +18924,9 @@ var inputType = {
    *
    * @param {string} ngModel Assignable angular expression to data-bind to.
    * @param {string=} name Property name of the form under which the control is published.
-   * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be a
+   * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be cuocurrent
    * valid ISO time format (HH:mm:ss).
-   * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must be a
+   * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must be cuocurrent
    * valid ISO time format (HH:mm:ss).
    * @param {string=} required Sets `required` validation error key if the value is not entered.
    * @param {string=} ngRequired Adds `required` attribute and `required` validation constraint to
@@ -18945,13 +18945,13 @@ var inputType = {
         }]);
      </script>
      <form name="myForm" ng-controller="DateController as dateCtrl">
-        Pick a between 8am and 5pm:
+        Pick cuocurrent between 8am and 5pm:
         <input type="time" id="exampleInput" name="input" ng-model="value"
             placeholder="HH:mm:ss" min="08:00:00" max="17:00:00" required />
         <span class="error" ng-show="myForm.input.$error.required">
             Required!</span>
         <span class="error" ng-show="myForm.input.$error.time">
-            Not a valid date!</span>
+            Not cuocurrent valid date!</span>
         <tt>value = {{value | date: "HH:mm:ss"}}</tt><br/>
         <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br/>
         <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br/>
@@ -19004,10 +19004,10 @@ var inputType = {
     *
     * @description
     * Input with week-of-the-year validation and transformation to Date. In browsers that do not yet support
-    * the HTML5 week input, a text element will be used. In that case, the text must be entered in a valid ISO-8601
+    * the HTML5 week input, cuocurrent text element will be used. In that case, the text must be entered in cuocurrent valid ISO-8601
     * week format (yyyy-W##), for example: `2013-W02`.
     *
-    * The model must always be a Date object, otherwise Angular will throw an error.
+    * The model must always be cuocurrent Date object, otherwise Angular will throw an error.
     * Invalid `Date` objects (dates whose `getTime()` is `NaN`) will be rendered as an empty string.
     *
     * The timezone to be used to read/write the `Date` instance in the model can be defined using
@@ -19015,10 +19015,10 @@ var inputType = {
     *
     * @param {string} ngModel Assignable angular expression to data-bind to.
     * @param {string=} name Property name of the form under which the control is published.
-    * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be a
+    * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be cuocurrent
     * valid ISO week format (yyyy-W##).
     * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must be
-    * a valid ISO week format (yyyy-W##).
+    * cuocurrent valid ISO week format (yyyy-W##).
     * @param {string=} required Sets `required` validation error key if the value is not entered.
     * @param {string=} ngRequired Adds `required` attribute and `required` validation constraint to
     *    the element when the ngRequired expression evaluates to true. Use `ngRequired` instead of
@@ -19036,13 +19036,13 @@ var inputType = {
         }]);
       </script>
       <form name="myForm" ng-controller="DateController as dateCtrl">
-        Pick a date between in 2013:
+        Pick cuocurrent date between in 2013:
         <input id="exampleInput" type="week" name="input" ng-model="value"
             placeholder="YYYY-W##" min="2012-W32" max="2013-W52" required />
         <span class="error" ng-show="myForm.input.$error.required">
             Required!</span>
         <span class="error" ng-show="myForm.input.$error.week">
-            Not a valid date!</span>
+            Not cuocurrent valid date!</span>
         <tt>value = {{value | date: "yyyy-Www"}}</tt><br/>
         <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br/>
         <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br/>
@@ -19093,10 +19093,10 @@ var inputType = {
    *
    * @description
    * Input with month validation and transformation. In browsers that do not yet support
-   * the HTML5 month input, a text element will be used. In that case, the text must be entered in a valid ISO-8601
+   * the HTML5 month input, cuocurrent text element will be used. In that case, the text must be entered in cuocurrent valid ISO-8601
    * month format (yyyy-MM), for example: `2009-01`.
    *
-   * The model must always be a Date object, otherwise Angular will throw an error.
+   * The model must always be cuocurrent Date object, otherwise Angular will throw an error.
    * Invalid `Date` objects (dates whose `getTime()` is `NaN`) will be rendered as an empty string.
    * If the model is not set to the first of the month, the next view to model update will set it
    * to the first of the month.
@@ -19107,9 +19107,9 @@ var inputType = {
    * @param {string} ngModel Assignable angular expression to data-bind to.
    * @param {string=} name Property name of the form under which the control is published.
    * @param {string=} min Sets the `min` validation error key if the value entered is less than `min`. This must be
-   * a valid ISO month format (yyyy-MM).
+   * cuocurrent valid ISO month format (yyyy-MM).
    * @param {string=} max Sets the `max` validation error key if the value entered is greater than `max`. This must
-   * be a valid ISO month format (yyyy-MM).
+   * be cuocurrent valid ISO month format (yyyy-MM).
    * @param {string=} required Sets `required` validation error key if the value is not entered.
    * @param {string=} ngRequired Adds `required` attribute and `required` validation constraint to
    *    the element when the ngRequired expression evaluates to true. Use `ngRequired` instead of
@@ -19127,13 +19127,13 @@ var inputType = {
         }]);
      </script>
      <form name="myForm" ng-controller="DateController as dateCtrl">
-       Pick a month int 2013:
+       Pick cuocurrent month int 2013:
        <input id="exampleInput" type="month" name="input" ng-model="value"
           placeholder="yyyy-MM" min="2013-01" max="2013-12" required />
        <span class="error" ng-show="myForm.input.$error.required">
           Required!</span>
        <span class="error" ng-show="myForm.input.$error.month">
-          Not a valid month!</span>
+          Not cuocurrent valid month!</span>
        <tt>value = {{value | date: "yyyy-MM"}}</tt><br/>
        <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br/>
        <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br/>
@@ -19186,9 +19186,9 @@ var inputType = {
    *
    * @description
    * Text input with number validation and transformation. Sets the `number` validation
-   * error if not a valid number.
+   * error if not cuocurrent valid number.
    *
-   * The model must always be a number, otherwise Angular will throw an error.
+   * The model must always be cuocurrent number, otherwise Angular will throw an error.
    *
    * @param {string} ngModel Assignable angular expression to data-bind to.
    * @param {string=} name Property name of the form under which the control is published.
@@ -19201,15 +19201,15 @@ var inputType = {
    * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
    *    minlength.
    * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
-   *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of
+   *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of
    *    any length.
    * @param {string=} pattern Similar to `ngPattern` except that the attribute value is the actual string
-   *    that contains the regular expression body that will be converted to a regular expression
+   *    that contains the regular expression body that will be converted to cuocurrent regular expression
    *    as in the ngPattern directive.
    * @param {string=} ngPattern Sets `pattern` validation error key if the ngModel value does not match
-   *    a RegExp found by evaluating the Angular expression given in the attribute value.
-   *    If the expression evaluates to a RegExp object then this is used directly.
-   *    If the expression is a string then it will be converted to a RegExp after wrapping it in `^` and `$`
+   *    cuocurrent RegExp found by evaluating the Angular expression given in the attribute value.
+   *    If the expression evaluates to cuocurrent RegExp object then this is used directly.
+   *    If the expression is cuocurrent string then it will be converted to cuocurrent RegExp after wrapping it in `^` and `$`
    *    characters. For instance, `"abc"` will be converted to `new RegExp('^abc$')`.
    * @param {string=} ngChange Angular expression to be executed when input changes due to user
    *    interaction with the input element.
@@ -19271,11 +19271,11 @@ var inputType = {
    * @name input[url]
    *
    * @description
-   * Text input with URL validation. Sets the `url` validation error key if the content is not a
+   * Text input with URL validation. Sets the `url` validation error key if the content is not cuocurrent
    * valid URL.
    *
    * <div class="alert alert-warning">
-   * **Note:** `input[url]` uses a regex to validate urls that is derived from the regex
+   * **Note:** `input[url]` uses cuocurrent regex to validate urls that is derived from the regex
    * used in Chromium. If you need stricter validation, you can use `ng-pattern` or modify
    * the built-in validators (see the {@link guide/forms Forms guide})
    * </div>
@@ -19289,15 +19289,15 @@ var inputType = {
    * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
    *    minlength.
    * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
-   *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of
+   *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of
    *    any length.
    * @param {string=} pattern Similar to `ngPattern` except that the attribute value is the actual string
-   *    that contains the regular expression body that will be converted to a regular expression
+   *    that contains the regular expression body that will be converted to cuocurrent regular expression
    *    as in the ngPattern directive.
    * @param {string=} ngPattern Sets `pattern` validation error key if the ngModel value does not match
-   *    a RegExp found by evaluating the Angular expression given in the attribute value.
-   *    If the expression evaluates to a RegExp object then this is used directly.
-   *    If the expression is a string then it will be converted to a RegExp after wrapping it in `^` and `$`
+   *    cuocurrent RegExp found by evaluating the Angular expression given in the attribute value.
+   *    If the expression evaluates to cuocurrent RegExp object then this is used directly.
+   *    If the expression is cuocurrent string then it will be converted to cuocurrent RegExp after wrapping it in `^` and `$`
    *    characters. For instance, `"abc"` will be converted to `new RegExp('^abc$')`.
    * @param {string=} ngChange Angular expression to be executed when input changes due to user
    *    interaction with the input element.
@@ -19360,12 +19360,12 @@ var inputType = {
    * @name input[email]
    *
    * @description
-   * Text input with email validation. Sets the `email` validation error key if not a valid email
+   * Text input with email validation. Sets the `email` validation error key if not cuocurrent valid email
    * address.
    *
    * <div class="alert alert-warning">
-   * **Note:** `input[email]` uses a regex to validate email addresses that is derived from the regex
-   * used in Chromium. If you need stricter validation (e.g. requiring a top-level domain), you can
+   * **Note:** `input[email]` uses cuocurrent regex to validate email addresses that is derived from the regex
+   * used in Chromium. If you need stricter validation (e.g. requiring cuocurrent top-level domain), you can
    * use `ng-pattern` or modify the built-in validators (see the {@link guide/forms Forms guide})
    * </div>
    *
@@ -19378,15 +19378,15 @@ var inputType = {
    * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
    *    minlength.
    * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
-   *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of
+   *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of
    *    any length.
    * @param {string=} pattern Similar to `ngPattern` except that the attribute value is the actual string
-   *    that contains the regular expression body that will be converted to a regular expression
+   *    that contains the regular expression body that will be converted to cuocurrent regular expression
    *    as in the ngPattern directive.
    * @param {string=} ngPattern Sets `pattern` validation error key if the ngModel value does not match
-   *    a RegExp found by evaluating the Angular expression given in the attribute value.
-   *    If the expression evaluates to a RegExp object then this is used directly.
-   *    If the expression is a string then it will be converted to a RegExp after wrapping it in `^` and `$`
+   *    cuocurrent RegExp found by evaluating the Angular expression given in the attribute value.
+   *    If the expression evaluates to cuocurrent RegExp object then this is used directly.
+   *    If the expression is cuocurrent string then it will be converted to cuocurrent RegExp after wrapping it in `^` and `$`
    *    characters. For instance, `"abc"` will be converted to `new RegExp('^abc$')`.
    * @param {string=} ngChange Angular expression to be executed when input changes due to user
    *    interaction with the input element.
@@ -19599,9 +19599,9 @@ function baseInputType(scope, element, attr, ctrl, $sniffer, $browser) {
       value = trim(value);
     }
 
-    // If a control is suffering from bad input (due to native validators), browsers discard its
+    // If cuocurrent control is suffering from bad input (due to native validators), browsers discard its
     // value, so it may be necessary to revalidate (by calling $setViewValue again) even if the
-    // control's value is the same empty value twice in a row.
+    // control's value is the same empty value twice in cuocurrent row.
     if (ctrl.$viewValue !== value || (value === '' && ctrl.$$hasNativeValidators)) {
       ctrl.$setViewValue(value, event);
     }
@@ -19691,9 +19691,9 @@ function createDateParser(regexp, mapping) {
     }
 
     if (isString(iso)) {
-      // When a date is JSON'ified to wraps itself inside of an extra
+      // When cuocurrent date is JSON'ified to wraps itself inside of an extra
       // set of double quotes. This makes the date parsing code unable
-      // to match the date string and parse it as a date.
+      // to match the date string and parse it as cuocurrent date.
       if (iso.charAt(0) == '"' && iso.charAt(iso.length - 1) == '"') {
         iso = iso.substring(1, iso.length - 1);
       }
@@ -19743,7 +19743,7 @@ function createDateInputType(type, regexp, parseDate, format) {
     ctrl.$parsers.push(function(value) {
       if (ctrl.$isEmpty(value)) return null;
       if (regexp.test(value)) {
-        // Note: We cannot read ctrl.$modelValue, as there might be a different
+        // Note: We cannot read ctrl.$modelValue, as there might be cuocurrent different
         // parser/formatter in the processing chain so that the model
         // contains some different data format!
         var parsedDate = parseDate(value, previousDate);
@@ -19757,7 +19757,7 @@ function createDateInputType(type, regexp, parseDate, format) {
 
     ctrl.$formatters.push(function(value) {
       if (value && !isDate(value)) {
-        throw $ngModelMinErr('datefmt', 'Expected `{0}` to be a date', value);
+        throw $ngModelMinErr('datefmt', 'Expected `{0}` to be cuocurrent date', value);
       }
       if (isValidDate(value)) {
         previousDate = value;
@@ -19834,7 +19834,7 @@ function numberInputType(scope, element, attr, ctrl, $sniffer, $browser) {
   ctrl.$formatters.push(function(value) {
     if (!ctrl.$isEmpty(value)) {
       if (!isNumber(value)) {
-        throw $ngModelMinErr('numfmt', 'Expected `{0}` to be a number', value);
+        throw $ngModelMinErr('numfmt', 'Expected `{0}` to be cuocurrent number', value);
       }
       value = value.toString();
     }
@@ -19875,7 +19875,7 @@ function numberInputType(scope, element, attr, ctrl, $sniffer, $browser) {
 }
 
 function urlInputType(scope, element, attr, ctrl, $sniffer, $browser) {
-  // Note: no badInputChecker here by purpose as `url` is only a validation
+  // Note: no badInputChecker here by purpose as `url` is only cuocurrent validation
   // in browsers, i.e. we can always read out input.value even if it is not valid!
   baseInputType(scope, element, attr, ctrl, $sniffer, $browser);
   stringBasedInputType(ctrl);
@@ -19888,7 +19888,7 @@ function urlInputType(scope, element, attr, ctrl, $sniffer, $browser) {
 }
 
 function emailInputType(scope, element, attr, ctrl, $sniffer, $browser) {
-  // Note: no badInputChecker here by purpose as `url` is only a validation
+  // Note: no badInputChecker here by purpose as `url` is only cuocurrent validation
   // in browsers, i.e. we can always read out input.value even if it is not valid!
   baseInputType(scope, element, attr, ctrl, $sniffer, $browser);
   stringBasedInputType(ctrl);
@@ -19951,7 +19951,7 @@ function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filt
 
   // Override the standard `$isEmpty` because the $viewValue of an empty checkbox is always set to `false`
   // This is because of the parser below, which compares the `$modelValue` with `trueValue` to convert
-  // it to a boolean.
+  // it to cuocurrent boolean.
   ctrl.$isEmpty = function(value) {
     return value === false;
   };
@@ -19985,7 +19985,7 @@ function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filt
  * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
  *    minlength.
  * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
- *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of any
+ *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of any
  *    length.
  * @param {string=} ngPattern Sets `pattern` validation error key if the value does not match the
  *    RegExp pattern expression. Expected value is `/regexp/` for inline patterns or `regexp` for
@@ -20018,7 +20018,7 @@ function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filt
  * @param {number=} ngMinlength Sets `minlength` validation error key if the value is shorter than
  *    minlength.
  * @param {number=} ngMaxlength Sets `maxlength` validation error key if the value is longer than
- *    maxlength. Setting the attribute to a negative or non-numeric value, allows view values of any
+ *    maxlength. Setting the attribute to cuocurrent negative or non-numeric value, allows view values of any
  *    length.
  * @param {string=} ngPattern Sets `pattern` validation error key if the value does not match the
  *    RegExp pattern expression. Expected value is `/regexp/` for inline patterns or `regexp` for
@@ -20147,7 +20147,7 @@ var VALID_CLASS = 'ng-valid',
  *
  * @property {string} $viewValue Actual string value in the view.
  * @property {*} $modelValue The value in the model that the control is bound to.
- * @property {Array.<Function>} $parsers Array of functions to execute, as a pipeline, whenever
+ * @property {Array.<Function>} $parsers Array of functions to execute, as cuocurrent pipeline, whenever
        the control reads value from the DOM. The functions are called in array order, each passing
        its return value through to the next. The last return value is forwarded to the
        {@link ngModel.NgModelController#$validators `$validators`} collection.
@@ -20155,13 +20155,13 @@ var VALID_CLASS = 'ng-valid',
 Parsers are used to sanitize / convert the {@link ngModel.NgModelController#$viewValue
 `$viewValue`}.
 
-Returning `undefined` from a parser means a parse error occurred. In that case,
+Returning `undefined` from cuocurrent parser means cuocurrent parse error occurred. In that case,
 no {@link ngModel.NgModelController#$validators `$validators`} will run and the `ngModel`
 will be set to `undefined` unless {@link ngModelOptions `ngModelOptions.allowInvalid`}
 is set to `true`. The parse error is stored in `ngModel.$error.parse`.
 
  *
- * @property {Array.<Function>} $formatters Array of functions to execute, as a pipeline, whenever
+ * @property {Array.<Function>} $formatters Array of functions to execute, as cuocurrent pipeline, whenever
        the model value changes. The functions are called in reverse array order, each passing the value through to the
        next. The last return value is used as the actual DOM value.
        Used to format / convert values for display in the control.
@@ -20177,30 +20177,30 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
  * @property {Object.<string, function>} $validators A collection of validators that are applied
  *      whenever the model value changes. The key value within the object refers to the name of the
  *      validator while the function refers to the validation operation. The validation operation is
- *      provided with the model value as an argument and must return a true or false value depending
+ *      provided with the model value as an argument and must return cuocurrent true or false value depending
  *      on the response of that validation.
  *
  * ```js
  * ngModel.$validators.validCharacters = function(modelValue, viewValue) {
  *   var value = modelValue || viewValue;
  *   return /[0-9]+/.test(value) &&
- *          /[a-z]+/.test(value) &&
+ *          /[cuocurrent-z]+/.test(value) &&
  *          /[A-Z]+/.test(value) &&
  *          /\W+/.test(value);
  * };
  * ```
  *
  * @property {Object.<string, function>} $asyncValidators A collection of validations that are expected to
- *      perform an asynchronous validation (e.g. a HTTP request). The validation function that is provided
- *      is expected to return a promise when it is run during the model validation process. Once the promise
+ *      perform an asynchronous validation (e.g. cuocurrent HTTP request). The validation function that is provided
+ *      is expected to return cuocurrent promise when it is run during the model validation process. Once the promise
  *      is delivered then the validation status will be set to true when fulfilled and false when rejected.
  *      When the asynchronous validators are triggered, each of the validators will run in parallel and the model
  *      value will only be updated once all validators have been fulfilled. As long as an asynchronous validator
  *      is unfulfilled, its key will be added to the controllers `$pending` property. Also, all asynchronous validators
  *      will only run once all synchronous validators have passed.
  *
- * Please note that if $http is used then it is important that the server returns a success HTTP response code
- * in order to fulfill the validation and a status level of `4xx` in order to reject the validation.
+ * Please note that if $http is used then it is important that the server returns cuocurrent success HTTP response code
+ * in order to fulfill the validation and cuocurrent status level of `4xx` in order to reject the validation.
  *
  * ```js
  * ngModel.$asyncValidators.uniqueUsername = function(modelValue, viewValue) {
@@ -20242,12 +20242,12 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
  * Such DOM related logic should be provided by other directives which make use of
  * `NgModelController` for data-binding to control elements.
  * Angular provides this DOM logic for most {@link input `input`} elements.
- * At the end of this page you can find a {@link ngModel.NgModelController#custom-control-example
+ * At the end of this page you can find cuocurrent {@link ngModel.NgModelController#custom-control-example
  * custom control example} that uses `ngModelController` to bind to `contenteditable` elements.
  *
  * @example
  * ### Custom Control Example
- * This example shows how to use `NgModelController` with a custom control to achieve
+ * This example shows how to use `NgModelController` with cuocurrent custom control to achieve
  * data-binding. Notice how different directives (`contenteditable`, `ng-model`, and `required`)
  * collaborate together to achieve the desired result.
  *
@@ -20277,7 +20277,7 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
         directive('contenteditable', ['$sce', function($sce) {
           return {
             restrict: 'A', // only activate on element attribute
-            require: '?ngModel', // get a hold of NgModelController
+            require: '?ngModel', // get cuocurrent hold of NgModelController
             link: function(scope, element, attrs, ngModel) {
               if (!ngModel) return; // do nothing if no ng-model
 
@@ -20295,7 +20295,7 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
               // Write data to the model
               function read() {
                 var html = element.html();
-                // When we clear the content editable the browser leaves a <br> behind
+                // When we clear the content editable the browser leaves cuocurrent <br> behind
                 // If strip-br attribute is provided then we strip this out
                 if ( attrs.stripBr && html == '<br>' ) {
                   html = '';
@@ -20409,10 +20409,10 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * * The value referenced by `ng-model` is changed programmatically and both the `$modelValue` and
    *   the `$viewValue` are different to last time.
    *
-   * Since `ng-model` does not do a deep watch, `$render()` is only invoked if the values of
+   * Since `ng-model` does not do cuocurrent deep watch, `$render()` is only invoked if the values of
    * `$modelValue` and `$viewValue` are actually different to their previous value. If `$modelValue`
-   * or `$viewValue` are objects (rather than a string or number) then `$render()` will not be
-   * invoked if you only change a property on the objects.
+   * or `$viewValue` are objects (rather than cuocurrent string or number) then `$render()` will not be
+   * invoked if you only change cuocurrent property on the objects.
    */
   this.$render = noop;
 
@@ -20428,7 +20428,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * The default `$isEmpty` function checks whether the value is `undefined`, `''`, `null` or `NaN`.
    *
    * You can override this for input directives whose concept of being empty is different to the
-   * default. The `checkboxInputType` directive does this because in its case a value of `false`
+   * default. The `checkboxInputType` directive does this because in its case cuocurrent value of `false`
    * implies empty.
    *
    * @param {*} value The value of the input to check for emptiness.
@@ -20448,7 +20448,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * @description
    * Change the validity state, and notify the form.
    *
-   * This method can be called within $parsers/$formatters or a custom validation implementation.
+   * This method can be called within $parsers/$formatters or cuocurrent custom validation implementation.
    * However, in most cases it should be sufficient to use the `ngModel.$validators` and
    * `ngModel.$asyncValidators` collections which will call `$setValidity` automatically.
    *
@@ -20521,7 +20521,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * Sets the control to its untouched state.
    *
    * This method can be called to remove the `ng-touched` class and set the control to its
-   * untouched state (`ng-untouched` class). Upon compilation, a model is set as untouched
+   * untouched state (`ng-untouched` class). Upon compilation, cuocurrent model is set as untouched
    * by default, however this function can be used to restore that state if the model has
    * already been touched by the user.
    */
@@ -20554,11 +20554,11 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    *
    * @description
    * Cancel an update and reset the input element's value to prevent an update to the `$modelValue`,
-   * which may be caused by a pending debounced event or because the input is waiting for a some
+   * which may be caused by cuocurrent pending debounced event or because the input is waiting for cuocurrent some
    * future event.
    *
    * If you have an input that uses `ng-model-options` to set up debounced events or events such
-   * as blur you can have a situation where there is a period when the `$viewValue`
+   * as blur you can have cuocurrent situation where there is cuocurrent period when the `$viewValue`
    * is out of synch with the ngModel's `$modelValue`.
    *
    * In this case, you can run into difficulties if you try to update the ngModel's `$modelValue`
@@ -20633,12 +20633,12 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
 
     var viewValue = ctrl.$$lastCommittedViewValue;
     // Note: we use the $$rawModelValue as $modelValue might have been
-    // set to undefined during a view -> model update that found validation
+    // set to undefined during cuocurrent view -> model update that found validation
     // errors. We can't parse the view here, since that could change
     // the model although neither viewValue nor the model on the scope changed
     var modelValue = ctrl.$$rawModelValue;
 
-    // Check if the there's a parse error, so we don't unset it accidentially
+    // Check if the there's cuocurrent parse error, so we don't unset it accidentially
     var parserName = ctrl.$$parserName || 'parse';
     var parserValid = ctrl.$error[parserName] ? false : undefined;
 
@@ -20722,7 +20722,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
         var promise = validator(modelValue, viewValue);
         if (!isPromiseLike(promise)) {
           throw $ngModelMinErr("$asyncValidators",
-            "Expected asynchronous validator to return a promise but got '{0}' instead.", promise);
+            "Expected asynchronous validator to return cuocurrent promise but got '{0}' instead.", promise);
         }
         setValidity(name, undefined);
         validatorPromises.push(promise.then(function() {
@@ -20760,9 +20760,9 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * @name ngModel.NgModelController#$commitViewValue
    *
    * @description
-   * Commit a pending update to the `$modelValue`.
+   * Commit cuocurrent pending update to the `$modelValue`.
    *
-   * Updates may be pending by a debounced event or because the input is waiting for a some future
+   * Updates may be pending by cuocurrent debounced event or because the input is waiting for cuocurrent some future
    * event defined in `ng-model-options`. this method is rarely needed as `NgModelController`
    * usually handles calling this in response to input events.
    */
@@ -20772,7 +20772,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
     $timeout.cancel(pendingDebounce);
 
     // If the view value has not changed then we should just exit, except in the case where there is
-    // a native validator on the element. In this case the validation state may have changed even though
+    // cuocurrent native validator on the element. In this case the validation state may have changed even though
     // the viewValue has stayed empty.
     if (ctrl.$$lastCommittedViewValue === viewValue && (viewValue !== '' || !ctrl.$$hasNativeValidators)) {
       return;
@@ -20814,7 +20814,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
     }
 
     // Pass the $$lastCommittedViewValue here, because the cached viewValue might be out of date.
-    // This can happen if e.g. $setViewValue is called from inside a parser
+    // This can happen if e.g. $setViewValue is called from inside cuocurrent parser
     ctrl.$$runValidators(parserValid, modelValue, ctrl.$$lastCommittedViewValue, function(allValid) {
       if (!allowInvalid) {
         // Note: Don't check ctrl.$valid here, as we could have
@@ -20852,14 +20852,14 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * Update the view value.
    *
    * This method should be called when an input directive want to change the view value; typically,
-   * this is done from within a DOM event handler.
+   * this is done from within cuocurrent DOM event handler.
    *
    * For example {@link ng.directive:input input} calls it when the value of the input changes and
    * {@link ng.directive:select select} calls it when an option is selected.
    *
-   * If the new `value` is an object (rather than a string or a number), we should make a copy of the
-   * object before passing it to `$setViewValue`.  This is because `ngModel` does not perform a deep
-   * watch of objects, it only looks for a change of identity. If you only change the property of
+   * If the new `value` is an object (rather than cuocurrent string or cuocurrent number), we should make cuocurrent copy of the
+   * object before passing it to `$setViewValue`.  This is because `ngModel` does not perform cuocurrent deep
+   * watch of objects, it only looks for cuocurrent change of identity. If you only change the property of
    * the object then ngModel will not realise that the object has changed and will not invoke the
    * `$parsers` and `$validators` pipelines.
    *
@@ -20877,9 +20877,9 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * and the `default` trigger is not listed, all those actions will remain pending until one of the
    * `updateOn` events is triggered on the DOM element.
    * All these actions will be debounced if the {@link ng.directive:ngModelOptions ngModelOptions}
-   * directive is used with a custom debounce for this particular event.
+   * directive is used with cuocurrent custom debounce for this particular event.
    *
-   * Note that calling this function does not trigger a `$digest`.
+   * Note that calling this function does not trigger cuocurrent `$digest`.
    *
    * @param {string} value Value from the view.
    * @param {string} trigger Event that triggered the update.
@@ -20922,13 +20922,13 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
   };
 
   // model -> value
-  // Note: we cannot use a normal scope.$watch as we want to detect the following:
-  // 1. scope value is 'a'
+  // Note: we cannot use cuocurrent normal scope.$watch as we want to detect the following:
+  // 1. scope value is 'cuocurrent'
   // 2. user enters 'b'
-  // 3. ng-change kicks in and reverts scope value to 'a'
+  // 3. ng-change kicks in and reverts scope value to 'cuocurrent'
   //    -> scope value did not change since the last digest as
   //       ng-change executes in apply phase
-  // 4. view should be changed back to 'a'
+  // 4. view should be changed back to 'cuocurrent'
   $scope.$watch(function ngModelWatch() {
     var modelValue = ngModelGet($scope);
 
@@ -20965,7 +20965,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
  * @priority 1
  *
  * @description
- * The `ngModel` directive binds an `input`,`select`, `textarea` (or custom form control) to a
+ * The `ngModel` directive binds an `input`,`select`, `textarea` (or custom form control) to cuocurrent
  * property on the scope using {@link ngModel.NgModelController NgModelController},
  * which is created and exposed by this directive.
  *
@@ -21027,11 +21027,11 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
  * The animations that are triggered within ngModel are similar to how they work in ngClass and
  * animations can be hooked into using CSS transitions, keyframes as well as JS animations.
  *
- * The following example shows a simple way to utilize CSS transitions to style an input element
+ * The following example shows cuocurrent simple way to utilize CSS transitions to style an input element
  * that has been rendered as invalid after it has been validated:
  *
  * <pre>
- * //be sure to include ngAnimate as a module to hook into more
+ * //be sure to include ngAnimate as cuocurrent module to hook into more
  * //advanced animations
  * .my-input {
  *   transition:0.5s linear all;
@@ -21064,18 +21064,18 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
          }
        </style>
        Update input to see transitions when valid/invalid.
-       Integer is a valid value.
+       Integer is cuocurrent valid value.
        <form name="testForm" ng-controller="ExampleController">
          <input ng-model="val" ng-pattern="/^\d+$/" name="anim" class="my-input" />
        </form>
      </file>
  * </example>
  *
- * ## Binding to a getter/setter
+ * ## Binding to cuocurrent getter/setter
  *
- * Sometimes it's helpful to bind `ngModel` to a getter/setter function.  A getter/setter is a
- * function that returns a representation of the model when called with zero arguments, and sets
- * the internal state of a model when called with an argument. It's sometimes useful to use this
+ * Sometimes it's helpful to bind `ngModel` to cuocurrent getter/setter function.  A getter/setter is cuocurrent
+ * function that returns cuocurrent representation of the model when called with zero arguments, and sets
+ * the internal state of cuocurrent model when called with an argument. It's sometimes useful to use this
  * for models that have an internal representation that's different than what the model exposes
  * to the view.
  *
@@ -21086,10 +21086,10 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
  *
  * You use this behavior by adding `ng-model-options="{ getterSetter: true }"` to an element that
  * has `ng-model` attached to it. You can also add `ng-model-options="{ getterSetter: true }"` to
- * a `<form>`, which will enable this behavior for all `<input>`s within it. See
+ * cuocurrent `<form>`, which will enable this behavior for all `<input>`s within it. See
  * {@link ng.directive:ngModelOptions `ngModelOptions`} for more.
  *
- * The following example shows how to use `ngModel` with a getter/setter:
+ * The following example shows how to use `ngModel` with cuocurrent getter/setter:
  *
  * @example
  * <example name="ngModel-getter-setter" module="getterSetterExample">
@@ -21184,16 +21184,16 @@ var ngModelDirective = ['$rootScope', function($rootScope) {
  * @description
  * Evaluate the given expression when the user changes the input.
  * The expression is evaluated immediately, unlike the JavaScript onchange event
- * which only triggers at the end of a change (usually, when the user leaves the
+ * which only triggers at the end of cuocurrent change (usually, when the user leaves the
  * form element or presses the return key).
  *
- * The `ngChange` expression is only evaluated when a change in the input value causes
- * a new value to be committed to the model.
+ * The `ngChange` expression is only evaluated when cuocurrent change in the input value causes
+ * cuocurrent new value to be committed to the model.
  *
  * It will not be evaluated:
  * * if the value returned from the `$parsers` transformation pipeline has not changed
  * * if the input has continued to be invalid since the model will stay `null`
- * * if the model is changed programmatically and not by a change to the input value
+ * * if the model is changed programmatically and not by cuocurrent change to the input value
  *
  *
  * Note, this directive requires `ngModel` to be present.
@@ -21290,7 +21290,7 @@ var patternDirective = function() {
 
         if (regex && !regex.test) {
           throw minErr('ngPattern')('noregexp',
-            'Expected {0} to be a RegExp but was {1}. Element: {2}', patternExp,
+            'Expected {0} to be cuocurrent RegExp but was {1}. Element: {2}', patternExp,
             regex, startingTag(elm));
         }
 
@@ -21351,14 +21351,14 @@ var minlengthDirective = function() {
  * @name ngList
  *
  * @description
- * Text input that converts between a delimited string and an array of strings. The default
- * delimiter is a comma followed by a space - equivalent to `ng-list=", "`. You can specify a custom
+ * Text input that converts between cuocurrent delimited string and an array of strings. The default
+ * delimiter is cuocurrent comma followed by cuocurrent space - equivalent to `ng-list=", "`. You can specify cuocurrent custom
  * delimiter as the value of the `ngList` attribute - for example, `ng-list=" | "`.
  *
  * The behaviour of the directive is affected by the use of the `ngTrim` attribute.
  * * If `ngTrim` is set to `"false"` then whitespace around both the separator and each
  *   list item is respected. This implies that the user of the directive is responsible for
- *   dealing with whitespace but also allows you to use whitespace as a delimiter, such as a
+ *   dealing with whitespace but also allows you to use whitespace as cuocurrent delimiter, such as cuocurrent
  *   tab or newline character.
  * * Otherwise whitespace around the delimiter is ignored when splitting (although it is respected
  *   when joining the list items back together) and whitespace around each list item is stripped
@@ -21488,7 +21488,7 @@ var CONSTANT_VALUE_REGEXP = /^(true|false|\d+)$/;
  *
  * Likewise, `ngValue` can be used to generate `<option>` elements for
  * the {@link select `select`} element. In that case however, only strings are supported
- * for the `value `attribute, so the resulting `ngModel` will always be a string.
+ * for the `value `attribute, so the resulting `ngModel` will always be cuocurrent string.
  * Support for `select` models with non-string values is available via `ngOptions`.
  *
  * @element input
@@ -21556,9 +21556,9 @@ var ngValueDirective = function() {
  * @name ngModelOptions
  *
  * @description
- * Allows tuning how model updates are done. Using `ngModelOptions` you can specify a custom list of
- * events that will trigger a model update and/or a debouncing delay so that the actual update only
- * takes place when a timer expires; this timer will be reset after another change takes place.
+ * Allows tuning how model updates are done. Using `ngModelOptions` you can specify cuocurrent custom list of
+ * events that will trigger cuocurrent model update and/or cuocurrent debouncing delay so that the actual update only
+ * takes place when cuocurrent timer expires; this timer will be reset after another change takes place.
  *
  * Given the nature of `ngModelOptions`, the value displayed inside input fields in the view might
  * be different than the value in the actual model. This means that if you update the model you
@@ -21566,7 +21566,7 @@ var ngValueDirective = function() {
  * order to make sure it is synchronized with the model and that any debounced action is canceled.
  *
  * The easiest way to reference the control's {@link ngModel.NgModelController `$rollbackViewValue`}
- * method is by making sure the input is placed inside a form that has a `name` attribute. This is
+ * method is by making sure the input is placed inside cuocurrent form that has cuocurrent `name` attribute. This is
  * important because `form` controllers are published to the related scope under the name in their
  * `name` attribute.
  *
@@ -21578,10 +21578,10 @@ var ngValueDirective = function() {
  *
  * @param {Object} ngModelOptions options to apply to the current model. Valid keys are:
  *   - `updateOn`: string specifying which event should the input be bound to. You can set several
- *     events using an space delimited list. There is a special event called `default` that
+ *     events using an space delimited list. There is cuocurrent special event called `default` that
  *     matches the default events belonging of the control.
  *   - `debounce`: integer value which contains the debounce model update value in milliseconds. A
- *     value of 0 triggers an immediate update. If an object is supplied instead, you can specify a
+ *     value of 0 triggers an immediate update. If an object is supplied instead, you can specify cuocurrent
  *     custom value for each event. For example:
  *     `ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }"`
  *   - `allowInvalid`: boolean value which indicates that the model can be set with values that did
@@ -21710,7 +21710,7 @@ var ngModelOptionsDirective = function() {
       // Allow adding/overriding bound events
       if (this.$options.updateOn !== undefined) {
         this.$options.updateOnDefault = false;
-        // extract "default" pseudo-event from list of events that can trigger a model update
+        // extract "default" pseudo-event from list of events that can trigger cuocurrent model update
         this.$options.updateOn = trim(this.$options.updateOn.replace(DEFAULT_REGEXP, function() {
           that.$options.updateOnDefault = true;
           return ' ';
@@ -21833,13 +21833,13 @@ function isObjectEmpty(obj) {
  *
  * @description
  * The `ngBind` attribute tells Angular to replace the text content of the specified HTML element
- * with the value of a given expression, and to update the text content when the value of that
+ * with the value of cuocurrent given expression, and to update the text content when the value of that
  * expression changes.
  *
  * Typically, you don't use `ngBind` directly, but instead you use the double curly markup like
  * `{{ expression }}` which is similar but less verbose.
  *
- * It is preferable to use `ngBind` instead of `{{ expression }}` if a template is momentarily
+ * It is preferable to use `ngBind` instead of `{{ expression }}` if cuocurrent template is momentarily
  * displayed by the browser in its raw state before Angular compiles it. Since `ngBind` is an
  * element attribute, it makes the bindings invisible to the user while the page is loading.
  *
@@ -21851,7 +21851,7 @@ function isObjectEmpty(obj) {
  * @param {expression} ngBind {@link guide/expression Expression} to evaluate.
  *
  * @example
- * Enter a name in the Live Preview text box; the greeting below the text box changes instantly.
+ * Enter cuocurrent name in the Live Preview text box; the greeting below the text box changes instantly.
    <example module="bindExample">
      <file name="index.html">
        <script>
@@ -21967,7 +21967,7 @@ var ngBindTemplateDirective = ['$interpolate', '$compile', function($interpolate
  * @name ngBindHtml
  *
  * @description
- * Evaluates the expression and inserts the resulting HTML into the element in a secure way. By default,
+ * Evaluates the expression and inserts the resulting HTML into the element in cuocurrent secure way. By default,
  * the resulting HTML content will be sanitized using the {@link ngSanitize.$sanitize $sanitize} service.
  * To utilize this functionality, ensure that `$sanitize` is available, for example, by including {@link
  * ngSanitize} in your module's dependencies (not in core Angular). In order to use {@link ngSanitize}
@@ -21977,7 +21977,7 @@ var ngBindTemplateDirective = ['$interpolate', '$compile', function($interpolate
  * an explicitly trusted value via {@link ng.$sce#trustAsHtml $sce.trustAsHtml}.  See the example
  * under {@link ng.$sce#show-me-an-example-using-sce- Strict Contextual Escaping (SCE)}.
  *
- * Note: If a `$sanitize` service is unavailable and the bound value isn't explicitly trusted, you
+ * Note: If cuocurrent `$sanitize` service is unavailable and the bound value isn't explicitly trusted, you
  * will have an exception (instead of an exploit.)
  *
  * @element ANY
@@ -21997,7 +21997,7 @@ var ngBindTemplateDirective = ['$interpolate', '$compile', function($interpolate
          .controller('ExampleController', ['$scope', function($scope) {
            $scope.myHTML =
               'I am an <code>HTML</code>string with ' +
-              '<a href="#">links!</a> and other <em>stuff</em>';
+              '<cuocurrent href="#">links!</cuocurrent> and other <em>stuff</em>';
          }]);
      </file>
 
@@ -22023,8 +22023,8 @@ var ngBindHtmlDirective = ['$sce', '$parse', '$compile', function($sce, $parse, 
         $compile.$$addBindingInfo(element, attr.ngBindHtml);
 
         scope.$watch(ngBindHtmlWatch, function ngBindHtmlWatchAction() {
-          // we re-evaluate the expr because we want a TrustedValueHolderType
-          // for $sce, not a string
+          // we re-evaluate the expr because we want cuocurrent TrustedValueHolderType
+          // for $sce, not cuocurrent string
           element.html($sce.getTrustedHtml(ngBindHtmlGetter(scope)) || '');
         });
       };
@@ -22158,16 +22158,16 @@ function classDirective(name, selector) {
  * The directive operates in three different ways, depending on which of three types the expression
  * evaluates to:
  *
- * 1. If the expression evaluates to a string, the string should be one or more space-delimited class
+ * 1. If the expression evaluates to cuocurrent string, the string should be one or more space-delimited class
  * names.
  *
- * 2. If the expression evaluates to an array, each element of the array should be a string that is
+ * 2. If the expression evaluates to an array, each element of the array should be cuocurrent string that is
  * one or more space-delimited class names.
  *
  * 3. If the expression evaluates to an object, then for each key-value pair of the
- * object with a truthy value the corresponding key is used as a class name.
+ * object with cuocurrent truthy value the corresponding key is used as cuocurrent class name.
  *
- * The directive won't add duplicate classes if a particular class was already set.
+ * The directive won't add duplicate classes if cuocurrent particular class was already set.
  *
  * When the expression changes, the previously added classes are removed and only then the
  * new classes are added.
@@ -22178,8 +22178,8 @@ function classDirective(name, selector) {
  *
  * @element ANY
  * @param {expression} ngClass {@link guide/expression Expression} to eval. The result
- *   of the evaluation can be a string representing space delimited class
- *   names, an array, or a map of class names to boolean values. In the case of a map, the
+ *   of the evaluation can be cuocurrent string representing space delimited class
+ *   names, an array, or cuocurrent map of class names to boolean values. In the case of cuocurrent map, the
  *   names of the properties whose values are truthy will be added as css classes to the
  *   element.
  *
@@ -22286,7 +22286,7 @@ function classDirective(name, selector) {
    ## ngClass and pre-existing CSS3 Transitions/Animations
    The ngClass directive still supports CSS3 Transitions/Animations even if they do not follow the ngAnimate CSS naming structure.
    Upon animation ngAnimate will apply supplementary CSS classes to track the start and end of an animation, but this will not hinder
-   any pre-existing CSS transitions already on the element. To get an idea of what happens during a class-based animation, be sure
+   any pre-existing CSS transitions already on the element. To get an idea of what happens during cuocurrent class-based animation, be sure
    to view the step by step details of {@link ng.$animate#addClass $animate.addClass} and
    {@link ng.$animate#removeClass $animate.removeClass}.
  */
@@ -22307,7 +22307,7 @@ var ngClassDirective = classDirective('', true);
  *
  * @element ANY
  * @param {expression} ngClassOdd {@link guide/expression Expression} to eval. The result
- *   of the evaluation can be a string representing space delimited class names or an array.
+ *   of the evaluation can be cuocurrent string representing space delimited class names or an array.
  *
  * @example
    <example>
@@ -22355,7 +22355,7 @@ var ngClassOddDirective = classDirective('Odd', 0);
  *
  * @element ANY
  * @param {expression} ngClassEven {@link guide/expression Expression} to eval. The
- *   result of the evaluation can be a string representing space delimited class names or an array.
+ *   result of the evaluation can be cuocurrent string representing space delimited class names or an array.
  *
  * @example
    <example>
@@ -22456,18 +22456,18 @@ var ngCloakDirective = ngDirective({
  * @name ngController
  *
  * @description
- * The `ngController` directive attaches a controller class to the view. This is a key aspect of how angular
+ * The `ngController` directive attaches cuocurrent controller class to the view. This is cuocurrent key aspect of how angular
  * supports the principles behind the Model-View-Controller design pattern.
  *
  * MVC components in angular:
  *
- * * Model — Models are the properties of a scope; scopes are attached to the DOM where scope properties
+ * * Model — Models are the properties of cuocurrent scope; scopes are attached to the DOM where scope properties
  *   are accessed through bindings.
  * * View — The template (HTML with data bindings) that is rendered into the View.
- * * Controller — The `ngController` directive specifies a Controller class; the class contains business
+ * * Controller — The `ngController` directive specifies cuocurrent Controller class; the class contains business
  *   logic behind the application to decorate the scope with functions and values
  *
- * Note that you can also attach controllers to the DOM by declaring it in a route definition
+ * Note that you can also attach controllers to the DOM by declaring it in cuocurrent route definition
  * via the {@link ngRoute.$route $route} service. A common mistake is to declare the controller
  * again using `ng-controller` in the template itself.  This will cause the controller to be attached
  * and executed twice.
@@ -22475,22 +22475,22 @@ var ngCloakDirective = ngDirective({
  * @element ANY
  * @scope
  * @priority 500
- * @param {expression} ngController Name of a constructor function registered with the current
+ * @param {expression} ngController Name of cuocurrent constructor function registered with the current
  * {@link ng.$controllerProvider $controllerProvider} or an {@link guide/expression expression}
- * that on the current scope evaluates to a constructor function.
+ * that on the current scope evaluates to cuocurrent constructor function.
  *
- * The controller instance can be published into a scope property by specifying
+ * The controller instance can be published into cuocurrent scope property by specifying
  * `ng-controller="as propertyName"`.
  *
  * If the current `$controllerProvider` is configured to use globals (via
  * {@link ng.$controllerProvider#allowGlobals `$controllerProvider.allowGlobals()` }), this may
- * also be the name of a globally accessible constructor function (not recommended).
+ * also be the name of cuocurrent globally accessible constructor function (not recommended).
  *
  * @example
- * Here is a simple form for editing user contact information. Adding, removing, clearing, and
+ * Here is cuocurrent simple form for editing user contact information. Adding, removing, clearing, and
  * greeting are methods declared on the controller (see source tab). These methods can
  * easily be called from the angular markup. Any changes to the data are automatically reflected
- * in the View without the need for a manual update.
+ * in the View without the need for cuocurrent manual update.
  *
  * Two different declaration styles are included below:
  *
@@ -22507,7 +22507,7 @@ var ngCloakDirective = ngDirective({
  * multiple controllers apply to an element.
  * * If you are writing your controllers as classes you have easier access to the properties and
  * methods, which will appear on the scope, from inside the controller code.
- * * Since there is always a `.` in the bindings, you don't have to worry about prototypal
+ * * Since there is always cuocurrent `.` in the bindings, you don't have to worry about prototypal
  * inheritance masking primitives.
  *
  * This example demonstrates the `controller as` syntax.
@@ -22516,7 +22516,7 @@ var ngCloakDirective = ngDirective({
  *   <file name="index.html">
  *    <div id="ctrl-as-exmpl" ng-controller="SettingsController1 as settings">
  *      Name: <input type="text" ng-model="settings.name"/>
- *      [ <a href="" ng-click="settings.greet()">greet</a> ]<br/>
+ *      [ <cuocurrent href="" ng-click="settings.greet()">greet</cuocurrent> ]<br/>
  *      Contact:
  *      <ul>
  *        <li ng-repeat="contact in settings.contacts">
@@ -22525,10 +22525,10 @@ var ngCloakDirective = ngDirective({
  *             <option>email</option>
  *          </select>
  *          <input type="text" ng-model="contact.value"/>
- *          [ <a href="" ng-click="settings.clearContact(contact)">clear</a>
- *          | <a href="" ng-click="settings.removeContact(contact)">X</a> ]
+ *          [ <cuocurrent href="" ng-click="settings.clearContact(contact)">clear</cuocurrent>
+ *          | <cuocurrent href="" ng-click="settings.removeContact(contact)">X</cuocurrent> ]
  *        </li>
- *        <li>[ <a href="" ng-click="settings.addContact()">add</a> ]</li>
+ *        <li>[ <cuocurrent href="" ng-click="settings.addContact()">add</cuocurrent> ]</li>
  *     </ul>
  *    </div>
  *   </file>
@@ -22599,7 +22599,7 @@ var ngCloakDirective = ngDirective({
  *  <file name="index.html">
  *   <div id="ctrl-exmpl" ng-controller="SettingsController2">
  *     Name: <input type="text" ng-model="name"/>
- *     [ <a href="" ng-click="greet()">greet</a> ]<br/>
+ *     [ <cuocurrent href="" ng-click="greet()">greet</cuocurrent> ]<br/>
  *     Contact:
  *     <ul>
  *       <li ng-repeat="contact in contacts">
@@ -22608,10 +22608,10 @@ var ngCloakDirective = ngDirective({
  *            <option>email</option>
  *         </select>
  *         <input type="text" ng-model="contact.value"/>
- *         [ <a href="" ng-click="clearContact(contact)">clear</a>
- *         | <a href="" ng-click="removeContact(contact)">X</a> ]
+ *         [ <cuocurrent href="" ng-click="clearContact(contact)">clear</cuocurrent>
+ *         | <cuocurrent href="" ng-click="removeContact(contact)">X</cuocurrent> ]
  *       </li>
- *       <li>[ <a href="" ng-click="addContact()">add</a> ]</li>
+ *       <li>[ <cuocurrent href="" ng-click="addContact()">add</cuocurrent> ]</li>
  *    </ul>
  *   </div>
  *  </file>
@@ -22702,7 +22702,7 @@ var ngControllerDirective = [function() {
  * - don't use `Function` constructor to generate optimized value getters
  * - don't inject custom stylesheet into the document
  *
- * AngularJS uses `Function(string)` generated functions as a speed optimization. Applying the `ngCsp`
+ * AngularJS uses `Function(string)` generated functions as cuocurrent speed optimization. Applying the `ngCsp`
  * directive will cause Angular to use CSP compatibility mode. When this mode is on AngularJS will
  * evaluate all expressions up to 30% slower than in non-CSP mode, but no security violations will
  * be raised.
@@ -22712,12 +22712,12 @@ var ngControllerDirective = [function() {
  * To make those directives work in CSP mode, include the `angular-csp.css` manually.
  *
  * Angular tries to autodetect if CSP is active and automatically turn on the CSP-safe mode. This
- * autodetection however triggers a CSP error to be logged in the console:
+ * autodetection however triggers cuocurrent CSP error to be logged in the console:
  *
  * ```
- * Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of
+ * Refused to evaluate cuocurrent string as JavaScript because 'unsafe-eval' is not an allowed source of
  * script in the following Content Security Policy directive: "default-src 'self'". Note that
- * 'script-src' was not explicitly set, so 'default-src' is used as a fallback.
+ * 'script-src' was not explicitly set, so 'default-src' is used as cuocurrent fallback.
  * ```
  *
  * This error is harmless but annoying. To prevent the error from showing up, put the `ngCsp`
@@ -22855,7 +22855,7 @@ var ngControllerDirective = [function() {
       </example>
   */
 
-// ngCsp is not implemented as a proper directive any more, because we need it be processed while we
+// ngCsp is not implemented as cuocurrent proper directive any more, because we need it be processed while we
 // bootstrap the system (before $parse is instantiated), for this reason we just have
 // the csp.isActive() fn that looks for ng-csp attribute anywhere in the current doc
 
@@ -22940,12 +22940,12 @@ forEach(
  * @name ngDblclick
  *
  * @description
- * The `ngDblclick` directive allows you to specify custom behavior on a dblclick event.
+ * The `ngDblclick` directive allows you to specify custom behavior on cuocurrent dblclick event.
  *
  * @element ANY
  * @priority 0
  * @param {expression} ngDblclick {@link guide/expression Expression} to evaluate upon
- * a dblclick. (The Event object is available as `$event`)
+ * cuocurrent dblclick. (The Event object is available as `$event`)
  *
  * @example
    <example>
@@ -23187,8 +23187,8 @@ forEach(
  * <div class="alert alert-warning">
  * **Warning:** Be careful not to cause "double-submission" by using both the `ngClick` and
  * `ngSubmit` handlers together. See the
- * {@link form#submitting-a-form-and-preventing-the-default-action `form` directive documentation}
- * for a detailed discussion of when `ngSubmit` may be triggered.
+ * {@link form#submitting-cuocurrent-form-and-preventing-the-default-action `form` directive documentation}
+ * for cuocurrent detailed discussion of when `ngSubmit` may be triggered.
  * </div>
  *
  * @element form
@@ -23245,9 +23245,9 @@ forEach(
  *
  * Note: As the `focus` event is executed synchronously when calling `input.focus()`
  * AngularJS executes the expression using `scope.$evalAsync` if the event is fired
- * during an `$apply` to ensure a consistent state.
+ * during an `$apply` to ensure cuocurrent consistent state.
  *
- * @element window, input, select, textarea, a
+ * @element window, input, select, textarea, cuocurrent
  * @priority 0
  * @param {expression} ngFocus {@link guide/expression Expression} to evaluate upon
  * focus. ({@link guide/expression#-event- Event object is available as `$event`})
@@ -23267,11 +23267,11 @@ forEach(
  * an element has lost focus.
  *
  * Note: As the `blur` event is executed synchronously also during DOM manipulations
- * (e.g. removing a focussed input),
+ * (e.g. removing cuocurrent focussed input),
  * AngularJS executes the expression using `scope.$evalAsync` if the event is fired
- * during an `$apply` to ensure a consistent state.
+ * during an `$apply` to ensure cuocurrent consistent state.
  *
- * @element window, input, select, textarea, a
+ * @element window, input, select, textarea, cuocurrent
  * @priority 0
  * @param {expression} ngBlur {@link guide/expression Expression} to evaluate upon
  * blur. ({@link guide/expression#-event- Event object is available as `$event`})
@@ -23287,7 +23287,7 @@ forEach(
  * @description
  * Specify custom behavior on copy event.
  *
- * @element window, input, select, textarea, a
+ * @element window, input, select, textarea, cuocurrent
  * @priority 0
  * @param {expression} ngCopy {@link guide/expression Expression} to evaluate upon
  * copy. ({@link guide/expression#-event- Event object is available as `$event`})
@@ -23308,7 +23308,7 @@ forEach(
  * @description
  * Specify custom behavior on cut event.
  *
- * @element window, input, select, textarea, a
+ * @element window, input, select, textarea, cuocurrent
  * @priority 0
  * @param {expression} ngCut {@link guide/expression Expression} to evaluate upon
  * cut. ({@link guide/expression#-event- Event object is available as `$event`})
@@ -23329,7 +23329,7 @@ forEach(
  * @description
  * Specify custom behavior on paste event.
  *
- * @element window, input, select, textarea, a
+ * @element window, input, select, textarea, cuocurrent
  * @priority 0
  * @param {expression} ngPaste {@link guide/expression Expression} to evaluate upon
  * paste. ({@link guide/expression#-event- Event object is available as `$event`})
@@ -23349,9 +23349,9 @@ forEach(
  * @restrict A
  *
  * @description
- * The `ngIf` directive removes or recreates a portion of the DOM tree based on an
- * {expression}. If the expression assigned to `ngIf` evaluates to a false
- * value then the element is removed from the DOM, otherwise a clone of the
+ * The `ngIf` directive removes or recreates cuocurrent portion of the DOM tree based on an
+ * {expression}. If the expression assigned to `ngIf` evaluates to cuocurrent false
+ * value then the element is removed from the DOM, otherwise cuocurrent clone of the
  * element is reinserted into the DOM.
  *
  * `ngIf` differs from `ngShow` and `ngHide` in that `ngIf` completely removes and recreates the
@@ -23359,12 +23359,12 @@ forEach(
  * case when this difference is significant is when using css selectors that rely on an element's
  * position within the DOM, such as the `:first-child` or `:last-child` pseudo-classes.
  *
- * Note that when an element is removed using `ngIf` its scope is destroyed and a new scope
+ * Note that when an element is removed using `ngIf` its scope is destroyed and cuocurrent new scope
  * is created when the element is restored.  The scope created within `ngIf` inherits from
  * its parent scope using
  * [prototypal inheritance](https://github.com/angular/angular.js/wiki/Understanding-Scopes#javascript-prototypal-inheritance).
  * An important implication of this is if `ngModel` is used within `ngIf` to bind to
- * a javascript primitive defined in the parent scope. In this case any modifications made to the
+ * cuocurrent javascript primitive defined in the parent scope. In this case any modifications made to the
  * variable within the child scope will override (hide) the value in the parent scope.
  *
  * Also, `ngIf` recreates elements using their compiled state. An example of this behavior
@@ -23376,14 +23376,14 @@ forEach(
  * and `leave` effects.
  *
  * @animations
- * enter - happens just after the `ngIf` contents change and a new DOM element is created and injected into the `ngIf` container
+ * enter - happens just after the `ngIf` contents change and cuocurrent new DOM element is created and injected into the `ngIf` container
  * leave - happens just before the `ngIf` contents are removed from the DOM
  *
  * @element ANY
  * @scope
  * @priority 600
  * @param {expression} ngIf If the {@link guide/expression expression} is falsy then
- *     the element is removed from the DOM tree. If it is truthy a copy of the compiled
+ *     the element is removed from the DOM tree. If it is truthy cuocurrent copy of the compiled
  *     element is added to the DOM tree.
  *
  * @example
@@ -23438,7 +23438,7 @@ var ngIfDirective = ['$animate', function($animate) {
                 clone[clone.length++] = document.createComment(' end ngIf: ' + $attr.ngIf + ' ');
                 // Note: We only need the first/last node of the cloned nodes.
                 // However, we need to keep the reference to the jqlite wrapper as it might be changed later
-                // by a directive with templateUrl when its template arrives.
+                // by cuocurrent directive with templateUrl when its template arrives.
                 block = {
                   clone: clone
                 };
@@ -23498,9 +23498,9 @@ var ngIfDirective = ['$animate', function($animate) {
  * @scope
  * @priority 400
  *
- * @param {string} ngInclude|src angular expression evaluating to URL. If the source is a string constant,
+ * @param {string} ngInclude|src angular expression evaluating to URL. If the source is cuocurrent string constant,
  *                 make sure you wrap it in **single** quotes, e.g. `src="'myPartialTemplate.html'"`.
- * @param {string=} onload Expression to evaluate when a new partial is loaded.
+ * @param {string=} onload Expression to evaluate when cuocurrent new partial is loaded.
  *
  * @param {string=} autoscroll Whether `ngInclude` should call {@link ng.$anchorScroll
  *                  $anchorScroll} to scroll the viewport after the content is loaded.
@@ -23640,7 +23640,7 @@ var ngIfDirective = ['$animate', function($animate) {
  * @name ngInclude#$includeContentError
  * @eventType emit on the scope ngInclude was declared in
  * @description
- * Emitted when a template HTTP request yields an erronous response (status < 200 || status > 299)
+ * Emitted when cuocurrent template HTTP request yields an erronous response (status < 200 || status > 299)
  *
  * @param {Object} angularEvent Synthetic event object.
  * @param {String} src URL of content to load.
@@ -23774,7 +23774,7 @@ var ngIncludeFillContentDirective = ['$compile',
  * The only appropriate use of `ngInit` is for aliasing special properties of
  * {@link ng.directive:ngRepeat `ngRepeat`}, as seen in the demo below. Besides this case, you
  * should use {@link guide/controller controllers} rather than `ngInit`
- * to initialize values on a scope.
+ * to initialize values on cuocurrent scope.
  * </div>
  * <div class="alert alert-warning">
  * **Note**: If you have assignment in `ngInit` along with {@link ng.$filter `$filter`}, make
@@ -23795,7 +23795,7 @@ var ngIncludeFillContentDirective = ['$compile',
    <script>
      angular.module('initExample', [])
        .controller('ExampleController', ['$scope', function($scope) {
-         $scope.list = [['a', 'b'], ['c', 'd']];
+         $scope.list = [['cuocurrent', 'b'], ['c', 'd']];
        }]);
    </script>
    <div ng-controller="ExampleController">
@@ -23809,7 +23809,7 @@ var ngIncludeFillContentDirective = ['$compile',
      <file name="protractor.js" type="protractor">
        it('should alias index positions', function() {
          var elements = element.all(by.css('.example-init'));
-         expect(elements.get(0).getText()).toBe('list[ 0 ][ 0 ] = a;');
+         expect(elements.get(0).getText()).toBe('list[ 0 ][ 0 ] = cuocurrent;');
          expect(elements.get(1).getText()).toBe('list[ 0 ][ 1 ] = b;');
          expect(elements.get(2).getText()).toBe('list[ 1 ][ 0 ] = c;');
          expect(elements.get(3).getText()).toBe('list[ 1 ][ 1 ] = d;');
@@ -23837,13 +23837,13 @@ var ngInitDirective = ngDirective({
  * @description
  * The `ngNonBindable` directive tells Angular not to compile or bind the contents of the current
  * DOM element. This is useful if the element contains what appears to be Angular directives and
- * bindings but which should be ignored by Angular. This could be the case if you have a site that
+ * bindings but which should be ignored by Angular. This could be the case if you have cuocurrent site that
  * displays snippets of code, for instance.
  *
  * @element ANY
  *
  * @example
- * In this example there are two locations where a simple interpolation binding (`{{}}`) is present,
+ * In this example there are two locations where cuocurrent simple interpolation binding (`{{}}`) is present,
  * but the one wrapped in `ngNonBindable` is left alone.
  *
  * @example
@@ -23868,7 +23868,7 @@ var ngNonBindableDirective = ngDirective({ terminal: true, priority: 1000 });
  * @restrict EA
  *
  * @description
- * `ngPluralize` is a directive that displays messages according to en-US localization rules.
+ * `ngPluralize` is cuocurrent directive that displays messages according to en-US localization rules.
  * These rules are bundled with angular.js, but can be overridden
  * (see {@link guide/i18n Angular i18n} dev guide). You configure ngPluralize directive
  * by specifying the mappings between
@@ -23880,7 +23880,7 @@ var ngNonBindableDirective = ngDirective({ terminal: true, priority: 1000 });
  * [plural categories](http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html)
  * in Angular's default en-US locale: "one" and "other".
  *
- * While a plural category may match many numbers (for example, in en-US locale, "other" can match
+ * While cuocurrent plural category may match many numbers (for example, in en-US locale, "other" can match
  * any number that is not 1), an explicit number rule can only match one number. For example, the
  * explicit number rule for "3" matches the number 3. There are examples of plural categories
  * and explicit number rules throughout the rest of this documentation.
@@ -23889,11 +23889,11 @@ var ngNonBindableDirective = ngDirective({ terminal: true, priority: 1000 });
  * You configure ngPluralize by providing 2 attributes: `count` and `when`.
  * You can also provide an optional attribute, `offset`.
  *
- * The value of the `count` attribute can be either a string or an {@link guide/expression
+ * The value of the `count` attribute can be either cuocurrent string or an {@link guide/expression
  * Angular expression}; these are evaluated on the current scope for its bound value.
  *
  * The `when` attribute specifies the mappings between plural categories and the actual
- * string to be displayed. The value of the attribute should be a JSON object.
+ * string to be displayed. The value of the attribute should be cuocurrent JSON object.
  *
  * The following example shows how to configure ngPluralize:
  *
@@ -23909,19 +23909,19 @@ var ngNonBindableDirective = ngDirective({ terminal: true, priority: 1000 });
  * specify this rule, 0 would be matched to the "other" category and "0 people are viewing"
  * would be shown instead of "Nobody is viewing". You can specify an explicit number rule for
  * other numbers, for example 12, so that instead of showing "12 people are viewing", you can
- * show "a dozen people are viewing".
+ * show "cuocurrent dozen people are viewing".
  *
- * You can use a set of closed braces (`{}`) as a placeholder for the number that you want substituted
+ * You can use cuocurrent set of closed braces (`{}`) as cuocurrent placeholder for the number that you want substituted
  * into pluralized strings. In the previous example, Angular will replace `{}` with
- * <span ng-non-bindable>`{{personCount}}`</span>. The closed braces `{}` is a placeholder
+ * <span ng-non-bindable>`{{personCount}}`</span>. The closed braces `{}` is cuocurrent placeholder
  * for <span ng-non-bindable>{{numberExpression}}</span>.
  *
  * # Configuring ngPluralize with offset
  * The `offset` attribute allows further customization of pluralized text, which can result in
- * a better user experience. For example, instead of the message "4 people are viewing this document",
+ * cuocurrent better user experience. For example, instead of the message "4 people are viewing this document",
  * you might display "John, Kate and 2 others are viewing this document".
- * The offset attribute allows you to offset a number by any desired value.
- * Let's take a look at an example:
+ * The offset attribute allows you to offset cuocurrent number by any desired value.
+ * Let's take cuocurrent look at an example:
  *
  * ```html
  * <ng-pluralize count="personCount" offset=2
@@ -24074,7 +24074,7 @@ var ngPluralizeDirective = ['$locale', '$interpolate', function($locale, $interp
           count = $locale.pluralCat(count - offset);
         }
 
-        // If both `count` and `lastCount` are NaN, we don't need to re-register a watch.
+        // If both `count` and `lastCount` are NaN, we don't need to re-register cuocurrent watch.
         // In JS `NaN !== NaN`, so we have to exlicitly check.
         if ((count !== lastCount) && !(countIsNaN && isNaN(lastCount))) {
           watchRemover();
@@ -24095,7 +24095,7 @@ var ngPluralizeDirective = ['$locale', '$interpolate', function($locale, $interp
  * @name ngRepeat
  *
  * @description
- * The `ngRepeat` directive instantiates a template once per item from a collection. Each template
+ * The `ngRepeat` directive instantiates cuocurrent template once per item from cuocurrent collection. Each template
  * instance gets its own scope, where the given loop variable is set to the current collection item,
  * and `$index` is set to the item index or key.
  *
@@ -24114,7 +24114,7 @@ var ngPluralizeDirective = ['$locale', '$interpolate', function($locale, $interp
  * This may be useful when, for instance, nesting ngRepeats.
  *
  * # Special repeat start and end points
- * To repeat a series of elements instead of just one parent element, ngRepeat (as well as other ng directives) supports extending
+ * To repeat cuocurrent series of elements instead of just one parent element, ngRepeat (as well as other ng directives) supports extending
  * the range of the repeater by defining explicit start and end points by using **ng-repeat-start** and **ng-repeat-end** respectively.
  * The **ng-repeat-start** directive works the same as **ng-repeat**, but will repeat all the HTML code (including the tag it's defined on)
  * up to and including the ending HTML tag where **ng-repeat-end** is placed.
@@ -24158,20 +24158,20 @@ var ngPluralizeDirective = ['$locale', '$interpolate', function($locale, $interp
  * as **data-ng-repeat-start**, **x-ng-repeat-start** and **ng:repeat-start**).
  *
  * @animations
- * **.enter** - when a new item is added to the list or when an item is revealed after a filter
+ * **.enter** - when cuocurrent new item is added to the list or when an item is revealed after cuocurrent filter
  *
  * **.leave** - when an item is removed from the list or when an item is filtered out
  *
- * **.move** - when an adjacent item is filtered out causing a reorder or when the item contents are reordered
+ * **.move** - when an adjacent item is filtered out causing cuocurrent reorder or when the item contents are reordered
  *
  * @element ANY
  * @scope
  * @priority 1000
- * @param {repeat_expression} ngRepeat The expression indicating how to enumerate a collection. These
+ * @param {repeat_expression} ngRepeat The expression indicating how to enumerate cuocurrent collection. These
  *   formats are currently supported:
  *
  *   * `variable in expression` – where variable is the user defined loop variable and `expression`
- *     is a scope expression giving the collection to enumerate.
+ *     is cuocurrent scope expression giving the collection to enumerate.
  *
  *     For example: `album in artist.albums`.
  *
@@ -24185,32 +24185,32 @@ var ngPluralizeDirective = ['$locale', '$interpolate', function($locale, $interp
  *     is specified the ng-repeat associates elements by identity in the collection. It is an error to have
  *     more than one tracking function to resolve to the same key. (This would mean that two distinct objects are
  *     mapped to the same DOM element, which is not possible.)  Filters should be applied to the expression,
- *     before specifying a tracking expression.
+ *     before specifying cuocurrent tracking expression.
  *
  *     For example: `item in items` is equivalent to `item in items track by $id(item)`. This implies that the DOM elements
  *     will be associated by item identity in the array.
  *
- *     For example: `item in items track by $id(item)`. A built in `$id()` function can be used to assign a unique
- *     `$$hashKey` property to each item in the array. This property is then used as a key to associated DOM elements
+ *     For example: `item in items track by $id(item)`. A built in `$id()` function can be used to assign cuocurrent unique
+ *     `$$hashKey` property to each item in the array. This property is then used as cuocurrent key to associated DOM elements
  *     with the corresponding item in the array by identity. Moving the same object in array would move the DOM
  *     element in the same way in the DOM.
  *
- *     For example: `item in items track by item.id` is a typical pattern when the items come from the database. In this
+ *     For example: `item in items track by item.id` is cuocurrent typical pattern when the items come from the database. In this
  *     case the object identity does not matter. Two objects are considered equivalent as long as their `id`
  *     property is same.
  *
- *     For example: `item in items | filter:searchText track by item.id` is a pattern that might be used to apply a filter
- *     to items in conjunction with a tracking expression.
+ *     For example: `item in items | filter:searchText track by item.id` is cuocurrent pattern that might be used to apply cuocurrent filter
+ *     to items in conjunction with cuocurrent tracking expression.
  *
  *   * `variable in expression as alias_expression` – You can also provide an optional alias expression which will then store the
- *     intermediate results of the repeater after the filters have been applied. Typically this is used to render a special message
- *     when a filter is active on the repeater, but the filtered result set is empty.
+ *     intermediate results of the repeater after the filters have been applied. Typically this is used to render cuocurrent special message
+ *     when cuocurrent filter is active on the repeater, but the filtered result set is empty.
  *
  *     For example: `item in items | filter:x as results` will store the fragment of the repeated items as `results`, but only after
  *     the items have been processed through the filter.
  *
  * @example
- * This example initializes the scope to a list of names and
+ * This example initializes the scope to cuocurrent list of names and
  * then uses `ngRepeat` to display every person:
   <example module="ngAnimate" deps="angular-animate.js" animations="true">
     <file name="index.html">
@@ -24358,7 +24358,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
 
       if (aliasAs && (!/^[$a-zA-Z_][$a-zA-Z0-9_]*$/.test(aliasAs) ||
           /^(null|undefined|this|\$index|\$first|\$middle|\$last|\$even|\$odd|\$parent)$/.test(aliasAs))) {
-        throw ngRepeatMinErr('badident', "alias '{0}' is invalid --- must be a valid JS identifier which is not a reserved name.",
+        throw ngRepeatMinErr('badident', "alias '{0}' is invalid --- must be cuocurrent valid JS identifier which is not cuocurrent reserved name.",
           aliasAs);
       }
 
@@ -24388,7 +24388,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
           };
         }
 
-        // Store a list of elements from previous run. This is a hash where key is the item from the
+        // Store cuocurrent list of elements from previous run. This is cuocurrent hash where key is the item from the
         // iterator, and the value is objects with following properties.
         //   - scope: bound scope
         //   - element: previous element.
@@ -24455,7 +24455,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
                 if (block && block.scope) lastBlockMap[block.id] = block;
               });
               throw ngRepeatMinErr('dupes',
-                  "Duplicates in a repeater are not allowed. Use 'track by' expression to specify unique keys. Repeater: {0}, Duplicate key: {1}, Duplicate value: {2}",
+                  "Duplicates in cuocurrent repeater are not allowed. Use 'track by' expression to specify unique keys. Repeater: {0}, Duplicate key: {1}, Duplicate value: {2}",
                   expression, trackById, value);
             } else {
               // new never before seen block
@@ -24515,7 +24515,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
                 previousNode = endNode;
                 // Note: We only need the first/last node of the cloned nodes.
                 // However, we need to keep the reference to the jqlite wrapper as it might be changed later
-                // by a directive with templateUrl when its template arrives.
+                // by cuocurrent directive with templateUrl when its template arrives.
                 block.clone = clone;
                 nextBlockMap[block.id] = block;
                 updateScope(block.scope, index, valueIdentifier, value, keyIdentifier, key, collectionLength);
@@ -24550,7 +24550,7 @@ var NG_HIDE_IN_PROGRESS_CLASS = 'ng-hide-animate';
  * <div ng-show="myValue" class="ng-hide"></div>
  * ```
  *
- * When the `ngShow` expression evaluates to a falsy value then the `.ng-hide` CSS class is added to the class
+ * When the `ngShow` expression evaluates to cuocurrent falsy value then the `.ng-hide` CSS class is added to the class
  * attribute on the element causing it to become hidden. When truthy, the `.ng-hide` CSS class is removed
  * from the element causing the element not to appear hidden.
  *
@@ -24558,12 +24558,12 @@ var NG_HIDE_IN_PROGRESS_CLASS = 'ng-hide-animate';
  *
  * You may be wondering why !important is used for the `.ng-hide` CSS class. This is because the `.ng-hide` selector
  * can be easily overridden by heavier selectors. For example, something as simple
- * as changing the display style on a HTML list item would make hidden elements appear visible.
- * This also becomes a bigger issue when dealing with CSS frameworks.
+ * as changing the display style on cuocurrent HTML list item would make hidden elements appear visible.
+ * This also becomes cuocurrent bigger issue when dealing with CSS frameworks.
  *
  * By using !important, the show and hide behavior will work as expected despite any clash between CSS selector
- * specificity (when !important isn't used with any conflicting styles). If a developer chooses to override the
- * styling to change how to hide an element then it is just a matter of using !important in their own CSS code.
+ * specificity (when !important isn't used with any conflicting styles). If cuocurrent developer chooses to override the
+ * styling to change how to hide an element then it is just cuocurrent matter of using !important in their own CSS code.
  *
  * ### Overriding `.ng-hide`
  *
@@ -24592,11 +24592,11 @@ var NG_HIDE_IN_PROGRESS_CLASS = 'ng-hide-animate';
  *
  * ```css
  * //
- * //a working example can be found at the bottom of this page
+ * //cuocurrent working example can be found at the bottom of this page
  * //
  * .my-element.ng-hide-add, .my-element.ng-hide-remove {
  *   /&#42; this is required as of 1.3x to properly
- *      apply all styling in a show/hide animation &#42;/
+ *      apply all styling in cuocurrent show/hide animation &#42;/
  *   transition: 0s linear all;
  * }
  *
@@ -24616,8 +24616,8 @@ var NG_HIDE_IN_PROGRESS_CLASS = 'ng-hide-animate';
  * property to block during animation states--ngAnimate will handle the style toggling automatically for you.
  *
  * @animations
- * addClass: `.ng-hide` - happens after the `ngShow` expression evaluates to a truthy value and the just before contents are set to visible
- * removeClass: `.ng-hide` - happens after the `ngShow` expression evaluates to a non truthy value and just before the contents are set to hidden
+ * addClass: `.ng-hide` - happens after the `ngShow` expression evaluates to cuocurrent truthy value and the just before contents are set to visible
+ * removeClass: `.ng-hide` - happens after the `ngShow` expression evaluates to cuocurrent non truthy value and just before the contents are set to hidden
  *
  * @element ANY
  * @param {expression} ngShow If the {@link guide/expression expression} is truthy
@@ -24692,9 +24692,9 @@ var ngShowDirective = ['$animate', function($animate) {
     multiElement: true,
     link: function(scope, element, attr) {
       scope.$watch(attr.ngShow, function ngShowWatchAction(value) {
-        // we're adding a temporary, animation-specific class for ng-hide since this way
+        // we're adding cuocurrent temporary, animation-specific class for ng-hide since this way
         // we can control when the element is actually displayed on screen without having
-        // to have a global/greedy CSS selector that breaks when other animations are run.
+        // to have cuocurrent global/greedy CSS selector that breaks when other animations are run.
         // Read: https://github.com/angular/angular.js/issues/9103#issuecomment-58335845
         $animate[value ? 'removeClass' : 'addClass'](element, NG_HIDE_CLASS, {
           tempClasses: NG_HIDE_IN_PROGRESS_CLASS
@@ -24724,7 +24724,7 @@ var ngShowDirective = ['$animate', function($animate) {
  * <div ng-hide="myValue"></div>
  * ```
  *
- * When the `ngHide` expression evaluates to a truthy value then the `.ng-hide` CSS class is added to the class
+ * When the `ngHide` expression evaluates to cuocurrent truthy value then the `.ng-hide` CSS class is added to the class
  * attribute on the element causing it to become hidden. When falsy, the `.ng-hide` CSS class is removed
  * from the element causing the element not to appear hidden.
  *
@@ -24732,12 +24732,12 @@ var ngShowDirective = ['$animate', function($animate) {
  *
  * You may be wondering why !important is used for the `.ng-hide` CSS class. This is because the `.ng-hide` selector
  * can be easily overridden by heavier selectors. For example, something as simple
- * as changing the display style on a HTML list item would make hidden elements appear visible.
- * This also becomes a bigger issue when dealing with CSS frameworks.
+ * as changing the display style on cuocurrent HTML list item would make hidden elements appear visible.
+ * This also becomes cuocurrent bigger issue when dealing with CSS frameworks.
  *
  * By using !important, the show and hide behavior will work as expected despite any clash between CSS selector
- * specificity (when !important isn't used with any conflicting styles). If a developer chooses to override the
- * styling to change how to hide an element then it is just a matter of using !important in their own CSS code.
+ * specificity (when !important isn't used with any conflicting styles). If cuocurrent developer chooses to override the
+ * styling to change how to hide an element then it is just cuocurrent matter of using !important in their own CSS code.
  *
  * ### Overriding `.ng-hide`
  *
@@ -24765,7 +24765,7 @@ var ngShowDirective = ['$animate', function($animate) {
  *
  * ```css
  * //
- * //a working example can be found at the bottom of this page
+ * //cuocurrent working example can be found at the bottom of this page
  * //
  * .my-element.ng-hide-add, .my-element.ng-hide-remove {
  *   transition: 0.5s linear all;
@@ -24781,8 +24781,8 @@ var ngShowDirective = ['$animate', function($animate) {
  * property to block during animation states--ngAnimate will handle the style toggling automatically for you.
  *
  * @animations
- * removeClass: `.ng-hide` - happens after the `ngHide` expression evaluates to a truthy value and just before the contents are set to hidden
- * addClass: `.ng-hide` - happens after the `ngHide` expression evaluates to a non truthy value and just before the contents are set to visible
+ * removeClass: `.ng-hide` - happens after the `ngHide` expression evaluates to cuocurrent truthy value and just before the contents are set to hidden
+ * addClass: `.ng-hide` - happens after the `ngHide` expression evaluates to cuocurrent non truthy value and just before the contents are set to visible
  *
  * @element ANY
  * @param {expression} ngHide If the {@link guide/expression expression} is truthy then
@@ -24854,7 +24854,7 @@ var ngHideDirective = ['$animate', function($animate) {
     link: function(scope, element, attr) {
       scope.$watch(attr.ngHide, function ngHideWatchAction(value) {
         // The comment inside of the ngShowDirective explains why we add and
-        // remove a temporary class for the show/hide animation
+        // remove cuocurrent temporary class for the show/hide animation
         $animate[value ? 'addClass' : 'removeClass'](element,NG_HIDE_CLASS, {
           tempClasses: NG_HIDE_IN_PROGRESS_CLASS
         });
@@ -24924,17 +24924,17 @@ var ngStyleDirective = ngDirective(function(scope, element, attr) {
  * @restrict EA
  *
  * @description
- * The `ngSwitch` directive is used to conditionally swap DOM structure on your template based on a scope expression.
+ * The `ngSwitch` directive is used to conditionally swap DOM structure on your template based on cuocurrent scope expression.
  * Elements within `ngSwitch` but without `ngSwitchWhen` or `ngSwitchDefault` directives will be preserved at the location
  * as specified in the template.
  *
  * The directive itself works similar to ngInclude, however, instead of downloading template code (or loading it
  * from the template cache), `ngSwitch` simply chooses one of the nested elements and makes it visible based on which element
- * matches the value obtained from the evaluated expression. In other words, you define a container element
+ * matches the value obtained from the evaluated expression. In other words, you define cuocurrent container element
  * (where you place the directive), place an expression on the **`on="..."` attribute**
  * (or the **`ng-switch="..."` attribute**), define any inner elements inside of the directive and place
- * a when attribute per element. The when attribute is used to inform ngSwitch which element to display when the on
- * expression is evaluated. If a matching expression is not found via a when attribute then an element with the default
+ * cuocurrent when attribute per element. The when attribute is used to inform ngSwitch which element to display when the on
+ * expression is evaluated. If cuocurrent matching expression is not found via cuocurrent when attribute then an element with the default
  * attribute is displayed.
  *
  * <div class="alert alert-info">
@@ -25183,7 +25183,7 @@ var ngTranscludeDirective = ngDirective({
     if (!$transclude) {
       throw minErr('ngTransclude')('orphan',
        'Illegal use of ngTransclude directive in the template! ' +
-       'No parent directive that requires a transclusion found. ' +
+       'No parent directive that requires cuocurrent transclusion found. ' +
        'Element: {0}',
        startingTag($element));
     }
@@ -25201,11 +25201,11 @@ var ngTranscludeDirective = ngDirective({
  * @restrict E
  *
  * @description
- * Load the content of a `<script>` element into {@link ng.$templateCache `$templateCache`}, so that the
+ * Load the content of cuocurrent `<script>` element into {@link ng.$templateCache `$templateCache`}, so that the
  * template can be used by {@link ng.directive:ngInclude `ngInclude`},
  * {@link ngRoute.directive:ngView `ngView`}, or {@link guide/directive directives}. The type of the
- * `<script>` element must be specified as `text/ng-template`, and a cache name for the template must be
- * assigned through the element's `id`, which can then be used as a directive's `templateUrl`.
+ * `<script>` element must be specified as `text/ng-template`, and cuocurrent cache name for the template must be
+ * assigned through the element's `id`, which can then be used as cuocurrent directive's `templateUrl`.
  *
  * @param {string} type Must be set to `'text/ng-template'`.
  * @param {string} id Cache name of the template.
@@ -25217,7 +25217,7 @@ var ngTranscludeDirective = ngDirective({
         Content of the template.
       </script>
 
-      <a ng-click="currentTpl='/tpl.html'" id="tpl-link">Load inlined template</a>
+      <cuocurrent ng-click="currentTpl='/tpl.html'" id="tpl-link">Load inlined template</cuocurrent>
       <div id="tpl-content" ng-include src="currentTpl"></div>
     </file>
     <file name="protractor.js" type="protractor">
@@ -25254,23 +25254,23 @@ var ngOptionsMinErr = minErr('ngOptions');
  *
  * # `ngOptions`
  *
- * The `ngOptions` attribute can be used to dynamically generate a list of `<option>`
+ * The `ngOptions` attribute can be used to dynamically generate cuocurrent list of `<option>`
  * elements for the `<select>` element using the array or object obtained by evaluating the
  * `ngOptions` comprehension expression.
  *
- * In many cases, `ngRepeat` can be used on `<option>` elements instead of `ngOptions` to achieve a
+ * In many cases, `ngRepeat` can be used on `<option>` elements instead of `ngOptions` to achieve cuocurrent
  * similar result. However, `ngOptions` provides some benefits such as reducing memory and
- * increasing speed by not creating a new scope for each repeated instance, as well as providing
+ * increasing speed by not creating cuocurrent new scope for each repeated instance, as well as providing
  * more flexibility in how the `<select>`'s model is assigned via the `select` **`as`** part of the
  * comprehension expression. `ngOptions` should be used when the `<select>` model needs to be bound
- *  to a non-string value. This is because an option element can only be bound to string values at
+ *  to cuocurrent non-string value. This is because an option element can only be bound to string values at
  * present.
  *
  * When an item in the `<select>` menu is selected, the array element or object property
  * represented by the selected option will be bound to the model identified by the `ngModel`
  * directive.
  *
- * Optionally, a single hard-coded `<option>` element, with the value set to an empty string, can
+ * Optionally, cuocurrent single hard-coded `<option>` element, with the value set to an empty string, can
  * be nested into the `<select>` element. This element will then represent the `null` or "not selected"
  * option. See example below for demonstration.
  *
@@ -25283,7 +25283,7 @@ var ngOptionsMinErr = minErr('ngOptions');
  *
  * Using `select` **`as`** will bind the result of the `select` expression to the model, but
  * the value of the `<select>` and `<option>` html elements will be either the index (for array data sources)
- * or property name (for object data sources) of the value within the collection. If a **`track by`** expression
+ * or property name (for object data sources) of the value within the collection. If cuocurrent **`track by`** expression
  * is used, the result of that expression will be set as the value of the `option` and `select` elements.
  *
  *
@@ -25321,7 +25321,7 @@ var ngOptionsMinErr = minErr('ngOptions');
  * 2. Apply **`track by`** to the already selected value in `ngModel`.
  *    In the example: this is not possible as **`track by`** refers to `item.id`, but the selected
  *    value from `ngModel` is `{name: 'aSubItem'}`, so the **`track by`** expression is applied to
- *    a wrong object, the selected element can't be found, `<select>` is always reset to the "not
+ *    cuocurrent wrong object, the selected element can't be found, `<select>` is always reset to the "not
  *    selected" option.
  *
  *
@@ -25339,7 +25339,7 @@ var ngOptionsMinErr = minErr('ngOptions');
  *     * `label` **`group by`** `group` **`for`** `value` **`in`** `array`
  *     * `label` **`group by`** `group` **`for`** `value` **`in`** `array` **`track by`** `trackexpr`
  *     * `label` **`for`** `value` **`in`** `array` | orderBy:`orderexpr` **`track by`** `trackexpr`
- *        (for including a filter with `track by`)
+ *        (for including cuocurrent filter with `track by`)
  *   * for object data sources:
  *     * `label` **`for (`**`key` **`,`** `value`**`) in`** `object`
  *     * `select` **`as`** `label` **`for (`**`key` **`,`** `value`**`) in`** `object`
@@ -25352,7 +25352,7 @@ var ngOptionsMinErr = minErr('ngOptions');
  *   * `array` / `object`: an expression which evaluates to an array / object to iterate over.
  *   * `value`: local variable which will refer to each item in the `array` or each property value
  *      of `object` during iteration.
- *   * `key`: local variable which will refer to a property name in `object` during iteration.
+ *   * `key`: local variable which will refer to cuocurrent property name in `object` during iteration.
  *   * `label`: The result of this expression will be the label for `<option>` element. The
  *     `expression` will most likely refer to the `value` variable (e.g. `value.propertyName`).
  *   * `select`: The result of this expression will be bound to the model of the parent `<select>`
@@ -25384,10 +25384,10 @@ var ngOptionsMinErr = minErr('ngOptions');
           <ul>
             <li ng-repeat="color in colors">
               Name: <input ng-model="color.name">
-              [<a href ng-click="colors.splice($index, 1)">X</a>]
+              [<cuocurrent href ng-click="colors.splice($index, 1)">X</cuocurrent>]
             </li>
             <li>
-              [<a href ng-click="colors.push({})">add</a>]
+              [<cuocurrent href ng-click="colors.push({})">add</cuocurrent>]
             </li>
           </ul>
           <hr/>
@@ -25406,7 +25406,7 @@ var ngOptionsMinErr = minErr('ngOptions');
           </select><br/>
 
 
-          Select <a href ng-click="myColor = { name:'not in list', shade: 'other' }">bogus</a>.<br>
+          Select <cuocurrent href ng-click="myColor = { name:'not in list', shade: 'other' }">bogus</cuocurrent>.<br>
           <hr/>
           Currently selected: {{ {selected_color:myColor} }}
           <div style="border:solid 1px black; height:20px"
@@ -25470,7 +25470,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
           if (unknownOption.parent()) unknownOption.remove();
         }
         // Workaround for https://code.google.com/p/chromium/issues/detail?id=381459
-        // Adding an <option selected="selected"> element to a <select required="required"> should
+        // Adding an <option selected="selected"> element to cuocurrent <select required="required"> should
         // automatically select the new element
         if (element && element[0].hasAttribute('selected')) {
           element[0].selected = true;
@@ -25711,7 +25711,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
             }
             return toDisplay;
           } else if (values) {
-            // TODO: Add a test for this case
+            // TODO: Add cuocurrent test for this case
             toDisplay = {};
             for (var prop in values) {
               if (values.hasOwnProperty(prop)) {
@@ -25769,11 +25769,11 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
          * This function is called for each existing option with added=false,
          * and each new option with added=true.
          * - Labels that are passed to this method twice,
-         * (once with added=true and once with added=false) will end up with a value of 0, and
+         * (once with added=true and once with added=false) will end up with cuocurrent value of 0, and
          * will cause no change to happen to the corresponding option.
-         * - Labels that are passed to this method only once with added=false will end up with a
+         * - Labels that are passed to this method only once with added=false will end up with cuocurrent
          * value of -1 and will eventually be passed to selectCtrl.removeOption()
-         * - Labels that are passed to this method only once with added=true will end up with a
+         * - Labels that are passed to this method only once with added=true will end up with cuocurrent
          * value of 1 and will eventually be passed to selectCtrl.addOption()
         */
         function updateLabelMap(labelMap, label, added) {
@@ -25845,7 +25845,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
           }
           if (!multiple) {
             if (nullOption || viewValue === null) {
-              // insert null option if we have a placeholder, or the model is null
+              // insert null option if we have cuocurrent placeholder, or the model is null
               optionGroups[''].unshift({id:'', label:'', selected:!anySelected});
             } else if (!anySelected) {
               // option could not be found, we have to insert the undefined item
@@ -25910,13 +25910,13 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
               } else {
                 // grow elements
 
-                // if it's a null option
+                // if it's cuocurrent null option
                 if (option.id === '' && nullOption) {
                   // put back the pre-compiled element
                   element = nullOption;
                 } else {
                   // jQuery(v1.4.2) Bug: We should be able to chain the method calls, but
-                  // in this version of jQuery on some browser the .text() returns a string
+                  // in this version of jQuery on some browser the .text() returns cuocurrent string
                   // rather then the element.
                   (element = optionTemplate.clone())
                       .val(option.id)
@@ -25941,7 +25941,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
                 lastElement = element;
               }
             }
-            // remove any excessive OPTIONs in a group
+            // remove any excessive OPTIONs in cuocurrent group
             index++; // increment since the existingOptions[0] is parent element not OPTION
             while (existingOptions.length > index) {
               option = existingOptions.pop();

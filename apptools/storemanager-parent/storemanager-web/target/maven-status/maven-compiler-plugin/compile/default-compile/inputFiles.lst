@@ -5,6 +5,8 @@ D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storema
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\controller\ProductSaleController.java
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\vo\rest\a.java
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\controller\ProductPurchaseController.java
+D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\service\imp\ProductPurchaseServiceImp.java
+D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\service\ProductPurchaseService.java
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\vo\page\ProductInStoreVo.java
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\controller\ProductInStoreController.java
 D:\software\gitWorkSpace\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\src\main\java\com\cxy\apptools\web\storemanager\vo\page\ProductDefineVo.java

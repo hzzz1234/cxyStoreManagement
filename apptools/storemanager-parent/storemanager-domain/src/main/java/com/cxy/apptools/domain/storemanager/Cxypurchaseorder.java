@@ -1,6 +1,8 @@
 package com.cxy.apptools.domain.storemanager;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+
 
 public class Cxypurchaseorder {
     private Integer id;
@@ -106,6 +108,7 @@ public class Cxypurchaseorder {
     }
 
     public Integer getStatus() {
+
         return status;
     }
 
@@ -113,16 +116,24 @@ public class Cxypurchaseorder {
         this.status = status;
     }
 
-    public Date getPddate() {
-        return pddate;
+    public String getPddate() {
+        SimpleDateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String ctime = formatter.format(pddate);
+
+        return ctime;
     }
 
     public void setPddate(Date pddate) {
         this.pddate = pddate;
     }
 
-    public Date getRedate() {
-        return redate;
+    public String getRedate() {
+        SimpleDateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String ctime = formatter.format(redate);
+
+        return ctime;
     }
 
     public void setRedate(Date redate) {
@@ -137,19 +148,27 @@ public class Cxypurchaseorder {
         this.repsor = repsor == null ? null : repsor.trim();
     }
 
-    public Date getCreateTime() {
-        return createTime;
+    public String getCreateTime() {
+        SimpleDateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String ctime = formatter.format(createTime);
+        return ctime;
     }
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    public Date getDatachangeLasttime() {
-        return datachangeLasttime;
+    public String getDatachangeLasttime() {
+        SimpleDateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String ctime = formatter.format(datachangeLasttime);
+        return ctime;
+
     }
 
     public void setDatachangeLasttime(Date datachangeLasttime) {
         this.datachangeLasttime = datachangeLasttime;
     }
+
 }

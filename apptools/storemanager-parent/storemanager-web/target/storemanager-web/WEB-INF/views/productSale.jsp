@@ -55,29 +55,55 @@
                   货品售卖表
                 </div>
 
-                <!-- <div class="table-responsive"> -->
-
-                <!-- <div class="dataTables_borderWrap"> -->
                 <div>
-                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row"><div class="col-xs-6"><div id="sample-table-2_length" class="dataTables_length"><label>Display <select size="1" name="sample-table-2_length" aria-controls="sample-table-2"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> records</label></div></div><div class="col-xs-6"><div class="dataTables_filter" id="sample-table-2_filter"><label>Search: <input type="text" aria-controls="sample-table-2"></label></div></div></div><table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info">
+                  <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                    <div class="row">
+                      <div class="col-xs-6"><div id="sample-table-2_length" class="dataTables_length">
+                        <label>显示：
+                          <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
+                          <option value="10" selected="selected">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option><option value="100">100</option>
+                          </select> records
+                        </label>
+                      </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_filter" id="sample-table-2_filter">
+                          <label>搜索： <input type="text" aria-controls="sample-table-2"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="overflow: auto">
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" width="1300px">
                     <thead>
-                    <tr role="row"><th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="
-
-
-
-
-													">
+                    <tr role="row">
+                      <th class="center sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="">
                       <label class="position-relative">
                         <input type="checkbox" class="ace">
                         <span class="lbl"></span>
                       </label>
-                    </th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">Domain</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">Price</th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">Clicks</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="
-
-														Update
-													: activate to sort column ascending">
+                    </th>
+                      <th class="hidden-480" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending"></th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">销售出库单号</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">商铺</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">客户</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">出库数量</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending">进货单价</th>
+                      <th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Clicks: activate to sort column ascending">币种</th>
+                      <th class="sorting" role="columnheader" rowspan="1" colspan="1" aria-label="">收款人</th>
+                      <th class="hidden-480" role="columnheader" rowspan="1" colspan="1" aria-label="Domain: activate to sort column ascending">单据说明</th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">
+                        <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                        创建时间
+                      </th>
+                      <th class="sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Update: activate to sort column ascending">
                       <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
-                      更新
-                    </th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample-table-2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""></th></tr>
+                      最后更新时间
+                    </th>
+
+
+                    </tr>
                     </thead>
 
 
@@ -88,7 +114,21 @@
                           <span class="lbl"></span>
                         </label>
                       </td>
+                      <td>
+                        <div class="hidden-sm hidden-xs action-buttons" width="auto">
+                          <a class="blue" href="#">
+                            <i class="ace-icon glyphicon glyphicon-zoom-in"></i>
+                          </a>
 
+                          <a class="green" href="#">
+                            <i class="ace-icon glyphicon glyphicon-pencil"></i>
+                          </a>
+
+                          <a class="red" href="#">
+                            <i class="ace-icon glyphicon glyphicon-minus"></i>
+                          </a>
+                        </div>
+                      </td>
                       <td class=" ">
                         <a href="#">app.com</a>
                       </td>
@@ -761,7 +801,21 @@
                           </div>
                         </div>
                       </td>
-                    </tr></tbody></table><div class="row"><div class="col-xs-6"><div class="dataTables_info" id="sample-table-2_info">Showing 1 to 10 of 23 entries</div></div><div class="col-xs-6"><div class="dataTables_paginate paging_bootstrap"><ul class="pagination"><li class="prev disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li><li class="prev disabled"><a href="#"><i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                      <div class="row">
+                      <div class="col-xs-6">
+                        <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10 行记录</div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="dataTables_paginate paging_bootstrap">
+                          <ul class="pagination"><li class="prev disabled"><a href="#">
+                            <i class="fa fa-angle-double-left"></i></a>
+                          </li>
+                            <li class="prev disabled"><a href="#">
+                              <i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li><li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li></ul></div></div></div></div>
                 </div>
               </div>
             </div>
@@ -885,10 +939,10 @@
       <div class="footer">
         <div class="footer-inner">
           <!-- #section:basics/footer -->
-          <div class="footer-content">
+          <div class="footer-content" align="center">
 						<span class="bigger-120">
 							<span class="blue bolder">Ace</span>
-							Application © 2013-2014
+							Application © 2016-2017
 						</span>
 
             &nbsp; &nbsp;
