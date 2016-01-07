@@ -12,20 +12,7 @@
   <title>货品采购</title>
   <%@ include file="/common/common.jsp"%>
 <link href="${rc.contextPath}/webresources/storemanager/css/ProductPurchase.css" type="text/css" rel="stylesheet"/>
-  <script type="text/javascript">
-    $(function () {
-// 全选或者全不选
-      $("#HeadCheck").bind("click", function () {
-        if($("#HeadCheck").checked())
-        {
-          $("[name = checkItem]:checkbox").attr("checked", true);
-        }else{
-          $("[name = checkItem]:checkbox").attr("checked", false);
-        }
 
-      });
-    });
-  </script>
 </head>
 
 <body ng-controller="productCtrl">
@@ -102,7 +89,7 @@
                     <tr role="row">
                       <th class="center sorting_disabled tableColoumStyle" role="columnheader" rowspan="1" colspan="1" aria-label="">
                       <label class="position-relative">
-                        <input type="checkbox" class="ace" name="HeadCheck">
+                        <input type="checkbox" class="ace" name="HeadCheck" onclick="checkClick(this)">
                         <span class="lbl"></span>
                       </label>
                     </th>
@@ -156,7 +143,7 @@
                         <td class="tableColoumContentStyle">${record.quantity}</td>
                         <td class="tableColoumContentStyle">${record.totalamout}</td>
                         <td class="tableColoumContentStyle">${record.payamount}</td>
-                        <td class="tableColoumContentStyle"><i class="text">${record.repsor}</i>s</td>
+                        <td class="tableColoumContentStyle"><span style="color:#696969">${record.repsor}</span></td>
 
                         <td class="hidden-480 tableColoumSatausStyle">
                           <span class="label label-sm label-warning">${record.status}</span>
@@ -256,6 +243,7 @@
 
   <!-- page specific plugin scripts -->
   <script src="${rc.contextPath}/webresources/jquery/js/jquery.dataTables.min.js"></script>
+  <script src="${rc.contextPath}/webresources/jquery/js/jquery-1.10.2.min.js"></script>
   <script src="${rc.contextPath}/webresources/jquery/js/jquery.dataTables.bootstrap.js"></script>
 
   <!-- ace scripts -->
@@ -275,5 +263,21 @@
   <script src="${rc.contextPath}/webresources/assets/js/html.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/css.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/javascript.js"></script>
+
+  <script type="text/javascript">
+    function checkClick(obj) {
+// 全选或者全不选
+      if(obj.checked)
+      {
+        $("[name = checkItem]:checkbox").attr("checked",'true');
+
+      }else{
+        $("[name = checkItem]:checkbox").attr("checked", false);
+      }
+
+    }
+
+
+  </script>
 </body>
 </html>

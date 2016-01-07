@@ -26,7 +26,6 @@ public class ProductPurchaseController {
         mv.setViewName("productPurchase");
         ProductPurchaseVo productPurchaseVo = new ProductPurchaseVo();
         productPurchaseVo.init("product_purchase","采购列表");
-        //supplierDefineVo.setCxysuppliercategoryList(supplierService.queryAllValues());
         mv.addObject("basevo",productPurchaseVo);
         mv.addObject("records",orderService.GetAllOrders());
         return mv;

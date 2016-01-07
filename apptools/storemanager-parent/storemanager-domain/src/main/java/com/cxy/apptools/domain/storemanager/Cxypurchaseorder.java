@@ -116,24 +116,18 @@ public class Cxypurchaseorder {
         this.status = status;
     }
 
-    public String getPddate() {
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String ctime = formatter.format(pddate);
+    public Date getPddate() {
 
-        return ctime;
+        return pddate;
     }
 
     public void setPddate(Date pddate) {
         this.pddate = pddate;
     }
 
-    public String getRedate() {
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String ctime = formatter.format(redate);
+    public Date getRedate() {
 
-        return ctime;
+        return redate;
     }
 
     public void setRedate(Date redate) {
@@ -148,22 +142,16 @@ public class Cxypurchaseorder {
         this.repsor = repsor == null ? null : repsor.trim();
     }
 
-    public String getCreateTime() {
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String ctime = formatter.format(createTime);
-        return ctime;
+    public Date getCreateTime() {
+        return  createTime;
     }
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
-    public String getDatachangeLasttime() {
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String ctime = formatter.format(datachangeLasttime);
-        return ctime;
+    public Date getDatachangeLasttime() {
+        return datachangeLasttime;
 
     }
 

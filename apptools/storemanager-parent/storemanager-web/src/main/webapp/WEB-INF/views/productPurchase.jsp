@@ -143,7 +143,7 @@
                         <td class="tableColoumContentStyle">${record.quantity}</td>
                         <td class="tableColoumContentStyle">${record.totalamout}</td>
                         <td class="tableColoumContentStyle">${record.payamount}</td>
-                        <td class="tableColoumContentStyle"><i class="text">${record.repsor}</i>s</td>
+                        <td class="tableColoumContentStyle"><span style="color:#696969">${record.repsor}</span></td>
 
                         <td class="hidden-480 tableColoumSatausStyle">
                           <span class="label label-sm label-warning">${record.status}</span>
@@ -244,7 +244,6 @@
   <!-- page specific plugin scripts -->
   <script src="${rc.contextPath}/webresources/jquery/js/jquery.dataTables.min.js"></script>
   <script src="${rc.contextPath}/webresources/jquery/js/jquery-1.10.2.min.js"></script>
-  <script src="${rc.contextPath}/webresources/jquery/js/jquery.min.js"></script>
   <script src="${rc.contextPath}/webresources/jquery/js/jquery.dataTables.bootstrap.js"></script>
 
   <!-- ace scripts -->
@@ -268,9 +267,6 @@
   <script type="text/javascript">
     function checkClick(obj) {
 // 全选或者全不选
-
-      alert(obj.checked);
-
       if(obj.checked)
       {
         $("[name = checkItem]:checkbox").attr("checked",'true');
@@ -280,6 +276,8 @@
       }
 
     }
+
+
   </script>
 </body>
 </html>

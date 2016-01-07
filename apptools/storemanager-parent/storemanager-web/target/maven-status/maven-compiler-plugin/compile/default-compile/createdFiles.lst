@@ -3,6 +3,7 @@ com\cxy\apptools\web\storemanager\vo\page\ClientDefineVo.class
 com\cxy\apptools\web\storemanager\vo\page\SpecAttrDefineVo.class
 com\cxy\apptools\web\storemanager\vo\page\SupplierDefineVo.class
 com\cxy\apptools\web\storemanager\controller\LoginLogoutController.class
+com\cxy\apptools\web\storemanager\service\models\ProductPurchaseModel.class
 com\cxy\apptools\web\storemanager\service\SupplierService.class
 com\cxy\apptools\web\storemanager\controller\MetaDefineController.class
 com\cxy\apptools\web\storemanager\service\imp\TestServiceImp.class
