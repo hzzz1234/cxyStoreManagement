@@ -31,5 +31,16 @@
         <module name="storemanager-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="arts-report" target="1.5" />
+      <module name="parent" target="1.5" />
+      <module name="storemanager-common" target="1.5" />
+      <module name="storemanager-domain" target="1.5" />
+      <module name="storemanager-job" target="1.5" />
+      <module name="storemanager-parent" target="1.5" />
+      <module name="storemanager-persistence" target="1.5" />
+      <module name="storemanager-rest" target="1.5" />
+      <module name="storemanager-web" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

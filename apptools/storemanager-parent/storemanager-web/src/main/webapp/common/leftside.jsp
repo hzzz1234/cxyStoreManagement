@@ -178,115 +178,54 @@
             </a>
         </li>
 
-        <li class="active">
-            <a href="gallery.html">
-                <i class="icon-picture"></i>
-                <span class="menu-text"> 相册 </span>
-            </a>
-        </li>
 
         <li>
             <a href="#" class="dropdown-toggle">
                 <i class="icon-tag"></i>
-                <span class="menu-text"> 更多页面 </span>
+                <span class="menu-text"> 控制管理 </span>
 
                 <b class="arrow icon-angle-down"></b>
             </a>
 
-            <ul class="submenu">
-                <li>
-                    <a href="profile.html">
+            <c:choose>
+                <c:when test="${basevo.leftsideIdentifier== 'left_user_group_admin' || basevo.leftsideIdentifier== 'left_user_group_authority_admin'}">
+                    <ul class="submenu" style="display: block;">
+                </c:when>
+                <c:otherwise>
+                    <ul class="submenu"></c:otherwise>
+            </c:choose>
+                <c:choose>
+                    <c:when test="${basevo.leftsideIdentifier== 'left_user_group_admin'}">
+                        <li class="active">
+                    </c:when>
+                    <c:otherwise>
+                        <li>
+                    </c:otherwise>
+                </c:choose>
+                    <a href="${rc.contextPath}/admin/userGroupAdmin">
                         <i class="icon-double-angle-right"></i>
-                        用户信息
+                        用户管理
                     </a>
                 </li>
 
-                <li>
-                    <a href="inbox.html">
+                <c:choose>
+                    <c:when test="${basevo.leftsideIdentifier== 'left_user_group_authority_admin'}">
+                        <li class="active">
+                    </c:when>
+                    <c:otherwise>
+                        <li>
+                    </c:otherwise>
+                </c:choose>
+                    <a href="${rc.contextPath}/admin/userGroupAuthorityAdmin">
                         <i class="icon-double-angle-right"></i>
-                        收件箱
+                        权限管理
                     </a>
                 </li>
 
-                <li>
-                    <a href="pricing.html">
-                        <i class="icon-double-angle-right"></i>
-                        售价单
-                    </a>
-                </li>
-
-                <li>
-                    <a href="invoice.html">
-                        <i class="icon-double-angle-right"></i>
-                        购物车
-                    </a>
-                </li>
-
-                <li>
-                    <a href="timeline.html">
-                        <i class="icon-double-angle-right"></i>
-                        时间轴
-                    </a>
-                </li>
-
-                <li>
-                    <a href="login.html">
-                        <i class="icon-double-angle-right"></i>
-                        登录 &amp; 注册
-                    </a>
-                </li>
             </ul>
         </li>
 
-        <li class="open">
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-file-alt"></i>
 
-								<span class="menu-text">
-									其他页面
-									<span class="badge badge-primary ">5</span>
-								</span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu" style="display: block;">
-                <li>
-                    <a href="faq.html">
-                        <i class="icon-double-angle-right"></i>
-                        帮助
-                    </a>
-                </li>
-
-                <li>
-                    <a href="error-404.html">
-                        <i class="icon-double-angle-right"></i>
-                        404错误页面
-                    </a>
-                </li>
-
-                <li>
-                    <a href="error-500.html">
-                        <i class="icon-double-angle-right"></i>
-                        500错误页面
-                    </a>
-                </li>
-
-                <li>
-                    <a href="grid.html">
-                        <i class="icon-double-angle-right"></i>
-                        网格
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blank.html">
-                        <i class="icon-double-angle-right"></i>
-                        空白页面
-                    </a>
-                </li>
-            </ul>
-        </li>
     </ul><!-- /.nav-list -->
 
     <div class="sidebar-collapse" id="sidebar-collapse">

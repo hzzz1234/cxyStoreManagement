@@ -20,7 +20,7 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
 
     @Autowired
     private CxypurchaseorderMapper cxypurchaseorder;
-    @Override
+
     public List<ProductPurchaseModel> GetAllOrders() {
         return ModelConverse(cxypurchaseorder.queryAllorders());
     }

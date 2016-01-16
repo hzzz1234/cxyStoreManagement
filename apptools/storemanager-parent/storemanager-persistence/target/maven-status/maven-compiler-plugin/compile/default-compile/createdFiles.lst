@@ -1,7 +1,6 @@
 com\cxy\apptools\persistence\storemanager\dao\CxyspecattrvalueMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxycurrencyMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxysellproductsizedetailMapper.class
-com\cxy\apptools\persistence\storemanager\dao\CxyuserrolesMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxyproductMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxyproductrspecattrMapper.class
 com\cxy\apptools\persistence\storemanager\enums\OrderTypeIndex.class
@@ -29,5 +28,4 @@ com\cxy\apptools\persistence\storemanager\dao\CxyclientcategoryMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxyproductcategoryMapper.class
 com\cxy\apptools\persistence\storemanager\dao\CxycolorMapper.class
-com\cxy\apptools\persistence\storemanager\dao\CxyusersMapper.class
 com\cxy\apptools\App.class

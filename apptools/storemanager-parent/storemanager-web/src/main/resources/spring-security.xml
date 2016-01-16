@@ -27,13 +27,29 @@
         <sec:http-basic />
         <sec:logout />
     </sec:http>
+
+    <!--自定义用户登录相关信息bean-->
+    <!--<bean id="jdbcUserService" class="com.cxy.apptools.web.storemanager.service.imp.security.CxyUserServiceImpl">-->
+        <!--<property name="dataSource" ref="dataSource"></property>-->
+        <!--<property name="enableGroups" value="true"></property>-->
+        <!--&lt;!&ndash;<property name="enableAuthorities" value="false"></property> &lt;!&ndash;用户授权和用户组授权尽量分开来控制，保证只有一个&ndash;&gt;&ndash;&gt;-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;已bean的形式配置,由于security已经帮我们封装好了,若需自定义时才这样使用&ndash;&gt; 配合sec:password-encoder ref="passwordEncoder"-->
+    <!--<bean class="org.springframework.security.authentication.encoding.ShaPasswordEncoder" id="passwordEncoder"/>-->
+
     <sec:authentication-manager>
+
+        <!--<sec:authentication-provider user-service-ref="jdbcUserService">-->
         <sec:authentication-provider>
             <sec:user-service> <!--in-memory authentication-->
                 <sec:user name="admin" password="admin" authorities="ROLE_USER"></sec:user>
                 <sec:user name="admin1" password="admin1" authorities="ROLE_USER"></sec:user>
             </sec:user-service>
-            <!--<sec:jdbc-user-service data-source-ref="dataSource"/>-->
+
+            <!--<sec:password-encoder hash="md5">-->
+                <!--<sec:salt-source user-property="salt"></sec:salt-source>-->
+            <!--</sec:password-encoder>-->
         </sec:authentication-provider>
     </sec:authentication-manager>
 </beans>

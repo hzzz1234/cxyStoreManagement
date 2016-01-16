@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/arts-report/arts-report.iml" filepath="$PROJECT_DIR$/arts-report/arts-report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-common/storemanager-common.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-common/storemanager-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-domain/storemanager-domain.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-domain/storemanager-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-job/storemanager-job.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-job/storemanager-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-parent.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-persistence/storemanager-persistence.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-persistence/storemanager-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-rest/storemanager-rest.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-rest/storemanager-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemanager-parent/storemanager-web/storemanager-web.iml" filepath="$PROJECT_DIR$/storemanager-parent/storemanager-web/storemanager-web.iml" />
+    </modules>
+  </component>
+</project>

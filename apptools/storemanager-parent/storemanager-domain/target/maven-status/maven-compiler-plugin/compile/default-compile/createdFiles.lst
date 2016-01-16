@@ -4,7 +4,6 @@ com\cxy\apptools\domain\storemanager\Cxysellproductsizedetail.class
 com\cxy\apptools\domain\storemanager\Cxyselldetail.class
 com\cxy\apptools\domain\storemanager\Cxyclient.class
 com\cxy\apptools\domain\storemanager\Cxypurchaseorderdetail.class
-com\cxy\apptools\domain\storemanager\Cxyuserroles.class
 com\cxy\apptools\domain\storemanager\Cxyproductrspecattr.class
 com\cxy\apptools\domain\storemanager\Cxyunit.class
 com\cxy\apptools\domain\storemanager\Cxyspecattrtype.class
@@ -20,7 +19,6 @@ com\cxy\apptools\domain\storemanager\Cxyshop.class
 com\cxy\apptools\domain\storemanager\Cxypurchaseorderproductsizedetail.class
 com\cxy\apptools\domain\storemanager\Cxycolor.class
 com\cxy\apptools\domain\storemanager\Cxysuppliercategory.class
-com\cxy\apptools\domain\storemanager\Cxyusers.class
 com\cxy\apptools\domain\storemanager\Cxysupplier.class
 com\cxy\apptools\domain\storemanager\Cxysizecategorydetail.class
 com\cxy\apptools\domain\storemanager\Cxybranch.class
