@@ -21,7 +21,7 @@
     delete from cxyspecattr
     where specattrid = #{specattrid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyspecattr">
+  <insert id="insert" parameterType="com.cxy.apptools.domain.storemanager.Cxyspecattr" useGeneratedKeys="true" keyProperty="id">
     insert into cxyspecattr (specattrid, specattrname, specattrtypeid, 
       create_time, DataChange_Lasttime)
     values (#{specattrid,jdbcType=INTEGER}, #{specattrname,jdbcType=VARCHAR}, #{specattrtypeid,jdbcType=INTEGER}, 
