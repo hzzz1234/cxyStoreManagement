@@ -6,34 +6,218 @@
   <component name="ChangeListManager">
     <list default="true" id="bb4532b1-6086-4670-9dbf-1303e83ade09" name="Default" comment="">
       <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\arts-report-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\surefire-reports\TEST-com.cxy.apptools.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\surefire-reports\com.cxy.apptools.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\arts-report\target\test-classes\com\cxy\apptools\AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\classes\com\cxy\apptools\com\utilitys\FormatConverse.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\classes\com\cxy\apptools\common\beans\Page.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\storemanager-common-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\surefire-reports\TEST-com.cxy.apptools.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\surefire-reports\com.cxy.apptools.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-common\target\test-classes\com\cxy\apptools\AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Authorities.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxybranch.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyclient.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyclientcategory.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxycolor.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxycurrency.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyproduct.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyproductcategory.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyproductrspecattr.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxypurchaseorder.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxypurchaseorderdetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxypurchaseorderproductsizedetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxysell.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyselldetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxysellproductsizedetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyshop.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxysizecategorydetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyspecattr.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyspecattrtype.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyspecattrvalue.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxysupplier.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxysuppliercategory.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxyunit.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxywarehousein.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxywarehouseindetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Cxywarehouseinproductsizedetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Groupauthorities.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Groupmembers.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Groups.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\Users.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\classes\com\cxy\apptools\domain\storemanager\cxywarehouseinsizedetail.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\storemanager-domain-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\surefire-reports\TEST-com.cxy.apptools.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\surefire-reports\com.cxy.apptools.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-domain\target\test-classes\com\cxy\apptools\AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\storemanager-job-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\surefire-reports\TEST-com.cxy.apptools.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\surefire-reports\com.cxy.apptools.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-job\target\test-classes\com\cxy\apptools\AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\AuthoritiesMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxybranchMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyclientMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyclientcategoryMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxycolorMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxycurrencyMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyproductMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyproductcategoryMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyproductrspecattrMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderdetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderproductsizedetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxysellMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyselldetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxysellproductsizedetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyshopMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxysizecategorydetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyspecattrMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyspecattrtypeMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyspecattrvalueMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxysupplierMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxysuppliercategoryMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxyunitMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxywarehouseinMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxywarehouseindetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\CxywarehouseinproductsizedetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\GroupauthoritiesMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\GroupmembersMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\GroupsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\UsersMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\dao\cxywarehouseinsizedetailMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\enums\OrderStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\enums\OrderTypeIndex.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\AuthoritiesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxybranchMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyclientMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyclientcategoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxycolorMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxycurrencyMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyproductMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyproductcategoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyproductrspecattrMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxypurchaseorderMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxypurchaseorderdetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxypurchaseorderproductsizedetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxysellMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyselldetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxysellproductsizedetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyshopMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxysizecategorydetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyspecattrMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyspecattrtypeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyspecattrvalueMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxysupplierMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxysuppliercategoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyunitMapper.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyuserrolesMapper.xml" afterPath="" />
       <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyusersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxywarehouseinMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxywarehouseindetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxywarehouseinproductsizedetailMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\GroupauthoritiesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\GroupmembersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\GroupsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\UsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\query\Basequery.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\query\Cxypurchaseorderquery.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\storemanager-persistence-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\com\cxy\apptools\AppTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\com\cxy\apptools\persistence\storemanager\dao\BaseMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\com\cxy\apptools\persistence\storemanager\dao\CxyclientcategoryMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\com\cxy\apptools\persistence\storemanager\dao\CxypurchaseorderMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\com\cxy\apptools\persistence\storemanager\dao\CxysuppliercategoryMapperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\test-classes\mybatis_config.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-rest\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-rest\target\storemanager-rest.war" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-rest\target\storemanager-rest\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-rest\target\storemanager-rest\index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\App.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\beans\CxyUser.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\BaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\ClientController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\LoginLogoutController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\MainController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\MetaDefineController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\ProductInStoreController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\ProductPurchaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\ProductSaleController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\SupplierController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\TestController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\UserGroupAdminController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\controller\UserGroupAuthorityAdminController.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\CxyUserService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\ProductPurchaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\SupplierService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\TestService.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\ProductPurchaseServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\SupplierServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\TestServiceImp.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$10.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$3.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$4.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$5.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$6.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$7.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$8.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$9.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\service\models\ProductPurchaseModel.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\BasePageVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\ClientDefineVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\MainVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\ProductDefineVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\ProductInStoreVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\ProductPurchaseVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\ProductSaleVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\SpecAttrDefineVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\SupplierDefineVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\UserGroupAdminVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\page\UserGroupAuthorityAdminVo.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\com\cxy\apptools\web\storemanager\vo\rest\a.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\env.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\spring-security.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\classes\spring.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\storemanager-parent\storemanager-web\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
       <change type="DELETED" beforePath="E:\Users\git\cxyStoreManagement\apptools\target\MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/arts-report-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/arts-report/target/arts-report-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/storemanager-common-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/storemanager-common-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/storemanager-domain-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/storemanager-domain-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/storemanager-job-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/storemanager-job-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/storemanager-persistence-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/storemanager-persistence-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/storemanager-rest.war" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/storemanager-rest.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAdmin.jsp" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAuthorityAdmin.jsp" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAuthorityAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,8 +303,8 @@
       <file leaf-file-name="userGroupAuthorityAdmin.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAuthorityAdmin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.686747">
-              <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.3756614">
+              <caret line="337" column="7" selection-start-line="337" selection-start-column="7" selection-end-line="337" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -1530,16 +1714,16 @@
       <workItem from="1452954793020" duration="4486000" />
       <workItem from="1453119159260" duration="559000" />
       <workItem from="1453722142074" duration="4648000" />
-      <workItem from="1456234046773" duration="741000" />
+      <workItem from="1456234046773" duration="1355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114354000" />
+    <option name="totallyTimeSpent" value="114968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1548,7 +1732,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28773585" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16970022" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33115825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29287305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1560,17 +1746,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27951002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33115825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27951002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3832547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1989,8 +2173,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAuthorityAdmin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.686747">
-          <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.3756614">
+          <caret line="337" column="7" selection-start-line="337" selection-start-column="7" selection-end-line="337" selection-end-column="7" />
           <folding />
         </state>
       </provider>
