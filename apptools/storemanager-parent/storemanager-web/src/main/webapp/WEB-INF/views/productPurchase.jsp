@@ -54,7 +54,7 @@
             &nbsp&nbsp<input type="button" value="导入采购单" onclick="">
             &nbsp&nbsp<input type="button" value="导出采购单" onclick="">
           </div>
-          <div class="col-xs-12" style="overflow: scroll">
+          <div class="col-xs-12" style="overflow: none">
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
               <div class="col-xs-12">
@@ -64,7 +64,7 @@
 
                   <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid">
                     <div class="row">
-                      <div class="col-xs-6">
+                      <div class="col-xs-6" >
                         <div id="sample-table-2_length" class="dataTables_length">
                           <label>显示:
                             <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
@@ -83,7 +83,7 @@
                         </div>
                       </div>
                     </div>
-                    <div style="overflow: auto;width: 100%;height: 100%;" >
+                    <div style="overflow: auto;width: 100%;" >
                     <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" style="width: 1300px">
                     <thead >
                     <tr role="row">
@@ -112,7 +112,7 @@
 
                     <c:forEach var="record" items="${records}">
 
-                      <tr class="odd tableColoumHeadStyle">
+                      <tr class="odd tableColoumHeadStyle" id="${record.pouid}">
                         <td class="center  sorting_1 tableColoumHeadStyle">
                           <label class="position-relative">
                             <input type="checkbox" class="ace" name="checkItem">
@@ -122,7 +122,7 @@
 
                         <td class="tableColoumOperateStyle">
                           <div class="hidden-sm hidden-xs action-buttons" width="auto">
-                            <a class="blue" href="#">
+                            <a class="blue" href="javascirpt:void(0)" onclick="$('#'+${record.pouid}).style.display=none;">
                               <i class="ace-icon glyphicon glyphicon-zoom-in"></i>
                             </a>
 
