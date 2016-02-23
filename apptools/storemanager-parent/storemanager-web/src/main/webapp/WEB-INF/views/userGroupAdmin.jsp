@@ -326,7 +326,7 @@
                           </tr>
                           <tr>
                             <td colspan="6" style="  text-align: right;">
-                              <button class="btn btn-link"><i class="icon-plus-sign" style="color: darkgrey;font-size: 20px;">新增用户组</i></button></td>
+                              <button class="btn btn-link" data-toggle="modal" data-target="#addGroup"><i class="icon-plus-sign" style="color: darkgrey;font-size: 20px;">新增用户组</i></button></td>
                           </tr>
                         </tbody>
                       </table>
@@ -373,58 +373,122 @@
     </div>
 
     <!-- 模态框（Modal） -->
-    <div class="modal fade" id="addUser" tabindex="-1" role="dialog"
-         aria-labelledby="addUserLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close"
-                    data-dismiss="modal" aria-hidden="true">
-              &times;
-            </button>
-            <h4 class="modal-title" id="myModalLabel">
-              用户添加
-            </h4>
-          </div>
-          <div class="modal-body">
-            <form class="form-horizontal" role="form">
-              <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="username">用户名</label>
+          <div class="modal fade" id="addUser" tabindex="-1" role="dialog"
+           aria-labelledby="addUserLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"
+                      data-dismiss="modal" aria-hidden="true">
+                &times;
+              </button>
+              <h4 class="modal-title" id="addUserLabel">
+                用户添加
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="username">用户名</label>
 
-                <div class="col-sm-9">
-                  <input type="text" id="username" placeholder="用户名" class="col-xs-10 col-sm-5" required ng-maxlength="20" ng-pattern="/[a-zA-Z]/" ng-model="user.username">
+                  <div class="col-sm-9">
+                    <input type="text" id="username" placeholder="用户名" class="col-xs-10 col-sm-5" required ng-maxlength="20" ng-pattern="/[a-zA-Z]/" ng-model="user.username">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="email">email</label>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="email">email</label>
 
-                <div class="col-sm-9">
-                  <input type="email" id="email" placeholder="email" class="col-xs-10 col-sm-5" required ng-maxlength="100" ng-model="user.email">
+                  <div class="col-sm-9">
+                    <input type="email" id="email" placeholder="email" class="col-xs-10 col-sm-5" required ng-maxlength="100" ng-model="user.email">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="password">password</label>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="password">password</label>
 
-                <div class="col-sm-9">
-                  <input type="text" id="password" placeholder="123456" class="col-xs-10 col-sm-5" ng-model="user.password" ng-maxlength="50">
-                  &nbsp;&nbsp;
-                  <button class="btn btn-primary btn-xs" ng-click="randPassword();">生成初始密码</button>
+                  <div class="col-sm-9">
+                    <input type="text" id="password" placeholder="123456" class="col-xs-10 col-sm-5" ng-model="user.password" ng-maxlength="50">
+                    &nbsp;&nbsp;
+                    <button class="btn btn-primary btn-xs" ng-click="randPassword();">生成初始密码</button>
+                  </div>
+
                 </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="userGroupName">用户名</label>
 
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default"
-                    data-dismiss="modal">关闭
-            </button>
-            <button type="button" class="btn btn-primary">
-              添加
-            </button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal -->
+                  <div class="col-sm-9">
+                    <input type="text" id="userGroupName" placeholder="用户组" class="col-xs-10 col-sm-5" required ng-maxlength="20" ng-model="user.selectedGroupName">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="groupList">用户组列表</label>
 
+                  <div class="col-sm-9">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"
+                      data-dismiss="modal">关闭
+              </button>
+              <button type="button" class="btn btn-primary">
+                添加
+              </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+      <!-- 模态框（Modal） -->
+      <div class="modal fade" id="addGroup" tabindex="-1" role="dialog"
+           aria-labelledby="addGroupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"
+                      data-dismiss="modal" aria-hidden="true">
+                &times;
+              </button>
+              <h4 class="modal-title" id="addGroupLabel">
+                用户组添加
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="groupName">用户组名</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" id="groupName" placeholder="用户组名" class="col-xs-10 col-sm-5" required ng-maxlength="20" ng-pattern="/[a-zA-Z]/" ng-model="user.username">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="groupUserName">用户组名</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" id="groupUserName" placeholder="用户名" class="col-xs-10 col-sm-5" required ng-maxlength="20" ng-pattern="/[a-zA-Z]/" ng-model="user.username">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label no-padding-right" for="userList">用户列表</label>
+
+                  <div class="col-sm-9">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default"
+                      data-dismiss="modal">关闭
+              </button>
+              <button type="button" class="btn btn-primary">
+                添加
+              </button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
     <!--置顶-->
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
       <i class="icon-double-angle-up icon-only bigger-110"></i>
