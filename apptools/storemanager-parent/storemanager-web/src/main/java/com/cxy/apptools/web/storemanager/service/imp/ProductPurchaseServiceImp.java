@@ -6,6 +6,7 @@ import com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderMapper;
 import com.cxy.apptools.persistence.storemanager.enums.OrderStatus;
 import com.cxy.apptools.web.storemanager.service.ProductPurchaseService;
 import com.cxy.apptools.web.storemanager.service.models.ProductPurchaseModel;
+import com.cxy.apptools.web.storemanager.vo.page.ProductPurchaseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,16 +22,16 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
     @Autowired
     private CxypurchaseorderMapper cxypurchaseorder;
 
-    public List<ProductPurchaseModel> GetAllOrders() {
+    public List<ProductPurchaseVo> GetAllOrders() {
         return ModelConverse(cxypurchaseorder.queryAllorders());
     }
-    public static List<ProductPurchaseModel> ModelConverse(List<Cxypurchaseorder> cxyorders)
+    public static List<ProductPurchaseVo> ModelConverse(List<Cxypurchaseorder> cxyorders)
     {
-        List<ProductPurchaseModel> list=new ArrayList<ProductPurchaseModel>();
+        List<ProductPurchaseVo> list=new ArrayList<ProductPurchaseVo>();
 
        for (Cxypurchaseorder order:cxyorders)
        {
-           ProductPurchaseModel model=new ProductPurchaseModel();
+           ProductPurchaseVo model=new ProductPurchaseVo();
            model.setId(order.getId());
            model.setComment(order.getComment());
            model.setCurrency(order.getCurrency());
