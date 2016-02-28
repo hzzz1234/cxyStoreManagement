@@ -24,7 +24,6 @@ com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$2.clas
 com\cxy\apptools\web\storemanager\vo\page\ClientDefineVo.class
 com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$6.class
 com\cxy\apptools\web\storemanager\vo\page\SpecAttrDefineVo.class
-com\cxy\apptools\web\storemanager\service\models\ProductPurchaseModel.class
 com\cxy\apptools\web\storemanager\controller\UserGroupAuthorityAdminController.class
 com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$10.class
 com\cxy\apptools\web\storemanager\vo\page\BasePageVo.class

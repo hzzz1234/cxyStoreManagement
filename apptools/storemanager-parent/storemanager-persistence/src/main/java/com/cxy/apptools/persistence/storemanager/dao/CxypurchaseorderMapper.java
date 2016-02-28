@@ -20,4 +20,5 @@ public interface CxypurchaseorderMapper {
 
     List<Cxypurchaseorder> queryCxypurchaseordersByBasequery(Cxypurchaseorderquery cxypurchaseorderquery);
     List<Cxypurchaseorder> queryAllorders();
+    boolean deleteMultiorders(String[] ids);
 }

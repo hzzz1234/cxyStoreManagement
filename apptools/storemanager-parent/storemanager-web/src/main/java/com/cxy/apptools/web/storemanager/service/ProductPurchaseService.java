@@ -1,7 +1,6 @@
 package com.cxy.apptools.web.storemanager.service;
 
 
-import com.cxy.apptools.web.storemanager.service.models.ProductPurchaseModel;
 import com.cxy.apptools.web.storemanager.vo.page.ProductPurchaseVo;
 
 
@@ -12,4 +11,6 @@ import java.util.List;
  */
 public interface ProductPurchaseService {
     public List<ProductPurchaseVo> GetAllOrders();
+    public boolean deleteOneOrder(int id);
+    public boolean deleteMultiOrder(String[] ids);
 }

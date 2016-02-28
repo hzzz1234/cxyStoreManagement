@@ -54,7 +54,7 @@
             &nbsp&nbsp<input type="button" value="导入采购单" onclick="">
             &nbsp&nbsp<input type="button" value="导出采购单" onclick="">
           </div>
-          <div class="col-xs-12" style="overflow: none">
+          <div class="col-xs-12" style="overflow: hidden">
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
               <div class="col-xs-12">

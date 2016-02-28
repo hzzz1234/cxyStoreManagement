@@ -27,7 +27,7 @@ public class ProductPurchaseController {
         ProductPurchaseVo productPurchaseVo = new ProductPurchaseVo();
         productPurchaseVo.init("product_purchase","采购列表");
         mv.addObject("basevo",productPurchaseVo);
-        mv.addObject("records",orderService.GetAllOrders());
+         mv.addObject("records",orderService.GetAllOrders());
         return mv;
     }
     @RequestMapping("purchaseForm")
@@ -35,5 +35,10 @@ public class ProductPurchaseController {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("productPurchaseForm");
         return mv;
+    }
+    @RequestMapping("purchaseDelete")
+    public boolean deleteOneOrder(int id){
+        System.out.printf(""+id);
+        return orderService.deleteOneOrder(id);
     }
 }

@@ -5,7 +5,6 @@ import com.cxy.apptools.domain.storemanager.Cxypurchaseorder;
 import com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderMapper;
 import com.cxy.apptools.persistence.storemanager.enums.OrderStatus;
 import com.cxy.apptools.web.storemanager.service.ProductPurchaseService;
-import com.cxy.apptools.web.storemanager.service.models.ProductPurchaseModel;
 import com.cxy.apptools.web.storemanager.vo.page.ProductPurchaseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +24,20 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
     public List<ProductPurchaseVo> GetAllOrders() {
         return ModelConverse(cxypurchaseorder.queryAllorders());
     }
+
+    @Override
+    public boolean deleteOneOrder(int id) {
+
+        cxypurchaseorder.deleteByPrimaryKey(id);
+        return false;
+    }
+
+    @Override
+    public boolean deleteMultiOrder(String[] ids) {
+        cxypurchaseorder.deleteMultiorders(ids);
+        return false;
+    }
+
     public static List<ProductPurchaseVo> ModelConverse(List<Cxypurchaseorder> cxyorders)
     {
         List<ProductPurchaseVo> list=new ArrayList<ProductPurchaseVo>();
