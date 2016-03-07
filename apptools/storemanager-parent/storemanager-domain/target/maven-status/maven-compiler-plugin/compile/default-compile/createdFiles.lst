@@ -2,6 +2,7 @@ com\cxy\apptools\domain\storemanager\Cxywarehousein.class
 com\cxy\apptools\domain\storemanager\Cxypurchaseorder.class
 com\cxy\apptools\domain\storemanager\Cxysellproductsizedetail.class
 com\cxy\apptools\domain\storemanager\Cxyselldetail.class
+com\cxy\apptools\domain\storemanager\CxypurchaseorderSum.class
 com\cxy\apptools\domain\storemanager\Authorities.class
 com\cxy\apptools\domain\storemanager\Cxyclient.class
 com\cxy\apptools\domain\storemanager\Cxypurchaseorderdetail.class

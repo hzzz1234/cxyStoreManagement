@@ -21,6 +21,7 @@ com\cxy\apptools\web\storemanager\controller\SupplierController.class
 com\cxy\apptools\web\storemanager\controller\ProductPurchaseController.class
 com\cxy\apptools\web\storemanager\service\CxyUserService.class
 com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$2.class
+com\cxy\apptools\web\storemanager\util\FormatConverse.class
 com\cxy\apptools\web\storemanager\vo\page\ClientDefineVo.class
 com\cxy\apptools\web\storemanager\service\imp\security\CxyUserServiceImpl$6.class
 com\cxy\apptools\web\storemanager\vo\page\SpecAttrDefineVo.class

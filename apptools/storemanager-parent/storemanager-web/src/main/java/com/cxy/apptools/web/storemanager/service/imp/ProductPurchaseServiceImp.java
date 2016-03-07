@@ -1,6 +1,11 @@
 package com.cxy.apptools.web.storemanager.service.imp;
 
-import com.cxy.apptools.com.utilitys.FormatConverse;
+
+import com.cxy.apptools.common.beans.Page;
+import com.cxy.apptools.domain.storemanager.CxypurchaseorderSum;
+import com.cxy.apptools.persistence.storemanager.enums.OrderTypeIndex;
+import com.cxy.apptools.persistence.storemanager.query.Cxypurchaseorderquery;
+import com.cxy.apptools.web.storemanager.util.FormatConverse;
 import com.cxy.apptools.domain.storemanager.Cxypurchaseorder;
 import com.cxy.apptools.persistence.storemanager.dao.CxypurchaseorderMapper;
 import com.cxy.apptools.persistence.storemanager.enums.OrderStatus;
@@ -18,33 +23,65 @@ import java.util.List;
 @Service("ProductPurchaseService")
 public class ProductPurchaseServiceImp implements ProductPurchaseService {
 
+
     @Autowired
-    private CxypurchaseorderMapper cxypurchaseorder;
+    public CxypurchaseorderMapper cxypurchaseorder;
 
     public List<ProductPurchaseVo> GetAllOrders() {
-        return ModelConverse(cxypurchaseorder.queryAllorders());
+        return ModelConverse(0,cxypurchaseorder.queryAllorders());
     }
 
-    @Override
     public boolean deleteOneOrder(int id) {
 
-        cxypurchaseorder.deleteByPrimaryKey(id);
-        return false;
+        int count=cxypurchaseorder.deleteByPrimaryKey(id);
+        if(count>0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
-    @Override
-    public boolean deleteMultiOrder(String[] ids) {
-        cxypurchaseorder.deleteMultiorders(ids);
-        return false;
+    public boolean deleteMultiOrder(List<Integer> ids) {
+        int count=0;
+        for(int i:ids){
+            cxypurchaseorder.deleteByPrimaryKey(i);
+            count++;
+        }
+        //int count=cxypurchaseorder.deleteMultiorders(ids);
+        if(count>0){
+          return true;
+        }else {
+            return false;
+        }
+
     }
 
-    public static List<ProductPurchaseVo> ModelConverse(List<Cxypurchaseorder> cxyorders)
+    public List<ProductPurchaseVo> GetOrdersByKeys(String keys,int startNum,int pageSize) {
+        Cxypurchaseorderquery keysModel=new Cxypurchaseorderquery();
+        keysModel.setSearchCondition(keys);
+        keysModel.setOrderField("create_time");
+        keysModel.setOrdertype(OrderTypeIndex.DESC);
+        List<String> searchFields=new ArrayList<String>();
+        searchFields.add("pouid");
+        keysModel.setSearchFields(searchFields);
+        CxypurchaseorderSum sum=cxypurchaseorder.queryCxySumByBasequery(keysModel);
+        Page page=new Page();
+        page.setPageSize((long)pageSize);
+        page.setStartItem((long)startNum);
+        keysModel.setPage(page);
+
+        return ModelConverse(sum.Sum,cxypurchaseorder.queryCxypurchaseordersByBasequery(keysModel));
+
+    }
+
+    public static List<ProductPurchaseVo> ModelConverse(int sum,List<Cxypurchaseorder> cxyorders)
     {
         List<ProductPurchaseVo> list=new ArrayList<ProductPurchaseVo>();
 
        for (Cxypurchaseorder order:cxyorders)
        {
            ProductPurchaseVo model=new ProductPurchaseVo();
+           model.orderSum=sum;
            model.setId(order.getId());
            model.setComment(order.getComment());
            model.setCurrency(order.getCurrency());
@@ -55,6 +92,7 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
            model.setShopid(order.getShopid());
            model.setStatus(GetOrderSatausName(order.getStatus()));
            model.setCreateTime(FormatConverse.ConverseDateFormat(order.getCreateTime(),"yyyy-mm-dd hh-mm-ss"));
+
            model.setPddate(FormatConverse.ConverseDateFormat(order.getPddate(),"yyyy-mm-dd hh-mm-ss"));
            model.setDatachangeLasttime( FormatConverse.ConverseDateFormat(order.getDatachangeLasttime(),"yyyy-mm-dd hh-mm-ss"));
            model.setRedate(FormatConverse.ConverseDateFormat(order.getRedate(),"yyyy-mm-dd hh-mm-ss"));

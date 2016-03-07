@@ -5,4 +5,3 @@ target/
 .idea/
 *.bak
 *.iml
-*.gitignore

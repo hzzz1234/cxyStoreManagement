@@ -104,7 +104,7 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-            <a href="${rc.contextPath}/productpurchase/purchase" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productpurchase/purchase?keys=&activePage=1" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-book"></i>
                 <span class="menu-text">采购列表</span>
             </a>

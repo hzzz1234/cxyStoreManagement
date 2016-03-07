@@ -1,4 +1,9 @@
-package com.cxy.apptools.com.utilitys;
+package com.cxy.apptools.web.storemanager.util;
+
+
+
+
+import org.springframework.util.StringUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -10,7 +15,9 @@ public class FormatConverse {
     public static String ConverseDateFormat(Date date,String formatStr){
         SimpleDateFormat formatter;
         formatter = new SimpleDateFormat(formatStr);
-        String ctime = formatter.format(date);
+        boolean a=date==null;
+        String ctime=date==null?"":formatter.format(date);
+        System.out.println(a);
         return ctime;
     }
 }

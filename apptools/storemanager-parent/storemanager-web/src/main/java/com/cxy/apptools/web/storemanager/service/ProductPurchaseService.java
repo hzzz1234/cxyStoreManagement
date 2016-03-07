@@ -12,5 +12,6 @@ import java.util.List;
 public interface ProductPurchaseService {
     public List<ProductPurchaseVo> GetAllOrders();
     public boolean deleteOneOrder(int id);
-    public boolean deleteMultiOrder(String[] ids);
+    public boolean deleteMultiOrder(List<Integer> ids);
+    public List<ProductPurchaseVo> GetOrdersByKeys(String keys,int startNum,int pageSize);
 }

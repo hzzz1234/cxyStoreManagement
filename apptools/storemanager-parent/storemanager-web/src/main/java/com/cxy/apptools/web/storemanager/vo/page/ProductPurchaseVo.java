@@ -8,6 +8,7 @@ import java.util.Date;
  */
 public class ProductPurchaseVo extends BasePageVo {
 
+    public int orderSum=0;
     private Integer id;
     private String pouid;
     private Integer shopid;
