@@ -52,13 +52,13 @@ public class ProductPurchaseController {
     @ResponseBody
     @RequestMapping("purchaseDeleteOne")
     public boolean deleteOneOrder(int id){
-        System.out.printf(""+id);
+        log.info("方法deleteOneOrder，參數id="+id);
         return orderService.deleteOneOrder(id);
     }
     @ResponseBody
     @RequestMapping("purchaseDeleteMulti")
     public boolean deleteMultiOrder(String ids){
-        System.out.printf(""+ids);
+        log.info("方法deleteOneOrder，參數ids="+ids);
         if(ids==null){
             return false;
         }
