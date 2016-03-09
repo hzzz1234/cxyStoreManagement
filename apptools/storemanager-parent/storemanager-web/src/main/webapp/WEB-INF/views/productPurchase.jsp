@@ -12,7 +12,12 @@
   <title>货品采购</title>
   <%@ include file="/common/common.jsp"%>
 <link href="${rc.contextPath}/webresources/storemanager/css/ProductPurchase.css" type="text/css" rel="stylesheet"/>
+<style>
+  #search-button{
 
+  }
+
+</style>
 </head>
 
 <body ng-controller="productCtrl">
@@ -49,12 +54,13 @@
         </div>
         <div class="row">
           <div class="col-xs-12" style="margin-bottom: 10px">
-            <input type="button" value="新增采购单据" onclick="WriteForm('${rc.contextPath}/productpurchase/purchaseForm')">
-            &nbsp&nbsp<input type="button" value="刷新记录" onclick="">
-            &nbsp&nbsp<input type="button" value="导入采购单" onclick="">
-            &nbsp&nbsp<input type="button" value="导出采购单" onclick="">
+            <button class=" btn btn-sm btn-success" onclick="WriteForm('${rc.contextPath}/productpurchase/purchaseForm')">新增采购单据</button>
+            &nbsp&nbsp<button class=" btn btn-sm btn-success" onclick="deleteMulti()">批量删除</button>
+            &nbsp&nbsp<button class=" btn btn-sm btn-success" onclick="reQuery()">刷新记录</button>
+            &nbsp&nbsp<button class=" btn btn-sm btn-success">导入采购单</button>
+            &nbsp&nbsp<button class=" btn btn-sm btn-success">导出采购单</button>
           </div>
-          <div class="col-xs-12" style="overflow: scroll">
+          <div class="col-xs-12" style="overflow: hidden">
             <!-- PAGE CONTENT BEGINS -->
             <div class="row">
               <div class="col-xs-12">
@@ -64,7 +70,7 @@
 
                   <div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline" role="grid">
                     <div class="row">
-                      <div class="col-xs-6">
+                      <div class="col-xs-6" >
                         <div id="sample-table-2_length" class="dataTables_length">
                           <label>显示:
                             <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
@@ -78,12 +84,13 @@
                         </div>
                       </div>
                       <div class="col-xs-6">
-                        <div class="dataTables_filter" id="sample-table-2_filter">
-                          <label>搜索: <input type="text" aria-controls="sample-table-2"></label>
-                        </div>
+                        <span class="input-icon" style="right: 0px;float: right;" >
+			           <input type="text" placeholder="采购单据号" class="nav-search-input" id="search-input" value="${keywords}">
+			           <i class="icon-search nav-search-icon" onclick="queryByKeys()"></i>
+			           </span>
                       </div>
                     </div>
-                    <div style="overflow: auto;width: 100%;height: 100%;" >
+                    <div style="overflow: auto;width: 100%;" >
                     <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" style="width: 1300px">
                     <thead >
                     <tr role="row">
@@ -112,17 +119,17 @@
 
                     <c:forEach var="record" items="${records}">
 
-                      <tr class="odd tableColoumHeadStyle">
+                      <tr  class="odd tableColoumHeadStyle" id="${record.id}">
                         <td class="center  sorting_1 tableColoumHeadStyle">
                           <label class="position-relative">
-                            <input type="checkbox" class="ace" name="checkItem">
+                            <input type="checkbox" class="ace" name="tbody_checkItem" value="${record.id}">
                             <span class="lbl"></span>
                           </label>
                         </td>
 
                         <td class="tableColoumOperateStyle">
                           <div class="hidden-sm hidden-xs action-buttons" width="auto">
-                            <a class="blue" href="#">
+                            <a class="blue" href="javascirpt:void(0)" onclick="">
                               <i class="ace-icon glyphicon glyphicon-zoom-in"></i>
                             </a>
 
@@ -131,7 +138,7 @@
                             </a>
 
                             <a class="red" href="#">
-                              <i class="ace-icon glyphicon glyphicon-minus"></i>
+                              <i class="ace-icon glyphicon glyphicon-minus" onclick="deleteOne(${record.id})"></i>
                             </a>
                           </div>
                         </td>
@@ -144,7 +151,6 @@
                         <td class="tableColoumContentStyle">${record.totalamout}</td>
                         <td class="tableColoumContentStyle">${record.payamount}</td>
                         <td class="tableColoumContentStyle"><span style="color:#696969">${record.repsor}</span></td>
-
                         <td class="hidden-480 tableColoumSatausStyle">
                           <span class="label label-sm label-warning">${record.status}</span>
                         </td>
@@ -162,28 +168,30 @@
                     </div>
                     <div class="row">
                       <div class="col-xs-6">
-                        <div class="dataTables_info" id="sample-table-2_info">显示 1 到 10  记录</div>
+                        <div class="dataTables_info" id="sample-table-2_info">显示<span id="start_span">${startIndex}</span> 到 <span id="end_span">${endIndex}</span>  记录</div>
                       </div>
                       <div class="col-xs-6">
                         <div class="dataTables_paginate paging_bootstrap">
-                          <ul class="pagination">
-                            <li class="prev disabled">
-                              <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                          <ul class="pagination" id="pagination">
+                            <!--
+                            <li class="prev">
+                              <a href="#"><i class="icon-fast-backward"></i></a>
                             </li>
-                            <li class="prev disabled">
-                              <a href="#"><i class="fa fa-angle-left"></i></a>
+                            <li class="prev">
+                              <a href="#"><i class=" icon-step-backward"></i></a>
                             </li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li class="next">
-                              <a href="#"><i class="fa fa-angle-right"></i></a>
+                              <a href="#"><i class="icon-step-forward"></i></a>
                             </li>
                             <li class="next">
                               <a href="#">
-                                <i class="fa fa-angle-double-right"></i>
+                                <i class="icon-fast-forward"></i>
                               </a>
                             </li>
+                            -->
                           </ul>
                         </div>
                       </div>
@@ -234,11 +242,9 @@
       <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
   </div>
+  <div id="pageCount" style="display: none">${pageCount}</div>
+  <div id="pageSize" style="display: none">${pageSize}</div>
   <%@ include file="/common/foot.jsp"%>
-
-  <script src="${rc.contextPath}/webresources/storemanager/js/productPurchase.js"></script>
-
-
   <script src="${rc.contextPath}/webresources/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- page specific plugin scripts -->
@@ -252,7 +258,6 @@
 
   <!-- inline scripts related to this page -->
 
-
   <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/ace.onpage-help.css" />
   <link rel="stylesheet" href="${rc.contextPath}/webresources/assets/css/sunburst.css" />
 
@@ -263,16 +268,23 @@
   <script src="${rc.contextPath}/webresources/assets/js/html.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/css.js"></script>
   <script src="${rc.contextPath}/webresources/assets/js/javascript.js"></script>
+  <script src="${rc.contextPath}/webresources/storemanager/js/commonWindows.js"></script>
+  <script src="${rc.contextPath}/webresources/storemanager/js/commPaging.js"></script>
+  <script src="${rc.contextPath}/webresources/storemanager/js/productPurchase.js"></script>
+
 
   <script type="text/javascript">
+    debugger;
+    //初始化分页部分
     function checkClick(obj) {
 // 全选或者全不选
+      debugger;
       if(obj.checked)
       {
-        $("[name = checkItem]:checkbox").attr("checked",'true');
+        $("[name = tbody_checkItem]:checkbox").attr("checked",'true');
 
       }else{
-        $("[name = checkItem]:checkbox").attr("checked", false);
+        $("[name = tbody_checkItem]:checkbox").attr("checked", false);
       }
 
     }

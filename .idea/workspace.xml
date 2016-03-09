@@ -5,8 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb4532b1-6086-4670-9dbf-1303e83ade09" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/LoginLogoutController.java" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/LoginLogoutController.java" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductDefineService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductDefineServiceImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/SpecAttrDefineService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SpecAttrDefineServiceImp.java" />
+      <change type="DELETED" beforePath="F:\Users\cxyStoreManagement\apptools\arts-report\target\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="F:\Users\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyuserrolesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Users\cxyStoreManagement\apptools\storemanager-parent\storemanager-persistence\target\classes\com\cxy\apptools\persistence\storemanager\mapper\CxyusersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\Users\cxyStoreManagement\apptools\target\MANIFEST.MF" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/arts-report-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/arts-report/target/arts-report-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/storemanager-common-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/storemanager-common-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/storemanager-domain-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/storemanager-domain-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/storemanager-job-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/storemanager-job-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/storemanager-persistence-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/storemanager-persistence-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/storemanager-rest.war" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/storemanager-rest.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/mapper/CxyspecattrMapper.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/mapper/CxyspecattrMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrtypeMapper.java" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrtypeMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/TEST-com.cxy.apptools.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/arts-report/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/com.cxy.apptools.AppTest.txt" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/surefire-reports/com.cxy.apptools.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/arts-report/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/arts-report/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-job/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-rest/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rebel_project.xml" afterPath="$PROJECT_DIR$/.idea/rebel_project.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/storemanager-common.iml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-common/storemanager-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/storemanager-persistence.iml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/storemanager-persistence.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/storemanager-web.iml" afterPath="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/storemanager-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/storemanager_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/storemanager_web_war_exploded.xml" />
+=======
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="parent.iws" />
@@ -38,107 +101,385 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="basequery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/query/basequery.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+      <file leaf-file-name="SpecAttrDefineService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/SpecAttrDefineService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="productPurchase.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/productPurchase.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16493055" vertical-offset="1425" max-vertical-offset="5510">
+              <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
               <folding />
+>>>>>>> 修改采购
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Cxypurchaseorderquery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/query/Cxypurchaseorderquery.java">
+=======
+      <file leaf-file-name="CxyspecattrMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/mapper/CxyspecattrMapper.xml">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
+=======
+              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+              <folding>
+                <marker date="1454655836150" expanded="true" signature="963:1086" placeholder="select from ..cxyspecattr..." />
+                <marker date="1454655836150" expanded="true" signature="1172:1249" placeholder="delete from ..." />
+                <marker date="1454655836150" expanded="true" signature="1395:1699" placeholder="insert into ..." />
+                <marker date="1454655836150" expanded="true" signature="2951:3500" placeholder="update cxysp..." />
+                <marker date="1454655836150" expanded="true" signature="3617:3928" placeholder="update cxysp..." />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="323">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="false" />
+>>>>>>> 修改采购
+              </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="BaseMapperTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/BaseMapperTest.java">
+=======
+      <file leaf-file-name="ProductDefineService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductDefineService.java">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
+=======
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="684">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="false" />
+>>>>>>> 修改采购
+              </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CxyclientcategoryMapperTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/CxyclientcategoryMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+      <file leaf-file-name="ProductDefineServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductDefineServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/webresources/storemanager/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1463">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CxypurchaseorderMapperTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+=======
+      <file leaf-file-name="productInStore.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/productInStore.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-129.14285" vertical-offset="15555" max-vertical-offset="20292">
+              <caret line="1009" column="0" selection-start-line="1009" selection-start-column="0" selection-end-line="1009" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
               <folding />
+>>>>>>> 修改采购
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CxypurchaseorderMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding />
+=======
+      <file leaf-file-name="CxyUserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/CxyUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="323">
+              <caret line="12" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CxypurchaseorderproductsizedetailMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderproductsizedetailMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
+=======
+      <file leaf-file-name="CxyUserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/security/CxyUserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+            <state vertical-scroll-proportion="-3.0414746">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <marker date="1454639287952" expanded="true" signature="1849:1926" placeholder="insert into ..." />
+                <marker date="1454639287952" expanded="true" signature="1995:2031" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="2100:2176" placeholder="update users..." />
+                <marker date="1454639287952" expanded="true" signature="2250:2308" placeholder="insert into ..." />
+                <marker date="1454639287952" expanded="true" signature="2389:2431" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="2500:2545" placeholder="select usern..users..." />
+                <marker date="1454639287952" expanded="true" signature="2618:2666" placeholder="update users..." />
+                <marker date="1454639287952" expanded="true" signature="2761:2790" placeholder="select group..groups..." />
+                <marker date="1454639287952" expanded="true" signature="2867:3010" placeholder="select usern..group_members..." />
+                <marker date="1454639287952" expanded="true" signature="3080:3122" placeholder="insert into ..." />
+                <marker date="1454639287952" expanded="true" signature="3193:3235" placeholder="select id fr..groups..." />
+                <marker date="1454639287952" expanded="true" signature="3315:3379" placeholder="insert into ..." />
+                <marker date="1454639287952" expanded="true" signature="3449:3480" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="3562:3610" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="3688:3732" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="3802:3855" placeholder="update group..." />
+                <marker date="1454639287952" expanded="true" signature="3932:3991" placeholder="insert into ..." />
+                <marker date="1454639287952" expanded="true" signature="4068:4129" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="4210:4406" placeholder="select g.id,..groups..." />
+                <marker date="1454639287952" expanded="true" signature="4487:4553" placeholder="delete from ..." />
+                <marker date="1454639287952" expanded="true" signature="7331:7446" placeholder="select usern..users..." />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="2432">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="e#622#623#0" expanded="false" />
+                <element signature="e#650#651#0" expanded="false" />
+                <element signature="e#680#681#0" expanded="false" />
+                <element signature="e#705#706#0" expanded="false" />
+                <element signature="e#739#740#0" expanded="false" />
+                <element signature="e#767#768#0" expanded="false" />
+                <element signature="e#801#802#0" expanded="false" />
+                <element signature="e#830#831#0" expanded="false" />
+                <element signature="e#869#870#0" expanded="false" />
+                <element signature="e#902#903#0" expanded="false" />
+                <element signature="e#1013#1014#0" expanded="false" />
+                <element signature="e#1047#1048#0" expanded="false" />
+                <element signature="e#1092#1093#0" expanded="false" />
+                <element signature="e#1128#1129#0" expanded="false" />
+                <element signature="e#1180#1181#0" expanded="false" />
+                <element signature="e#1224#1225#0" expanded="false" />
+                <element signature="e#1268#1269#0" expanded="false" />
+                <element signature="e#1304#1305#0" expanded="false" />
+                <element signature="e#1372#1373#0" expanded="false" />
+                <element signature="e#1432#1433#0" expanded="false" />
+                <element signature="e#1573#1574#0" expanded="false" />
+                <element signature="e#1609#1610#0" expanded="false" />
+                <element signature="e#1653#1654#0" expanded="false" />
+                <element signature="e#1689#1690#0" expanded="false" />
+                <element signature="e#1733#1734#0" expanded="false" />
+                <element signature="e#1769#1770#0" expanded="false" />
+                <element signature="e#1903#1904#0" expanded="false" />
+                <element signature="e#1943#1944#0" expanded="false" />
+                <element signature="e#1993#1994#0" expanded="false" />
+                <element signature="e#2035#2036#0" expanded="false" />
+                <element signature="e#2084#2085#0" expanded="false" />
+                <element signature="e#2124#2125#0" expanded="false" />
+                <element signature="e#2177#2178#0" expanded="false" />
+                <element signature="e#2221#2222#0" expanded="false" />
+                <element signature="e#2257#2258#0" expanded="false" />
+                <element signature="e#2288#2289#0" expanded="false" />
+                <element signature="e#2333#2334#0" expanded="false" />
+                <element signature="e#2374#2375#0" expanded="false" />
+                <element signature="e#2474#2475#0" expanded="false" />
+                <element signature="e#2507#2508#0" expanded="false" />
+                <element signature="e#2603#2604#0" expanded="false" />
+                <element signature="e#2632#2633#0" expanded="false" />
+                <element signature="e#2729#2730#0" expanded="false" />
+                <element signature="e#2759#2760#0" expanded="false" />
+                <element signature="e#2795#2796#0" expanded="false" />
+                <element signature="e#2826#2827#0" expanded="false" />
+>>>>>>> 修改采购
+              </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="66" column="22" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="22" />
               <folding />
+=======
+      <file leaf-file-name="SpecAttrDefineServiceImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SpecAttrDefineServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+                <element signature="imports" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+=======
+                <element signature="imports" expanded="false" />
+                <element signature="e#1143#1165#0" expanded="false" />
+                <element signature="e#2429#2430#0" expanded="false" />
+                <element signature="e#2482#2483#0" expanded="false" />
+>>>>>>> 修改采购
+              </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="LoginLogoutController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/LoginLogoutController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.13949275">
               <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
+=======
+      <file leaf-file-name="CxyspecattrtypeMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrtypeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="380">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <element signature="e#231#232#0" expanded="false" />
+                <element signature="e#263#264#0" expanded="false" />
+                <element signature="e#294#295#0" expanded="false" />
+                <element signature="e#321#322#0" expanded="false" />
+                <element signature="e#361#362#0" expanded="false" />
+                <element signature="e#393#394#0" expanded="false" />
+>>>>>>> 修改采购
+              </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="CxysuppliercategoryMapperTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/CxysuppliercategoryMapperTest.java">
+=======
+      <file leaf-file-name="specAttrDefine.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/specAttrDefine.jsp">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
               <folding />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="836">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <element signature="e#632#633#0" expanded="false" />
+                <element signature="e#659#660#0" expanded="false" />
+                <element signature="e#699#700#0" expanded="false" />
+                <element signature="e#731#732#0" expanded="false" />
+                <element signature="e#760#761#0" expanded="false" />
+                <element signature="e#788#789#0" expanded="false" />
+                <element signature="e#827#828#0" expanded="false" />
+                <element signature="e#861#862#0" expanded="false" />
+              </folding>
+>>>>>>> 修改采购
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,10 +528,19 @@
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/models/ProductPurchaseModel.java" />
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductPurchaseServiceImp.java" />
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/webresources/storemanager/js/main.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAdmin.jsp" />
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/userGroupAuthorityAdmin.jsp" />
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/AuthoritiesMapper.java" />
         <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/LoginLogoutController.java" />
+=======
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrtypeMapper.java" />
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/SpecAttrDefineService.java" />
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SpecAttrDefineServiceImp.java" />
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/mapper/CxyspecattrMapper.xml" />
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductDefineService.java" />
+        <option value="$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductDefineServiceImp.java" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       </list>
     </option>
   </component>
@@ -201,8 +551,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/tool/apache-maven-3.2.5" />
-        <option name="userSettingsFile" value="E:\tool\apache-maven-3.2.5\conf\settings.xml" />
+        <option name="mavenHome" value="F:/Program Files/apache-maven-3.3.3-bin/apache-maven-3.3.3" />
+        <option name="userSettingsFile" value="F:\Program Files\apache-maven-3.3.3-bin\apache-maven-3.3.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -223,6 +573,20 @@
           <option name="myItemId" value="storemanager-web Maven Webapp" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="storemanager-web Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -237,12 +601,20 @@
           <option name="myItemId" value="Plugins" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+=======
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jetty" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+>>>>>>> 修改采购
       </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
         <PATH_ELEMENT>
           <option name="myItemId" value="storemanager-web Maven Webapp" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
@@ -254,27 +626,7 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="jetty" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="storemanager-web Maven Webapp" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
+=======
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -298,6 +650,7 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Plugins" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+>>>>>>> 修改采购
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -305,38 +658,7 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="storemanager-persistence" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="parent" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="parent" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
       </PATH>
     </treeState>
   </component>
@@ -346,8 +668,30 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
+=======
+        <PATH_ELEMENT>
+          <option name="myItemId" value="storemanager-persistence" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="install" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+>>>>>>> 修改采购
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -374,19 +718,16 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="parent" />
@@ -1322,12 +1663,29 @@
               <option name="myItemId" value="apptools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           </PATH>
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+>>>>>>> 修改采购
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="parent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <PATH_ELEMENT>
               <option name="myItemId" value="apptools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -1364,6 +1722,12 @@
               <option name="myItemId" value="query" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+=======
+>>>>>>> 修改采购
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1374,6 +1738,7 @@
               <option name="myItemId" value="apptools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <PATH_ELEMENT>
               <option name="myItemId" value="storemanager-parent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -1407,8 +1772,303 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="basequery.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+=======
+              <option name="myItemId" value="imp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+            </PATH_ELEMENT>
+=======
+>>>>>>> 修改采购
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+=======
+>>>>>>> 修改采购
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="storemanager-persistence" />
+=======
+              <option name="myItemId" value="storemanager-web" />
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+=======
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="storemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+=======
+              <option name="myItemId" value="storemanager-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+=======
+              <option name="myItemId" value="webapp" />
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="storemanager-persistence" />
+=======
+              <option name="myItemId" value="storemanager-web" />
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-persistence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+=======
+              <option name="myItemId" value="webapp" />
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apptools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storemanager-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="storemanager-persistence" />
+=======
+              <option name="myItemId" value="storemanager-web" />
+>>>>>>> 修改采购
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+              <option name="myItemId" value="storemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1450,6 +2110,9 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mapper" />
+=======
+              <option name="myItemId" value="views" />
+>>>>>>> 修改采购
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1467,7 +2130,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
               <option name="myItemId" value="storemanager-persistence" />
+=======
+              <option name="myItemId" value="storemanager-web" />
+>>>>>>> 修改采购
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1478,44 +2145,7 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apptools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storemanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apptools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storemanager-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storemanager-persistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -1550,11 +2180,16 @@
               <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> 修改采购
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1693,6 +2328,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
       <method />
@@ -1944,7 +2590,9 @@
       <workItem from="1451915824716" duration="2675000" />
       <workItem from="1451955012295" duration="104000" />
       <workItem from="1452061615188" duration="35509000" />
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
       <workItem from="1452156530830" duration="6437000" />
+<<<<<<< HEAD
       <workItem from="1452954793020" duration="4486000" />
       <workItem from="1453119159260" duration="559000" />
       <workItem from="1453722142074" duration="4648000" />
@@ -1952,14 +2600,40 @@
       <workItem from="1456322470399" duration="1269000" />
       <workItem from="1456630295578" duration="2369000" />
       <workItem from="1456750182355" duration="3945000" />
+=======
+      <workItem from="1452954793020" duration="3239000" />
+      <workItem from="1454639508772" duration="6165000" />
+      <workItem from="1454661448893" duration="1544000" />
+=======
+      <workItem from="1452156530830" duration="8614000" />
+      <workItem from="1452520987487" duration="142000" />
+      <workItem from="1452747738859" duration="4526000" />
+      <workItem from="1452955095099" duration="3134000" />
+      <workItem from="1456187074200" duration="1351000" />
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="123832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+    <option name="totallyTimeSpent" value="114868000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1386" height="788" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="115250000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1967,7 +2641,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28773585" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16862956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33115825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1976,6 +2652,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28907922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21459854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31970802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1983,17 +2667,47 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27951002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+=======
+=======
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.103953145" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26573938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33115825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27951002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32205883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798742" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22798742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+>>>>>>> 修改采购
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2024,7 +2738,11 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
+<<<<<<< HEAD
       <option name="time" value="6" />
+=======
+      <option name="time" value="5" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2033,7 +2751,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/vo/page/MainVo.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/models/ProductPurchaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SupplierServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#879#880#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/main.jsp">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -2043,9 +2791,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/vo/page/ProductDefineVo.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.686722">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
@@ -2059,17 +2812,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductPurchaseServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
+=======
+        <state vertical-scroll-proportion="-10.178572">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SupplierServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
+=======
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
@@ -2094,17 +2856,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/CxyUserService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.54545456">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductPurchaseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
+=======
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
@@ -2156,6 +2927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/GroupsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
@@ -2167,6 +2939,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
+=======
+        <state vertical-scroll-proportion="-20.464285">
+          <caret line="138" column="52" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="52" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
@@ -2210,6 +2986,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyproductcategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2238,10 +3015,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/filter/CharacterEncodingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductPurchaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyselldetailMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2302,69 +3107,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SupplierServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#879#880#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/src/main/java/com/cxy/apptools/domain/storemanager/Cxypurchaseorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.378788">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/models/ProductPurchaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/enums/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/hello.jsp">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/productSale.jsp">
+>>>>>>> 修改采购
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/webresources/storemanager/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="90" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductPurchaseServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxysuppliercategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxysupplierMapper.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/MetaDefineController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="38" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxysupplierMapper.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderMapper.java">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+          <caret line="10" column="40" selection-start-line="8" selection-start-column="32" selection-end-line="10" selection-end-column="40" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
+          <caret line="0" column="249" selection-start-line="0" selection-start-column="249" selection-end-line="0" selection-end-column="249" />
+>>>>>>> 修改采购
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyunitMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/src/main/java/com/cxy/apptools/domain/storemanager/Cxyspecattr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxywarehouseindetailMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxywarehouseinMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/supplierDefine.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/GroupauthoritiesMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/specAttrDefine.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/src/main/java/com/cxy/apptools/domain/storemanager/Cxypurchaseorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37445888" vertical-offset="1328" max-vertical-offset="2166">
+          <caret line="118" column="28" selection-start-line="118" selection-start-column="28" selection-end-line="118" selection-end-column="28" />
+>>>>>>> 修改采购
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/cxywarehouseinsizedetailMapper.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/SpecAttrDefineServiceImp.java">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+=======
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+=======
+        <state vertical-scroll-proportion="-0.86698335" vertical-offset="365" max-vertical-offset="1216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
+>>>>>>> 修改采购
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/GroupmembersMapper.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxyspecattrtypeMapper.java">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
@@ -2388,18 +3336,95 @@
             <marker date="1451155324132" expanded="true" signature="-1:-1" placeholder="insert into ..." />
             <marker date="1451155324132" expanded="true" signature="-1:-1" placeholder="update autho..." />
             <marker date="1451155324132" expanded="true" signature="-1:-1" placeholder="update autho..." />
+=======
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="836">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#788#789#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#861#862#0" expanded="false" />
+>>>>>>> 修改采购
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/mapper/CxyspecattrMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+          <folding>
+            <marker date="1454655836150" expanded="true" signature="963:1086" placeholder="select from ..cxyspecattr..." />
+            <marker date="1454655836150" expanded="true" signature="1172:1249" placeholder="delete from ..." />
+            <marker date="1454655836150" expanded="true" signature="1395:1699" placeholder="insert into ..." />
+            <marker date="1454655836150" expanded="true" signature="2951:3500" placeholder="update cxysp..." />
+            <marker date="1454655836150" expanded="true" signature="3617:3928" placeholder="update cxysp..." />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#231#232#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+>>>>>>> 修改采购
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/SpecAttrDefineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="27" />
+          <folding>
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+            <element signature="imports" expanded="true" />
+=======
+            <element signature="imports" expanded="false" />
+            <element signature="e#1143#1165#0" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2482#2483#0" expanded="false" />
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/query/basequery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-domain/src/main/java/com/cxy/apptools/domain/storemanager/Cxyproductcategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.06758833">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> 修改采购
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/query/Cxypurchaseorderquery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2409,8 +3434,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/BaseMapperTest.java">
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/ProductDefineService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/ProductDefineServiceImp.java">
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -2420,10 +3460,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+=======
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="2432">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#801#802#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#869#870#0" expanded="false" />
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1092#1093#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1180#1181#0" expanded="false" />
+            <element signature="e#1224#1225#0" expanded="false" />
+            <element signature="e#1268#1269#0" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
+            <element signature="e#1573#1574#0" expanded="false" />
+            <element signature="e#1609#1610#0" expanded="false" />
+            <element signature="e#1653#1654#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+            <element signature="e#1733#1734#0" expanded="false" />
+            <element signature="e#1769#1770#0" expanded="false" />
+            <element signature="e#1903#1904#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2035#2036#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2124#2125#0" expanded="false" />
+            <element signature="e#2177#2178#0" expanded="false" />
+            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2288#2289#0" expanded="false" />
+            <element signature="e#2333#2334#0" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2507#2508#0" expanded="false" />
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2632#2633#0" expanded="false" />
+            <element signature="e#2729#2730#0" expanded="false" />
+            <element signature="e#2759#2760#0" expanded="false" />
+            <element signature="e#2795#2796#0" expanded="false" />
+            <element signature="e#2826#2827#0" expanded="false" />
+>>>>>>> 修改采购
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.3.RELEASE/spring-security-core-3.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.21187802">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
+          <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="12" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> 修改采购
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/test/java/com/cxy/apptools/persistence/storemanager/dao/CxysuppliercategoryMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2436,39 +3565,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/CxyUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="684">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+>>>>>>> 修改采购
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/resources/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 1bf250ab0bfb40ba3517ec6cb89b1e7ce24e8558
+        <state vertical-scroll-proportion="-1.1187801">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1463">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-persistence/src/main/java/com/cxy/apptools/persistence/storemanager/dao/CxypurchaseorderproductsizedetailMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/productInStore.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-129.14285" vertical-offset="15555" max-vertical-offset="20292">
+          <caret line="1009" column="0" selection-start-line="1009" selection-start-column="0" selection-end-line="1009" selection-end-column="0" />
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/webapp/WEB-INF/views/productPurchase.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16493055" vertical-offset="1425" max-vertical-offset="5510">
+          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+>>>>>>> 修改采购
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/controller/LoginLogoutController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13949275">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/apptools/storemanager-parent/storemanager-web/src/main/java/com/cxy/apptools/web/storemanager/service/imp/security/CxyUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0414746">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1454639287952" expanded="true" signature="1849:1926" placeholder="insert into ..." />
+            <marker date="1454639287952" expanded="true" signature="1995:2031" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="2100:2176" placeholder="update users..." />
+            <marker date="1454639287952" expanded="true" signature="2250:2308" placeholder="insert into ..." />
+            <marker date="1454639287952" expanded="true" signature="2389:2431" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="2500:2545" placeholder="select usern..users..." />
+            <marker date="1454639287952" expanded="true" signature="2618:2666" placeholder="update users..." />
+            <marker date="1454639287952" expanded="true" signature="2761:2790" placeholder="select group..groups..." />
+            <marker date="1454639287952" expanded="true" signature="2867:3010" placeholder="select usern..group_members..." />
+            <marker date="1454639287952" expanded="true" signature="3080:3122" placeholder="insert into ..." />
+            <marker date="1454639287952" expanded="true" signature="3193:3235" placeholder="select id fr..groups..." />
+            <marker date="1454639287952" expanded="true" signature="3315:3379" placeholder="insert into ..." />
+            <marker date="1454639287952" expanded="true" signature="3449:3480" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="3562:3610" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="3688:3732" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="3802:3855" placeholder="update group..." />
+            <marker date="1454639287952" expanded="true" signature="3932:3991" placeholder="insert into ..." />
+            <marker date="1454639287952" expanded="true" signature="4068:4129" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="4210:4406" placeholder="select g.id,..groups..." />
+            <marker date="1454639287952" expanded="true" signature="4487:4553" placeholder="delete from ..." />
+            <marker date="1454639287952" expanded="true" signature="7331:7446" placeholder="select usern..users..." />
+          </folding>
+>>>>>>> 588e23178e495c25bd060f97a6a682e7b20ee09f
         </state>
       </provider>
     </entry>
@@ -2514,7 +3713,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2531,6 +3730,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
