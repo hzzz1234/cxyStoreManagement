@@ -1,5 +1,6 @@
 <!--meta-->
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--css-->
 <link href="${rc.contextPath}/webresources/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
@@ -28,7 +29,8 @@
 <script type="text/javascript">
     var ctx = '${rc.contextPath}';
 </script>
-
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="bookmark" href="/favicon.ico"/>
     <!--jQuery-->
     <!--[if !IE]> -->
     <script src="${rc.contextPath}/webresources/jquery/js/jquery.min.js" ></script>
