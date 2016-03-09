@@ -1,7 +1,8 @@
 package com.cxy.apptools.web.storemanager.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class LoginLogoutController extends BaseController{
 
+    private static final Logger log = LoggerFactory.getLogger(LoginLogoutController.class);
     @RequestMapping("/login")
     public ModelAndView login(@RequestParam(value="error",required = false) String error){
         ModelAndView mv = new ModelAndView();
