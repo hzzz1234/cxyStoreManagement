@@ -18,6 +18,7 @@
         <mapper resource="com/cxy/apptools/persistence/storemanager/mapper/CxycurrencyMapper.xml"/>
         <mapper resource="com/cxy/apptools/persistence/storemanager/mapper/CxypurchaseorderMapper.xml"/>
         <mapper resource="com/cxy/apptools/persistence/storemanager/mapper/CxysuppliercategoryMapper.xml"/>
+        <mapper resource="com/cxy/apptools/persistence/storemanager/mapper/CxypurchaseorderdetailMapper.xml"/>
         <package name="com.cxy.apptools.persistence.storemanager.mapper" />
     </mappers>
 </configuration>

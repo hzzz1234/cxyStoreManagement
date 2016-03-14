@@ -54,7 +54,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12" style="margin-bottom: 10px">
-            <button class=" btn btn-sm btn-success" onclick="WriteForm('${rc.contextPath}/productpurchase/purchaseForm')">新增采购单据</button>
+            <a class=" btn btn-sm btn-success" href="${rc.contextPath}/productpurchasedetail/0" target="_blank">新增采购单据</a>
             &nbsp&nbsp<button class=" btn btn-sm btn-success" onclick="deleteMulti()">批量删除</button>
             &nbsp&nbsp<button class=" btn btn-sm btn-success" onclick="reQuery()">刷新记录</button>
             &nbsp&nbsp<button class=" btn btn-sm btn-success">导入采购单</button>
@@ -143,7 +143,7 @@
                           </div>
                         </td>
                         <td class="tableColoumContentStyle">
-                          <a href="#">${record.pouid}</a>
+                          <a href="${rc.contextPath}/productpurchasedetail/${record.id}" target="_blank">${record.pouid}</a>
                         </td>
                         <td class="tableColoumContentStyle">${record.supplierid}</td>
                         <td class="tableColoumContentStyle">${record.shopid}</td>
