@@ -67,15 +67,15 @@
           </div>
           <div class="col-xs-12">
             <div class="table-header" align="center" >
-              <div>采购订单详情</div>
+              <div>销售单</div>
             </div>
           </div>
           <div class="col-xs-12" style="overflow: auto;width: 100%;">
             <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable" aria-describedby="sample-table-2_info" style="width: 100%">
               <tr>
-                <td style="width:10%">供应商:</td>
+                <td style="width:10%">客户:</td>
                 <td style="width:40%" ondblclick="ShowElement(this);"></td>
-                <td style="width:10%">订单编号:</td>
+                <td style="width:10%">销售单号:</td>
                 <td style="width:40%" ondblclick="ShowElement(this);"></td>
 
               </tr>
@@ -150,7 +150,7 @@
               </tr>
               <tr>
                 <td colspan="8"></td>
-                <td>经办人</td>
+                <td>收款人</td>
                 <td></td>
               </tr>
               <tr>

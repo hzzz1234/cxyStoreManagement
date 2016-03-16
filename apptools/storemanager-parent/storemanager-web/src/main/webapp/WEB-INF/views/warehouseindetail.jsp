@@ -67,7 +67,7 @@
           </div>
           <div class="col-xs-12">
             <div class="table-header" align="center" >
-              <div>采购订单详情</div>
+              <div>入库订单详情</div>
             </div>
           </div>
           <div class="col-xs-12" style="overflow: auto;width: 100%;">
@@ -75,14 +75,14 @@
               <tr>
                 <td style="width:10%">供应商:</td>
                 <td style="width:40%" ondblclick="ShowElement(this);"></td>
-                <td style="width:10%">订单编号:</td>
+                <td style="width:10%">入库订单编号:</td>
                 <td style="width:40%" ondblclick="ShowElement(this);"></td>
 
               </tr>
               <tr>
                 <td>单据日期:</td>
                 <td ondblclick="ShowElement(this);"></td>
-                <td>币种:</td>
+                <td>订单编号:</td>
                 <td ondblclick="ShowElement(this);"></td>
               </tr>
             </table>
@@ -100,6 +100,7 @@
                   <td>数量</td>
                   <td>进货单价</td>
                   <td>金额</td>
+                  <td>存放位置</td>
                   <td>备注</td>
                 </tr>
               </thead>
@@ -123,11 +124,13 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td>合计</td>
                 <td></td>
                 <td colspan="4"></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -140,6 +143,7 @@
                 <td>本次收款</td>
                 <td></td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td colspan="6"></td>
@@ -147,14 +151,15 @@
                 <td>本次欠款</td>
                 <td></td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td colspan="8"></td>
+                <td colspan="9"></td>
                 <td>经办人</td>
                 <td></td>
               </tr>
               <tr>
-                <td colspan="10" style="  text-align: right;">
+                <td colspan="11" style="  text-align: right;">
                   <button class="btn btn-link" data-toggle="modal" data-target="#addUser"><i class="icon-plus-sign" style="color: darkgrey;font-size: 20px;">新增</i></button></td>
               </tr>
 
