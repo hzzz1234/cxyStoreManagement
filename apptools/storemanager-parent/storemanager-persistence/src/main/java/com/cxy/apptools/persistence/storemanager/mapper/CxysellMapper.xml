@@ -11,8 +11,11 @@
     <result column="currency" jdbcType="INTEGER" property="currency" />
     <result column="comment" jdbcType="VARCHAR" property="comment" />
     <result column="repsor" jdbcType="VARCHAR" property="repsor" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="DataChange_LastTime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="DataChange_LastTime" jdbcType="VARCHAR" property="datachangeLasttime" />
+  </resultMap>
+  <resultMap id="orderSum" type="com.cxy.apptools.domain.storemanager.CxyOrderSum" >
+    <result property="Sum" column="NUM" jdbcType="NUMERIC" />
   </resultMap>
   <sql id="Base_Column_List">
     id, sellid, shopid, clientid, quantity, perprice, currency, comment, repsor, create_time, 
@@ -161,4 +164,71 @@
       DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <delete id="deleteMultiorders" parameterType="java.lang.Integer">
+
+    DELETE FROM cxysell where id in
+
+    <foreach item="idItem" collection="array" open="(" separator="," close=")">
+      #{idItem}
+    </foreach>
+
+
+  </delete>
+  <select id="queryCxysellByKeys" parameterType="com.cxy.apptools.persistence.storemanager.query.Cxypurchaseorderquery" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from cxysell
+    where 1=1
+    <if test="searchCondition !=null and searchFields != null">
+      and concat
+      <foreach item="item" collection="searchFields" separator="," open="(" close=")" index="index">
+        <if test="index == 0">
+          ${item}
+        </if>
+        <if test="index != 0">
+          ",",${item}
+        </if>
+      </foreach>
+      LIKE '%${searchCondition}%'
+    </if>
+    <if test="orderField != null">
+      order by ${orderField}
+      <if test="ordertype != null">
+        ${ordertype}
+      </if>
+    </if>
+
+    <if test="page != null">
+      limit #{page.startItem},#{page.pageSize}
+    </if>
+  </select>
+
+  <select id="queryCxysellSumByBasequery" parameterType="com.cxy.apptools.persistence.storemanager.query.Cxypurchaseorderquery" resultMap="orderSum">
+    select
+    count(1) as NUM
+    from cxysell
+    where 1=1
+    <if test="searchCondition !=null and searchFields != null">
+      and concat
+      <foreach item="item" collection="searchFields" separator="," open="(" close=")" index="index">
+        <if test="index == 0">
+          ${item}
+        </if>
+        <if test="index != 0">
+          ",",${item}
+        </if>
+      </foreach>
+      LIKE '%${searchCondition}%'
+    </if>
+    <if test="orderField != null">
+      order by ${orderField}
+      <if test="ordertype != null">
+        ${ordertype}
+      </if>
+    </if>
+
+    <if test="page != null">
+      limit #{page.startItem},#{page.pageSize}
+    </if>
+  </select>
 </mapper>

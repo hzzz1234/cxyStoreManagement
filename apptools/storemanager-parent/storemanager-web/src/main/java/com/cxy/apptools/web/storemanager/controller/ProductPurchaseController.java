@@ -26,23 +26,7 @@ public class ProductPurchaseController {
     private static Logger log= LoggerFactory.getLogger(ProductPurchaseController.class);
     @Resource
     private ProductPurchaseService orderService;
-    @RequestMapping("purchase")
-    public ModelAndView view(String keys){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("productPurchase");
-        ProductPurchaseVo productPurchaseVo = new ProductPurchaseVo();
-        productPurchaseVo.init("product_purchase","采购列表");
-        mv.addObject("basevo",productPurchaseVo);
-        List<ProductPurchaseVo> records=orderService.GetOrdersByKeys("",0,10);
-        log.info(productPurchaseVo.toString());
-         mv.addObject("records",records);
-        mv.addObject("keywords",keys);
-        mv.addObject("startIndex",records.size()==0?"0":"1");
-        mv.addObject("endIndex",records.size()<10?records.size():10);
-        double temp=Math.ceil((double)records.get(0).orderSum/(double)10);
-        mv.addObject("pageCount",(int)temp);
-        return mv;
-    }
+
     @RequestMapping("purchaseForm")
     public ModelAndView FormView(){
         ModelAndView mv = new ModelAndView();
@@ -77,14 +61,15 @@ public class ProductPurchaseController {
         productPurchaseVo.setId(-1);
         productPurchaseVo.init("product_purchase","采购列表");
         mv.addObject("basevo",productPurchaseVo);
-        List<ProductPurchaseVo> records=orderService.GetOrdersByKeys(keys,Integer.parseInt(startNum),Integer.parseInt(pageSize));
+        List<ProductPurchaseVo> records=orderService.GetOrdersByKeys(keys,(Integer.parseInt(startNum)-1),Integer.parseInt(pageSize));
         log.info(productPurchaseVo.toString());
         mv.addObject("records",records.size()==0?productPurchaseVo:records);
         mv.addObject("keywords",keys);
-        mv.addObject("startIndex",records.size()==0?"0":"1");
-        mv.addObject("endIndex",records.size());
-        double temp=Math.ceil((double) records.get(0).orderSum / (double) 10);
+        mv.addObject("startIndex",records.size()==0?0:startNum);
+        mv.addObject("endIndex",records.size()==0?0:(records.size()<=Integer.parseInt(pageSize)?(Integer.parseInt(startNum)+records.size()-1):(Integer.parseInt(startNum)+Integer.parseInt(pageSize)-1)));
+        double temp=Math.ceil((double) records.get(0).orderSum / (double) Integer.parseInt(pageSize));
         mv.addObject("pageCount",(int)temp);
+        mv.addObject("pageSize",Integer.parseInt(pageSize));
         return mv;
     }
     private List<Integer> ToList(String[] strs){

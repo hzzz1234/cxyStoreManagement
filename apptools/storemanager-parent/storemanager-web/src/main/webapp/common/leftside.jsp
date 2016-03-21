@@ -104,7 +104,7 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-            <a href="${rc.contextPath}/productpurchase/purchase?keys=&activePage=1" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productpurchase/purchaseQueryLikeKeys?keys=&activePage=1&startNum=1&pageSize=10" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-book"></i>
                 <span class="menu-text">采购列表</span>
             </a>
@@ -118,7 +118,7 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-            <a href="${rc.contextPath}/productinstore/instore" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productinstore/houseInQueryLikeKeys?keys=&activePage=1&startNum=1&pageSize=10" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-edit"></i>
                 <span class="menu-text">入库列表</span>
             </a>
@@ -131,7 +131,7 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-            <a href="${rc.contextPath}/productsale/sale" class="dropdown-toggle">
+            <a href="${rc.contextPath}/productsale/saleQueryLikeKeys?keys=&activePage=1&startNum=1&pageSize=10" class="dropdown-toggle">
                 <i class="ace-icon glyphicon glyphicon-file"></i>
                 <span class="menu-text">售卖列表</span>
             </a>
