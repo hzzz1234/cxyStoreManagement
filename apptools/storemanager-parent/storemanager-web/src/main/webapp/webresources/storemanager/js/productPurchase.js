@@ -142,7 +142,7 @@ return chk_value.join(",");
 }
 
 function reQuery(){
-    document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys=&activePage=1"+"&startNum=0&pageSize=10");
+    document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys=&activePage=1"+"&startNum=1&pageSize="+$("#selectValue").val());
 }
 
 function toArray(ids){
@@ -157,7 +157,7 @@ function toArray(ids){
 function queryByKeys(){
     debugger;
      var keys= $("#search-input").val();
-    document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage=1"+"&startNum=0&pageSize=10");
+    document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage=1"+"&startNum=1&pageSize="+$("#selectValue").val());
     //queryLikeKeys($("#search-input").val());
 }
 //模糊查询
@@ -189,5 +189,7 @@ function queryByKeys(){
 //        }
 //    });
 //}
-
+function selectChange(){
+    document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage=1"+"&startNum=1&pageSize="+$("#selectValue").val());
+}
 

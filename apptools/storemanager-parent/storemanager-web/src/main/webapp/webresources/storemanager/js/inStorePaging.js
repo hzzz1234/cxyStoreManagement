@@ -1,7 +1,13 @@
 /**
+ * Created by songbo on 2016/3/12.
+ */
+
+
+/**
  * Created by songbo on 2016/3/6.
  */
 function setPage(container, count, pageindex) {
+    debugger;
     var container = container;//装载该分页的容器
     var count = count;//总页数
     var pageindex = pageindex;//当前页
@@ -9,10 +15,10 @@ function setPage(container, count, pageindex) {
     //总页数少于10 全部显示,大于10 显示前3 后3 中间3 其余....
     if (pageindex == 1) {
         a[a.length] = "<li class=\"prev disabled\"> <a class='pageA' href=\"#\"><i class=\"icon-fast-backward\"></i></a></li>"+
-                       "<li class=\"prev disabled\"><a class='pageA' href=\"#\"><i class=\" icon-step-backward\"></i></a> </li>";
+        "<li class=\"prev disabled\"><a class='pageA' href=\"#\"><i class=\" icon-step-backward\"></i></a> </li>";
     } else {
         a[a.length] = "<li class=\"prev\"> <a class='pageA' href=\"#\"><i class=\"icon-fast-backward\"></i></a></li>" +
-                        "<li class=\"prev\"><a class='pageA' href=\"#\"><i class=\" icon-step-backward\"></i></a> </li>";
+        "<li class=\"prev\"><a class='pageA' href=\"#\"><i class=\" icon-step-backward\"></i></a> </li>";
     }
     function setPageList() {
         if (pageindex == i) {
@@ -62,23 +68,20 @@ function setPage(container, count, pageindex) {
         var inx = pageindex; //初始的页码
         oAlink[0].onclick = function() { //点击首页
             debugger;
-
             if (inx == 1) {
                 return false;
             }
-            var selectedValue=parseInt($("#selectValue").val());
-            document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+1+"&startNum=1&pageSize="+selectedValue);
+            document.location.assign("/productinstore/houseInQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+1+"&startNum=0&pageSize=10");
             //setPage(container, count, 1);
             return false;
         }
         oAlink[1].onclick = function() { //点击上一页
             debugger;
-            var selectedValue=parseInt($("#selectValue").val());
             if (inx == 1) {
                 return false;
             }
             inx--;
-            document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+inx+"&startNum="+((inx-1)*selectedValue+1)+"&pageSize="+selectedValue);
+            document.location.assign("/productinstore/houseInQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+inx+"&startNum="+(inx-1)*10+"&pageSize=10");
             //setPage(container, count, inx);
 
             return false;
@@ -86,9 +89,8 @@ function setPage(container, count, pageindex) {
         for (var i = 2; i < oAlink.length - 2; i++) { //点击页码
             oAlink[i].onclick = function() {
                 inx = parseInt(this.innerHTML);
-                var selectedValue=parseInt($("#selectValue").val());
                 debugger;
-                document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+inx+"&startNum="+((inx-1)*selectedValue+1)+"&pageSize="+selectedValue);
+                document.location.assign("/productinstore/houseInQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+inx+"&startNum="+(inx-1)*10+"&pageSize=10");
                 //setPage(container, count, inx);
                 return false;
             }
@@ -98,8 +100,8 @@ function setPage(container, count, pageindex) {
             if (inx == count) {
                 return false;
             }
-            var selectedValue=parseInt($("#selectValue").val());
-            document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+(parseInt(inx)+1)+"&startNum="+(inx*selectedValue+1)+"&pageSize="+selectedValue);
+
+            document.location.assign("/productinstore/houseInQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+(parseInt(inx)+1)+"&startNum="+inx*10+"&pageSize=10");
             //setPage(container, count, inx);
             return false;
         }
@@ -108,8 +110,7 @@ function setPage(container, count, pageindex) {
             if (inx == count) {
                 return false;
             }
-            var selectedValue=parseInt($("#selectValue").val());
-            document.location.assign("/productpurchase/purchaseQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+count+"&startNum="+((count-1)*selectedValue+1)+"&pageSize="+selectedValue);
+            document.location.assign("/productinstore/houseInQueryLikeKeys?"+"keys="+$("#search-input").val()+"&activePage="+count+"&startNum="+(count-1)*10+"&pageSize=10");
             //setPage(container, count, count);
             return false;
         }

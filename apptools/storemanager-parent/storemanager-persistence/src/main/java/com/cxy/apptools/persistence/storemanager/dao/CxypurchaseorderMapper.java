@@ -1,7 +1,7 @@
 package com.cxy.apptools.persistence.storemanager.dao;
 
 import com.cxy.apptools.domain.storemanager.Cxypurchaseorder;
-import com.cxy.apptools.domain.storemanager.CxypurchaseorderSum;
+import com.cxy.apptools.domain.storemanager.CxyOrderSum;
 import com.cxy.apptools.persistence.storemanager.query.Cxypurchaseorderquery;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -23,7 +23,7 @@ public interface CxypurchaseorderMapper {
 
     List<Cxypurchaseorder> queryCxypurchaseordersByBasequery(Cxypurchaseorderquery cxypurchaseorderquery);
 
-    CxypurchaseorderSum queryCxySumByBasequery(Cxypurchaseorderquery cxypurchaseorderquery);
+    CxyOrderSum queryCxySumByBasequery(Cxypurchaseorderquery cxypurchaseorderquery);
     List<Cxypurchaseorder> queryAllorders();
     int deleteMultiorders(List<Integer> ids);
     @Select("select * from cxypurchaseorder where pouid like #{pouid}")

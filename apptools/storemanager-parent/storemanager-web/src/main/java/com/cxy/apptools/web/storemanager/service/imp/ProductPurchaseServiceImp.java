@@ -2,7 +2,7 @@ package com.cxy.apptools.web.storemanager.service.imp;
 
 
 import com.cxy.apptools.common.beans.Page;
-import com.cxy.apptools.domain.storemanager.CxypurchaseorderSum;
+import com.cxy.apptools.domain.storemanager.CxyOrderSum;
 import com.cxy.apptools.persistence.storemanager.enums.OrderTypeIndex;
 import com.cxy.apptools.persistence.storemanager.query.Cxypurchaseorderquery;
 import com.cxy.apptools.web.storemanager.util.FormatConverse;
@@ -64,7 +64,7 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
         List<String> searchFields=new ArrayList<String>();
         searchFields.add("pouid");
         keysModel.setSearchFields(searchFields);
-        CxypurchaseorderSum sum=cxypurchaseorder.queryCxySumByBasequery(keysModel);
+        CxyOrderSum sum=cxypurchaseorder.queryCxySumByBasequery(keysModel);
         Page page=new Page();
         page.setPageSize((long)pageSize);
         page.setStartItem((long)startNum);
@@ -101,6 +101,7 @@ public class ProductPurchaseServiceImp implements ProductPurchaseService {
            list.add(model);
 
        }
+
 
         return list;
     }

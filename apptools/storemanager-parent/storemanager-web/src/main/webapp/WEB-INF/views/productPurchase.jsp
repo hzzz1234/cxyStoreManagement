@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <html lang="en" ng-app="productDefine" >
 <head>
   <title>货品采购</title>
@@ -73,11 +74,11 @@
                       <div class="col-xs-6" >
                         <div id="sample-table-2_length" class="dataTables_length">
                           <label>显示:
-                            <select size="1" name="sample-table-2_length" aria-controls="sample-table-2">
-                            <option value="10" selected="selected">10</option>
+                            <select id="selectValue" size="1" name="sample-table-2_length" aria-controls="sample-table-2" onchange="selectChange()">
+                            <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
-                            <option value="100">100</option>
+                            <option  value="100">100</option>
                           </select> 记录
                           </label>
 
@@ -146,7 +147,7 @@
                           <a href="#">${record.pouid}</a>
                         </td>
                         <td class="tableColoumContentStyle">${record.supplierid}</td>
-                        <td class="tableColoumContentStyle">${record.shopid}</td>
+                        <td class="tableColoumContentStyle" title="${record.shopid}">${fn:substring(record.shopid, 0, 6)}</td>
                         <td class="tableColoumContentStyle">${record.quantity}</td>
                         <td class="tableColoumContentStyle">${record.totalamout}</td>
                         <td class="tableColoumContentStyle">${record.payamount}</td>
@@ -173,25 +174,6 @@
                       <div class="col-xs-6">
                         <div class="dataTables_paginate paging_bootstrap">
                           <ul class="pagination" id="pagination">
-                            <!--
-                            <li class="prev">
-                              <a href="#"><i class="icon-fast-backward"></i></a>
-                            </li>
-                            <li class="prev">
-                              <a href="#"><i class=" icon-step-backward"></i></a>
-                            </li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="next">
-                              <a href="#"><i class="icon-step-forward"></i></a>
-                            </li>
-                            <li class="next">
-                              <a href="#">
-                                <i class="icon-fast-forward"></i>
-                              </a>
-                            </li>
-                            -->
                           </ul>
                         </div>
                       </div>
@@ -275,6 +257,7 @@
 
   <script type="text/javascript">
     debugger;
+    $("#selectValue option[value='"+document.getElementById("pageSize").innerText+"']").attr("selected",true);
     //初始化分页部分
     function checkClick(obj) {
 // 全选或者全不选
@@ -289,7 +272,15 @@
 
     }
 
+//    $(".sorting").click(function(){
+//
+//      debugger;
+//      this
+//      alert(this);
+//    });
 
   </script>
+
+
 </body>
 </html>
