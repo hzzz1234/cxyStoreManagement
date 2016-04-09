@@ -1,20 +1,21 @@
 package com.cxy.apptools.web.storemanager.vo.page;
 
-import com.cxy.apptools.domain.storemanager.Cxysuppliercategory;
+import com.cxy.apptools.web.storemanager.vo.page.beans.CategoryLeafNode;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2015/12/17.
  */
 public class SupplierDefineVo extends BasePageVo{
-    List<Cxysuppliercategory> cxysuppliercategoryList;
+    Map<Integer,List<CategoryLeafNode>> supplierTree ;
 
-    public List<Cxysuppliercategory> getCxysuppliercategoryList() {
-        return cxysuppliercategoryList;
+    public Map<Integer, List<CategoryLeafNode>> getSupplierTree() {
+        return supplierTree;
     }
 
-    public void setCxysuppliercategoryList(List<Cxysuppliercategory> cxysuppliercategoryList) {
-        this.cxysuppliercategoryList = cxysuppliercategoryList;
+    public void setSupplierTree(Map<Integer, List<CategoryLeafNode>> supplierTree) {
+        this.supplierTree = supplierTree;
     }
 }

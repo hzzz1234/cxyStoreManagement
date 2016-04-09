@@ -196,4 +196,9 @@
       DataChange_LastTime = #{datachangeLasttime,jdbcType=TIMESTAMP}
     where supplierid = #{supplierid,jdbcType=INTEGER}
   </update>
+  <select id="selectAllValues" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"></include>
+    FROM cxysupplier
+  </select>
 </mapper>

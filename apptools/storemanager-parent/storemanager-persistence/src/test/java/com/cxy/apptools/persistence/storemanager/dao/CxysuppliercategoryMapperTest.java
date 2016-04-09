@@ -15,4 +15,11 @@ public class CxysuppliercategoryMapperTest extends BaseMapperTest{
         List<Cxysuppliercategory> list = cxysuppliercategoryMapper.selectAllValues();
         System.out.println(list.get(0));
     }
+
+    @Test
+    public void queryByNameAndCategoryid() throws Exception {
+        CxysuppliercategoryMapper cxysuppliercategoryMapper = session.getMapper(CxysuppliercategoryMapper.class);
+        Integer c = cxysuppliercategoryMapper.queryByNameAndCategoryid("a",1);
+        System.out.println("###########"+c);
+    }
 }

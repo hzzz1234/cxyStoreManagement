@@ -1,3 +1,7 @@
+<%@ page import="com.cxy.apptools.web.storemanager.vo.page.SupplierDefineVo" %>
+<%@ page import="com.cxy.apptools.web.storemanager.vo.page.beans.CategoryLeafNode" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Map" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -7,15 +11,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<html lang="en" ng-app="supplierDefine" >
+<html lang="en">
 <head>
-    <title>client</title>
+    <title>supplier</title>
     <%@ include file="/common/common.jsp"%>
     <link href="${rc.contextPath}/webresources/storemanager/css/tree.css" rel="stylesheet" />
 
 </head>
 
-<body ng-controller="supplierCtrl">
+<body>
 <!--头框-->
 <%@ include file="/common/header.jsp"%>
 <!--主框架-->
@@ -48,66 +52,81 @@
                 <div class="col-xs-4">
                     <div class="widget-box">
                         <div class="widget-header header-color-blue2" >
-                            <h4 class="lighter smaller">产品</h4>
+                            <h4 class="lighter smaller">供应商</h4>
                         </div>
                         <div class="tree well" >
                             <ul>
-                                <c:forEach var="item" items="${basevo.cxysuppliercategoryList}">
-                                    ${item.suppliercategoryname}
-                                </c:forEach>
+                                <%
+                                    SupplierDefineVo supplierDefineVo =(com.cxy.apptools.web.storemanager.vo.page.SupplierDefineVo) request.getAttribute("basevo");
+                                    Map<Integer,List<CategoryLeafNode>> tree = supplierDefineVo.getSupplierTree();
+                                    CategoryLeafNode root = tree.get(0).get(0);
+                                %>
                                 <li>
-                                    <span><i class="glyphicon glyphicon-folder-open"></i> Parent</span> <a href="">Goes somewhere</a>
+                                    <span spid="sp<%=root.getId()%>">
+                                        <i class="glyphicon glyphicon-folder-open"></i>
+                                        <%=root.getName()%>
+                                    </span>
+                                    <i class="ace-icon glyphicon glyphicon-plus" onclick="add(<%=root.getId()%>,1)"></i>
                                     <ul>
-                                        <li>
-                                            <span><i class="glyphicon glyphicon-minus-sign"></i> Child</span> <a href="">Goes somewhere</a>
-                                            <ul>
-                                                <li>
-                                                    <span><i class="glyphicon glyphicon-leaf"></i> Grand Child</span> <a href="">Goes somewhere</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span><i class="glyphicon glyphicon-minus-sign"></i> Child</span> <a href="">Goes somewhere</a>
-                                            <ul>
-                                                <li>
-                                                    <span><i class="glyphicon glyphicon-leaf"></i> Grand Child</span> <a href="">Goes somewhere</a>
-                                                </li>
-                                                <li>
-                                                    <span><i class="glyphicon glyphicon-minus-sign"></i> Grand Child</span> <a href="">Goes somewhere</a>
-                                                    <ul>
-                                                        <li>
-                                                            <span><i class="glyphicon glyphicon-minus-sign"></i> Great Grand Child</span> <a href="">Goes somewhere</a>
-                                                            <ul>
-                                                                <li>
-                                                                    <span><i class="glyphicon glyphicon-leaf"></i> Great great Grand Child</span> <a href="">Goes somewhere</a>
-                                                                </li>
-                                                                <li>
-                                                                    <span><i class="glyphicon glyphicon-leaf"></i> Great great Grand Child</span> <a href="">Goes somewhere</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <span><i class="glyphicon glyphicon-leaf"></i> Great Grand Child</span> <a href="">Goes somewhere</a>
-                                                        </li>
-                                                        <li>
-                                                            <span><i class="glyphicon glyphicon-leaf"></i> Great Grand Child</span> <a href="">Goes somewhere</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <span><i class="glyphicon glyphicon-leaf"></i> Grand Child</span> <a href="">Goes somewhere</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        <%
+                                            int rootid = root.getId();
+                                            for(CategoryLeafNode secondnode:tree.get(rootid)){
+                                                int secondid = secondnode.getId();
+
+                                        %>
+                                            <li>
+                                                <%
+                                                    if(!secondnode.isLeaf()){
+                                                %>
+                                                    <span spid="sp<%=secondid%>">
+                                                        <i class="glyphicon glyphicon-minus-sign tag"></i>
+                                                        <%=secondnode.getName()%>
+                                                    </span>
+                                                    <i class="ace-icon glyphicon glyphicon-plus" onclick="add(<%=secondnode.getId()%>,0)"></i>
+                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,0)"></i>
+                                                    <ul></ul>
+                                                <%
+                                                    }else{
+                                                %>
+                                                    <span onclick="viewsupplier(<%=secondnode.getId()%>)" spid="sp<%=secondid%>">
+                                                        <i class="glyphicon glyphicon-leaf"></i>
+                                                        <%=secondnode.getName()%>
+                                                    </span>
+                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,1)"></i>
+                                                <%
+                                                    }
+                                                %>
+                                                <%
+                                                    if(!tree.containsKey(secondid) || secondnode.isLeaf()){
+                                                        continue;
+                                                    }
+                                                %>
+                                                <ul>
+
+                                                    <%
+                                                        for (CategoryLeafNode thirdnode:tree.get(secondid)){
+                                                    %>
+                                                    <li>
+                                                        <span onclick="viewsupplier(<%=thirdnode.getId()%>)" spid="sp<%=thirdnode.getId()%>">
+                                                            <i class="glyphicon glyphicon-leaf"></i>
+                                                            <%=thirdnode.getName()%>
+                                                        </span>
+                                                        <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=thirdnode.getId()%>,1)"></i>
+                                                    </li>
+
+                                                        <%
+                                                            }
+                                                        %>
+
+                                                </ul>
+
+                                            </li>
+                                        <%
+                                            }
+                                        %>
+
                                     </ul>
-                                </li>
-                                <li>
-                                    <span><i class="glyphicon glyphicon-folder-open"></i> Parent2</span> <a href="">Goes somewhere</a>
-                                    <ul>
-                                        <li>
-                                            <span><i class="glyphicon glyphicon-leaf"></i> Child</span> <a href="">Goes somewhere</a>
-                                        </li>
-                                    </ul>
+
                                 </li>
                             </ul>
                         </div>
@@ -116,11 +135,20 @@
                 <div class="col-xs-8">
                     <div class="col-xs-12">
                         <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="suppliername">供应商</label>
+                            <input type="text" id="status" placeholder="status" class="col-xs-10 col-sm-5" readonly style="display:none" >
+                            <input type="text" id="suppliercategoryid" placeholder="suppliercategoryid" class="col-xs-10 col-sm-5" readonly style="display:none" >
+                            <input type="text" id="createTime" placeholder="createTime" class="col-xs-10 col-sm-5" readonly style="display:none" >
 
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="supplierid">供应商号</label>
                                 <div class="col-sm-9">
-                                    <input type="text" id="suppliername" placeholder="供应商" class="col-xs-10 col-sm-5">
+                                    <input type="text" id="supplierid" placeholder="供应商号" class="col-xs-10 col-sm-5" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="suppliername" readonly>供应商</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="suppliername" placeholder="供应商" class="col-xs-10 col-sm-5" readonly>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -182,7 +210,7 @@
 
                             <div class="clearfix form-actions">
                                 <div class="col-md-offset-3 col-md-9">
-                                    <button class="btn btn-info" type="button">
+                                    <button class="btn btn-info" type="button" onclick="updatesupplier();">
                                         <i class="ace-icon fa fa-check bigger-110"></i>
                                         提交
                                     </button>
@@ -197,6 +225,49 @@
                         </form>
                     </div>
                 </div>
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="addnode" tabindex="-1" role="dialog"
+                     aria-labelledby="addGroupLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close"
+                                        data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <h4 class="modal-title" id="addGroupLabel">
+                                    供应商(类别)添加<input type="text" id="pcateid" class="col-xs-10 col-sm-5" readonly style="display: none">
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+
+                                        <label class="col-sm-3 control-label no-padding-right" for="sname">供应商(类别)名</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" id="sname" placeholder="供应商(类别)名" class="col-xs-10 col-sm-5">
+                                        </div>
+                                        <label class="col-sm-3 control-label no-padding-right" for="cate">类型</label>
+                                        <div class="col-sm-9">
+
+                                            <input type="radio" checked="checked" name="cate" value="1" />供应商
+
+                                            <input type="radio" name="cate" value="0" id="cat"/>供应商类别
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default"
+                                        data-dismiss="modal">关闭
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="addnode()">
+                                    添加
+                                </button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
             </div><!--page-content-->
 
             <%@ include file="/common/settings.jsp"%>
@@ -209,49 +280,19 @@
     </div><!-- /.main-container -->
     <%@ include file="/common/foot.jsp"%>
 
-    <script src="${rc.contextPath}/webresources/storemanager/js/productDefine.js"></script>
+    <script src="${rc.contextPath}/webresources/storemanager/js/supplier.js"></script>
     <script type="text/javascript">
         jQuery(function($) {
-            $('.cxy-input-file').ace_file_input({
-                style:'well',
-                btn_choose:'Drop files here or click to choose',
-                btn_change:null,
-                no_icon:'icon-cloud-upload',
-                droppable:true,
-                thumbnail:'fit'//large | fit
-                //,icon_remove:null//set null, to hide remove/reset button
-                /**,before_change:function(files, dropped) {
-                //Check an example below
-                //or examples/file-upload.html
-                return true;
-                }*/
-                /**,before_remove : function() {
-                return true;
-                }*/
-                ,
-                preview_error : function(filename, error_code) {
-                    //name of the file that failed
-                    //error_code values
-                    //1 = 'FILE_LOAD_FAILED',
-                    //2 = 'IMAGE_LOAD_FAILED',
-                    //3 = 'THUMBNAIL_FAILED'
-                    //alert(error_code);
-                }
-
-            }).on('change', function(){
-                console.log($(this).data('ace_input_files'));
-                console.log($(this).data('ace_input_method'));
-            });
 
             $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
             $('.tree li.parent_li > span').on('click', function (e) {
                 var children = $(this).parent('li.parent_li').find(' > ul > li');
                 if (children.is(":visible")) {
                     children.hide('fast');
-                    $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+                    $(this).attr('title', 'Expand this branch').find('.tag').addClass('icon-plus-sign').removeClass('icon-minus-sign');
                 } else {
                     children.show('fast');
-                    $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+                    $(this).attr('title', 'Collapse this branch').find('.tag').addClass('icon-minus-sign').removeClass('icon-plus-sign');
                 }
                 e.stopPropagation();
             });
