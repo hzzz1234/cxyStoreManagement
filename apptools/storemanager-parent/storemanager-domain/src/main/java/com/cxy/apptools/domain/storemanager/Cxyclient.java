@@ -1,5 +1,7 @@
 package com.cxy.apptools.domain.storemanager;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.util.Date;
 
 public class Cxyclient {
@@ -26,7 +28,7 @@ public class Cxyclient {
     private Integer status;
 
     private Integer clientcategoryid;
-
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 
     private Date datachangeLasttime;

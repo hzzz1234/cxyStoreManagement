@@ -62,7 +62,7 @@
                                     CategoryLeafNode root = tree.get(0).get(0);
                                 %>
                                 <li>
-                                    <span spid="sp<%=root.getId()%>">
+                                    <span spid="sp<%=root.getId()%>" <%--ondblclick="ShowElement(this,<%=root.getId()%>,0)"--%>>
                                         <i class="glyphicon glyphicon-folder-open"></i>
                                         <%=root.getName()%>
                                     </span>
@@ -70,6 +70,7 @@
                                     <ul>
                                         <%
                                             int rootid = root.getId();
+                                            if(null!=tree.get(rootid)){
                                             for(CategoryLeafNode secondnode:tree.get(rootid)){
                                                 int secondid = secondnode.getId();
 
@@ -78,21 +79,21 @@
                                                 <%
                                                     if(!secondnode.isLeaf()){
                                                 %>
-                                                    <span spid="sp<%=secondid%>">
+                                                    <span spid="sp<%=secondid%>" >
                                                         <i class="glyphicon glyphicon-minus-sign tag"></i>
-                                                        <%=secondnode.getName()%>
+                                                        <span  style="border:1px" ondblclick="ShowElement(this,<%=secondid%>,0)"><%=secondnode.getName()%></span>
                                                     </span>
                                                     <i class="ace-icon glyphicon glyphicon-plus" onclick="add(<%=secondnode.getId()%>,0)"></i>
-                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,0)"></i>
+                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,0,this)"></i>
                                                     <ul></ul>
                                                 <%
                                                     }else{
                                                 %>
-                                                    <span onclick="viewsupplier(<%=secondnode.getId()%>)" spid="sp<%=secondid%>">
+                                                    <span onclick="viewsupplier(<%=secondnode.getId()%>)" spid="sp<%=secondid%>" >
                                                         <i class="glyphicon glyphicon-leaf"></i>
-                                                        <%=secondnode.getName()%>
+                                                        <span style="border:1px" ondblclick="ShowElement(this,<%=secondnode.getId()%>,1)"><%=secondnode.getName()%></span>
                                                     </span>
-                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,1)"></i>
+                                                    <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=secondnode.getId()%>,1,this)"></i>
                                                 <%
                                                     }
                                                 %>
@@ -107,11 +108,11 @@
                                                         for (CategoryLeafNode thirdnode:tree.get(secondid)){
                                                     %>
                                                     <li>
-                                                        <span onclick="viewsupplier(<%=thirdnode.getId()%>)" spid="sp<%=thirdnode.getId()%>">
+                                                        <span onclick="viewsupplier(<%=thirdnode.getId()%>)" spid="sp<%=thirdnode.getId()%>" >
                                                             <i class="glyphicon glyphicon-leaf"></i>
-                                                            <%=thirdnode.getName()%>
+                                                            <span style="border:1px" ondblclick="ShowElement(this,<%=thirdnode.getId()%>,1)"><%=thirdnode.getName()%></span>
                                                         </span>
-                                                        <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=thirdnode.getId()%>,1)"></i>
+                                                        <i class="ace-icon glyphicon glyphicon-minus" onclick="deletenode(<%=thirdnode.getId()%>,1,this)"></i>
                                                     </li>
 
                                                         <%
@@ -122,7 +123,7 @@
 
                                             </li>
                                         <%
-                                            }
+                                            }}
                                         %>
 
                                     </ul>
@@ -147,6 +148,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="suppliername" readonly>供应商</label>
+
                                 <div class="col-sm-9">
                                     <input type="text" id="suppliername" placeholder="供应商" class="col-xs-10 col-sm-5" readonly>
                                 </div>

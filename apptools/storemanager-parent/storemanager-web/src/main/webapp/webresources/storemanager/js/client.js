@@ -22,7 +22,7 @@ function addnode(){
 
         $.ajax({
             type:"POST",
-            url:"/supplier/addnode",
+            url:"/client/addnode",
             data:{name:name,id:pcateid,t:cat},
             dataType:"json",
             beforeSend:function(){
@@ -41,7 +41,7 @@ function addnode(){
                     var li= document.createElement("li");
                     if(cat=="1"){
                         //叶子节点
-                        template="<span onclick=\"viewsupplier("+json1+")\"spid=\"sp"+json1+"\"><i class=\"glyphicon glyphicon-leaf\"></i><span  style=\"border:1px\" ondblclick=\"ShowElement(this,("+json1+"),1)\">"+name
+                        template="<span onclick=\"viewclient("+json1+")\"spid=\"sp"+json1+"\"><i class=\"glyphicon glyphicon-leaf\"></i><span  style=\"border:1px\" ondblclick=\"ShowElement(this,("+json1+"),1)\">"+name
                             +"</span></span><i class=\"ace-icon glyphicon glyphicon-minus\" onclick=\"deletenode("+json1+",1)\"></i>";
 
                     }else{
@@ -73,7 +73,7 @@ function deletenode(id,t,obj){
     }else {
         $.ajax({
             type: "POST",
-            url: "/supplier/deletenode",
+            url: "/client/deletenode",
             data: {id:id,t:t},
             dataType: "json",
             beforeSend: function () {
@@ -90,32 +90,33 @@ function deletenode(id,t,obj){
             }
         });
     }
+
 }
 
-function updatesupplier(){
-    var supplierid = $("#supplierid").val()
-    if(supplierid==undefined || supplierid==''){
+function updateclient(){
+    var clientid = $("#clientid").val()
+    if(clientid==undefined || clientid==''){
         alert("供应商id不能为空")
     }else{
-        var supplier={}
+        var client={}
 
-        supplier['supplierid']= $("#supplierid").val()
-        supplier['suppliername']= $("#suppliername").val()
-        supplier['contactname']= $("#contactname").val()
-        supplier['contactphone']= $("#contactphone").val()
-        supplier['fax']= $("#fax").val()
-        supplier['qq']= $("#qq").val()
-        supplier['address']= $("#address").val()
-        supplier['post']= $("#post").val()
-        supplier['email']= $("#email").val()
-        supplier['comment']= $("#comment").val()
-        supplier['status']= $("#status").val()
-        supplier['suppliercategoryid']= $("#suppliercategoryid").val()
-        supplier['createTime']= $("#createTime").val()
+        client['clientid']= $("#clientid").val()
+        client['clientname']= $("#clientname").val()
+        client['contactname']= $("#contactname").val()
+        client['contactphone']= $("#contactphone").val()
+        client['fax']= $("#fax").val()
+        client['qq']= $("#qq").val()
+        client['address']= $("#address").val()
+        client['post']= $("#post").val()
+        client['email']= $("#email").val()
+        client['comment']= $("#comment").val()
+        client['status']= $("#status").val()
+        client['clientcategoryid']= $("#clientcategoryid").val()
+        client['createTime']= $("#createTime").val()
         $.ajax({
             type:"POST",
-            url:"/supplier/updatesupplier",
-            data:supplier,
+            url:"/client/updateclient",
+            data:client,
             dataType:"json",
             beforeSend:function(){
                 debugger;
@@ -132,11 +133,11 @@ function updatesupplier(){
     }
 }
 
-function viewsupplier(supplierid){
+function viewclient(clientid){
     $.ajax({
         type:"GET",
-        url:"/supplier/viewsupplier",
-        data:{id:supplierid},
+        url:"/client/viewclient",
+        data:{id:clientid},
         dataType:"json",
         beforeSend:function(){
             debugger;
@@ -148,8 +149,8 @@ function viewsupplier(supplierid){
                 alert(json['msg'])
             }else{
                 var json1 = eval('(' + json['data'] + ')');
-                $("#supplierid").val(json1['supplierid'])
-                $("#suppliername").val(json1['suppliername'])
+                $("#clientid").val(json1['clientid'])
+                $("#clientname").val(json1['clientname'])
                 $("#contactname").val(json1['contactname'])
                 $("#contactphone").val(json1['contactphone'])
                 $("#fax").val(json1['fax'])
@@ -159,7 +160,7 @@ function viewsupplier(supplierid){
                 $("#email").val(json1['email'])
                 $("#comment").val(json1['comment'])
                 $("#status").val(json1['status'])
-                $("#suppliercategoryid").val(json1['suppliercategoryid'])
+                $("#clientcategoryid").val(json1['clientcategoryid'])
                 $("#createTime").val( json1['createTime'])
             }
         },
@@ -168,7 +169,6 @@ function viewsupplier(supplierid){
         }
     });
 }
-
 
 
 
@@ -190,7 +190,7 @@ function ShowElement(element,id,t)
             debugger;
             $.ajax({
                 type:"GET",
-                url:"/supplier/rename",
+                url:"/client/rename",
                 data:{id:id,name:name,t:t},
                 dataType:"json",
                 success:function(data){

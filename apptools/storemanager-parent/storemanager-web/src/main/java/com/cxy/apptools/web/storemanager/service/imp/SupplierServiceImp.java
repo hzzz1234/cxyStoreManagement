@@ -29,7 +29,8 @@ public class SupplierServiceImp implements SupplierService{
     @Autowired
     private CxysuppliercategoryMapper cxysuppliercategoryMapper;
 
-    public List<Cxysuppliercategory> queryAllValues() {
+    public List<Cxysuppliercategory> queryAllValues()
+    {
         return cxysuppliercategoryMapper.selectAllValues();
     }
 
@@ -139,29 +140,43 @@ public class SupplierServiceImp implements SupplierService{
     public String rename(int id,String name, int type) {
         int cnt=0;
         if(type==1){
-            Cxysupplier cxysupplier = cxysupplierMapper.selectByPrimaryKey(id);
-            if(cxysupplier==null){
-                return JSON.toJSONString(new Msg(2,"查找重命名供应商失败",""));
-            }
-            cxysupplier.setSuppliername(name);
-            cnt = cxysupplierMapper.updateByPrimaryKey(cxysupplier);
-            if(cnt>0){
-                return JSON.toJSONString(new Msg(0,"重命名供应商成功",""));
-            }else{
-                return JSON.toJSONString(new Msg(1,"重命名供应商失败",""));
+            Cxysupplier cxysupplier=cxysupplierMapper.selectByPrimaryKey(id);
+            int oldid=cxysupplier.getSuppliercategoryid();
+            Integer supplierid = cxysupplierMapper.queryByNameAndCategoryid(name,oldid);
+            if(supplierid!=null){
+                return JSON.toJSONString(new Msg(2,"rename supplier fail，供应商已存在",""));
+            }else {
+                /*Cxysupplier cxysupplier = cxysupplierMapper.selectByPrimaryKey(id);
+                if (cxysupplier == null) {
+                    return JSON.toJSONString(new Msg(2, "查找重命名供应商失败", ""));
+                }*/
+                cxysupplier.setSuppliername(name);
+                cnt = cxysupplierMapper.updateByPrimaryKey(cxysupplier);
+                if (cnt > 0) {
+                    return JSON.toJSONString(new Msg(0, "重命名供应商成功", ""));
+                } else {
+                    return JSON.toJSONString(new Msg(1, "重命名供应商失败", ""));
+                }
             }
         }else{
             Cxysuppliercategory cxysuppliercategory = cxysuppliercategoryMapper.selectByPrimaryKey(id);
-            if(cxysuppliercategory==null){
-                return JSON.toJSONString(new Msg(2,"查找重命名供应商类别失败",""));
-            }
-            cxysuppliercategory.setSuppliercategoryname(name);
-            cnt = cxysuppliercategoryMapper.updateByPrimaryKey(cxysuppliercategory);
-            if(cnt>0){
-                return JSON.toJSONString(new Msg(0,"重命名供应商类别成功",""));
+            int oldid=cxysuppliercategory.getPcategoryid();
+            Integer suppliercategoryid = cxysuppliercategoryMapper.queryByNameAndCategoryid(name, oldid);
+            if (suppliercategoryid != null) {
+                return JSON.toJSONString(new Msg(2, "rename suppliercategory fail,供应商类别已存在", ""));
             }else{
-                return JSON.toJSONString(new Msg(1,"重命名供应商类别失败",""));
+                /*Cxysuppliercategory cxysuppliercategory = cxysuppliercategoryMapper.selectByPrimaryKey(id);
+                if(cxysuppliercategory==null){
+                    return JSON.toJSONString(new Msg(2,"查找重命名供应商类别失败",""));
+                }*/
+                cxysuppliercategory.setSuppliercategoryname(name);
+                cnt = cxysuppliercategoryMapper.updateByPrimaryKey(cxysuppliercategory);
+                if(cnt>0){
+                    return JSON.toJSONString(new Msg(0,"重命名供应商类别成功",""));
+                }else{
+                    return JSON.toJSONString(new Msg(1,"重命名供应商类别失败",""));
 
+                }
             }
         }
 
